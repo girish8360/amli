@@ -15,46 +15,77 @@
 
        
       </head>
-    <style>
+
+ <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color:gray;
-            color: #333;
-        }
+            background-color:lightgray;
+            color: #333; }
+
       .container-fluid{
-                          border: 2px ;
-        } 
+                          border: 2px; 
+width:auto;} 
+
         .container1{
         text-align: justify;
-
-       width:auto;
-margin:5px;
+       max-width:auto;
+margin-left:3px;
+margin-right:2px;
 padding:5px;
-border: 2px solid blue;
-}
+border: 3px solid maroon;}
+
  .container2{
         text-align: justify;
-     background:linear-gradient(180deg,#f17a2a,#003366);
-}
+margin-left:1px;
+     background:#f17a2a;}
 
  .container3{
         text-align: justify;
-     background:#f17a2a;
-}
+     background:#003366;
+color:#fff;}
 
-ul {
-            list-style-type:none;
+.topnav02 {
+  overflow: hidden;
+  background-color: maroon;
+padding-}
+
+.topnav02 a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    display:block;
+             color:white;
+font-family:times new roman;
+               text-align:center;
+              padding:3px;
+               font-weight:bold;
+                 border:1px solid white;
+font-size:20px;}
+
+.topnav02 a:hover {
+  background-color: black;
+  color: #fff;}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav02 a.split {
+  float: right;
+  background-color: linear-gradient(200deg,#f17a2a,#003366);
+  color: white;
+font-weight:bolder;}
+
+ul {list-style-type:none;
                   margin:1px;
-             padding:1px;
+             padding:6px;
               overflow:hidden;
-font-weight:normal;
-             
+font-weight:normal;         
          }
+
      ul li {
-        float:left;
-        }
+        float:left; }
 
       ul   li a {
             display:block;
@@ -63,38 +94,26 @@ font-family:times new roman;
                text-align:center;
               padding:3px;
                text-decoration:none;
-                 border:1px                     solid white;
-font-size:20px;
-
-      }
+                 border:1px solid white;
+font-size:20px;      }
          li a:hover {
-          background-color:#111111;
-                }
+          background-color:#111111; }
  
- ul  li ul  li
-  {
+ ul  li ul  li  {
 display:none;
-}
- 
-ul  li ul li 
-{
-float:none;
- }
-
+float:none;}
+  
 ul  li:hover ul  li
-{display:block;
-}
+{display:block;}
+
 ul1 {
             list-style-type:disc;
-                          font-weight:normal;
-            
-         }
+                          font-weight:normal;        }
    ul1 li {
         font-size:25px;
 padding:5px;
-margin-left:5px;
- 
-        }
+margin-left:65px;        }
+
 .custom-media{
     width: 100%;
     border-collapse: collapse;
@@ -105,8 +124,7 @@ margin-left:5px;
     th,td {
       display: block;
       width: 96%;
-      text-align: justify;
-  
+      text-align: justify; 
     }
        }
       }
@@ -125,8 +143,7 @@ font-size:23px;
    th{
 background:gray;
 color:azure;
-text-align: center;
-}
+text-align: center;}
  p{
   font-weight: bold;
 text-align: justify;
@@ -134,36 +151,29 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
  padding: 10px;
 margin: 5px;
 font-size:25px;
-color:white;
-}
+color:white;}
       header {
             background: linear-gradient(130deg,#f17a2a,#003366);
                        color: white;
             padding: 20px 0;
-            text-align: center;
-                 }
+            text-align: center;                 }
+
                 header h1 {
             margin: 0;
-            font-size: 2.5em;
-        }
+            font-size: 2.5em; }
         header h2 {
             margin: 5px 0 20px;
-            font-size: 1.5em;
-   
-        }
+            font-size: 1.5em;        }
         section {
    background-color: #003366;
             color: white;
             padding: 20px;
-            max-width: 1400px;
-            margin: 0 auto
- 
- }
+            max-width: 1500px;
+            margin: 0 auto;}
         .services, .contact-info {
             display: flex;
             justify-content: space-between;
-            flex-wrap: wrap;
-        }
+            flex-wrap: wrap;        }
         .service-item, .contact-item {
             background-color: #003366;
             color:azure;
@@ -172,20 +182,19 @@ color:white;
             flex-basis: 45%;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             border-radius: 5px;
- font-size:30px; 
-        }
+ font-size:30px;         }
         .contact-item a {
 background:linear-gradient(90deg,#003366,#f17a2a);
                          text-decoration: none;
         }
       footer {
             background: linear-gradient(180deg,#f17a2a,#003366);
-            font-size:20px;          
+            font-size:20px;     
    
     padding: 10px;
     color: white;
     text-align: justify;
- max-width: 1400px;
+ max-width: 1500px;
  
 }   
 p1,p2{
@@ -195,12 +204,18 @@ font-family: Arial, Helvetica, sans-serif;
 color:black;
 padding: 5px;
 margin: 5px;
-font-size:25px;
+font-size:25px;}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
 }
+
+.flex-container > div {
+   }
     
     </style>
-</head>
-  
+ 
 <body>
   <div class="container-fluid">
                            <div class="row">
@@ -589,6 +604,7 @@ COURT  ROAD<br>SAHARANPUR-247001 (U.P.)  </span></td>
  
 </body>
 </html>
+
 
 
 
