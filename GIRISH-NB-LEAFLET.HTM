@@ -15,7 +15,6 @@
 
        
       </head>
-
  <style>
         body {
             font-family: Arial, sans-serif;
@@ -34,17 +33,20 @@ width:auto;}
 margin-left:3px;
 margin-right:2px;
 padding:5px;
-border: 3px solid maroon;}
+border: 3px solid blue;}
 
  .container2{
         text-align: justify;
 margin-left:1px;
-     background:#f17a2a;}
+     background:#f17a2a;
+width:auto;}
 
  .container3{
         text-align: justify;
      background:#003366;
-color:#fff;}
+color:#fff;
+margin-left:1px;
+width:auto;}
 
 .topnav02 {
   overflow: hidden;
@@ -108,11 +110,11 @@ ul  li:hover ul  li
 
 ul1 {
             list-style-type:disc;
-                          font-weight:normal;        }
+                          font-weight:normal;}
    ul1 li {
         font-size:25px;
-padding:5px;
-margin-left:65px;        }
+padding:2px;
+margin-left:25px;  }
 
 .custom-media{
     width: 100%;
@@ -123,25 +125,24 @@ margin-left:65px;        }
         .custom-media{
     th,td {
       display: block;
-      width: 96%;
-      text-align: justify; 
-    }
+      width: auto%;
+      text-align: justify;     }
        }
       }
       .table{
         width:auto;
  background:maroon;
  margin-left:5px;
- margin-right:20px;
+ margin-right:5px;
              }
       td{
 padding:5px;
 border:2px solid #fff;
 color:white;
 font-size:23px;
-}
+font-weight:normal;}
    th{
-background:gray;
+background:red;
 color:azure;
 text-align: center;}
  p{
@@ -213,21 +214,49 @@ font-size:25px;}
 
 .flex-container > div {
    }
-    
+    .split{
+float:right;
+ display:block;
+             color:white;
+font-family:times new roman;
+               text-align:center;
+              padding:3px;
+               text-decoration:none;
+                 border:1px solid white;
+font-size:20px;   
+padding-right:5px;
+ }
+
+.split:hover {
+  background-color: black;
+  color: #fff;}
+
+ .split hover{
+ background:black;
+color:white;
+cursor:pointer;
+ }
+@media only screen and (max-width: 475px) { 
+  .responsive { 
+    width: 100%;
+  }
+}
+
     </style>
- 
 <body>
   <div class="container-fluid">
                            <div class="row">
                 <div class="col-sm-12">
-                                   <div class="container1">
+
+                                   <div class="responsive">
   <header>
-<img src="https://raw.githubusercontent.com/girish8360/amli/main/nb.jpg" width="150px;height:50px;" style="float:left;padding-left:10px;">
+<img src="https://raw.githubusercontent.com/girish8360/amli/main/nb.jpg"    style="width:250px;height:100px;float:left;padding-left:5px;"></td>
+ 
           
              <h1 style="margin-left:5%;margin-right:25%;color:azure; text-align:center;font-weight:bolder">GIRISH GAUR</h1> 
         <h2 style="margin-left:25%;margin-right:25%;color:azure; text-align:right;font-weight:bolder">    Advisor, NIVA BUPA HEALTH INSURANCE</h2> 
     </header>
-  <p1>     
+      
 <div class="container3" style="background:maroon; width:auto;">
  <ul>
   <li><a id="home"><b>HOME</b></a></li>
@@ -242,26 +271,29 @@ font-size:25px;}
 <li><a href="#rider"><b>RIDERS &<br> ADD-ON</b></a></li>
 <li><a href="#health"><b>HEALTH PRODUCTS</b></a>
       <ul>
-    <li> <a href="#rea"><b>ReAssure 2.0</b></a></li>
+    <li> <a href="#rea2"><b>ReAssure 2.0</b></a></li>
+<li> <a href="#rea3"><b>ReAssure 3.0</b></a></li>
   <li> <a href="#asp"><b>Aspire</b></a></li>
 <li> <a href="#sf"><b>Senior First</b></a></li>
  </ul>
 </li>
 <li><a href="#travel"><b>TRAVEL  PRODUCTS</b></a></li>
 <li><a href="#accident"><b>ACCIDENTS PRODUCTS</b></a> </li>
+<a href="#contact" class="split">CONTACT US</a>
 
-        <li><a href="#contact"><b>CONTACT US</b></a></li>
   </ul>
 </div> 
                    
  <section>
-        <h2 style="font-size:40px;"><strong>GIRISH GAUR</strong> <br>
-        <span style="font-size:25px;font-style: italic;"><b>  B.Sc.,M.A.(Eco.), PGDCASA, PGDBA, Cert. in Oracle 8i</b></span><br>
-           <strong>Certified Insurance Advisor,<br>  NIVA BUPA HEALTH   INSURANCE</strong></h2>
-       
+  <h2 style="font-size:40px;"><strong>GIRISH GAUR</strong> <br>
+        <span style="font-size:25px;font-style:italic;padding-left:45px;"><b>  B.Sc.,M.A.(Eco.),  PGDCASA, PGDBA, Cert. in Oracle 8<i>i</i></b></span></h2>
+<h2>Certified Insurance Advisor</h2>
+       <h2 style="padding-left:45px;"><strong>NIVA BUPA HEALTH INSURANCE </h2>
+     
+ <div class="flex-container">
+
  
- <div class="container3">
-<h2 id="nb" style="text-align:center;"><b> NIVA BUPA HEALTH INSURANCE CO. LTD.</b></h2>
+<h2 id="nb" style="text-align:center;background:maroon;color:#fff;border:2px solid orange;"><b> NIVA BUPA HEALTH INSURANCE CO. LTD.</b></h2>
 </div>
   <div class="container2">
         <table class="table custom-media" style="width:auto;">                  
@@ -302,7 +334,7 @@ Association of India (IAMAI).</li>
 <p><a href="#home"class="btn btn-warning btn-lg" role="button"><b>HOME</b></a></p>  
       
  </div>
-  <div class="container3">
+  <div class="container2">
 <h2 id="prod1"  style="text-align:center;"><b>MAJOR PRODUCTS</b></h2>
 </div>
     <p style="font-size:25px;"><strong>NIVA BUPA HEALTH INSURANCE</strong> offers a range of Insurance products including Health Insurance, Travel Insurance & Personal Accident Insurance. Niva Bupa's insurance products are designed to provide financial protection and peace of mind for individuals and families. For detailed information on these products please visit or contact to us.<br>An overview is here: </p>
@@ -338,19 +370,73 @@ Association of India (IAMAI).</li>
      <div class="container2">
 <table class="table custom-media" style="width:auto;">   
 <tr>
-<td><b>ReAssure Rider (Available with some plans)</b></td>
-<td><p>Offers unlimited reinstatement of the sum insured for unrelated and related illnesses in a year.
-Once the base Sum Insured is used up, the rider activates automatically without any extra premium during the claim.</p></td>
+<th colspan="2"><h2> Riders & Add-ons (Available with  plans)</h2></th>
+ 
 </tr>
 <tr>
+<td colspan="2"><h2 style="text-align:center;"><strong>SMART HEALTH DISEASE MANAGEMENT</strong> </h2> 
+ DAY 1 - COVERAGE from DIABETES & HYPERTENSION <br>
+BENEFITS of this DISEASE MANAGEMENT RIDER<br>
+<ol>
+<li>NO WAITING PERIOD for PED DIABETES & HYPERTENSION</li>
+<li>NO EXTRA PREMIUM for existing PED</li>
+<li>Upto 20% DISCOUNT on RENEWAL PREMIUM</li>
+<li>DIAGNOSTIC TESTS covered to IRE 3,000/- per Year</li>
+</ol></td>
+</tr>
+<tr>
+<td><b>GOLD VARIANT</b></td>
+<td>
+ <ul1>
+<li> * Day 0 Coverage for inpatient hospitalization or day-care treatment for any complications arising out of
+diabetes or hypertension from the date of this policy inception</li>
+<li>* Up to 20% discount on renewal premium of base product and rider. The discount will be calculated as per the
+grid </li>
+<li>*Get discount for undergoing health check-up. Just undergo the complete set of tests mentioned under
+Health Check-up in Annexure 1, and you can get up to 4% discount</li>
+<li> * Get discount for results you get in these tests. Submit the test reports to us and get discounts as per test
+report</li>
+<li>Take the tests up to 4 times a year and get the discount for every time you get the test done</li>
+<li>Just ensure that there is a gap of at least 60 days between 2 set of tests</li>
+<li>you must submit the report to us at least 75 days prior to the policy renewal date</li>
+
+</ul>
+</td>
+</tr>
+<tr>
+<td><b>PLATINUM VARIANT</b></td>
+<td><ul1>
+<li> * Day 0 Coverage for inpatient hospitalization or day-care treatment for any complications arising out of
+diabetes or hypertension from the date of this policy inception</li>
+<li>* Up to 20% discount on renewal premium of base product and rider.   </li>
+<li>*QUARTERLY TESTS on CASHLESS BASIS or INR 3,000/- RE-IMBURSED. This Test will include <ol>
+<li>BMI</li>
+<li>LIPID PROFILE</li>
+<li>HbA1c</li>
+ </li>
+ </ol>
+</td>
+</tr>
+ 
+</td>
+</tr>
 <td><b>Safeguard+</b></td>
 <td>Very popular add-on, especially with ReAssure 2.0 and Health Companion plans.<br>
 Key Benefits:
+<ol>
+<li><b>Claim Safeguard+</b>:Get coverage for many “non-payable” items listed in the non-payables annexure (Lists I, II, III, IV) that otherwise would be excluded. </li>
+<li><b> Booster / Booster+ / No Claim Bonus Safeguard+</b>:Cumulative Bonus under Booster /Booster+ or No Claim Bonus of the Base Plan will not be impacted at Renewal if total admissible claim amount in the previous Policy Year is not more than Rs. 1,00,000/-.<br>Without this rider you may lose part or whole of that bonus/accumulated benefit when you make a claim. </li>
+<li><b> Sum Insured Safeguard+</b>:Preserves the value of Sum Insured. Safeguards it against inflation. We will increase the Base Sum Insured on cumulative basis at each renewal by the rate of inflation in the previous year. Inflation rate would be the average consumer price index (CPI) of the entire calendar year published by the Central Statistical Organization (CSO). </li>
+</ol>
 <ul1>
-<li>Coverage for non-payable expenses (e.g., consumables like gloves, PPE kits, masks).</li>
-<li>No Impact on No Claim Bonus (NCB) even if a small claim is made.</li>
-<li>Inflation Protection: Sum insured automatically increases each year in line with inflation (up to 10%).</li>
-</ul1>
+<li><b>Broader coverage</b>: Non-payable items often include things like special equipment, extra diet, certain consumables, etc. These costs can add up even if they are small per item, and without it you might have to bear them yourself. With Safeguard+, you reduce “surprise out-of-pocket” costs.</li>
+
+<li><b>Protecting your bonus / booster</b>: ReAssure plans have benefits like Booster+ / No-claim bonus, which reward years of low/no claims by increasing effective coverage or sum insured. If you make claims under a certain threshold, Safeguard+ ensures you don’t lose these gains. This helps maintain value of your plan.</li>
+
+<li><b>Inflation safety</b>: Healthcare inflation is a major risk. Without sum insured increasing, your base cover might erode in real value over years. Safeguard+ helps maintain the purchasing power of your insurance.</li>
+
+<li><b>Peace of mind</b>: Knowing many otherwise excluded items will be covered, and that your booster/no-claim benefits are safer, gives more confidence in using the policy when needed.</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -381,17 +467,24 @@ Especially useful for high-end hospitalizations where you prefer a single room o
 </table> 
 <p><a href="#home"class="btn btn-warning btn-lg" role="button"><b>HOME</b></a></p>  
      
-</div>
- <div class="container3">
-<h2 id="health" style="text-align:center;"><b> Major Health Insurance Products</h2> </div>
-   <div class="container2">
-    <table class="table custom-media" style="width:auto;">                   
+</div></td>
+</tr>
+<tr>
+<td colspan="2">
+ 
+ 
+<h2 id="health" style="text-align:center;"><b> Major Health Insurance Products</h2>  
+
+ 
+ <table class="table custom-media" style="width:auto;">                   
       <tr>
-<td>
- <h2><strong>ReAssure 2.0</strong></h2>
-<p> This plan offers comprehensive coverage, including hospitalization, pre and post-hospitalization expenses, and more. It also features innovative benefits like "Forever Restoration" and "Lock the Clock"</p>
-</td>
- <td>
+ 
+ <img src="https://github.com/girish8360/amli/raw/main/RA2%20LOGO.jpg" style="display: flex;margin: auto;width=100px;height:100px;justify-content: center;align-items: center;"><br><br> 
+
+ 
+  <h1 id="rea2" style="text-align:center;"><strong>ReAssure 2.0</strong></h1>
+<p> This plan offers comprehensive coverage, including hospitalization, pre and post-hospitalization expenses, and more. It also features innovative benefits like "Forever Restoration" and "Lock the Clock"</p> 
+ 
  <h3><strong>Major Features</strong></h3>
 <ul1>
 <li>Comprehensive Coverage: In-patient care, pre-hospitalization expenses, post-hospitalization expenses, and more.</li>
@@ -399,17 +492,381 @@ Especially useful for high-end hospitalizations where you prefer a single room o
 <li>Lifelong Renewability: The plan is renewable for a lifetime.</li>
 <li>Annual Health Check-ups: Available from day one of the policy period</li>
 <li>Safeguard Benefit: A lump sum benefit for critical illnesses or survival after a covered surgery.</li>
-<li> Accidental Hospital Cash Benefit: A daily cash benefit for hospitalization due to accide</li>
+<li> Accidental Hospital Cash Benefit: A daily cash benefit for hospitalization due to accident</li>
 </ul1> 
- </td>
+  
+<table class="table custom-media" style="background:darkblue;:width:auto;">     
+<tr>
+<th style="background:red;border:2px solid white;">VARIANT</th>
+<th style="background:red;border:2px solid white;">GOLD</th>
+<th style="background:red;border:2px solid white;">BRONZE+</th>
+<th style="background:red;border:2px solid white;">PLATINUM+</th>
+<th style="background:red;border:2px solid white;">TITANIUM+</th>
+ 
+</tr>
+<tr>
+<td>BASE SUM INSURED</td>
+<td colspan="4">5 LACS;10 LACS;15 LACS;20 LACS;25 LACS;50 LACS;100 LACS</td>
+ </tr>
+<tr>
+<td colspan="5"><h1 style="text-align:center;"><strong>BENEFITS</strong></h1></td> 
+</tr>
+<tr>
+<td>IN PATIENT CARE<br>Including AYUSH</td>
+<td colspan="4" style="text-align:center;">Covered upto SUM INSUREd</td>
+ </tr>
+<tr>
+<td>PRE HOSPITALIZATION</td>
+<td colspan="4" style="text-align:center;">60 DAYS;Covered upto SUM INSUREd</td>
+</tr>
+<tr>
+<td>POST HOSPITALIZATION</td>
+<td colspan="4" style="text-align:center;">180 DAYS;Covered upto SUM INSUREd</td>
+</tr>
+<tr>
+<td>MODERN TREAMENT</td>
+<td colspan="4" style="text-align:center;"> Covered upto SUM INSURED<br><b>SUB LIMIT of INR 1 Lac per Claim on few ROBOTIC SURGERIES</b></td>
+</tr>
+<tr>
+<td>AMBULANCE</td>
+<td colspan="4"><ul1>
+<li>ROAD AMBULANCE: Covered upto SUM INSURED</li>
+<li>AIR AMBULANCE: Upto INR 2,50,000/- per Hospitalisation</li>
+</ul>
+  </td>
+</tr>
+<tr>
+<td>HOME CARE/DOMICILLARY</td>
+<td colspan="4" style="text-align:center;"> Covered upto SUM INSURED  </td>
+</tr>
+<tr>
+<td>ORGAN DONOR</td>
+<td colspan="4" style="text-align:center;"> Covered upto SUM INSURED  </td>
+</tr>
+<tr>
+<td>ANNUAL HEALTH CHECK-UP DAY-1</td>
+<td colspan="4" style="text-align:left;">For defined list of tests; up to INR 500 for every INR 1 Lac Base Sum Insured.<br>
+(Individual: Maximum INR 5,000 per Insured; Family Floater: Maximum INR 10,000 per policy).  </td>
+</tr>
+<tr>
+<td>LOCK THE CLOCK</td>
+<td>NOT AVAILABLE</td>
+<td>NOT AVAILABLE</td>
+<td>Save your Age.PAY as per ENTRY AGE until You CLAIM</td>
+<td>Save your Age.PAY as per ENTRY AGE until You CLAIM</td>
+</tr>
+<tr>
+<tr>
+<td>ReAssureX</td>
+<td colspan="4" style="text-align:left;"><b>ReAssure “Forever”</b>: First claim paid triggers ReAssure “Forever”.<br>
+ It is unlimited. Each Claim under ReAssure “Forever” will be up to Base Sum Insured.  </td>
 </tr>
 <tr>
 <td>
-<h2><strong>Aspire</strong></h2>
- <p>  Niva Bupa's Aspire health insurance plan is a comprehensive policy that offers extensive coverage for individuals and families.This plan offers extensive coverage, including maternity benefits, infertility treatment, and more. It also features innovative benefits like "M-iracle" and "Booster   Here are the major features of Niva Bupa's Aspire plan:</p>
+ReAssure+</td>
+<td></td>
+<td></td>
+<td colspan="2" style="text-align:left"><ul1>
+<li>1<sup>st</sup> claim triggers ReAssure+, forever. It is Unlimited. Each claim will be up to the BASE SUM INSURED</li>
+<li>Pay the premium as per your entry age, till a claim is paid</li></ul1></td>
+</tr>
+<tr>
+<td>Booster+</td>
+<td>10X: Unutilized Base Sum Insured carries forward
+to the next policy year, maximum up to 10 times</td>
+<td>3X: Unutilized Base Sum Insured carries forward
+to the next policy year, maximum up to 3 times</td>
+<td>5X: Unutilized Base Sum Insured carries forward
+to the next policy year, maximum up to 5 times</td>
+<td>10X: Unutilized Base Sum Insured carries forward
+to the next policy year, maximum up to 10 times</td>
+</tr>
+<tr>
+<td>Live Healthy</td>
+ <td colspan="4">Up to 30% discount on premium at the time of Renewal</td>
+</tr>
+<tr>
+<td>Shared Accommodation</td>
+<td colspan="4"><ul1>
+<li>Up to INR 15 Lac Base Sum Insured: INR 800 per day; Maximum INR 4,800</li>
+<li>Above INR 15 Lac Base Sum Insured: INR 1,000 per day; Maximum INR. 6,000</li>
+</ul></td>
+ </tr>
+<tr>
+<td>Second Medical Opinion</td>
+<td colspan="4">Once for any condition in a Policy Year.</td>
+ </tr>
+<tr>
+<td>e-consultation</td>
+<td colspan="4">Unlimited e-consultation within our network.</td>
+ </tr>
+<tr>
+<td colspan="5">
+<h1 style="text-align:center;"><strong>OPTIONAL BENEFITS</strong></h1></td>
+
+ 
+</tr>
+<tr>
+<td>Safeguard+</td>
+<td colspan="4"><ul1>
+<li>Claim Safeguard+: Non-payable items will be covered (as per list I, II, III, IV of Annexure I)</li>
+<li>Booster+ Safeguard+: No impact on Booster+ if claim in a policy year is less than INR 1,00,000</li>
+<li>Sum Insured Safeguard+: CPI linked increase in Base Sum Insured</li>
+</ul1>
 </td>
-<td>
-<h3><strong>Major Features</strong></h3>
+</tr>
+ <tr>
+<td>Personal Accident</td>
+<td colspan="4">Choose from 1X / 2X / 3X / 4X / 5X of base sum insured. Maximum up to INR 1 Crore.</td>
+</tr>
+<tr>
+<td>Hospital Cash</td>
+<td colspan="4"><ul1>
+<li>Up to INR 5 Lac Base Sum Insured: INR 1,000/day</li>
+<li>Between INR 7.5 Lacs to INR 15 Lac Base Sum Insured: INR 2,000/day</li>
+<li>Above 15 Lac Base Sum Insured: INR 4,000/day</li>
+</ul1>
+</td>
+</tr>
+<tr>
+<td>Annual Aggregate Deductible</td>
+<td colspan="4">Small deductibles to choose from. INR 20,000; INR 30,000; INR 50,000; INR 1,00,000</td>
+</tr>
+ 
+<tr>
+<td>Tiered Network</td>
+<td colspan="4">Get 15% discount on Premium. A co-payment of 20% would apply if treatment taken
+in a non-Tiered Network Hospital</td>
+</tr>
+ </table>
+ 
+</td>
+</tr>
+<tr>
+ 
+<td colspan="2" style="background:maroon;">
+ 
+  <table class="table custom-media" style="width:auto;">                   
+      <tr>
+ 
+<img src="https://github.com/girish8360/amli/raw/main/ra3%20logo.png" style="display: flex;margin: auto;
+width=75px;height:75px;justify-content: center;align-items: center;"><br> 
+ 
+ <h1 id="rea3" style="text-align:center;"><strong>ReAssure 3.0</strong></h1>
+<p> The Niva Bupa ReAssure 3.0 plan builds on this foundation, introducing a<b> no-limits approach to coverage means UNLIMITED SUM INSURED</b>. It offers unlimited base sum insured across all variants, immediate 145 pre-existing disease (PED) coverage options, and a rewards system that incentivises healthy living. With four variants—Classic, Select, Elite, and Black—it caters to diverse needs, from affordability to premium care. <br>
+ReAssure 3.0 also integrates wellness-focused benefits and global treatment options, making it a holistic solution for modern healthcare challenges.
+</p><br>
+ 
+ <h2> KEY FEATURES </h2>
+<ol style="font-size:25px;font-weight:normal;">
+<li> <b>UNLIMITED SUM INSURED :</b> Unlike traditional health insurance plans with fixed coverage limits, ReAssure 3.0 provides unlimited base sum insured across all variants. This ensures that medical emergencies, whether minor or major, don’t leave you financially strained. Whether you’re facing a prolonged hospital stay or advanced treatment, this feature guarantees coverage without the fear of exhausting your benefits.</li>
+<li><strong> Day 1 PED COVER :</strong>Pre-existing diseases usually come with long waiting periods, but ReAssure 3.0 changes that. By paying a small underwriting loading, you can get a waiver on waiting periods for up to 145 pre-existing conditions and enjoy coverage from day one. If you prefer, you can also choose the standard 36-month waiting period, giving you the flexibility to decide what works best for your health needs.</li>
+<li><strong> CASH-BAG+ REWARDS :</strong>ReAssure 3.0 introduces a unique rewards system called Cash-Bag+. After the first claim-free year, you receive 10% of your renewal premium back, followed by 5% each subsequent year. Completing three consecutive claim-free years earns an additional 10% bonus. These rewards can be used for outpatient department (OPD) expenses, premiums, or co-payments and can even be shared with nominated individuals, making it a versatile financial tool.</li>
+<li><strong> HEADSUP BENEFITS :</strong>Planning hospitalisation can reduce stress and costs. The HeadsUp feature guides you to the right hospital when you inform the insurer 24 hours in advance, ensuring cost-effective and efficient care. This is particularly useful for planned treatments, enhancing convenience and coordination.</li>
+<li><b>NIVABUPA ONE</b>:ReAssure 3.0 goes beyond traditional insurance with NivaBupaOne, a premium service offering priority support, a dedicated relationship manager, and executive health assessments. This ensures personalised care and streamlined access to healthcare services, elevating the overall experience.</li>
+</ol>
+ <h3><strong>MAJOR HIGHLIGHTS</strong></h3>
+<ul1>
+<li><strong>Unlimited Sum Insured:</strong>No cap on total hospitalisation claims any policy‐year; protection for large medical costs.Unlimited claims for unlimited amounts … you never have to worry about exhausting your cover</li>
+<li> <strong> Variants / Flexibility:</strong>Multiple variants (Classic, Select, Elite, Black) to suit different budgets and requirements.<br>
+Each has different features with higher benefits (like no room rent caps, global treatment, etc.) in upper tiers. </li>
+<li> <strong> Lock the Clock: </strong>Until the first claim is made, premium is fixed at the entry‐age rate for variants that support this (Elite/Black). This protects against premium hikes simply due to aging, at least until you make a claim. </li>
+<li><strong>Carry Forward / Booster Benefits :</strong>Unused base sum insured can be carried forward across years (up to multiples of base SI) to help with high‐cost treatments. <br>
+Booster+ type features: in some circumstances, base SI increases with claim‐free years. </li>
+<li><strong> Day-1 Coverage for Pre-Existing Diseases (PED) Option : </strong>Option (with additional premium/loadings) to cover a large number of pre‐existing conditions from day one. </li>
+<li>  <strong>OPD / WellConsult+ Add-On : </strong>Covers outpatient consultations, diagnostics, pharmacy, etc., up to a certain limit (often expressed as multiple of premium paid) under the WellConsult+ feature. .</li>
+<li>  <strong>Global / International Treatment Option:</strong>  Higher variants (Elite/Black) allow treatment outside India, or international coverage limits. </li>
+<li> <strong>Pre- and Post-Hospitalisation, Domiciliary Treatment: </strong>Good durations for pre-hospitalisation (≈ 60 days) and post-hospitalisation (≈ 180 days). Also domiciliary (treatment at home) covered.</li>
+<li> <strong>Wellness / Rewards / Discounts: “Live Healthy” benefits –</strong> premium discounts on renewal based on health metrics (steps, wellness tracking etc.). <br>
+ CashBag+ or similar cashback / benefits for claim-free years. </li>
+<li><strong> Lifetime Renewability: </strong>Policy can be renewed for life, no upper age limit in many cases. </li>
+<li><strong>Optional Co-Pay / Deductible : </strong>To reduce premium, policy holders can choose co-payment (e.g. 20-50%) or deductible zones (₹10,000 up to large sums). </li>
+<li> <strong>No Sub-limits in Top Variants: </strong>Top variants do away with sub-limits for modern treatments (e.g. immunotherapy, robotic surgery etc.) which are often capped in more basic variants. </li>
+</ul1> 
+  
+<table class="table custom-media" style="background:darkblue;:width:auto;">     
+<tr>
+<th style="background:red;border:2px solid white;">VARIANT</th>
+<th style="background:red;border:2px solid white;">CLASSIC</th>
+<th style="background:red;border:2px solid white;"">SELECT</th>
+<th style="background:red;border:2px solid white;"">ELITE</th>
+<th style="background:red;border:2px solid white;"">BLACK</th>
+</tr>
+<tr>
+<td>BASE SUM INSURED</td>
+<td colspan="4" style="text-align:center;"> <strong>UNLIMITED</strong></td>
+ </tr>
+<tr>
+<td colspan="5"><h1 style="text-align:center;"><strong>BENEFITS</strong></h1></td> 
+</tr>
+<tr>
+<td>ROOM TYPE-COVERED upto SUM INSURED )CO-PAY if Room category is breached</td>
+<td>General Ward</td>
+<td>Twin Sharing</td>
+<td>All Rooms covered except Deluxe/Suite</td>
+<td>Any Room Covered</td>
+ </tr>
+<tr>
+<td>EXPENSES IN REACHING HOSPITAL</td>
+<td>Road Ambulance: INR 2,000/- per Hospitalisation</td>
+<td>Road Ambulance: INR 2,000/- per Hospitalisation</td>
+<td>Road Ambulance: Upto SUM INSURED <br> AIR AMBULANCE:INR 5L per Hospitalisation</td> 
+<td>Road Ambulance: Upto SUM INSURED <br> AIR AMBULANCE:INR 5L per Hospitalisation</td>
+</tr>
+<tr>
+<tr>
+<td>EXPENSES DURING HOSPITALISATION<br>Including AYUSH</td>
+<td colspan="4" style="text-align:center;">Covered upto SUM INSURED for 2+ Hours of Hospitalisation<br>
+24+ Hours for AYUSH TREATMENT</td>
+</tr>
+ <tr>
+<td>MODERN TREAMENT</td>
+<td>Covered upto INR 1 Lacs for each complete Claim Amount</td>
+<td>Covered upto INR 1 Lacs for each complete Claim Amount</td>
+<td>Upto Sum Insured</td>
+<td>Upto Sum Insured</td>
+ 
+</tr>
+ <tr>
+<td>EXPENSES BEFORE & AFTER HOSPITALISATION</td>
+<td colspan="4">60 DAYS before & 180 DAYS after Hosp:Covered upto SUM INSURED </td>
+  </tr>
+<tr>
+<td>HOME CARE/DOMICILLARY</td>
+<td colspan="4" style="text-align:center;"> Covered upto SUM INSURED  </td>
+</tr>
+<tr>
+<td>ORGAN DONOR</td>
+<td colspan="4" style="text-align:center;"> Covered upto SUM INSURED  </td>
+</tr>
+<tr>
+<tr>
+<td>LOCK THE CLOCK</td>
+<td>NOT AVAILABLE</td>
+<td>NOT AVAILABLE</td>
+<td>Save your Age.PAY as per ENTRY AGE until You CLAIM</td>
+<td>Save your Age.PAY as per ENTRY AGE until You CLAIM</td>
+</tr>
+<tr>
+ <td>Live Healthy<br>DAY-1 PED LOADINGS</td>
+ <td colspan="4">Up to 30% discount on premium at the time of Renewal</td>
+</tr>
+  <tr>
+<tr>
+<td>Second Medical Opinion</td>
+<td colspan="4">Unlimited Second Medical Opinions within our network.</td>
+ </tr>
+<tr>
+<td>e-consultation</td>
+<td colspan="4">Unlimited e-consultation within our network.</td>
+ </tr>
+ 
+<tr>
+<td colspan="5">
+<h1 style="text-align:center;"><strong>OPTIONAL BENEFITS</strong></h1></td>
+ </tr>
+<tr>
+<td> CASH BAG+</td>
+<td colspan="4"><ul1>
+<li>Accumulate CASHBACK on ever CLAIM FREE YEAR. Use it for payments of premiums, OPD, DEDUCTIBLES & CO-PAYMENT<br>10% of 1<sup>st</sup> RENEWAL PREMIUM & 5% of every subsequent renewal premium<br>
+Get Extra 10% of the accumulated CASH-BAG for a block of 3 CLAIM FREE YEARS</li>
+</ul1>
+</td>
+</tr>
+<tr>
+<td>NIVA BUPA ONE</td>
+<td colspan="4">Exclusive Membershipthat gives you an access to Executive Health Assessmen & provides PRIORITY CLAIMS & Dedicared Support Services</td>
+</tr>
+ <tr>
+<td>ElderOne</td>
+<td colspan="4">Choose from Comprehensive package to support Elders</td>
+</tr>
+<tr>
+<td>ANNUAL HEALTH CHECKUP<br>(ONLY CASHLESS)</td>
+<td colspan="4">Day 1 HEALTH CHECKUP as per defined package </td>
+</tr>
+<tr>
+<td>HEADSUP</td>
+<td colspan="4">Get 16% DISCOUNT IN PREMIUM
+<ul1>
+<li>CONDT-1-Inform 48 Hrs before, you have to approach suggested hospital in case of PLANNED TREATRMENT else PAY 20% COPAY</li>
+<li>CONDT-2-In case of EMERGENCY TREATMENT, inform within 24 HOURS else PAY 20% COPAY</li>
+</ul1></td>
+</tr>
+<tr>
+<td>TIERED NETWORK</td>
+<td colspan="4">Extensive List of Hospitals.  Co-payment if treatment taken outside the recommended list </td>
+</tr>
+<tr>
+<td>SPECIFIC DISEASE WAITING PERIOD MODIFICATION</td>
+<td colspan="4">Modify the SPECIFIC DISEASE WAITING PERIOD from 36 MONTHS to 12 or 24  MONTHS   </td>
+</tr>
+<tr>
+<td>PRE-EXISTING  DISEASE WAITING PERIOD MODIFICATION</td>
+<td colspan="4">Modify the PED WAITING PERIOD from 36 MONTHS to 12 or 24  MONTHS   </td>
+</tr>
+<tr>
+<td>CO-PAYMENT</td>
+<td colspan="4">0%, 10%, 20%, 30%, 40% & 50%</td>
+</tr>
+<tr>
+<td>Personal Accident<br>
+From 5 Lac in multiples of 5 lacs</td>
+<td>UPTO INR 10 Lacs</td>
+<td>UPTO INR  20 Lacs</td>
+<td>UPTO INR 50 Lacs</td>
+<td>UPTO INR 1 CRORS</td>
+</tr>
+<tr>
+ <tr>
+<td>HOSPITAL DAILY CASH<br>
+Max. 30 Days in a Year</td>
+<td>UPTO INR 1,000/- per Day for Hospitalisation</td>
+<td>UPTO INR 1,000/- per Day for Hospitalisation</td>
+<td>UPTO INR 2,000/- per Day for Hospitalisation</td>
+<td>UPTO INR 4,000/- per Day for Hospitalisation</td>
+</tr>
+<tr>
+<td>ANNUAL AGGREGATE DEDUCTIBLE</td>
+<td colspan="4"> INR 10,000/-, INR 20,000/-, INR 30,000/-, INR 50,000/-,  INR 1L,2L,3L, 4L, 5L
+</td>
+</tr>
+<tr>
+<td> CLAIM SAFEGUARD+</td>
+<td colspan="4">All NON PAYABLE ITEMS wii be covered (As per List-I,II, III & IV)</td>
+</tr>
+<tr>
+<td>WELL CONSULT+</td>
+<td colspan="4">Choose up to 5X of TOTAL PREMIUM for OPD COVERAGE like: Consultation, Diagnostics, Pharmacy, Gym Membership & 10 more comprehensive benefits-<br>CO-Payment is applicable in Reimbursement</td>
+ </tr>
+<tr>
+<td>BORDERLESS<br>
+Co-Payment Option 0%,20%,30%,40% & 50%</td>
+<td>NOT APPLICABLE</td>
+<td>Get International Treatment upto INR 10 LACS </td>
+<td>Get International Treatment upto INR 50 LACS </td>
+<td>Get International Treatment upto INR 5 CRORES</td>
+ </tr>
+<tr>
+<td>BORDERLESS for Specified Illness<br>
+Co-Payment Option 0%,20%,30%,40% & 50%<</td>
+ <td>NOT APPLICABLE</td>
+<td>Get International Treatment upto INR 10 LACS </td>
+<td>Get International Treatment upto INR 50 LACS </td>
+<td>Get International Treatment upto INR 5 CRORES</td>
+ </tr>
+  </table>
+</tr>
+<tr>
+<td colspan="2">
+
+<img src="https://github.com/girish8360/amli/raw/main/aspire%20logo.jpg"  style="display: flex;margin: auto;
+width=100px;height:100px;justify-content: center;align-items: center;"> <br>
+
+<h1 id="asp" style="text-align:center;font-weight:bold;"><strong>Aspire</strong></h1>
+ <p>  Niva Bupa's Aspire health insurance plan is a comprehensive policy that offers extensive coverage for individuals and families.This plan offers extensive coverage, including maternity benefits, infertility treatment, and more. It also features innovative benefits like "M-iracle" and "Booster   Here are the major features of Niva Bupa's Aspire plan:</p>
+ 
+<h2><strong>Major Features</strong></h2>
 <ul1>
 <li>Comprehensive Coverage: Aspire offers comprehensive coverage for hospitalization expenses, including room rent, doctor's fees, and medical expenses.</li>
 <li>Maternity Benefits: The plan covers maternity expenses, including normal and cesarean deliveries, up to a certain limit.</li>
@@ -421,8 +878,186 @@ Especially useful for high-end hospitalizations where you prefer a single room o
 <li>Health Check-up: The plan offers a free health check-up every year, up to a certain limit.</li>
 <li>Tax Benefits: Aspire offers tax benefits under Section 80D of the Income Tax Act.</li>
  </ul1>
-           </td>
+         
+   <table class="table custom-media" style="background:darkblue;:width:auto;">                   
+ <tr>
+<th style="background:red;border:2px solid white;">VARIANT</th>
+<th style="background:red;border:2px solid white;">GOLD+</th>
+<th style="background:red;border:2px solid white;"">DIAMOND+</th>
+<th style="background:red;border:2px solid white;"">PLATINUM+</th>
+<th style="background:red;border:2px solid white;"">TITANIUM+</th>
+</tr>
 <tr>
+<td>BASE SUM INSURED</td>
+<td colspan="4" style="font-weight:normal;">5 LACS;10 LACS;15 LACS;20 LACS;25 LACS;50 LACS;1 CRORES</td>
+ </tr>
+<tr>
+<td colspan="5"><h1 style="text-align:center;"><strong>BENEFITS</strong></h1></td> 
+</tr>
+<tr>
+<td>EXPENSES IN REACHING A HOSPITAL</td>
+<td colspan="4" style="font-weight:normal;">Up to sum insured for<strong> Road & Air Ambulance.</strong></td>
+ </tr>
+<tr>
+<td>Expenses During Hospitalisation<br>
+(Including AYUSH)</td>
+<td colspan="4" style="font-weight:normal;">Covered up to sum insured for <strong>2+ hours of hospitalisation.</strong>.<br> Covers all day-care also.<br>
+(24+ hours for Ayush treatment)</td>
+</tr>
+<tr>
+<td>MODERN TREAMENT</td>
+<td colspan="4" style="font-weight:normal;"> Covered upto SUM INSURED</td>
+</tr>
+<tr>
+<td>Expenses before and after a Hospitalisation</td>
+<td colspan="4" style="font-weight:normal;"><strong>60 days and 180 days respectively.</strong> Covered up to sum insured.
+<tr>
+<tr>
+<td>HOME CARE/DOMICILLARY</td>
+<td colspan="4" style="font-weight:normal;"> Covered upto SUM INSURED  </td>
+</tr>
+<tr>
+<td>ORGAN DONOR</td>
+<td colspan="4" style="font-weight:normal;"> Covered upto SUM INSURED  </td>
+</tr>
+<tr>
+<td>ANNUAL HEALTH <CASHLESS ONLY)</td>
+<td colspan="4" style="font-weight:normal;">Covered for defined list of tests. </td>
+</tr>
+<tr>
+<td>ReAssure FOREVER</td>
+<td colspan="4"  style="font-weight:normal;">Triggers after the 1st claim. It is Unlimited. <br>Each claim will be up to the Base sum insured. </td>
+</tr>
+<tr>
+<td>LOCK THE CLOCK<br>
+Pay the premium as per your entry age,
+till a claim is paid</td>
+<td style="font-weight:normal;">NOT AVAILABLE</td>
+<td  style="font-weight:normal;">YES</td>
+<td style="font-weight:normal;">YES</td>
+<td style="font-weight:normal;">NOT AVAILABLE</td>
+</tr>
+<tr>
+<td>LOCK THE CLOCK+<br>
+ Pay the premium as per your entry age, till a
+claim is paid. M-iracle claim will not impact
+the AGE LOCK</td>
+<td style="font-weight:normal;">NOT AVAILABLE</td>
+<td style="font-weight:normal;">NOT AVAILABLE</td>
+<td style="font-weight:normal;">NOT AVAILABLE</td>
+<td style="font-weight:normal;">YES</td>
+</tr>
+<tr>
+<td style="font-weight:normal;"><strong>BOOSTER+</strong><br>
+Unutilised Base sum insured carries forward to the next policy year,  as per
+your entry age.</td>
+<td style="font-weight:normal;"><ul1 style="padding-left:2px;">
+<li>ENTRY AGE 18-35;UPTO 3X; </li>
+<li>ENTRY AGE 36-45;UPTO 2X; </li>
+<li>ENTRY AGE 46+;UPTO 1X;</li>
+</ul1>  </td>
+<td style="font-weight:normal;"><ul1>
+<li>ENTRY AGE 18-35;UPTO 5X; </li>
+<li>ENTRY AGE 36-45;UPTO 3X;</li>
+<li>ENTRY AGE 46+;UPTO 2X;</li>
+</ul1> </td>
+<td style="font-weight:normal;">
+<ul1>
+<li>ENTRY AGE 18-35;UPTO 10X;</li>
+<li>ENTRY AGE 36-45;UPTO 5X;</li>
+<li>ENTRY AGE 46+;UPTO 3X;</li>
+</ul1></td>
+<td style="font-weight:normal;">
+<ul1>
+<li>ENTRY AGE 18-35;UPTO 10X; </li>
+<li>ENTRY AGE 36-45;UPTO 5X;</li>
+<li>ENTRY AGE 46+;UPTO 3X;</li>
+</ul1></td>
+</tr>
+<tr>
+<td>M-iracle</td>
+<td colspan="4" style="font-weight:normal;"> Covered up to M-iracle sum insured. Carry forward unutilised M-iracle sum insured maximum up to Booster+ limits
+  </td>
+</tr>
+<tr>
+<td  style="font-weight:normal;">M-iracle WAITING PERIOD</td>
+<td  style="font-weight:normal;">48 MONTHS</td>
+ <td  style="font-weight:normal;">24 MONTHS</td>
+ <td  style="font-weight:normal;">9 MONTHS</td>
+<td  style="font-weight:normal;">9 MONTHS</td>
+</tr>
+<tr>
+<td>Live Healthy</td>
+ <td colspan="4"  style="font-weight:normal;">Up to 30% discount on premium at the time of Renewal</td>
+</tr>
+<tr>
+<td>Second Medical Opinion</td>
+<td colspan="4"  style="font-weight:normal;">Once for any condition in a Policy Year.</td>
+ </tr>
+<tr>
+<td>e-consultation</td>
+<td colspan="4" style="font-weight:normal;">Unlimited e-consultation within our network.</td>
+ </tr>
+ <tr>
+<td colspan="5">
+<h1 style="text-align:center;"><strong>OPTIONAL BENEFITS</strong></h1></td>
+</tr>
+<tr>
+<td>Fast Forward</td>
+<td colspan="4" style="font-weight:normal;">Combine multi tenure sum insured to be used anytime.<br> Applicable for Base and M-iracle sum insured.</td>
+</tr>
+<tr>
+<td>Future Ready</td>
+<td colspan="4" style="font-weight:normal;">Guaranteed issuance & continuity on waiting periods served by you for your future spouse</td>
+</tr>
+<tr>
+<td>Borderless</td>
+<td colspan="4" style="font-weight:normal;">Get treatment anywhere in the world, up to sum insured.<br>
+Co-payment options: 0% / 20% / 30% / 40% / 50%</td>
+</tr>
+<tr>
+<td>Cash-Bag</td>
+<td colspan="4" style="font-weight:normal;">Accumulate cashback on every claim free year in your Cash-Bag.<br>
+Use it to pay for premiums, deductible, co-payment, and OPD.<br>
+10% of 1st renewal premium and 5% of every subsequent renewal premium</td>
+</tr>
+<tr>
+<td>Safeguard+</td>
+<td colspan="4"><ul1>
+<li>Claim Safeguard+: Non-payable items will be covered (as per list I, II, III, IV of Annexure I)</li>
+<li>Booster+ Safeguard+: No impact on Booster+ if claim in a policy year is less than INR 1,00,000</li>
+<li>Sum Insured Safeguard+: CPI linked increase in Base Sum Insured</li>
+</ul1></td>
+</tr>
+ <tr>
+<td>WellConsult (OPD)</td>
+<td colspan="4" style="font-weight:normal;">Get comprehensive coverage for Tele & Physical Consultations, Diagnostics, Pharmacy, Gym Membership,
+and host of Wellness benefits.</td>
+</tr>
+<tr>
+<td>Personal Accident</td>
+<td colspan="4" style="font-weight:normal;">Equal to 5 times of Base sum insured. Maximum up to INR 1 Crore.</td>
+</tr>
+<tr>
+<td>Hospital Daily Cash</td>
+<td colspan="4" style="font-weight:normal;"><ul1>
+<li>Up to INR 5 Lac Base Sum Insured: INR 1,000/day</li>
+<li>Between INR 7.5 Lacs to INR 15 Lac Base Sum Insured: INR 2,000/day</li>
+<li>Above 15 Lac Base Sum Insured: INR 4,000/day</li>
+</ul1>
+</td>
+</tr>
+<tr>
+<td>Annual Aggregate Deductible</td>
+<td colspan="4" style="font-weight:normal;">Choose a small deductible. INR 20,000 / INR 30,000 / INR 50,000 / INR 1,00,000</td>
+</tr>
+   </table>
+
+
+ 
+ </tr>
+<tr>
+  
 <td>
  <h2><strong>Senior First</strong></h2>
 <p>Senior First is a health insurance plan designed for senior citizens.</p></td>
@@ -453,9 +1088,10 @@ Especially useful for high-end hospitalizations where you prefer a single room o
             </table>
 <p><a href="#home"class="btn btn-warning btn-lg" role="button"><b>HOME</b></a></p>  
     
-</div>
- <div class="container3">
- <h2 id="travel" style="text-align:center;"><b>Travel Insurance Products</b>  </h2> </div>
+  <div class="container3">
+
+
+ <h2 id="travel" style="text-align:center;"><b>Travel Insurance Products</b>  </h2>  
 <p>Primary offerings in the travel insurance segment are under the TravelAssure product line, which includes various plans tailored to different traveler need</p>
    <div class="container2">
     <table class="table custom-media" style="width:auto;">                        
@@ -488,11 +1124,12 @@ Especially useful for high-end hospitalizations where you prefer a single room o
 <li><b>Policy Tenure:</b> Available for durations ranging from 1 month to 3 years, with renewal options.</li>
  </ul1>
 </td>
-</td>
+ </tr>
 </table>
 <p><a href="#home"class="btn btn-warning btn-lg" role="button"><b>HOME</b></a></p>  
-    
-</div>
+
+
+ 
  <div class="container3">
 <h2 id="accident" style="text-align:center;"><b>Personal Accident Products</b>  </h2> </div>
 <p>Niva Bupa's standalone Personal Accident Plan offers extensive coverage to financially protect policyholders and their families in case of accidental events. This Personal Accident Insurance plan by Niva Bupa is designed to offer comprehensive financial protection against a wide range of accidental events, ensuring peace of mind for you and your loved ones. </p>
@@ -555,37 +1192,53 @@ Niva Bupa's standalone Personal Accident Plan offers extensive coverage to finan
 <li>Direct Claim Settlement: Claims are processed directly by Niva Bupa's customer service team, ensuring a hassle-free experience</li>
 </ul1></td>
 </table>
+
+<div class="container3">    
+<p><a href="#home"class="btn btn-warning btn-lg" role="button"><b>HOME</b></a></p>  
+
+ <a href="https://girish8360.github.io/amli/GIRISH-LEAFLET.htm"  target="_blank" class="btn btn-primary btn-lg" role="button"><b>HOME PAGE</b></a> 
+
+</div>
+
 <div class="container3">    
 <a href="https://girish8360.github.io/amli/GIRISH-LEAFLET.htm" target="_blank" class="btn btn-warning btn-lg" role="button"><b>HOME</b></a></p>
   MAIN LEAFLET</a>      
 </div>
 
-   <div class="row">
+ <div class="row">
                 <div class="col-sm-12">
-                                   <div class="container1">
+                                   <div class="container3">
 
  
  <footer style="padding:1px;margin-left:5px;">
   <h3 id="contact"><b>CONTACT US</b></h3>
-                  <table class="table custom-media" style="width:99%;">      
+ 
+                  <table class="table custom-media" style="width:auto; background:maroon;">      
 <tr>    
-<td style="border:blue;">
- <img src="https://raw.githubusercontent.com/girish8360/amli/main/nb.jpg" width="200px;height:50px;" style="float:left;padding-left:30px;">
-</td>
-<td style="border:blue;">   <h2 style="color:azure; text-align:center;font-weight:bolder">GIRISH GAUR</h2> 
-<h3 style="color:azure; text-align:left;padding-left:60px;">   HEALTH INSURANCE ADVISOR<br>NIVA BUPA HEALTH INSURANCE </h3> 
-   </tr>
+<td style="border:transparent;">
+<img src="https://raw.githubusercontent.com/girish8360/amli/main/nb.jpg"    style="width:250px;height:100px;float:left;padding-left:5px;">
+ <td style="border:blue;"></td>
+</tr>
 <tr>
- <td style="border:blue;"> <i class="fa-solid fa-phone" style="font-size:30px"></i><span style="font-weight:bold;">+91-7906284866 <br> 8859662533</span> </td>
-<td style="border:blue;"><i class="fa-brands fa-whatsapp" style="background:darkgreen;color: white;font-size:40px"></i><span style="font-weight:bold;">+91-7906284866 <br> 8859662533  </td> 
-<td style="border:blue;"> <i class="fa-solid fa-at" style="font-size:30px"></i> 
+<td style="border:blue;">   <h2 style="color:azure; text-align:center;font-weight:bolder">GIRISH GAUR</h2> 
+<h3 style="color:azure; text-align:left;font-weight:normal;">  Certified Insurance Advisor, <br> NIVA BUPA HEALTH  INSURANCE     </h3> </td>
+ 
+  </tr>
+<tr>
+ <td style="border:blue;"> <i class="fa-solid fa-phone" style="font-size:30px"></i><br><span style="font-weight:bold;">+91-790-628-4866 <br> 885-966-2533</span> </td>
+<td style="border:blue;"><i class="fa-brands fa-whatsapp" style="background:darkgreen;color: white;font-size:40px"></i><br><span style="font-weight:bold;">+91-790-628-4866 <br> 885-966-2533  </td> 
+<td style="border:blue;"> <i class="fa-solid fa-at" style="font-size:30px"></i> <br>
+<span style="font-weight:normal;">
  <a href="mailto:girish.garry4u@gmail.com"  style="color:#fff;">girish.garry4u@gmail.com</a>  <br>
-                <a href="mailto:girish.gaur@rediffmail.com" style="color:#fff;" >girish.gaur@rediffmail.com</a>  </td>
-<td style="border:blue;"><i class="fas fa-map-marker-alt"  style="font-size:30px"></i> <span>  NIVA BUPA HEALTH  INSURANCE <br>G-17 & G-24<br>UPPER GROUND  FLOOR ,<br> PARSVNATH PLAZA <br>
+                <a href="mailto:girish.gaur@rediffmail.com" style="color:#fff;" >girish.gaur@rediffmail.com</a>  </span></td>
+ 
+<td style="border:blue;"><i class="fas fa-map-marker-alt"  style="font-size:30px"></i><br>     <span style="font-weight:bold;">   NIVA BUPA HEALTH  INSURANCE <br>G-17 & G-24<br>UPPER GROUND  FLOOR ,<br> PARSVNATH PLAZA <br>
 COURT  ROAD<br>SAHARANPUR-247001 (U.P.)  </span></td>
-</tr> 
- </table>               
-   <p2 style="text-align:center;font-size:25px;color:#fff;">Compiled & Designed by: <b>GIRISH GAUR</b></p2>
+
+ </table>   
+  
+ 
+ <p2  style="text-align:center;font-size:25px;color:#fff;">Compiled & Designed by: <b>GIRISH GAUR</b></p2>
        
            </div>
                 </div>
@@ -596,14 +1249,17 @@ COURT  ROAD<br>SAHARANPUR-247001 (U.P.)  </span></td>
     </footer>
   </div>
                 </div>            
+      
               
                      </div>
      </div>
+
 
  
  
 </body>
 </html>
+
 
 
 
