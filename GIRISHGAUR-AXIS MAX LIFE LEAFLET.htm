@@ -226,6 +226,56 @@ cursor:pointer;
     width: 100%;
   }
 }
+.container04{
+       position: relative; 
+float:right;
+                    
+   }
+   .clock{
+       width: 200px;
+       height: 200px;
+       border-radius: 60%;
+       background-color:#212121;
+       border: 2px solid rgba(255,255,255,0.1);
+           box-shadow: inset 20px 20px 20px rgba(0,0,0,0.9);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+   }
+   .clock span{
+       position: absolute; 
+      transform:rotate(calc(30deg*var(--i)));
+     inset-block: 9px;  
+            text-align: center;
+   }
+   .clock span b{
+       transform: rotate(calc(-30deg*var(--i)));
+       /* display:inline-block; */
+       font-size: 23px;
+   }
+   .clock::before{
+       content:'' ;
+       position:absolute;
+       width:8px;
+       height:8px;
+       border-radius: 50%;
+       background: #fff;
+       z-index:2;
+   }
+   .hand{
+       position: absolute;
+       display:flex;
+       justify-content: center;
+      align-items:flex-end;  
+   }
+   .hand i{
+       position: absolute;
+       background:var(--clr);
+       width: 4px;
+       height: var(--h);
+       border-radius: 8px;
+   }
 
     </style>
  <body>
@@ -290,6 +340,67 @@ cursor:pointer;
   </ul>
 </div>   
 <section>
+     <table class="table custom-media" style="width:auto;">  
+<td style="border:1px solid maroon;">
+  <h2 style="font-size:40px;"><strong>GIRISH GAUR</strong> <br>
+        <span style="font-size:25px;font-style:italic;padding-left:45px;"><b>  B.Sc.,M.A.(Eco.),  PGDCASA, PGDBA, Cert. in Oracle 8<i>i</i></b></span></h2>
+<h2>Certified Insurance Advisor</h2>
+       <h2 style="padding-left:45px;"><strong>NIVA BUPA HEALTH INSURANCE </h2></td>
+ <td style="border:1px solid maroon;"></td>
+<td style="border:1px solid maroon;">
+ <h3>Perfect time is <br>to protect you FINANCIALLY NOW:</h3>
+<div class="container04">
+   <div class="clock">
+    
+    <div style="--clr:#ff3d58; --h:55px;" id="hour" class="hand"><i></i></div>
+    <div style="--clr:#00a6ff;  --h:70px;" id="min" class="hand"><i></i></div>
+    <div style="--clr:#ffffff;  --h:90px;" id="sec" class="hand"><i></i></div>
+    
+    <span style="--i:1;"><b>I</b></span>
+     <span style="--i:2;"><b>II</b></span>
+     <span style="--i:3;"><b>III</b></span>
+     <span style="--i:4;"><b>IIII</b></span>
+     <span style="--i:5;"><b>V</b></span>
+     <span style="--i:6;"><b>VI</b></span>
+     <span style="--i:7;"><b>VII</b></span>
+     <span style="--i:8;"><b>VIII</b></span>
+     <span style="--i:9;"><b>IX</b></span>
+     <span style="--i:10;"><b>X</b></span>
+     <span style="--i:11;"><b>XI</b></span>
+     <span style="--i:12;"><b>XII</b></span>
+</div>
+
+   </div> 
+ <script>
+   let hr = document.getElementById('hour');
+let min = document.getElementById('min');
+let sec = document.getElementById('sec');
+
+function displayTime(){
+   let date = new Date();
+
+   // Getting hour, mins, secs from date
+   let hh = date.getHours();
+   let mm = date.getMinutes();
+   let ss = date.getSeconds();
+
+   let hRotation = 30*hh + mm/2;
+   let mRotation = 6*mm;
+   let sRotation = 6*ss;
+
+
+hr.style.transform =`rotate(${hRotation}deg)`;
+   // hr.style.transform = `rotate(${hRotation}deg)`;
+   // hr.style.transform = `rotate(${hRotation}deg)`;
+   min.style.transform = `rotate(${mRotation}deg)`;
+   sec.style.transform = `rotate(${sRotation}deg)`;
+
+}
+
+setInterval(displayTime, 1000);
+</script>
+</td>
+     </table>
   <h2 style="font-size:40px;"><strong>GIRISH GAUR</strong> <br>
         <span style="font-size:25px;font-style:italic;padding-left:45px;"><b>  B.Sc.,M.A.(Eco.),  PGDCASA, PGDBA, Cert. in Oracle 8<i>i</i></b></span></h2>
 <h2>Certified Insurance Advisor</h2>
@@ -309,6 +420,7 @@ width:25%;height:75%;object-fit:cover;border:2px solid blue;">
  </div>
 </div> 
 </div>
+    
 <div class="flex-container">
 
  
@@ -1746,6 +1858,7 @@ Your input will help me assess your needs accurately and recommend the best fina
 </body>
 
      </html>                      
+
 
 
 
