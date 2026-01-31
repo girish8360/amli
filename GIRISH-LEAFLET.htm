@@ -236,6 +236,52 @@ cursor:pointer;
   width: 75%;
   height: 75%;}
 
+         .clock{
+       width: 200px;
+       height: 200px;
+       border-radius: 60%;
+ 
+       border: 2px solid rgba(255,255,255,0.1);
+           box-shadow: inset 20px 20px 20px rgba(0,0,0,0.9);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+   }
+   .clock span{
+       position: absolute; 
+      transform:rotate(calc(30deg*var(--i)));
+     inset-block: 9px;  
+            text-align: center;
+   }
+   .clock span b{
+       transform: rotate(calc(-30deg*var(--i)));
+       /* display:inline-block; */
+       font-size: 23px;
+   }
+   .clock::before{
+       content:'' ;
+       position:absolute;
+       width:8px;
+       height:8px;
+       border-radius: 50%;
+       background: #fff;
+       z-index:2;
+   }
+   .hand{
+       position: absolute;
+       display:flex;
+       justify-content: center;
+      align-items:flex-end;  
+   }
+   .hand i{
+       position: absolute;
+       background:var(--clr);
+       width: 4px;
+       height: var(--h);
+       border-radius: 8px;
+   }
+
     </style>
 </head>
   
@@ -318,7 +364,64 @@ NIVA BUPA HEALTH INSURANCE </h2>
 <img src="https://raw.githubusercontent.com/girish8360/girish8360/main/nb.jpg" width="200px;height:20px;" style="float:left;padding-left:10px;"><br><br><br><br>
  <p style="font-size:20px;">PLEASE CLICK HERE FOR NIVA BUPA HEALTH INSURANCE</p></span>
  </td>
-    <tr>
+   <tr>
+<td style="background:maroon;border:2px solid orange;">
+ 
+<p style="font-family:Times New Roman;font-style:italic;"><strong>In a world that moves at an ever-accelerating pace, time is our most valuable  & irreversible asset<br>
+Time never slows down, and life never waits.<br> Make today the moment you choose to protect what matters most—your health and your financial security. </strong></p>
+
+<div class="col-12 col-md-3 d-flex justify-content-center mt-3 mt-md-0">
+ <div class="container04" style="background:transparent;">
+   <div class="clock">
+      <!-- Clock -->
+         
+    <div style="--clr:#ff3d58; --h:55px;" id="hour" class="hand"><i></i></div>
+    <div style="--clr:#00a6ff;  --h:70px;" id="min" class="hand"><i></i></div>
+    <div style="--clr:#ffffff;  --h:90px;" id="sec" class="hand"><i></i></div>
+    
+    <span style="--i:1;"><b>I</b></span>
+     <span style="--i:2;"><b>II</b></span>
+     <span style="--i:3;"><b>III</b></span>
+     <span style="--i:4;"><b>IIII</b></span>
+     <span style="--i:5;"><b>V</b></span>
+     <span style="--i:6;"><b>VI</b></span>
+     <span style="--i:7;"><b>VII</b></span>
+     <span style="--i:8;"><b>VIII</b></span>
+     <span style="--i:9;"><b>IX</b></span>
+     <span style="--i:10;"><b>X</b></span>
+     <span style="--i:11;"><b>XI</b></span>
+     <span style="--i:12;"><b>XII</b></span>
+</div>
+
+   </div> 
+ <script>
+   let hr = document.getElementById('hour');
+let min = document.getElementById('min');
+let sec = document.getElementById('sec');
+
+function displayTime(){
+   let date = new Date();
+
+   // Getting hour, mins, secs from date
+   let hh = date.getHours();
+   let mm = date.getMinutes();
+   let ss = date.getSeconds();
+
+   let hRotation = 30*hh + mm/2;
+   let mRotation = 6*mm;
+   let sRotation = 6*ss;
+
+
+hr.style.transform =`rotate(${hRotation}deg)`;
+   // hr.style.transform = `rotate(${hRotation}deg)`;
+   // hr.style.transform = `rotate(${hRotation}deg)`;
+   min.style.transform = `rotate(${mRotation}deg)`;
+   sec.style.transform = `rotate(${sRotation}deg)`;
+}
+setInterval(displayTime, 1000);
+</script>
+ </td>
+</tr>
   <td colspan="2" style="border:blue;">
         <h3>WHY INSURANCE IS ESSENTIAL</h3>
         
@@ -388,6 +491,7 @@ NIVA BUPA HEALTH INSURANCE </h2>
 </body>
 
      </html>                      
+
 
 
 
