@@ -54,15 +54,26 @@ width:auto;}
 
 h2{
 text-align:center;
-background:maroon;
+background:yellow;
 font-weight:bold;
-color:#fff;
-padding-left:25%;
-padding-right:25%;
+color:black;
+padding-left:15%;
+padding-right:15%;
 margin-left:5%;
 margin-right:5%;
-box-shadow: 10px 13px orange;
- }
+box-shadow: 10px 13px orange; }
+
+h3{
+text-align:center;
+background:darkblue;
+font-weight:bold;
+color:#fff;
+padding-left:15%;
+padding-right:15%;
+margin-left:5%;
+margin-right:5%;
+font-weight:25px;
+box-shadow: 10px 13px skyblue; }
 
 
 .topnav02 {
@@ -72,9 +83,8 @@ padding:5px;}
 
 .topnav02 a {
   float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 10px 10px;
+   text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
     display:block;
              color:white;
@@ -86,7 +96,7 @@ font-family:times new roman;
 font-size:10px;}
 
 .topnav02 a:hover {
-  background-color: black;
+  background-color:darkblue;
   color: #fff;}
 
 /* Create a right-aligned (split) link inside the navigation bar */
@@ -115,7 +125,7 @@ font-family:times new roman;
                text-decoration:none;
                  border:1px solid white;
  
-font-size:25px;   }
+font-size:20px;   }
          li a:hover {
           background-color:#111111; }
  
@@ -124,7 +134,9 @@ display:none;
 float:none;}
   
 ul  li:hover ul  li
-{display:block;}
+{display:block;
+background:darkblue;
+color:white;}
 
 ul1 {
             list-style-type:disc;
@@ -133,6 +145,28 @@ ul1 {
         font-size:25px;
 padding:2px;
 margin-left:25px;  }
+
+dl {list-style-type:disc;
+                          font-weight:bold;
+font-size:30px;
+padding-left:5px;
+padding-right:5px;
+font-family:arial;
+}
+   dl dt {
+        font-size:25px;
+padding-left:15px;
+padding-right:5px;
+margin-left:20px;
+font-family:arial;  }
+
+ dl dd {
+        font-size:25px;
+padding-left:25px;
+padding-right:5px;
+margin-left:20px; 
+font-family:arial; }
+
 
 .custom-media{
     width: 100%;
@@ -158,7 +192,8 @@ font-family:arial;}
  background:maroon;
  margin-left:5px;
  margin-right:5px;
-font-size:25px;
+ 
+ font-size:25px;
 
              }
       td{
@@ -168,8 +203,8 @@ color:white;
 font-size:25px;
 font-weight:normal;}
    th{
-background:red;
-color:azure;
+background:gray;
+color:black;
 text-align: center;}
  p{
   font-weight: bold;
@@ -336,30 +371,33 @@ cursor:pointer;
 <div class="container3" style="background:maroon; width:auto:font-size:10px;font-weight:normal;">
  <ul>
   <li><a id="home"><b>HOME</b></a></li>
- <li><a id="introhi"><b>INTRODUCTION to <br> HEALTH INSURANCE</b></a></li>
-        <li><a href="#basichi"><b>BASIC TERMS IN<br> HEALTH INSURANCE<b></a></li>
+ <li><a id="introhi"><b>INTRODUCTION to <br> HEALTH INSURANCE</b></a>
+<ul>
+        <li><a href="#basichi"><b>BASIC TERMS<b></a></li>
 <li><a href="#whyhi"><b>WHY HEALTH INSURANCE<b></a></li>
 <li><a href="#hivsmc"><b>HEALTH INSURANCE VS<br> MEDICLAIM<b></a></li>
- 
-<li><a href="#claimset"><b>CLAIM SETTLEMENT<br> IN HEALTH INSURANCE<b></a></li>
+<li><a href="#ghilimit"><b>GROUP INSURANCE<br> LIMITATIONS<b></a></li>
+<li><a href="#online"><b>ONLINE INSURANCE<br> DRAWBACKS<b></a></li>
 <li><a href="#hiinf"><b>HEALTH CLAIM INFLATION <br> IN INDIA<b></a></li>
+
+</ul>
+ </li>
+
+<li><a href="#claimset"><b>CLAIM SETTLEMENT<br> IN HEALTH INSURANCE<b></a></li>
+
  
-<li><a href="#prod"><b>MAJOR PRODUCTS<b></a></li>
- <li><a href="#riderexcl"><b>RIDERS &<br> EXCLUSIONS</b></a>
+ <li><a href="#"><b>RIDERS &<br> EXCLUSIONS</b></a>
 <ul> 
 <li><a href="#rider"><b>RIDERS &<br> ADD-ON</b></a></li>
  <li><a href="#excl"><b>EXCLUSIONS</b></a></li>
- </ul>
-</li>
+ <li><a href="#copayded"><b>COPAY vs DEDUCTIBLES</b></a></li>
 
- <li><a href="#treattest"><b>TREAMENTS &<br> TESTS</b></a>
-<ul> 
  <li><a href="#moderntreat"><b>MODERN<br> TREATMENTS</a>  </li>
  <li><a href="#test"><b>CASHLESS<br>TESTS<br>COVERED</a></li>  
+
  </ul>
 </li>
- 
- <li><a href="#prod1"><b>MAJOR PRODUCTS IN <br>NIVA BUPA</a></li>  
+ <li><a href="#prod"><b>MAJOR PRODUCTS IN <br>NIVA BUPA</a></li>  
 <li><a href="#feedback"><b>FEEDBACK <br>FORM</b></a> </li>
 <a href="#contact" class="split">CONTACT US</a>
 
@@ -370,12 +408,11 @@ cursor:pointer;
  <table class="table custom-media" style="width:auto;background:transparent;">  
 <td style="border:1px solid maroon;">
   <h1 style="font-size:40px;"><strong>GIRISH GAUR</strong> <br>
-        <span style="font-size:25px;font-style:italic;padding-left:45px;"><b>  B.Sc.,M.A.(Eco.),<br>  PGDCASA, PGDBA, Cert. in Oracle 8<i>i</i><br>Certified Insurance Advisor</b></span></h1>
- 
-       <h3 style="padding-left:45px;"><strong>NIVA BUPA HEALTH INSURANCE </h3></td>
+        <span style="font-size:25px;font-style:italic;padding-left:45px;"><b>  B.Sc.,M.A.(Eco.),<br>  PGDCASA, PGDBA, Cert. in Oracle 8<i>i</i><br>Certified Insurance Advisor</b></span><br>
+ NIVA BUPA HEALTH INSURANCE </h1></td>
  <td style="border:1px solid transparent;"></td>
 <td style="border:1px solid transparent;">
- <h3>Perfect time is <br>to protect you medically NOW:</h3>
+ <p>Perfect time is <br>to protect you medically NOW:</p>
 <div class="container04">
    <div class="clock">
     
@@ -1085,7 +1122,7 @@ Medical Inflation Projection in India (2025- 2030)</h2>
  This projection shows how healthcare costs for a typical middlenclass family may rise over the next 5
 years. Such inflation highlights the importance of reviewing your health insurance cover regularly to keep up with the rising cost of treatment and hospitalization.
 
- <table class="table custom-media" style="width:75%">   
+ <table class="table custom-media" style="width:auto;">   
 <tr>
 <th>BASE ANNUAL<br>
 COST (INR)</th>
@@ -1342,47 +1379,262 @@ Review your policy annually to ensure your sum insured keeps pace with inflation
 <p><a href="#home"class="btn btn-warning btn-lg" role="button"><b>HOME</b></a></p>  
       
 </div>
- 
- 
-<div class="container2">
 
- <h2 id="prod"  style="text-align:center;"><b>MAJOR PRODUCTS</b></h2>
+<div class="container2">
  
-    <p style="font-size:25px;"><strong>NIVA BUPA HEALTH INSURANCE</strong> offers a range of Insurance products including Health Insurance, Travel Insurance & Personal Accident Insurance. Niva Bupa's insurance products are designed to provide financial protection and peace of mind for individuals and families. For detailed information on these products please visit or contact to us.<br>An overview is here: </p>
-     <div class="container2">
-       <table class="table custom-media" style="width:96%">   
+ <h2 id="online" style="text-align:center;">WHY ONLINE ISN'T ADVISABLE?</h2>
+<p>Here’s a detailed, evidence-backed overview  of the drawbacks of buying life and health insurance policies online — especially focusing on claim-settlement discrepancies and real-world consumer issues, with the latest available official and survey data (largely from India, where much of this public data originates):</p>
+<dl>
+<dt><b><u>A. Mis-selling and Information Gaps at the Point of Online Purchase:</b></u></dt>
+ 
+  <dd>
+<ol type="I">
+<li><b>Complex Policy Terms & Low Understanding</b>: A large share of potential buyers find online insurance products confusing and hard to understand. Many buyers drop out mid-purchase because the terms, clauses, and exclusions are perceived as too complex.</li>
+<li><b>Dark Patterns & Manipulative Interfaces </b>: A survey of 36,000+ insurance consumers revealed that 61% encountered “subscription traps” or manipulative tactics on online platforms (e.g., difficult cancellation, nagging prompts, forced actions). These are often called dark patterns, and regulators are increasingly targeting them</li>
+</ol>
+</dd>
+ <p><b>Key takeaway: Convenience can mask inadequate explanations, steering buyers to products that might not match their needs.</b></p>
+   
+<dt><b><u>B.  Claim Settlement Issues — The Most Significant Friction Point</b></u></dt>
+ 
+  <dd>
+<ol type="1">
+<li>While how you buy a policy (online vs offline) shouldn’t technically affect claim settlement, in practice policyholders report frequent issues that often begin with misunderstandings around the policy itself — especially when purchased online with minimal professional guidance</li>
+<li><b><u> Official Data</b></u>: Rising Complaints on Claims in FY25:Total insurance complaints in India in FY2024-25 reached ~2.58 lakh</li>
+<li> Health insurance complaints alone rose 41% year-on-year</b></u>; claim disputes, settlement delays, and partial payouts were the biggest issues</li>
+<li><b><u>Grievance Patterns</b></u>: In general and health insurance combined, about 69% of grievances were related to claims (delays, rejections, documentation disputes). Health insurance complaints alone rose 41% year-on-year; claim disputes, settlement delays, and partial payouts were the biggest issues</li>
+<li><b><u> Consumer Experiences:Surveys show ~43% of health insurance holders</b></u> struggled to get a claim processed (rejections, partial approvals, or long waits) over the last three years.</li>
+<li>In some studies, 60% reported discharge delays of 6–48 hours due to claims processing issues </b> — despite regulatory mandates for faster handling.<br>
+Breakdown of common claim issues reported:
+<ol type="I">
+<li>Claims refused or partially paid</li>
+<li>Delays in approvals or settlement</li>
+<li>Documentation and pre-authorization disputes</li>
+<li> Confusion over coverage limits and exclusions</li>
+ </ol>
+</li></dd> 
+  
+<dt><b><u>C. Why Online Buyers Often Feel Claim Problems Are Worse</b></u></dt>
+<dd>
+<ol type="I">
+<li>Lack of Personalized Advice: Unlike an agent or broker, online platforms don’t provide tailored explanation of how specific terms (like waiting periods, co-pays, or room limits) affect your claim</li>
+<li>Misunderstanding of Key Metrics : Metrics commonly advertised online — such as “claim settlement ratio” — can be misleading because there is no standardised way companies must calculate or present these ratios. Regulators are now focusing on standardising this, meaning past comparisons may have been unreliable.</li>
+<li>Online Purchase Doesn’t Guarantee Better Claims: Some industry commentators and consumers note that only the insurer’s internal processes (not the channel of purchase) ultimately determine claim outcomes — but online buyers may be less prepared to challenge denials due to limited upfront guidance.  </li>
+<li> Confusion over coverage limits and exclusions</li>
+ </ol></dd>
+<dt><b><u> D. Other Drawbacks Related to Online Insurance:  </b></u></dt>
+ <dd>
+<ol type="I">
+<li>Digital & Privacy Risks : While not specific to claims, there have been real cybersecurity concerns in the insurance sector (e.g., data breaches exposing customer information), highlighting the sensitivity of personal data shared online.</li>
+<li>Cancellation and Return Challenges :Many online platforms have complex or opaque cancellation processes, making it harder for customers to exit products they don’t want soon after purchase</li>
+<li>Emotional & Administrative Stress: Online purchases without human assistance can leave consumers feeling unsupported and frustrated when dealing with claim disputes — increasing stress during already difficult times</li>
+ </ol>
+</dd>
+  </dl>
+
+<h3>Summary of Major Online Purchase Drawbacks<br> (Life & Health)</h3>
+ <table class="table custom-media" style="width:80%;">   
 <tr>
-<td>HEALTH INSURANCE</td>
- <td><ul1>
-<li><b>ReAssure 2.0</b>:A comprehensive health insurance plan offering extensive coverage for in-patient care, pre-hospitalization expenses, post-hospitalization expenses, and more.</li>
-<li><b>Aspire</b>:  Niva Bupa's Aspire health insurance plan is a comprehensive policy that offers extensive coverage for individuals and families.This plan offers extensive coverage, including maternity benefits, infertility treatment, and more. It also features innovative benefits like "M-iracle" and "Booster</li>
-<li><b>Senior First</b>:A health insurance plan designed for senior citizens, offering comprehensive coverage and lifelong renewability.</li>
-<li><b>Cancer Safe</b>: A cancer-specific health insurance plan providing coverage for cancer-related expenses.</li>
+<th>Drawback Category</th>
+<th>What Happens</th>
+<th>Impact on <br>Policyholder</th>
+</tr>
+<tr>
+<td>Mis-selling /<br> Misunderstanding</td>
+<td>Lack of clear guidance;<br> dark patterns</td>
+<td>Wrong product choice;<br> gaps in coverage</td>
+</tr>
+<tr>
+ <tr>
+<td>Claims friction</td>
+<td>Delays, refusals, documentation disputes</td>
+<td>Financial stress; time loss</td>
+</tr>
+ <tr>
+<td>Complex cancellation</td>
+<td>Hard to unwind policies</td>
+<td>Financial lock-in</td>
+</tr>
+ <tr>
+<td>Data privacy concerns</td>
+<td>Cyber threats to personal info</td>
+<td>Risk of identity/data misuse</td>
+</tr>
+ <tr>
+<td>Misleading metrics</td>
+<td>Unclear settlement ratios</td>
+<td>Wrong insurer choice</td>
+</tr>
+ </table>
+  <h3>Recent Official IRDAI Action Against PolicyBazaar: IRDAI Penalty on PolicyBazaar</h3>
+<p>IRDAI has imposed a record penalty of Rs 5 crore on Policybazaar for several violations found during a remote inspection conducted in June 2020. The breaches include conflict of interest, biased product promotion, irregular outsourcing payments, failure to map telemarketing sales to authorised verifiers, and delays in premium remittance. <br>
+The company was fined Rs 1 crore for allowing its principal officer and other key managerial personnel to hold directorships in other firms without prior approval, which the regulator said posed a conflict of interest. <br>
+ Another Rs 1-crore penalty was imposed for promoting select insurance products as "best" or "top" on its website without using independent third-party data. Irdai said thispractice was misleading, created preferential visibility for certain insurers, and restricted consumer choice.</p>
+<ol>
+<li>Biased product promotion — advertising certain insurers/products as “top” without independent data (misleading consumers).</li>
+<li>Conflict of interest — key personnel holding directorships without approvals.</li>
+<li>Improper outsourcing & premium remittance delays — not following regulatory norms</li>
+<li>Telemarketing without proper authorised tagging</li>
+</ol>
+<p>These infractions exposed consumers to misleading information, potential product bias, and delays in premium crediting — undermining trust. </p>
+<p><a href="#home"class="btn btn-warning btn-lg" role="button"><b>HOME</b></a></p>  
+      </div>
+
+<div class="container2">
+     
+ <h2 id="ghilimit" style="text-align:center;">GROUP HEALTH INSURANCE <br>
+Employer-Provided-Corporate Mediclaim Policy</h2>
+<p>Most private sector employees are covered under group policies issued by insurers like New India Assurance, Star Health & Allied Insurance, HDFC ERGO General Insurance, ICICI Lombard, etc., regulated by Insurance Regulatory and Development Authority of India (IRDAI).<br>While convenient, group cover has several important limitations.</p>
+
+<dl>
+<dt><b>1.	<u>No Portability After Job Exit</u></b>:</dt>
+<dd><ul1>
+<li>Coverage is linked to employment.</li>
+<li>If you resign, are laid off, or retire — coverage stops immediately.</li>
+<li>You may lose continuity benefits (waiting period credits may not fully carry forward unless converted properly).</li>
+</ul1>
+</dd>
+<p><b>Risk: A medical emergency during a job transition can leave you uninsured.</b></p>
+
+<dt><b>2.	<u>Limited Sum Insured:</u></b>:</dt>
+<dd><ul1>
+<li>Typical corporate coverage: ₹2–5 lakh (sometimes ₹10 lakh in senior roles).</li>
+<li>In metro cities like Mumbai, Delhi, Bangalore, a single hospitalization can exceed this.</li>
+</ul1>
+</dd>
+<p><b>Rising medical inflation in India (10–14% annually) makes low coverage risky. </b></p>
+
+<dt><b>3.	<u>Policy Terms Controlled by Employer:<br>The employer negotiates</u></b>:</dt>
+<dd><ul1>
+<li>Sum Insured</li>
+<li>Room Rent Limits</li>
+<li>Sub-limits on specific diseases</li>
+<li> Co-pay Clauses</li>
+</ul1>
+</dd>
+<p><b>You cannot customize coverage. </b></p>
+
+<dt><b>4.	<u>Annual Renewal Uncertainty<br>Every year the employer may:
+</u></b>:</dt>
+<dd><ul1>
+<li>Change insurer</li>
+<li>Reduce coverage</li>
+<li>Increase employee contribution</li>
+ </ul1>
+</dd>
+<p><b>Past continuity may not fully transfer smoothly </b></p>
+
+<dt><b>5.	<u>No Long-Term Stability</u></b>:</dt>
+<dd><ul1>
+<li>Insurers may change TPAs (Third Party Administrators).</li>
+<li>Claim experience depends on employer contract, not individual history.</li>
+</ul1>
+</dd>
+ 
+<dt><b>6.	<u>Family Coverage May Be Limited</u></b>:</dt>
+<dd><ul1>
+<li>Often restricted to: Spouse + 1–2 children </li>
+<li>Parents often excluded or charged high premiums</li>
+</ul1>
+</dd>
+ 
+<dt><b>7.	<u>Claim Experience Can Be Impersonal</u></b>:</dt>
+<dd><ul1>
+<li>In group policies : HR handles coordination</li>
+<li>Individual claim advocacy may be weaker. </li>
+<li>Some corporate policies have tighter internal claim scrutiny</li>
+</ul1>
+</dd>
+
+<dt><b>8.	<u>Tax Benefit Limitations</u></b>:</dt>
+<dd><ul1>
+<li> Premium is paid by employer</li>
+<li>You generally cannot claim Section 80D deduction unless you pay additional premium yourself  </li>
+ </ul1>
+</dd>
+</dl>
+
+<h3>Benefits of Individual Health Insurance Policy<br> in addition to GHI</h3>
+<p>An individual policy (or family floater) purchased directly from insurers like Niva Bupa Health Insurance , offers long-term security</p>
+ <table class="table custom-media" style="width:auto;">   
+<tr>
+<td>Continuity for Life</td>
+<td><ul1>
+<li>Renewable lifelong (as per IRDAI norms).</li>
+<li>Not dependent on employer</li>
 </ul1></td>
 </tr>
 <tr>
-<td>TRAVEL INSURANCE</td>
+<td>Higher & Customizable Coverage</td>
 <td><ul1>
-<li><b>Travel Safe</b>: A travel insurance plan offering coverage for trip cancellations, medical emergencies, loss of baggage, and more.</li>
-<li><b>Travel Secure</b>: A comprehensive travel insurance plan providing coverage for various travel-related risks.</li>
- </ul1></td>
+<li>₹10–₹50 lakh or even ₹1 crore coverage options</li>
+ Can add:
+<ul1>
+<li>Super top-ups</li>
+<li>Critical illness riders</li>
+<li>Room rent upgrades</li>
+<li>o	OPD cover</li>
+ </ul1>
+ </td>
 </tr>
- <tr>
-<td>PERSONAL ACCIDENT INSURANCE </td>
-<td><b>Personal Accident Insurance</b>: A plan offering coverage for accidental death, permanent disability, and temporary disability.</td>
+<tr>
+<td>Waiting Period Benefits Build Over Time</td>
+<td><ul1>
+<li>Pre-existing disease waiting period reduces with continuous renewal.</li>
+<li>The earlier you buy, the better your long-term eligibility</li>
+ </ul1>
+</td>
+</tr>
+<tr>
+<td>Stronger Personal Claim Support</td>
+<td><ul1>
+<li>You directly interact with insurer</li>
+<li>Dedicated claim helplines</li>
+<li>No HR dependency</li>
+</ul1>
+</td>
+</tr>
+<tr>
+<td>Tax Benefits</td>
+<td>Under Section 80D:
+<ul1>
+<li>Up to ₹25,000 (self/family)</li>
+<li>Additional ₹25,000–₹50,000 for parents <br>(depending on age)</li>
+</ul1>
+</td>
+</tr>
+<tr>
+<td>Protection During<br> Job Loss</td>
+<td>Coverage continues even during unemployment or career break</td>
+</tr>
+<tr>
+<td>Better Control Over <br>Sum Insured Against <br>Medical Inflation</td>
+<td>India’s healthcare inflation is among the highest globally (~10–14% annually).<br>
+Individual policy allows upgrades over time</td>
 </tr>
 </table>
-<p><a href="#home"class="btn btn-warning btn-lg" role="button"><b>HOME</b></a></p>  
-  
-</div>
- 
- 
-<div class="container2">
- <h2 id="riderexcl" style="text-align:center;">RIDERS & EXLUSIONS</h2>
-<h2 id ="rider" style="text-align:center;"><b>Riders & Add-ons <br>(Available with  plans)</b></h2>
- <p style="background:darkblue;color:white;padding-right:5px;"><b>WHAT ARE RIDERS/AD-ONS</b>:<br>Riders (sometimes called add-on covers or endorsements) are optional enhancements you can attach to your base health insurance policy by paying an additional premium. They expand your coverage beyond what the basic policy offers.</p>
 
-<table class="table custom-media" style="width:auto;">   
+<h3>When Is Group Insurance Alone Dangerous?</h3>
+<ul1>
+<li>Startup job / unstable industry</li>
+<li>Coverage below ₹5 lakh</li>
+<li>Employer changes insurer frequently</li>
+<li>You’re planning career break</li>
+<li>•	You’re above age 35 without personal policy</li>
+</ul1>
+
+  <p><a href="#home"class="btn btn-warning btn-lg" role="button"><b>HOME</b></a></p>  
+      </div>
+
+<div class="container2">
+     
+ <h2 id="riderexcl" style="text-align:center;">RIDERS & EXLUSIONS</h2>
+<h2 id ="rider" style="text-align:center;"><b>Riders & Add-ons <br>(Available with  plans)</b></h2> 
+  <table class="table custom-media" style="width:96%;">
+<tr>
+<td colspan="2">
+ <p><b>WHAT ARE RIDERS/AD-ONS</b>:<br>Riders (sometimes called add-on covers or endorsements) are optional enhancements you can attach to your base health insurance policy by paying an additional premium. They expand your coverage beyond what the basic policy offers.</p>
+</td>
 <tr>
 <td colspan="2">
 <p>As of 2025, Niva Bupa (formerly Max Bupa) has introduced several popular riders and add-ons that customers can opt for to enhance their base health insurance coverage:</p>
@@ -1394,7 +1646,9 @@ Review your policy annually to ensure your sum insured keeps pace with inflation
 <li><b>Disease Management / Acute Care Add-Ons </b>– Provides extra benefits like tele-consultations, wellness programs, or removes waiting periods for certain diseases.</li>
 <li><b>Zero Co-pay Add-On</b> – Removes the co-payment requirement (so you don’t pay a share of the claim amount out-of-pocket) except for room category differences</li>
 </ul1>
-
+</tr>
+<tr>
+<td  colspan="2">
  Why add riders?They let you tailor your cover to your needs — e.g., if you want maternity, cash benefit, or cover for specific chronic risks that the base plan doesn’t fully pay for.<br>
 Note: Riders usually must be opted at purchase or renewal time, and not all can be added mid-term. 
 
@@ -1495,23 +1749,25 @@ Also includes wellness programs, health check-ups, and discounts.</td>
 Especially useful for high-end hospitalizations where you prefer a single room or suite.</td>
 </tr>
 </table>
+
  </div>
-</div>
+ 
 
 
 <div class="container2">
-<h2 id="excl" style="text-align:center;"><b> EXCLUSIONS</b></h2>
  
-<p style="background:darkblue;color:white;padding-right:5px;"><b>What Are Exclusions?</b><br>
+<h2 id="excl"><b> EXCLUSIONS</b></h2>
+ 
+<p><b>What Are Exclusions?</b><br>
 
-Exclusions are situations, treatments, or conditions for which Niva Bupa will not pay claims under the policy. These are defined in your policy contract and are legal parts of any health insurance.<br>
- <div class="table-wrapper">
-<table class="table custom-media" style="width:auto;"> 
-
-<th>
+Exclusions are situations, treatments, or conditions for which Niva Bupa will not pay claims under the policy. These are defined in your policy contract and are legal parts of any health insurance.</p>
+ 
+ 
+ 
 <h2 style="text-align:center;"><b>MAJOR TYPES OF  EXCLUSIONS 
-  </b></h2></th>
-</tr>
+  </b></h2>  
+ <table class="table custom-media" style="width:96%;">   
+
 <tr>
 <td> 
 A) Standard Exclusions (Common to Most Policies)</p>
@@ -1665,49 +1921,49 @@ In conjunction with any of the following severe co-morbidities<br> following fai
 </tr>
 <tr>
 <td>
- <p style="background:darkgreen;">Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an Accident, Burn(s) or Cancer or as part of medically necessary treatment to remove a direct and immediate health risk to the insured. For this to be considered a medical necessity, it must be certified by the attending Medical Practitioner.</p></td>
+ <p>Expenses for cosmetic or plastic surgery or any treatment to change appearance unless for reconstruction following an Accident, Burn(s) or Cancer or as part of medically necessary treatment to remove a direct and immediate health risk to the insured. For this to be considered a medical necessity, it must be certified by the attending Medical Practitioner.</p></td>
 </tr>
 <tr>
 <td>
 <h3 style="text-align:center";><b>Hazardous or Adventure sports <br> (Code-Excl09)</b></h3>
- <p style="background:darkgreen;"> Expenses related to any treatment necessitated due to participation as a professional in hazardous or adventure sports, including but not limited to, para-jumping, rock climbing, mountaineering, rafting, motor racing, horse racing or scuba diving, hand gliding, sky diving, deep-sea diving</p></td>
+ <p> Expenses related to any treatment necessitated due to participation as a professional in hazardous or adventure sports, including but not limited to, para-jumping, rock climbing, mountaineering, rafting, motor racing, horse racing or scuba diving, hand gliding, sky diving, deep-sea diving</p></td>
 </tr>
 <tr>
 <td><h3 style="text-align:center";><b>Breach of Law<br> (Code-Excl10)</b></h3>
- <p style="background:darkgreen;">  Expenses for treatment directly arising from or consequent upon any Insured Person committing or attempting to commit a breach of law with criminal intent.</p></td>
+ <p>  Expenses for treatment directly arising from or consequent upon any Insured Person committing or attempting to commit a breach of law with criminal intent.</p></td>
 </tr>
 <tr>
-<td><h3 style="text-align:center";><b>Excluded Providers (Code-Excl11)</b></h3>
- <p style="background:darkgreen;"> Expenses incurred towards treatment in any Hospital or by any Medical Practitioner or any other provider specifically excluded by Company and disclosed in  website / notified to the Policyholders are not admissible. However, in case of life threatening situations or following an Accident, expenses up to the stage of stabilization are payable but not the complete claim.The complete list of excluded providers can be referred to on website.</p></td>
-</tr>
-<tr>
-<td>
-<h3 style="text-align:center";><b>Drugs & Alcoholism<br> (Code-Excl12)</b></h3>
- <p style="background:darkgreen;">  Treatment for, alcoholism, drug or substance abuse or any addictive condition and consequences thereof</p></td>
+<td><h3><b>Excluded Providers (Code-Excl11)</b></h3>
+ <p> Expenses incurred towards treatment in any Hospital or by any Medical Practitioner or any other provider specifically excluded by Company and disclosed in  website / notified to the Policyholders are not admissible. However, in case of life threatening situations or following an Accident, expenses up to the stage of stabilization are payable but not the complete claim.The complete list of excluded providers can be referred to on website.</p></td>
 </tr>
 <tr>
 <td>
-<h3 style="text-align:center";><b> Health Hydros, Spas<br> (Code-Excl13)</b></h3>
- <p style="background:darkgreen;">Treatments received in health hydros, nature cure clinics, spas or similar establishments or private beds registered as a nursing home attached to such establishments or where admission is arranged wholly or partly for domestic reasons.   </p></td>
+<h3><b>Drugs & Alcoholism<br> (Code-Excl12)</b></h3>
+ <p>  Treatment for, alcoholism, drug or substance abuse or any addictive condition and consequences thereof</p></td>
+</tr>
+<tr>
+<td>
+<h3><b> Health Hydros, Spas<br> (Code-Excl13)</b></h3>
+ <p>Treatments received in health hydros, nature cure clinics, spas or similar establishments or private beds registered as a nursing home attached to such establishments or where admission is arranged wholly or partly for domestic reasons.   </p></td>
 </tr>
 <tr>
 <td>
 <h3 style="text-align:center";><b>  Refractive Error <br>(Code-Excl15)</b></h3>
- <p style="background:darkgreen;"> Expenses related to the treatment for correction of eye sight due to refractive error less than 7.5 dioptres.<br>
+ <p> Expenses related to the treatment for correction of eye sight due to refractive error less than 7.5 dioptres.<br>
 Note: Less than 7.5 Diopter means a power of eye either >7.5 Dioptre for Hypermetropia or far sightedness (say +7.75 Dioptre) or < 7.5 Dioptre for Myopia or near sightedness (say -7.75 Dioptre).
  </p></td>
 </tr>
 <tr>
 <td>
 <h3 style="text-align:center";><b>Unproven Treatments <br>(Code-Excl16)</b></h3>
- <p style="background:darkgreen;"> Expenses related to any unproven treatment, services and supplies for or in connection with any treatment. Unproven treatments are treatments, procedures or supplies that lack significant medical documentation to support their effectiveness. </p></td>
+ <p> Expenses related to any unproven treatment, services and supplies for or in connection with any treatment. Unproven treatments are treatments, procedures or supplies that lack significant medical documentation to support their effectiveness. </p></td>
 </tr>
 <tr>
 <td>
 <h3 style="text-align:center";><b>Sterility and Infertility <br> (Code-Excl17)</b></h3>
  
  Expenses related to sterility and infertility. This includes: 
-<ol style="background:darkgreen;">
+<ol>
 <li> Any type of contraception, sterilization</li>
 <li>Assisted Reproduction services including artificial insemination and advanced reproductive technologies such as IVF, ZIFT, GIFT, ICSI</li>
 <li>Gestational Surrogacy</li>
@@ -1717,7 +1973,7 @@ Note: Less than 7.5 Diopter means a power of eye either >7.5 Dioptre for Hyperme
 <tr>
 <td>
 <h3 style="text-align:center";><b>Maternity Expenses (Code-Excl18)</b></h3>
- <ol style="background:darkgreen;">
+ <ol>
 <li>  Medical treatment expenses traceable to childbirth (including complicated deliveries and caesarean sections incurred during Hospitalization) except ectopic pregnancy;</li>
 <li>Expenses towards miscarriage (unless due to an Accident) and lawful medical termination of pregnancy during the Policy Period. </li>
  </ol>  </td>
@@ -1751,14 +2007,63 @@ Note: Less than 7.5 Diopter means a power of eye either >7.5 Dioptre for Hyperme
 <tr>
 <td>Artificial life maintenance for the Insured Person who has been declared brain dead or in vegetative state</td>
 </tr>
-</table>
+ </table>
+
+ <h2> EXCLUSION LISTS <br>AT A GLANCE</h2> 
+ <table class="table custom-media" style="width:96%;">  
+<tr>
+ <td colspan="3">   
+ 
+ <ol>
+<li> Investigation & Evaluation</li>
+<li> Rest Cure, rehabilitation and respite care</li>
+<li>Obesity/ Weight Control</li>
+<li>Change-of-Gender treatments</li>
+<li>Cosmetic or plastic Surgery</li>
+<li>Hazardous or Adventure sports</li>
+<li>Breach of law</li>
+<li>Excluded Providers</li>
+<li>Treatment for, alcoholism, drug or substance abuse or any addictive condition and consequences thereof</li>
+<li> Treatments received in heath hydros, nature cure clinics, spas or similar establishments or private beds registered as a nursing home attached to such establishments or where admission is arranged wholly or partly for domestic reasons</li>
+</ol></td>
+<td><ol start="11">
+<li> Dietary supplements and substances that can be purchased without prescription.</li>
+<li>Refractive Error</li>
+<li> Unproven Treatments</li>
+<li>Sterility and Infertility</li>
+<li> Maternity Expenses</li>
+<li>Charges related to a Hospital stay not expressly mentioned as being covered. This will include RMO charges, surcharges and service charges levied by the Hospital.</li>
+<li>Circumcision</li>
+<li>Conflict & Disaster</li>
+<li> External Congenital Anomaly</li>
+<li> Dental treatment</li>
+</ol></td>
+<td><ol start="21">
+<li>Hormone Replacement Therapy</li>
+<li>Multifocal Lens and ambulatory devices</li>
+<li>Sexually transmitted Infections & diseases (other than HIV / AIDS)</li>
+<li>Sleep Disorders</li>
+<li> Any treatment or medical services received outside the geographical limits of India</li>
+<li>Any expenses incurred on OPD treatment</li>
+<li> Treatment related to intentional self-inflicted Injury or attempted suicide by any means</li>
+<li>Treatment related to intentional self-inflicted Injury or attempted suicide by any means</li>
+<li> Costs which are not Reasonable and Customary and treatments which are not Medically Necessary</li>
+<li>Artificial life maintenance for the Insured Person who has been declared brain dead or in vegetative state</li>
+</ol>
+</td> 
+</tr>
+
+            </table>
 </div>
- </div>
+ 
 
 <div class="container2">
- <div class="table-wrapper">
+ 
  <h3 style="text-align:center";><b> LIST-I- EXPENSES NOT COVERED<br>
   COVERED under SAFEGUARD+</b></h3>
+ 
+<div class="table-wrapper">
+
 <table class="table custom-media" style="width:auto;">
  <td>
  <ol>
@@ -1957,11 +2262,113 @@ COVERED under SAFEGUARD+</b></h3>
 <li> URINE BAG </li>
    </ol></td>
  </table>
+ 
+
 
 <p><a href="#home"class="btn btn-warning btn-lg" role="button"><b>HOME</b></a></p>  
  
 </div>
- </div>
+ 
+<div class="container2">
+  <h2 id="copayded"><b> COPAY vs DEDUCTIBLES</h2>  
+
+ 
+<table class="table custom-media" style="width:90%;">
+
+<tr>
+<th>FEATURE</th>
+<th>COPAY</th>
+<th>DEDUCTIBLE</th>
+</tr>
+<tr>
+<td>DEFINITION</td>
+<td><b>Insured pays a percentage of each claim</b></td>
+<td><b>Insured pays a **fixed amount annually** before<br>
+insurer starts paying</b></td>
+</tr>
+<tr>
+<td>PAYMENT TYPE</td>
+<td>% of **every claim**</td>
+<td>**Flat yearly threshold**, then insurer pays 100%</td>
+</tr>
+<tr>
+<td>AVAILABLE CO-PAY LEVELS</td>
+<td>0%, 20%, 30%, 40%, 50%</td>
+<td>0% Co-pay if Deductible is opted. INR 20,000, INR
+30,000 INR 50,000 & INR 1 LAKH</td>
+</tr>
+<tr>
+<td>DEDUCTIBLE AMOUNT</td>
+<td>Not applicable</td>
+<td>1/5th of Sum Insured (e.g., ₹2L for ₹10L SI)</td>
+</tr>
+<tr>
+<td>WHO PAYS FIRST?</td>
+<td>Shared: Insured always pays partial</td>
+<td>Insured pays **all costs** up to deductible</td>
+</tr>
+<tr>
+<td>AFTER CROSSING LIMIT</td>
+<td>Still pays % of every claim</td>
+<td>Insurer pays **100% of future claims**</td>
+</tr>
+<tr>
+<td> IMPACT ON <br> SMALL CLAIMS</td>
+<td>Partially covered</td>
+<td>You pay full if below deductible</td>
+</tr>
+<tr>
+<td> IMPACT ON <br> LARGE CLAIMS</td>
+<td>Insured still pays a %</td>
+<td>Fully covered after threshold crossed</td>
+</tr>
+<tr>
+<td>BEST SUITABLE FOR</td>
+<td>Low premium, small claims expected</td>
+<td>Large claim coverage, no % sharing burden</td>
+</tr>
+<tr>
+<td>PREMIUM IMPACT</td>
+<td>Lower premium for higher co-pay</td>
+<td>Premium is slightly higher due to 0% co-pay</td>
+</tr>
+<tr>
+<td>RISK LEVEL <br> FOR CLIENT</td>
+<td>High (uncertain, rising with every claim)</td>
+<td>Fixed & predictable (max out-of-pocket = deductible</td>
+</tr>
+<tr>
+<td colspan="3" style="text-align:center;"><b>EXAMPLE</b></td>
+</tr>
+<tr>
+<td>₹1.5L claim</td>
+<td>You pay ₹75K (50% co-pay)</td>
+<td>You pay ₹1.5L (if deductible ₹2L not yet used)</td>
+</tr>
+<tr>
+<td>(₹5L claim after
+₹2L spent)</td>
+<td>You pay ₹2.5L (50%)</td>
+<td>You pay ₹2L total, insurer pays rest ₹3L</td>
+</tr>
+<tr>
+<td>✅ Summary<br>
+Recommendation:</td>
+<td colspan="2"><ol>
+<li>Choose co-pay option if : Budget is tight 
+Expect low-value claims only</li>
+<li>Choose Deductible option if : Wants 0% co-pay even for large hospital bills, Can manage a fixed
+expense annually (₹1–2 L). Prefers complete peace of mind after that threshold</li>
+</ol>
+</td>
+ 
+</tr>
+</table>
+
+<p><a href="#home"class="btn btn-warning btn-lg" role="button"><b>HOME</b></a></p>  
+ 
+</div>
+
 
  
 <div class="container2">
@@ -2021,24 +2428,51 @@ COVERED under SAFEGUARD+</b></h3>
   </table>
 <p><a href="#home"class="btn btn-warning btn-lg" role="button"><b>HOME</b></a></p>  
 </div>
-
+ 
    <div class="container2">
-    
- <h2 id="prod1" style="text-align:center;"><b> Major Health Insurance Products</h2>  
+ 
 
+ <h2 id="prod"  style="text-align:center;"><b>MAJOR PRODUCTS</b></h2>
+ 
+    <p style="font-size:25px;"><strong>NIVA BUPA HEALTH INSURANCE</strong> offers a range of Insurance products including Health Insurance, Travel Insurance & Personal Accident Insurance. Niva Bupa's insurance products are designed to provide financial protection and peace of mind for individuals and families. For detailed information on these products please visit or contact  us.An overview is here: </p>
+      
+       <table class="table custom-media" style="width:auto;">   
+<tr>
+<td>HEALTH INSURANCE</td>
+ <td colspan="3"><ul1>
+<li><b>ReAssure 2.0</b>:A comprehensive health insurance plan offering extensive coverage for in-patient care, pre-hospitalization expenses, post-hospitalization expenses, and more.</li>
+<li><b>Aspire</b>:  Niva Bupa's Aspire health insurance plan is a comprehensive policy that offers extensive coverage for individuals and families.This plan offers extensive coverage, including maternity benefits, infertility treatment, and more. It also features innovative benefits like "M-iracle" and "Booster</li>
+<li><b>Senior First</b>:A health insurance plan designed for senior citizens, offering comprehensive coverage and lifelong renewability.</li>
+<li><b>Cancer Safe</b>: A cancer-specific health insurance plan providing coverage for cancer-related expenses.</li>
+</ul1></td>
+</tr>
+<tr>
+<td>TRAVEL INSURANCE</td>
+ <td colspan="3"><ul1>
+<li><b>Travel Safe</b>: A travel insurance plan offering coverage for trip cancellations, medical emergencies, loss of baggage, and more.</li>
+<li><b>Travel Secure</b>: A comprehensive travel insurance plan providing coverage for various travel-related risks.</li>
+ </ul1></td>
+</tr>
+ <tr>
+<td>PERSONAL ACCIDENT INSURANCE </td>
+ <td colspan="3"><b>Personal Accident Insurance</b>: A plan offering coverage for accidental death, permanent disability, and temporary disability.</td>
+</tr>
+ 
+<tr>
+ <td colspan="4">
 <p>Primary offerings in the HEALTH INSURANCE SEGMENTS are mainly 
-<ol style="text:#fff;font-size:25px;">
+<ol>
 <li>ReAssure 2.0</li>
 <li>ReAssure 3.0 - UNLIMITED SUM INSURED</li>
 <li>SENIOR FIRST- For Senior Citizens</li>
-</ol>
- </p>
-
- <img src="https://github.com/girish8360/amli/raw/main/RA2%20LOGO.jpg" style="display: flex;margin: auto;width:250px;height:100px;justify-content: center;align-items: center;"><br><br> 
-
+</ol> </p></td>
+</tr>
+<tr>
+<td colspan="5">
+ <img src="https://github.com/girish8360/amli/raw/main/RA2%20LOGO.jpg" style="display: flex;margin: auto;width:250px;height:100px;justify-content: center;align-items: center;"><br>  
  
   <h1 id="rea2" style="text-align:center;"><strong>ReAssure 2.0</strong></h1>
-<p>This plan offers comprehensive coverage, including hospitalization, pre and post-hospitalization expenses, and more. It also features innovative benefits like "Forever Restoration" and "Lock the Clock"</p>
+<p> This plan offers comprehensive coverage, including hospitalization, pre and post-hospitalization expenses, and more. It also features innovative benefits like "Forever Restoration" and "Lock the Clock"</p> 
  
  <h3><strong>Major Features</strong></h3>
 <ul1>
@@ -2048,20 +2482,167 @@ COVERED under SAFEGUARD+</b></h3>
 <li>Annual Health Check-ups: Available from day one of the policy period</li>
 <li>Safeguard Benefit: A lump sum benefit for critical illnesses or survival after a covered surgery.</li>
 <li> Accidental Hospital Cash Benefit: A daily cash benefit for hospitalization due to accident</li>
-</ul1> 
-   
-   <table class="table custom-media" style="width:auto;">
+</ul1> </td>
+</tr>
+<tr>  
+    
+<th>VARIANT</th>
+<th>GOLD</th>
+<th>BRONZE+</th>
+<th>PLATINUM+</th>
+<th>TITANIUM+</th>
+ 
+</tr>
+<tr>
+<td style="background:maroon;"><b>BASE SUM INSURED</b></td>
+<td colspan="4">5 LACS;10 LACS;15 LACS;20 LACS;25 LACS;50 LACS;100 LACS</td>
+ </tr>
+<tr>
+<td colspan="5"><h1 style="text-align:center;"><strong>BENEFITS</strong></h1></td> 
+</tr>
+<tr>
+<td style="background:maroon;"><b>IN PATIENT CARE<br>Including AYUSH</b></td>
+<td colspan="4" style="text-align:center;">Covered upto SUM INSURED</td>
+ </tr>
+<tr>
+<td style="background:maroon;"><b>PRE HOSPITALIZATION</b></td>
+<td colspan="4" style="text-align:center;">60 DAYS;Covered upto SUM INSURED</td>
+</tr>
+<tr>
+<td style="background:maroon;"><b>POST HOSPITALIZATION</b></td>
+<td colspan="4" style="text-align:center;">180 DAYS;Covered upto SUM INSURED</td>
+</tr>
+<tr>
+<td style="background:maroon;"><b>MODERN TREAMENT</b></td>
+<td colspan="4" style="text-align:center;"> Covered upto SUM INSURED<br><b>SUB LIMIT of INR 1 Lac per Claim on few ROBOTIC SURGERIES</b></td>
+</tr>
+<tr>
+<td style="background:maroon;">AMBULANCE</td>
+<td colspan="4"><ul1>
+<li>ROAD AMBULANCE: Covered upto SUM INSURED</li>
+<li>AIR AMBULANCE: Upto INR 2,50,000/- per Hospitalisation</li>
+</ul>
+  </td>
+</tr>
+<tr>
+<td style="background:maroon;">HOME CARE/DOMICILLARY</td>
+<td colspan="4" style="text-align:center;"> Covered upto SUM INSURED  </td>
+</tr>
+<tr>
+<td style="background:maroon;">ORGAN DONOR</td>
+<td colspan="4" style="text-align:center;"> Covered upto SUM INSURED  </td>
+</tr>
+<tr>
+<td style="background:maroon;">ANNUAL HEALTH CHECK-UP DAY-1</td>
+<td colspan="4" style="text-align:left;">For defined list of tests; up to INR 500 for every INR 1 Lac Base Sum Insured.<br>
+(Individual: Maximum INR 5,000 per Insured; Family Floater: Maximum INR 10,000 per policy).  </td>
+</tr>
+<tr>
+<td style="background:maroon;">LOCK THE CLOCK</td>
+<td>NOT AVAILABLE</td>
+<td>NOT AVAILABLE</td>
+<td>Save your Age.PAY as per ENTRY AGE until You CLAIM</td>
+<td>Save your Age.PAY as per ENTRY AGE until You CLAIM</td>
+</tr>
+<tr>
+<tr>
+<td style="background:maroon;">ReAssureX</td>
+<td colspan="4" style="text-align:left;"><b>ReAssure “Forever”</b>: First claim paid triggers ReAssure “Forever”.<br>
+ It is unlimited. Each Claim under ReAssure “Forever” will be up to Base Sum Insured.  </td>
+</tr>
+<tr>
+<td style="background:maroon;">
+ReAssure+</td>
+<td></td>
+<td></td>
+<td colspan="2" style="text-align:left"><ul1>
+<li>1<sup>st</sup> claim triggers ReAssure+, forever. It is Unlimited. Each claim will be up to the BASE SUM INSURED</li>
+<li>Pay the premium as per your entry age, till a claim is paid</li></ul1></td>
+</tr>
+<tr>
+<td style="background:maroon;">Booster+</td>
+<td>10X: Unutilized Base Sum Insured carries forward
+to the next policy year, maximum up to 10 times</td>
+<td>3X: Unutilized Base Sum Insured carries forward
+to the next policy year, maximum up to 3 times</td>
+<td>5X: Unutilized Base Sum Insured carries forward
+to the next policy year, maximum up to 5 times</td>
+<td>10X: Unutilized Base Sum Insured carries forward
+to the next policy year, maximum up to 10 times</td>
+</tr>
+<tr>
+<td style="background:maroon;">Live Healthy</td>
+ <td colspan="4">Up to 30% discount on premium at the time of Renewal</td>
+</tr>
+<tr>
+<td style="background:maroon;">Shared Accommodation</td>
+<td colspan="4"><ul1>
+<li>Up to INR 15 Lac Base Sum Insured: INR 800 per day; Maximum INR 4,800</li>
+<li>Above INR 15 Lac Base Sum Insured: INR 1,000 per day; Maximum INR. 6,000</li>
+</ul></td>
+ </tr>
+<tr>
+<td style="background:maroon;">Second Medical Opinion</td>
+<td colspan="4">Once for any condition in a Policy Year.</td>
+ </tr>
+<tr>
+<td style="background:maroon;">e-consultation</td>
+<td colspan="4">Unlimited e-consultation within our network.</td>
+ </tr>
+<tr>
+ <td colspan="4">
+<h1 style="text-align:center;"><strong>OPTIONAL BENEFITS</strong></h1></td>
+</tr>
+<tr>
+<td style="background:maroon;">Safeguard+</td>
+<td colspan="4"><ul1>
+<li>Claim Safeguard+: Non-payable items will be covered (as per list I, II, III, IV of Annexure I)</li>
+<li>Booster+ Safeguard+: No impact on Booster+ if claim in a policy year is less than INR 1,00,000</li>
+<li>Sum Insured Safeguard+: CPI linked increase in Base Sum Insured</li>
+</ul1>
+</td>
+</tr>
+ <tr>
+<td style="background:maroon;">Personal Accident</td>
+<td colspan="4">Choose from 1X / 2X / 3X / 4X / 5X of base sum insured. Maximum up to INR 1 Crore.</td>
+</tr>
+<tr>
+<td style="background:maroon;">Hospital Cash</td>
+<td colspan="4"><ul1>
+<li>Up to INR 5 Lac Base Sum Insured: INR 1,000/day</li>
+<li>Between INR 7.5 Lacs to INR 15 Lac Base Sum Insured: INR 2,000/day</li>
+<li>Above 15 Lac Base Sum Insured: INR 4,000/day</li>
+</ul1>
+</td>
+</tr>
+<tr>
+<td style="background:maroon;">Annual Aggregate Deductible</td>
+<td colspan="4">Small deductibles to choose from. INR 20,000; INR 30,000; INR 50,000; INR 1,00,000</td>
+</tr>
+ 
+<tr>
+<td style="background:maroon;">Tiered Network</td>
+<td colspan="4">Get 15% discount on Premium. A co-payment of 20% would apply if treatment taken
+in a non-Tiered Network Hospital</td>
+</tr>
+ </table>
+</div>
+
+<div class="container2">
+       <table class="table custom-media" style="width:auto;">   
  <tr>
 <td colspan="2" style="background:maroon;">
           
      <img src="https://github.com/girish8360/amli/raw/main/ra3%20logo.png" style="display: flex;margin: auto;
-width:250px;height:150px;justify-content: center;align-items:center;"><br> 
+width:250px;height:100px;justify-content: center;align-items:center;"><br> 
  
  <h1 id="rea3" style="text-align:center;"><strong>ReAssure 3.0</strong></h1>
 <p> The Niva Bupa ReAssure 3.0 plan builds on this foundation, introducing a<b> no-limits approach to coverage means UNLIMITED SUM INSURED</b>. It offers unlimited base sum insured across all variants, immediate 145 pre-existing disease (PED) coverage options, and a rewards system that incentivises healthy living. With four variants—Classic, Select, Elite, and Black—it caters to diverse needs, from affordability to premium care. <br>
 ReAssure 3.0 also integrates wellness-focused benefits and global treatment options, making it a holistic solution for modern healthcare challenges.
-</p><br>
- 
+</p></td>
+</tr>
+<tr>
+<td> 
  <h2> KEY FEATURES </h2>
 <ol style="font-size:25px;font-weight:normal;">
 <li> <b>UNLIMITED SUM INSURED :</b> Unlike traditional health insurance plans with fixed coverage limits, ReAssure 3.0 provides unlimited base sum insured across all variants. This ensures that medical emergencies, whether minor or major, don’t leave you financially strained. Whether you’re facing a prolonged hospital stay or advanced treatment, this feature guarantees coverage without the fear of exhausting your benefits.</li>
@@ -2089,8 +2670,10 @@ Booster+ type features: in some circumstances, base SI increases with claim‐fr
 <li> <strong>No Sub-limits in Top Variants: </strong>Top variants do away with sub-limits for modern treatments (e.g. immunotherapy, robotic surgery etc.) which are often capped in more basic variants. </li>
 </ul1> 
 </div>
+</div>
 <div class="container2">
  
+<div class="table-wrapper">
  <img src="https://github.com/girish8360/amli/raw/main/aspire%20logo.jpg"  style="display: flex;margin: auto;
 width:250px;height:150px;justify-content: center;align-items: center;"> <br>
 
@@ -2109,10 +2692,11 @@ width:250px;height:150px;justify-content: center;align-items: center;"> <br>
 <li>Health Check-up: The plan offers a free health check-up every year, up to a certain limit.</li>
 <li>Tax Benefits: Aspire offers tax benefits under Section 80D of the Income Tax Act.</li>
  </ul1>
-   
+   </div>
 </div>
 
- <div class="container2">
+<div class="container2">
+ <div class="table-wrapper">
  <h1 id="srfirst"  style="text-align:center;background:orange;color:maroon"><b>SENIOR FIRST</b>  </h1> 
   
 <h3><strong>Major Features</strong></h3>
@@ -2135,59 +2719,16 @@ width:250px;height:150px;justify-content: center;align-items: center;"> <br>
 <li>Designed for Senior Citizens: Senior First is tailored to meet the health insurance needs of senior citizens.</li>
 <li>Comprehensive Coverage: The plan offers extensive coverage for various medical expenses.</li>
 </ul1>
- <table>
- 
-<tr>
-<td colspan="3" style="text-align:center;"><h3> EXCLUSION LISTS</h3></td>
-</tr>
-<tr>
- 
- <td colspan="3">  <table class="table custom-media" style="width:auto;">
-<td>
- <ol>
-<li> Investigation & Evaluation</li>
-<li> Rest Cure, rehabilitation and respite care</li>
-<li>Obesity/ Weight Control</li>
-<li>Change-of-Gender treatments</li>
-<li>Cosmetic or plastic Surgery</li>
-<li>Hazardous or Adventure sports</li>
-<li>Breach of law</li>
-<li>Excluded Providers</li>
-<li>Treatment for, alcoholism, drug or substance abuse or any addictive condition and consequences thereof</li>
-<li> Treatments received in heath hydros, nature cure clinics, spas or similar establishments or private beds registered as a nursing home attached to such establishments or where admission is arranged wholly or partly for domestic reasons</li>
-</ol></td>
-<td><ol start="11">
-<li> Dietary supplements and substances that can be purchased without prescription.</li>
-<li>Refractive Error</li>
-<li> Unproven Treatments</li>
-<li>Sterility and Infertility</li>
-<li> Maternity Expenses</li>
-<li>Charges related to a Hospital stay not expressly mentioned as being covered. This will include RMO charges, surcharges and service charges levied by the Hospital.</li>
-<li>Circumcision</li>
-<li>Conflict & Disaster</li>
-<li> External Congenital Anomaly</li>
-<li> Dental treatment</li>
-</ol></td>
-<td><ol start="21">
-<li>Hormone Replacement Therapy</li>
-<li>Multifocal Lens and ambulatory devices</li>
-<li>Sexually transmitted Infections & diseases (other than HIV / AIDS)</li>
-<li>Sleep Disorders</li>
-<li> Any treatment or medical services received outside the geographical limits of India</li>
-<li>Any expenses incurred on OPD treatment</li>
-<li> Treatment related to intentional self-inflicted Injury or attempted suicide by any means</li>
-<li>Treatment related to intentional self-inflicted Injury or attempted suicide by any means</li>
-<li> Costs which are not Reasonable and Customary and treatments which are not Medically Necessary</li>
-<li>Artificial life maintenance for the Insured Person who has been declared brain dead or in vegetative state</li>
-</ol>
-</td></td>
-</tr>
-
-            </table>
+ </tr>
+<table>
 <p><a href="#home"class="btn btn-warning btn-lg" role="button"><b>HOME</b></a></p>  
     </div>
+ 
 
-  <div class="container2">
+<div class="container2">
+ 
+<div class="table-wrapper">
+
  <h2 id="travel" style="text-align:center;"><b>Travel Insurance Products</b>  </h2>  
 <p>Primary offerings in the travel insurance segment are under the TravelAssure product line, which includes various plans tailored to different traveler need</p>
   
@@ -2225,21 +2766,25 @@ width:250px;height:150px;justify-content: center;align-items: center;"> <br>
 </table>
 <p><a href="#home"class="btn btn-warning btn-lg" role="button"><b>HOME</b></a></p>  
  </div>
-    
+    </div>
+
 <div class="container2">
- <h2 id="feedback" style="text-align:center;">FEEDBACK FORM</b>  </h2>  
+ 
+  <h2 id="feedback" style="text-align:center;">FEEDBACK FORM</b>  </h2>  
 <p>Please spare your valubale moments to fill up attached <b>FEEDBACK FORM</b> in order to understand Health Management Strategy (HMS) in a better way & consequently let's navigate towards an effective Health Management Strategy to safeguard our health as well as  medical expenses due to unforseen medical emergencies. Plese click the  button to fill up this brief Health Survey Form.  </p>
  
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSemtYqq2uhJ2KY9MPtYos7Fln_5xNvqasLrXdk77a0-9gFXMg/viewform?usp=sharing&ouid=110655948174661466563"  target="_blank" class="btn btn-primary btn-lg" role="button"><strong>Click here for  HEALTH SURVEY  FORM </strong></a>
  </div>
   
- 
-<div class="container3">    
+ <div class="container2">    
 <p><a href="#home"class="btn btn-warning btn-lg" role="button"><b>HOME</b></a></p>  
+<a href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM" target="_blank"  class="btn btn-success btn-lg" role="button"><b>NIVA BUPA LEAFLET </b></a> >
 
+ 
  <a href="https://girish8360.github.io/amli/GIRISH-LEAFLET.htm"  target="_blank" class="btn btn-primary btn-lg" role="button"><b>HOME PAGE</b></a> 
 
 </div>
+
  
   <div class="row">
                 <div class="col-sm-12">
@@ -2291,5 +2836,6 @@ COURT  ROAD<br>SAHARANPUR-247001 (U.P.)  </span></td>
      </div>
 </body>
 </html>
+
 
 
