@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       
       </head>
-   <style>
+     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Times New Roman;
             margin: 0;
             padding: 0;
             background-color:lightgray;
@@ -37,25 +37,51 @@ border: 3px solid blue;}
  .container2{
         text-align: justify;
 margin-left:1px;
-     background:#f17a2a;
+     background:maroon;
+color:white;
 width:auto;}
+
 
  .container3{
         text-align: justify;
-     background:#003366;
-color:#fff;
-margin-left:1px;
+     background:white;
+color:darkblue;
+font-size:25px;
+margin-left:3px;
 width:auto;}
+
+h2{
+text-align:center;
+background:yellow;
+font-weight:bold;
+color:black;
+padding-left:15%;
+padding-right:15%;
+margin-left:5%;
+margin-right:5%;
+box-shadow: 10px 13px orange; }
+
+h3{
+text-align:center;
+background:darkblue;
+font-weight:bold;
+color:#fff;
+padding-left:15%;
+padding-right:15%;
+margin-left:5%;
+margin-right:5%;
+font-weight:25px;
+box-shadow: 10px 13px skyblue; }
+
 
 .topnav02 {
   overflow: hidden;
   background-color: maroon;
-padding-}
+padding:5px;}
 
 .topnav02 a {
   float: left;
-  color: #f2f2f2;
-  text-align: center;
+   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
     display:block;
@@ -63,12 +89,12 @@ padding-}
 font-family:times new roman;
                text-align:center;
               padding:3px;
-               font-weight:bold;
+               font-weight:normal;
                  border:1px solid white;
-font-size:20px;}
+font-size:10px;}
 
 .topnav02 a:hover {
-  background-color: black;
+  background-color:darkblue;
   color: #fff;}
 
 /* Create a right-aligned (split) link inside the navigation bar */
@@ -96,7 +122,8 @@ font-family:times new roman;
               padding:3px;
                text-decoration:none;
                  border:1px solid white;
-font-size:20px;      }
+ 
+font-size:20px;   }
          li a:hover {
           background-color:#111111; }
  
@@ -105,7 +132,9 @@ display:none;
 float:none;}
   
 ul  li:hover ul  li
-{display:block;}
+{display:block;
+background:darkblue;
+color:white;}
 
 ul1 {
             list-style-type:disc;
@@ -114,6 +143,28 @@ ul1 {
         font-size:25px;
 padding:2px;
 margin-left:25px;  }
+
+dl {list-style-type:disc;
+                          font-weight:bold;
+font-size:30px;
+padding-left:5px;
+padding-right:5px;
+font-family:arial;
+}
+   dl dt {
+        font-size:25px;
+padding-left:15px;
+padding-right:5px;
+margin-left:20px;
+font-family:arial;  }
+
+ dl dd {
+        font-size:25px;
+padding-left:25px;
+padding-right:5px;
+margin-left:20px; 
+font-family:arial; }
+
 
 .custom-media{
     width: 100%;
@@ -125,24 +176,33 @@ margin-left:25px;  }
     th,td {
       display: block;
       width: auto;
-      text-align: justify;}
+      text-align: justify;     }
        }
       }
+
+ol{font-size:25px;
+padding-left:50px;
+padding-right:20px;
+font-family:arial;}
+
       .table{
         width:auto;
  background:maroon;
  margin-left:5px;
  margin-right:5px;
+ 
+ font-size:25px;
+
              }
       td{
 padding:5px;
 border:2px solid #fff;
 color:white;
-font-size:23px;
+font-size:25px;
 font-weight:normal;}
    th{
-background:darkblue;
-color:azure;
+background:gray;
+color:black;
 text-align: center;}
  p{
   font-weight: bold;
@@ -151,7 +211,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
  padding: 10px;
 margin: 5px;
 font-size:25px;
-color:white;}
+ }
       header {
             background: linear-gradient(130deg,#f17a2a,#003366);
                        color: white;
@@ -197,12 +257,14 @@ background:linear-gradient(90deg,#003366,#f17a2a);
  max-width: 1500px;
  
 }   
-p1,p2{
+p1 {
  
 text-align: justify;
 font-family: Arial, Helvetica, sans-serif;
-color:black;
-padding: 5px;
+background:white;
+color:darkblue;
+padding-left: 20px;
+padding-right:10px;
 margin: 5px;
 font-size:25px;}
 .flex-container {
@@ -240,7 +302,8 @@ cursor:pointer;
 
 .container04{
        position: relative; 
- float:center;                    
+ float:center;       
+             
    }
    .clock{
        width: 200px;
@@ -287,33 +350,8 @@ cursor:pointer;
        height: var(--h);
        border-radius: 8px;
    }
-
-@media (max-width: 475px) {
-
-table{
-width:auto;}
-
-  td {
-    display: block;
-    width: 100%;
-  }
-
-  .clock {
-    width: 200px;
-    height: 200px;
-  }
-
-     .responsive-video {
-    max-width: 100%;
-  }
-}
-
-.table-wrapper {
-  width: 100%;
-  overflow-x: hidden;
-}
-
     </style>
+
 <body>
  
 <div class="container-fluid">
@@ -1518,7 +1556,7 @@ in a non-Tiered Network Hospital</td>
      
  
 <img src="https://github.com/girish8360/amli/raw/main/ra3%20logo.png" style="display: flex;margin: auto;
-width:250px;height:150px;justify-content: center;align-items:center;"><br> 
+width:250px;height:100px;justify-content: center;align-items:center;"><br> 
  
  <h1 id="rea3" style="text-align:center;"><strong>ReAssure 3.0</strong></h1>
 <p> The Niva Bupa ReAssure 3.0 plan builds on this foundation, introducing a<b> no-limits approach to coverage means UNLIMITED SUM INSURED</b>. It offers unlimited base sum insured across all variants, immediate 145 pre-existing disease (PED) coverage options, and a rewards system that incentivises healthy living. With four variants—Classic, Select, Elite, and Black—it caters to diverse needs, from affordability to premium care. <br>
@@ -1725,7 +1763,7 @@ Co-Payment Option 0%,20%,30%,40% & 50%<</td>
  </tr>
   </table>
 </div>
-<div class="container3">
+<div class="container2">
  
  <img src="https://github.com/girish8360/amli/raw/main/aspire%20logo.jpg"  style="display: flex;margin: auto;
 width:250px;height:150px;justify-content: center;align-items: center;"> <br>
@@ -2187,7 +2225,7 @@ and host of Wellness benefits.</td>
   
 
 
-  <div class="container3">
+  <div class="container2">
  <h2 id="travel" style="text-align:center;"><b>Travel Insurance Products</b>  </h2>  
 <p>Primary offerings in the travel insurance segment are under the TravelAssure product line, which includes various plans tailored to different traveler need</p>
   
@@ -2233,14 +2271,14 @@ and host of Wellness benefits.</td>
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSemtYqq2uhJ2KY9MPtYos7Fln_5xNvqasLrXdk77a0-9gFXMg/viewform?usp=sharing&ouid=110655948174661466563"  target="_blank" class="btn btn-primary btn-lg" role="button"><strong>Click here for  HEALTH SURVEY  FORM </strong></a>
  </div>
  
- 
-<div class="container3">    
+  <div class="container2">    
 <p><a href="#home"class="btn btn-warning btn-lg" role="button"><b>HOME</b></a></p>  
+ <a href="https://girish8360.github.io/amli/hibasic.htm"  target="_blank" class="btn btn-success btn-lg" role="button"><b>BASICS TO HEALTH INSURANCE</b></a> 
 
  <a href="https://girish8360.github.io/amli/GIRISH-LEAFLET.htm"  target="_blank" class="btn btn-primary btn-lg" role="button"><b>HOME PAGE</b></a> 
 
 </div>
- 
+
   <div class="row">
                 <div class="col-sm-12">
                                    <div class="container3">
@@ -2296,6 +2334,7 @@ COURT  ROAD<br>SAHARANPUR-247001 (U.P.)  </span></td>
  
 </body>
 </html>
+
 
 
 
