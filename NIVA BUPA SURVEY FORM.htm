@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+   <style>
+* {box-sizing: border-box;}
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:lightgray;
+            color: #333; }
+
+
+
+      .container-fluid{
+                          border: 2px; 
+width:auto;} 
+
+        .container1{
+        text-align: justify;
+       max-width:auto;
+margin-left:3px;
+margin-right:2px;
+padding:5px;
+border: 3px solid orange;}
+
+ .container2{
+        text-align: justify;
+margin-left:3px;
+margin-right:2px;
+     background:darkblue;
+ max-width:auto;}
+
+ .container3{
+        text-align: justify;
+     background:maroon;
+color:#fff;
+margin-left:3px;
+margin-right:2px;
+ 
+width:auto;}
+
+ header {
+            background: linear-gradient(130deg,#f17a2a,#003366);
+                       color: white;
+            padding: 20px 0;
+            text-align: center;                 }
+
+.button01 {
+padding: 15px 25px;
+font-size: 24px;
+text-align: center;
+cursor: pointer;
+outline: none;
+color: #fff;
+background-color: maroon;
+color:white;
+border: none;
+border-radius: 15px;
+box-shadow: 0 9px #999;}
+
+.button01:hover {background-color: darkblue;
+color:white;}
+.button01:active {
+background-color: #3e8e41;
+box-shadow: 0 5px #666;
+transform: translateY(4px);}
+    font-size: 1.5em;        }
+
+        section {
+   background-color: #003366;
+            color: white;
+            padding: 20px;
+            max-width: 1500px;
+            margin: 0 auto;}
+        .services, .contact-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;       
+font-size:15px; }
+
+
+form{
+background:maroon;
+color: white;
+padding-left:20px;
+font-size:20px;
+padding-top:40px;}
+.form-group row {
+font-size:25px;
+}
+
+@media only screen and (max-width: 475px) { 
+  .responsive { 
+    width: 100%;
+  }
+}
+   .container{
+        border: 2px solid blue;
+        /* background: #555; */
+        background:linear-gradient(45deg, maroon,orange);
+    }
+    h2{
+        color:#fff;
+font-size:30px;
+    }
+    .form-group label{
+        color:#fff;
+font-size:18px;
+    }
+    .form-check label{
+        color:#fff;
+         font-weight: bold;
+font-size:18px;
+    }
+
+.intro{
+
+  font-weight: bold;
+text-align: justify;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ padding: 10px;
+margin: 10px;
+ background-color:maroon;
+color:white;
+font-size:20px;
+ 
+padding-left:10px;
+padding-right:10px;}
+
+ 
+footer {
+            background: linear-gradient(180deg,#f17a2a,#003366);
+            font-size:20px;     
+   
+    padding: 10px;
+    color: white;
+    text-align: justify;
+ max-width:auto;
+ }   
+.container04{
+       position: relative; 
+ float:center;       
+             
+   }
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.flex-container > div {
+   }
+    .split{
+float:right;
+ display:block;
+             color:white;
+font-family:times new roman;
+               text-align:center;
+              padding:3px;
+               text-decoration:none;
+                 border:1px solid white;
+font-size:20px;   
+padding-right:5px;
+ }
+
+  .split hover{
+ background:black;
+color:white;
+cursor:pointer;
+ }
+@media only screen and (max-width: 470px) { 
+  .responsive { 
+    width: 100%;
+  }
+}
+
+   .clock{
+       width: 250px;
+       height: 250px;
+       border-radius: 60%;
+ 
+       border: 2px solid rgba(255,255,255,0.1);
+           box-shadow: inset 20px 20px 20px rgba(0,0,0,0.9);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+   }
+   .clock span{
+       position: absolute; 
+      transform:rotate(calc(30deg*var(--i)));
+     inset-block: 9px;  
+            text-align: center;
+   }
+   .clock span b{
+       transform: rotate(calc(-30deg*var(--i)));
+ display:inline-block;  
+       font-size: 23px;
+font-family:Times New Roman;
+   }
+   .clock::before{
+       content:'' ;
+       position:absolute;
+       width:8px;
+       height:8px;
+       border-radius: 50%;
+       background: #fff;
+       z-index:2;
+   }
+   .hand{
+       position: absolute;
+       display:flex;
+       justify-content: center;
+      align-items:flex-end;  
+   }
+   .hand i{
+       position: absolute;
+       background:var(--clr);
+       width: 4px;
+       height: var(--h);
+       border-radius: 8px;
+   }
+.fieldset{
+border-style: 5px solid;
+border-color: warning;}
+
+.feedform{
+text-align: justify;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size:20px;
+ padding-left:10px;
+padding-right:10px;
+}
+
+.label{
+font-size:20px;}
+
+
+    </style>
+  
+
+<script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+<script>
+function getFormData() {
+  const fname = document.getElementById("fname").value || "";
+  const mname = document.getElementById("mname").value || "";
+  const lname = document.getElementById("lname").value || "";
+
+  return {
+    name: fname + " " + mname + " " + lname,
+    mobile: document.getElementById("mob").value || "",
+    email: document.getElementById("email").value || "",
+    dob: document.getElementById("dob").value || "",
+    city: document.getElementById("city").value || "",
+    state: document.getElementById("state").value || "",
+    income: document.getElementById("income").value || "",
+    si: document.getElementById("si").value || "",
+    cover: document.getElementById("cover").value || "",
+    pstatus: document.getElementById("pstatus").value || ""
+  };
+}
+
+  <!--PDF GENERATION (UPDATED) -->
+
+
+function generatePDF(data) {
+  const content = `
+    <div style="font-family:Arial; padding:20px;">
+      <h2 style="text-align:center;">Health Survey</h2>
+      <p><b>Name:</b> ${data.name}</p>
+      <p><b>Mobile:</b> ${data.mobile}</p>
+      <p><b>Email:</b> ${data.email}</p>
+      <p><b>DOB:</b> ${data.dob}</p>
+      <p><b>City:</b> ${data.city}</p>
+      <p><b>State:</b> ${data.state}</p>
+      <p><b>Income:</b> ${data.income}</p>
+      <p><b>Sum Insured:</b> ${data.si}</p>
+    </div>
+  `;
+
+  html2pdf().from(content).save("Survey.pdf");
+}
+
+<!--EXCEL GENERATION (NEW FEATURE)-->
+function generateExcel(data) {
+  const worksheet = XLSX.utils.json_to_sheet([data]);
+  const workbook = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(workbook, worksheet, "Survey");
+
+  XLSX.writeFile(workbook, "Survey.xlsx");
+}
+ <!-- EMAIL (IMPORTANT LIMITATION + SOLUTION)-->
+
+function sendEmail(data) {
+  const subject = "Health Survey Form";
+  const body = `
+Name: ${data.name}
+Mobile: ${data.mobile}
+Email: ${data.email}
+DOB: ${data.dob}
+City: ${data.city}
+State: ${data.state}
+Income: ${data.income}
+  `;
+
+  window.location.href =
+    `mailto:girish.garry4u@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+function submitForm() {
+  const data = getFormData();
+
+  if (!data.name || !data.mobile) {
+    alert("Please fill required fields");
+    return;
+  }
+
+  generatePDF(data);
+  generateExcel(data);
+  sendEmail(data);
+}
+
+function submitForm() {
+  const data = getFormData();
+
+  if (!data.name || !data.mobile) {
+    alert("Please fill required fields");
+    return;
+  }
+
+  generatePDF(data);
+  generateExcel(data);
+  sendEmail(data);
+}
+
+<button class="btn btn-success btn-lg" onclick="submitForm()">
+  Submit + PDF + Excel + Email
+</button>
+</script>
+
+   <body> 
+
+<header class="py-3">
+  <div class="container-fluid">
+    <div class="row align-items-center text-center text-md-start">
+
+      <!-- Logo -->
+      <div class="col-12 col-md-3 mb-2 mb-md-0 text-center">
+        <img 
+          src="https://raw.githubusercontent.com/girish8360/amli/main/nb.jpg"
+          class="img-fluid"
+          style="max-height:200px;max-width:200px;"
+
+          alt="Logo">
+      </div>
+
+      <!-- Name & Designation -->
+      <div class="col-12 col-md-6 text-center">
+        <h2 class="fw-bold mb-1" style="color:azure;">
+        <strong>  GIRISH GAUR</strong>
+        </h2>
+        <h5 class="fw-semibold" style="color:azure;">
+          <strong>Advisor,<br> NIVA BUPA HEALTH INSURANCE</strong>
+        </h5>
+      </div>
+
+<div class="col-12 col-md-3 d-flex justify-content-center mt-3 mt-md-0">
+ <div class="container04" style="background:transparent;">
+   <div class="clock">
+      <!-- Clock -->
+         
+    <div style="--clr:#ff3d58; --h:55px;" id="hour" class="hand"><i></i></div>
+    <div style="--clr:#00a6ff;  --h:70px;" id="min" class="hand"><i></i></div>
+    <div style="--clr:#ffffff;  --h:90px;" id="sec" class="hand"><i></i></div>
+    
+    <span style="--i:1;"><b>I</b></span>
+     <span style="--i:2;"><b>II</b></span>
+     <span style="--i:3;"><b>III</b></span>
+     <span style="--i:4;"><b>IIII</b></span>
+     <span style="--i:5;"><b>V</b></span>
+     <span style="--i:6;"><b>VI</b></span>
+     <span style="--i:7;"><b>VII</b></span>
+     <span style="--i:8;"><b>VIII</b></span>
+     <span style="--i:9;"><b>IX</b></span>
+     <span style="--i:10;"><b>X</b></span>
+     <span style="--i:11;"><b>XI</b></span>
+     <span style="--i:12;"><b>XII</b></span>
+</div>
+
+   </div> 
+ <script>
+   let hr = document.getElementById('hour');
+let min = document.getElementById('min');
+let sec = document.getElementById('sec');
+
+function displayTime(){
+   let date = new Date();
+
+   // Getting hour, mins, secs from date
+   let hh = date.getHours();
+   let mm = date.getMinutes();
+   let ss = date.getSeconds();
+
+   let hRotation = 30*hh + mm/2;
+   let mRotation = 6*mm;
+   let sRotation = 6*ss;
+
+
+hr.style.transform =`rotate(${hRotation}deg)`;
+   // hr.style.transform = `rotate(${hRotation}deg)`;
+   // hr.style.transform = `rotate(${hRotation}deg)`;
+   min.style.transform = `rotate(${mRotation}deg)`;
+   sec.style.transform = `rotate(${sRotation}deg)`;
+}
+setInterval(displayTime, 1000);
+</script>
+</td>
+     </table>
+
+    </header>
+ </div>
+ 
+        <h1 align="center">HEALTH MANAGEMENT SURVEY</h1>
+ 
+<div class="container2">
+                              <div class="row">
+                    <div class="col">
+<div class="feedform">
+<div class="intro">
+<p>This survey aims to gather more detailed information about the
+respondent's current health insurance status, medical emergency
+preparedness, reserved medical funds, and awareness of Niva Bupa's
+offerings</p>
+</div>
+
+<div class="form-group row">
+                                                                        <label class="col-sm-6 col-form-label">
+                                                                      Date of Submission
+                                                                  </label>
+
+                                                                  <div class="col-sm-6">
+  
+     <input type="datetime-local" class="form-control" id="dos" placeholder="dd/mm/yyyy"  maxlength="8" size="8" style="width:200px;" required>
+                                                                                   </div>
+                                                                                </div>
+
+                 
+ <form class="form-inline" action="">
+  
+                                                                                     <div class="form-group row">
+                                                             <label class="col-sm-6 col-form-label" style="font-weight:bold;font-size:18px;">
+                                                                                       Would you like to spare few moments to fill up this brief questionnaire?
+                                                                                        </label>
+ 
+
+<div class="col-sm-6">   
+ 
+<input type="radio" id="yes" name="medstatus" value="YES">
+<label for="yes">YES</label>
+ <input type="radio" id="no" name="medstatus" value="NO">
+<label for="no">NO</label>
+ <input type="radio" id="may" name="medstatus" value="may">
+<label for="may">MAY BE LATER</label>
+</div></div>
+
+  <fieldset style="border:2px solid orange;">
+  <legend><h2 style="text-align:center;">PERSONAL INFORMATION</h2> </legend>
+
+    <div class="form-check form-check-inline">
+
+     <div class="form-group row">
+                                  <label class="col-sm-6 col-form-label" style="font-weight:bold;">
+                                FULL NAME :
+                            </label>
+                            <div class="col-sm-6">
+
+<input type="text" class="form-control" id="fname" placeholder="Enter FULL NAME"  length="60" size="60" style="width:400px;" required>
+  
+</div>
+</div>
+ 
+ 
+                <br>     
+<div class="form-group row">
+                                  <label class="col-sm-6 col-form-label" style="font-weight:bold;">
+                                                                      DATE OF BIRTH :
+                                                                  </label>
+                                                                  <div class="col-sm-6">
+           <input type="date" class="form-control" id="dob" placeholder="dd/mm/yyyy"  maxlength="8" size="8" style="width:200px;" required>
+                                                                                   </div>
+                                                                                </div>
+<br>
+<div class="form-group row">
+                                  <label class="col-sm-6 col-form-label" style="font-weight:bold;">
+                                                                                            SEX :         </label>
+                                                                                 <div class="col-sm-6">             
+                                                      <input type="radio" name="gender" class="form-check-input" id="sex">
+                                                                                            <label for="malecheck" class="form-check-label">MALE</label>
+                                                                    
+                                                                                        <div class="form-check form-check-inline">
+                                                                     <input type="radio" name="gender" class="form-check-input" id="femalecheck">
+                                                                                            <label for="femalecheck" class="form-check-label">FEMALE</label>
+                                                                    
+                                                                                        </div>
+                                                                                    </div>
+<br>
+<div class="form-group row">
+                                  <label class="col-sm-6 col-form-label" style="font-weight:bold;">
+                                                                                            MARITAL STATUS :         </label>
+                                                                                 <div class="col-sm-6">             
+                                                      <input type="radio" name="marstatus" class="form-check-input" id="marital">
+                                                                                            <label for="married" class="form-check-label">Married</label>
+                                                                    
+                                                                                        <div class="form-check form-check-inline">
+                                                                     <input type="radio" name="marstatus" class="form-check-input" id="marital">
+                                                                                            <label for="single" class="form-check-label">Single</label>
+                                                                    
+                                                                                        </div>
+                                                                                    </div>
+ <br>
+ <br>
+
+ 
+ <h2 style="text-align:center;">CONTACT DETAILS</h2>  
+
+<div class="form-group row">
+                                                <label class="col-sm-6 col-form-label" style="font-weight:bold;">
+                                              CONTACT No.
+                                          </label>
+   <div class="col-sm-6">
+<input type="number" id="mob"  maxlength="4" size="4" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+                              
+                                             </div>
+                                            </div>
+<br>
+ <br>
+ 
+<div class="form-group row">
+                                          <label class="col-sm-6 col-form-label" style="font-weight:bold;">
+                                              Email ID
+                                          </label>
+<div class="col-sm-6">
+ <input type="email"   id="email" maxlength="20" size="20" placeholder="Enter email" name="email">
+    </div>
+                                            </div>
+ <br>
+ <br>
+<div class="form-group row">
+                                             <label class="col-sm-6 col-form-label">
+                                 CITY as per Permanent Address ID:
+                                          </label>
+<div class="col-sm-6" style="font-weight:bold;">
+<input type="text" id="city" maxlength="30" size="30"  placeholder="City" style="width:300px;">
+
+    </div>
+</div>
+ <br>
+ <br>
+<div class="form-group row">
+                                             <label class="col-sm-6 col-form-label" style="font-weight:bold;">
+                                          STATE  as per Permanent Address ID:
+                                          </label>
+
+<div class="col-sm-6">
+<input type="text" id="state" maxlength="30" size="30"  placeholder= "State" name="state" style="width:300px;">
+      </div>
+                                           </div>
+
+  <br>
+ <br>
+<h2 style="text-align:center;">HEALTH MANAGEMENT SURVEY (HMS)</h2>
+ <br>
+ <br>
+<div class="form-group row">
+                                                <label class="col-sm-6 col-form-label" style="font-weight:bold;">
+                                1. ANNUAL INCOME (approx)
+                            </label>
+                            <div class="col-sm-6">
+ <input type="number"  id="income" placeholder="ANNUAL INCOME" name="income"  style="width:300px;">
+</div></div>
+ <br>
+ <br>
+<div class="form-group row">
+                                             <label class="col-sm-6 col-form-label" style="font-weight:bold;">
+                                          2. No. of Dependents (You, Spouse & Kids): 
+(In case of FAMILY FLOATER)
+                                          </label>
+<div class="col-sm-6">
+<input type="number" id="dependent" maxlength="3" size="3"   name="dependent">
+    </div>
+                                            </div>
+<br>
+<br>
+  <br>
+ 
+<div class="form-group row">
+                                  <label class="col-sm-6 col-form-label" style="font-weight:bold;">
+                                   3. Any Pre Existing Disease as  per your Medical History as on Date         </label>
+                                                                                 <div class="col-sm-6">             
+                                                       <input type="checkbox" id="dia" name="DIABETES" value="DIABETES">
+<label for="dia"> DIABETES</label>
+<input type="checkbox" id="hypertension" name="hypertension" value="hypertension">
+<label for="hypertension"> HYPERTENSION </label>
+ <input type="checkbox" id="cardiac" name="cardiac" value="cardiac">
+<label for="cardiac"> CARDIAC DISEASE </label>
+<br>
+<input type="checkbox" id="thyroid" name="thyroid" value="thyroid">
+<label for="thyroid"> THYROID</label>
+ <input type="checkbox" id="others" name="others" value="others">
+<label for="others"> Others, If any </label>
+<input type="checkbox" id="none" name="none" value="none">
+<label for="none"> None of the above </label>
+</div>                                                               
+                                                                                        </div>
+                                                                                    </div> 
+<br>
+<br>
+ <br>
+ 
+
+
+<div class="form-group row">
+  <label class="col-sm-6 col-form-label" style="font-weight:bold;">                                     
+4. Current Health Insurance Status: Do you currently have a health
+insurance policy?                                          </label>
+     <div class="col-sm-6">   
+ 
+<input type="radio" id="yes" name="medstatus" value="YES">
+<label for="yes">YES</label>
+ <input type="radio" id="no" name="medstatus" value="NO">
+<label for="no">NO</label>
+  
+</div></div>
+<br>
+<br>
+
+
+<div class="form-group row">
+                                               <label class="col-sm-12 col-form-label" style="font-weight:bold;">
+5. Existing Coverage Details </label>
+
+<div class="form-group row">                
+ 
+              <label class="col-sm-6 col-form-label" style="font-weight:bold;">
+                           <h3>     A. INSURANCE COMPANY</h3>
+-Which Insurance Provider do you use?
+                            </label>
+<div class="col-sm-6">
+<input type="text"  maxlength="30" size="30" style="width:300px;"> 
+    </div>
+ 
+<label class="col-sm-6 col-form-label" style="font-weight:bold;">
+<h3>B. SUM INSURED</h3>  
+ -What is your current policy's sum insured? </label>
+<div class="col-sm-6">
+<input type="text"  maxlength="30" size="30" style="width:300px;" id="si"> 
+    </div>
+
+<label class="col-sm-6 col-form-label" style="font-weight:bold;">
+<h3>C. POLICY COVERAGE</h3>  
+   - How long have you been covered under this policy?</label>
+<div class="col-sm-6">
+<input type="text"  maxlength="30" size="30" style="width:300px;" id="si"> 
+    </div>
+
+<label class="col-sm-6 col-form-label" style="font-weight:bold;">
+<h3>D. POLICY STATUS</h3>  
+   -- Is it INDIVIDUAL or FAMILY FLOATER?</label>
+<div class="col-sm-6">
+<input type="text"  maxlength="30" size="30" style="width:300px;" id="si"> 
+    </div>
+   
+</div> 
+<div class="form-group row">
+        <label class="col-sm-6 col-form-label" style="font-weight:bold;">           
+
+6. Medical Emergency Preparedness:
+Are you aware of current hospitalization costs in cities like Delhi/NCR?<br>
+Do you think ₹5 lakh coverage is enough today?
+</label>
+ <div class="col-sm-6">
+<input type="radio" id="yes" name="emergency" value="YES">
+<label for="yes">YES</label>
+ <input type="radio" id="no" name="emergency" value="NO">
+<label for="no">NO</label>
+ <input type="radio" id="may" name="emergency" value="may">
+<label for="may">MAY BE</label>
+</div></div>
+
+<br>
+<br> 
+<div class="form-group row">
+        <label class="col-sm-6 col-form-label" style="font-weight:bold;">           
+
+7. Have you or any family member faced a medical emergency in the last 3 years?
+</label>
+ <div class="col-sm-6">
+<input type="radio" id="yes" name="emergency" value="YES">
+<label for="yes">YES</label>
+ <input type="radio" id="no" name="emergency" value="NO">
+<label for="no">NO</label>
+ 
+</div></div>
+<br>
+<br>
+<div class="form-group row">
+        <label class="col-sm-6 col-form-label" style="font-weight:bold;">                 
+
+8. Reserved Medical Funds:</b> Do you have a separate fund or savings 
+specifically reserved for medical emergencies?
+</label>
+ <div class="col-sm-6">
+<input type="radio" id="yes" name="resmed" value="YES">
+<label for="yes">YES</label>
+ <input type="radio" id="no" name="resmed" value="NO">
+<label for="no">NO</label>
+ <input type="radio" id="may" name="resmed" value="may">
+<label for="may">MAY BE</label>
+</div></div>
+<br>
+
+<div class="form-group row">
+                                            <label class="col-sm-6 col-form-label" style="font-weight:bold;">
+9. Financial Impact of Medical Emergency: How
+concerned are you about the potential financial impact of a medical
+emergency on your family?  </label>
+ <div class="col-sm-6">
+<input type="radio" id="conc" name="finimpact" value="conc">
+<label for="conc">NOT CONCENRNED </label><br>
+ <input type="radio" id="sligconc" name="finimpact" value="sligconc">
+<label for="sligconc"> SLIGHTLY CONCERNED</label><br>
+ <input type="radio" id="veryconc" name="finimpact" value="veryconc">
+<label for="veryconc"> VERY MUCH CONCERNED</label>
+</div></div>
+
+<div class="form-group row">
+  <label class="col-sm-6 col-form-label" style="font-weight:bold;">                                     
+10. If a ₹5–10 lakh medical emergency happens, how will you manage?</label>
+                                   
+ <div class="col-sm-6">   
+ <input type="checkbox" id="p" name="p" value="p">
+<label for="p">HEALTH INSURANCE POLICY, already taken </label><br>
+  <input type="checkbox" id="mf" name="mf" value="mf">
+<label for="mf">RESERVED HEALTH CORPUS </label><br>
+ <input type="checkbox" id="s" name="s" value="s">
+<label for="s"> SAVINGS/FD </label><br>
+<input type="checkbox" id="bo" name="bo" value="bo">
+<label for="bo"> BORROWINGS </label><br>
+<input type="checkbox" id="none" name="none" value="none">
+<label for="none"> None of the above </label>
+</div>
+   </div> 
+
+<div class="form-group row">
+  <label class="col-sm-6 col-form-label" style="font-weight:bold;"> 
+11. What is the main reason if you don't have health insurance?
+                                   </label>
+ 
+     <div class="col-sm-6">   
+ <input type="checkbox" id="a" name="a" value="a">
+<label for="a"> Lack of awareness</label><br>
+<input type="checkbox" id="b" name="b" value="b">
+<label for="b"> Cost concerns </label><br>
+ <input type="checkbox" id="c" name="c" value="c">
+<label for="c">No need of any fund for medical
+emergencies </label><br>
+  <input type="checkbox" id="others" name="others" value="others">
+<label for="others"> Others, If any </label><br>
+<input type="checkbox" id="none" name="none" value="none">
+<label for="none"> None of the above </label>
+</div></div>
+<br>
+<br>
+<div class="form-group row">
+  <label class="col-sm-6 col-form-label" style="font-weight:bold;"> 
+12.   
+What Concerns you most about health insurance?
+                                   </label>
+ 
+     <div class="col-sm-6">   
+ <input type="checkbox" id="a" name="a" value="a">
+<label for="a"> HIGHER PREMIUMS</label><br>
+<input type="checkbox" id="b" name="b" value="b">
+<label for="b"> CLAIM REJECTIONS </label><br>
+ <input type="checkbox" id="c" name="c" value="c">
+<label for="c"> COMPLICATED PROCESS</label><br>
+  <input type="checkbox" id="others" name="others" value="others">
+<label for="others"> LACK OF TRUST</label><br>
+<input type="checkbox" id="none" name="none" value="none">
+<label for="none"> None of the above </label>
+</div></div>
+
+<div class="form-group row">
+  <label class="col-sm-6 col-form-label" style="font-weight:bold;"> 
+13.Consultation Preference:
+Would you like a free personalized health risk analysis for your family? 
+If yes, then Preferred mode:
+                                   </label>
+ 
+     <div class="col-sm-6">   
+ <input type="checkbox" id="a" name="a" value="a">
+<label for="a"> CALL</label><br>
+<input type="checkbox" id="b" name="b" value="b">
+<label for="b"> WHATSAPP MESSAGES </label><br>
+ <input type="checkbox" id="c" name="c" value="c">
+<label for="c">IN-PERSON BRIEFING</label><br>
+ 
+<input type="checkbox" id="none" name="none" value="none">
+<label for="none"> None of the above </label>
+</div></div>
+
+                                 
+
+ <div class="form-group row">
+                                                <label class="col-sm-6">
+                                             14. If any policy document exists. Please upload Document
+                                          </label>
+
+       <div class="col-sm-6">
+  <input type="file" id="files" name="files" multiple> 
+  </div>
+                                                        </div>
+<br>
+   
+   </fieldset>
+
+<div class="intro" style="color:white;font-size:25px;">
+<p>Thank you for taking the time to complete this questionnaire! 🙏 Your
+input is invaluable in helping us understand your health insurance
+needs and medical emergency preparedness. I appreciate your time
+and honesty in sharing your thoughts and concerns
+</p>
+</div>
+
+<div class="intro">
+ <h2 id="feedback" style="text-align:center;">FEEDBACK FORM</b>  </h2>  
+
+<p>Please spare your valubale moments to fill up attached <b>FEEDBACK FORM</b> in order to understand Health Management Strategy (HMS) in a better way & consequently let's navigate towards an effective Health Management Strategy to safeguard our health as well as  medical expenses due to unforseen medical emergencies. Plese click the  button to fill up this brief Health Survey Form.  </p>
+ </div>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSemtYqq2uhJ2KY9MPtYos7Fln_5xNvqasLrXdk77a0-9gFXMg/viewform?usp=sharing&ouid=110655948174661466563"  target="_blank" class="btn btn-primary btn-lg" role="button"><strong>Click here for  HEALTH SURVEY  FORM </strong></a>
+ 
+  <button onclick="html2pdf(document.body)">Download Full Page PDF</button>
+ 
+ 
+ <div class="form-group row">
+  
+  <div class="button01">
+<button onclick="window.print()">CLICK ME TO PRINT OR GET PDF VERSION</button>
+
+ <a href="https://girish8360.github.io/amli/GIRISH-LEAFLET.htm"  target="_blank" class="btn btn-primary btn-lg" role="button"><b>HOME PAGE</b></a> 
+</div>
+ 
+<header class="py-3">
+    <div class="col-sm-12">
+    <div class="row align-items-center text-center text-md-start">
+
+      <!-- Logo -->
+      <div class="col-12 col-md-3 mb-2 mb-md-0 text-align:left;">
+        <img  src="https://raw.githubusercontent.com/girish8360/amli/main/nb.jpg"
+          class="img-fluid"
+          style="max-height:90px;"
+          alt="Logo">
+      </div>
+
+      <!-- Name & Designation -->
+      <div class="col-12 col-md-6 text-center">
+        <h2 class="fw-bold mb-1" style="color:azure;">
+        <strong>  GIRISH GAUR</strong>
+        </h2>
+        <h3 class="fw-semibold" style="color:azure;">
+          <strong>Advisor,<br> NIVA BUPA HEALTH INSURANCE</strong>
+        </h3>
+      </div>
+       </div>
+     <div class="form-group row">
+
+    <div class="col-sm-12">
+
+<table class="table custom-media" style="width:96%;border:transparent;text-align:left:">
+<tr>
+<td style="background:maroon;color:white;"><i class="fa-solid fa-phone" style="background:maroon;font-size:40px"></i> <span style="font-weight:bold;font-size:20px;">+91-790-628-4866 <br> 885-966-2533</span> </td>
+ 
+
+  <td style="background:maroon;color:white;">
+ <i class="fa-brands fa-whatsapp" style="background:darkgreen;color: white;font-size:40px"></i>  <span style="font-weight:bold;font-size:20px;">+91-790-628-4866 <br> 885-966-2533</span></td>
+ 
+
+  <td style="background:maroon;color:white;">
+  <i class="fa-solid fa-at" style="font-size:20px;"></i> 
+ 
+<span style="font-weight:bold;font-size:20px;">
+ <a href="mailto:girish.garry4u@gmail.com"  style="color:#fff;font-size:20px">girish.garry4u@gmail.com</a>  <br>
+                <a href="mailto:girish.gaur@rediffmail.com" style="color:#fff;">girish.gaur@rediffmail.com</a>  </span>  </td> 
+ 
+<td style="background:maroon;color:white;"><i class="fas fa-map-marker-alt"  style="font-size:30px"></i>      <span style="font-weight:bold;font-size:20px;">   NIVA BUPA HEALTH  INSURANCE <br>G-17 & G-24<br>UPPER GROUND  FLOOR ,<br> PARSVNATH PLAZA <br>
+COURT  ROAD<br>SAHARANPUR-247001 (U.P.)  </span></td> 
+
+
+</table>
+</div> </div> 
+   
+ 
+ <p2  style="text-align:center;font-size:25px;color:#fff;">Compiled & Designed by: <b>GIRISH GAUR</b></p2>
+       
+           </div>
+                </div>
+           
+        </div>
+   
+  
+    </footer>
+</form>
+</div>
+</div>
+      </div>  
+</body>
+</html>
