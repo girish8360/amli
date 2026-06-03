@@ -234,14 +234,15 @@
     font-family: arial;
   }
 
-
-  .custom-media {
-    width: auto;
-    border-collapse: collapse;
-    border-spacing: 0;
+                 @media only screen and (max-width: 475px) {
+    .responsive {
+      width: 100%;
+    }
   }
 
+
   @media only screen and (max-width:475px) {
+
     .custom-media {
 
       th,
@@ -255,6 +256,35 @@
       }
     }
   }
+
+
+  .table {
+    width: auto;
+    background: darkblue;
+    margin-left: 50px;
+    paddding-left: 8px;
+    margin-right: 20px;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+
+  }
+
+  td {
+    padding: 5px;
+    border: 2px solid #fff;
+    color: white;
+    font-size: 25px;
+    font-weight: normal;
+    font-family: 'Times New Roman';
+  }
+
+  th {
+    background: gray;
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman';
+  }
+
 
   ol {
     font-size: 25px;
