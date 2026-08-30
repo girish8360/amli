@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Management Survey</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: maroon;
+            color: #fff;
+            border: 3px solid orange;
+        }
+
+        fieldset {
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        legend h2 {
+            margin: 0;
+            padding: 0 10px;
+        }
+
+        .question-label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            max-width: 400px;
+        }
+
+        .survey-section {
+            margin-top: 15px;
+        }
+
+        @media (max-width: 575px) {
+            .form-control {
+                max-width: 100%;
+            }
+
+            fieldset {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid px-2 px-sm-3 px-md-4 px-lg-5 py-3">
+
+        <form class="form-inline" action="submit.php" method="POST" enctype="multipart/form-data">
+
+            <!-- QUESTIONNAIRE INTEREST -->
+            <div class="form-group row mb-3">
+                <label class="col-sm-6 col-form-label question-label" style="font-size:18px;">
+                    Would you like to spare few moments to fill up this brief questionnaire?
+                </label>
+
+                <div class="col-sm-6">
+                    <input type="radio" id="questionnaire_yes" name="questionnaire_interest" value="YES" required>
+                    <label for="questionnaire_yes">YES</label>
+
+                    <input type="radio" id="questionnaire_no" name="questionnaire_interest" value="NO">
+                    <label for="questionnaire_no">NO</label>
+
+                    <input type="radio" id="questionnaire_maybe" name="questionnaire_interest" value="MAY BE LATER">
+                    <label for="questionnaire_maybe">MAY BE LATER</label>
+                </div>
+            </div>
+
+            <fieldset style="border:2px solid orange;">
+                <legend>
+                    <h2 class="text-center">PERSONAL INFORMATION</h2>
+                </legend>
+
+                <!-- FULL NAME -->
+                <div class="form-group row mb-3">
+                    <label class="col-sm-6 col-form-label question-label">
+                        FULL NAME :
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="fname" name="full_name"
+                            placeholder="Enter FULL NAME" maxlength="100" autocomplete="name" required>
+                    </div>
+                </div>
+
+                <!-- DATE OF BIRTH -->
+                <div class="form-group row mb-3">
+                    <label class="col-sm-6 col-form-label question-label">
+                        DATE OF BIRTH :
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="date" class="form-control" id="dob" name="dob" style="width:200px;" required>
+                    </div>
+                </div>
+
+                <!-- SEX -->
+                <div class="form-group row mb-3">
+                    <label class="col-sm-6 col-form-label question-label">
+                        SEX :
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="radio" name="gender" value="Male" class="form-check-input" id="malecheck" required>
+                        <label for="malecheck" class="form-check-label">MALE</label>
+
+                        <div class="form-check form-check-inline ms-3">
+                            <input type="radio" name="gender" value="Female" class="form-check-input" id="femalecheck">
+                            <label for="femalecheck" class="form-check-label">FEMALE</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MARITAL STATUS -->
+                <div class="form-group row mb-3">
+                    <label class="col-sm-6 col-form-label question-label">
+                        MARITAL STATUS :
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="radio" name="marital_status" value="Married" class="form-check-input" id="married"
+                            required>
+                        <label for="married" class="form-check-label">Married</label>
+
+                        <div class="form-check form-check-inline ms-3">
+                            <input type="radio" name="marital_status" value="Single" class="form-check-input"
+                                id="single">
+                            <label for="single" class="form-check-label">Single</label>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="text-center mt-4">CONTACT DETAILS</h2>
+
+                <!-- MOBILE -->
+                <div class="form-group row mb-3">
+                    <label class="col-sm-6 col-form-label question-label">
+                        CONTACT No.
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="tel" id="mob" name="mobile" class="form-control" maxlength="15"
+                            placeholder="Enter mobile number" inputmode="numeric" pattern="[0-9+\-\s]{10,15}"
+                            autocomplete="tel" required>
+                    </div>
+                </div>
+
+                <!-- EMAIL -->
+                <div class="form-group row mb-3">
+                    <label class="col-sm-6 col-form-label question-label">
+                        Email ID
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="email" id="email" name="email" class="form-control" maxlength="150"
+                            placeholder="Enter email" autocomplete="email">
+                    </div>
+                </div>
+
+                <!-- CITY -->
+                <div class="form-group row mb-3">
+                    <label class="col-sm-6 col-form-label">
+                        CITY as per Permanent Address ID:
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="text" id="city" name="city" class="form-control" maxlength="60" placeholder="City"
+                            autocomplete="address-level2">
+                    </div>
+                </div>
+
+                <!-- STATE -->
+                <div class="form-group row mb-3">
+                    <label class="col-sm-6 col-form-label">
+                        STATE as per Permanent Address ID:
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="text" id="state" name="state" class="form-control" maxlength="60"
+                            placeholder="State" autocomplete="address-level1">
+                    </div>
+                </div>
+
+                <h2 class="text-center mt-4">HEALTH MANAGEMENT SURVEY (HMS)</h2>
+
+                <!-- Q1 -->
+                <div class="form-group row mb-3">
+                    <label class="col-sm-6 col-form-label question-label">
+                        1. ANNUAL INCOME (approx)
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="number" id="income" name="annual_income" class="form-control" min="0" step="0.01"
+                            placeholder="ANNUAL INCOME">
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="form-group row mb-3">
+                    <label class="col-sm-6 col-form-label question-label">
+                        2. No. of Dependents (You, Spouse & Kids):
+                        <br>(In case of FAMILY FLOATER)
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="number" id="dependent" name="dependents" class="form-control" min="0" max="20"
+                            step="1">
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="form-group row mb-4">
+                    <label class="col-sm-6 col-form-label question-label">
+                        3. Any Pre Existing Disease as per your Medical History as on Date
+                    </label>
+                    <div class="col-sm-6">
+
+                        <input type="checkbox" id="ped_diabetes" name="ped_diabetes" value="1">
+                        <label for="ped_diabetes">DIABETES</label>
+
+                        <input type="checkbox" id="ped_hypertension" name="ped_hypertension" value="1">
+                        <label for="ped_hypertension">HYPERTENSION</label>
+
+                        <input type="checkbox" id="ped_cardiac" name="ped_cardiac" value="1">
+                        <label for="ped_cardiac">CARDIAC DISEASE</label>
+
+                        <br>
+
+                        <input type="checkbox" id="ped_thyroid" name="ped_thyroid" value="1">
+                        <label for="ped_thyroid">THYROID</label>
+
+                        <input type="checkbox" id="ped_other" name="ped_other" value="1">
+                        <label for="ped_other">Others, If any</label>
+
+                        <input type="checkbox" id="ped_none" name="ped_none" value="1">
+                        <label for="ped_none">None of the above</label>
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="form-group row mb-4">
+                    <label class="col-sm-6 col-form-label question-label">
+                        4. Current Health Insurance Status:
+                        Do you currently have a health insurance policy?
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="radio" id="insurance_yes" name="has_health_insurance" value="YES" required>
+                        <label for="insurance_yes">YES</label>
+
+                        <input type="radio" id="insurance_no" name="has_health_insurance" value="NO">
+                        <label for="insurance_no">NO</label>
+                    </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="form-group row mb-4">
+                    <label class="col-12 col-form-label question-label">
+                        5. Existing Coverage Details
+                    </label>
+
+                    <div class="row">
+
+                        <!-- A -->
+                        <div class="col-12 col-md-6 mb-3">
+                            <label class="form-label question-label">
+                                A. INSURANCE COMPANY<br>
+                                - Which Insurance Provider do you use?
+                            </label>
+                            <input type="text" name="insurance_company" class="form-control" maxlength="100"
+                                placeholder="Insurance Company">
+                        </div>
+
+                        <!-- B -->
+                        <div class="col-12 col-md-6 mb-3">
+                            <label class="form-label question-label">
+                                B. SUM INSURED<br>
+                                - What is your current policy's sum insured?
+                            </label>
+                            <input type="text" name="current_sum_insured" class="form-control" maxlength="50"
+                                placeholder="e.g. ₹5 Lakh">
+                        </div>
+
+                        <!-- C -->
+                        <div class="col-12 col-md-6 mb-3">
+                            <label class="form-label question-label">
+                                C. POLICY COVERAGE<br>
+                                - How long have you been covered under this policy?
+                            </label>
+                            <input type="text" name="policy_coverage_years" class="form-control" maxlength="30"
+                                placeholder="e.g. 5 years">
+                        </div>
+
+                        <!-- D -->
+                        <div class="col-12 col-md-6 mb-3">
+                            <label class="form-label question-label">
+                                D. POLICY STATUS<br>
+                                - Is it INDIVIDUAL or FAMILY FLOATER?
+                            </label>
+                            <select name="policy_type" class="form-select" style="max-width:400px;">
+                                <option value="">Please select</option>
+                                <option value="Individual">Individual</option>
+                                <option value="Family Floater">Family Floater</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Q6 -->
+                <div class="form-group row mb-4">
+                    <label class="col-sm-6 col-form-label question-label">
+                        6. Medical Emergency Preparedness:<br>
+                        Are you aware of current hospitalization costs in cities like Delhi/NCR?<br>
+                        Do you think ₹5 lakh coverage is enough today?
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="radio" id="costaware_yes" name="hospitalization_cost_awareness" value="YES"
+                            required>
+                        <label for="costaware_yes">YES</label>
+
+                        <input type="radio" id="costaware_no" name="hospitalization_cost_awareness" value="NO">
+                        <label for="costaware_no">NO</label>
+
+                        <input type="radio" id="costaware_maybe" name="hospitalization_cost_awareness" value="MAY BE">
+                        <label for="costaware_maybe">MAY BE</label>
+                    </div>
+                </div>
+
+                <!-- Q7 -->
+                <div class="form-group row mb-4">
+                    <label class="col-sm-6 col-form-label question-label">
+                        7. Have you or any family member faced a medical emergency in the last 3 years?
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="radio" id="emergency3_yes" name="medical_emergency_3yr" value="YES" required>
+                        <label for="emergency3_yes">YES</label>
+
+                        <input type="radio" id="emergency3_no" name="medical_emergency_3yr" value="NO">
+                        <label for="emergency3_no">NO</label>
+                    </div>
+                </div>
+
+                <!-- Q8 -->
+                <div class="form-group row mb-4">
+                    <label class="col-sm-6 col-form-label question-label">
+                        8. Reserved Medical Funds:
+                        Do you have a separate fund or savings specifically reserved for medical emergencies?
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="radio" id="resmed_yes" name="reserved_medical_fund" value="YES" required>
+                        <label for="resmed_yes">YES</label>
+
+                        <input type="radio" id="resmed_no" name="reserved_medical_fund" value="NO">
+                        <label for="resmed_no">NO</label>
+
+                        <input type="radio" id="resmed_maybe" name="reserved_medical_fund" value="MAY BE">
+                        <label for="resmed_maybe">MAY BE</label>
+                    </div>
+                </div>
+
+                <!-- Q9 -->
+                <div class="form-group row mb-4">
+                    <label class="col-sm-6 col-form-label question-label">
+                        9. Financial Impact of Medical Emergency:
+                        How concerned are you about the potential financial impact of a medical emergency on your
+                        family?
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="radio" id="not_concerned" name="financial_impact_concern" value="NOT CONCERNED"
+                            required>
+                        <label for="not_concerned">NOT CONCERNED</label><br>
+
+                        <input type="radio" id="slightly_concerned" name="financial_impact_concern"
+                            value="SLIGHTLY CONCERNED">
+                        <label for="slightly_concerned">SLIGHTLY CONCERNED</label><br>
+
+                        <input type="radio" id="very_concerned" name="financial_impact_concern"
+                            value="VERY MUCH CONCERNED">
+                        <label for="very_concerned">VERY MUCH CONCERNED</label>
+                    </div>
+                </div>
+
+                <!-- Q10 -->
+                <div class="form-group row mb-4">
+                    <label class="col-sm-6 col-form-label question-label">
+                        10. If a ₹5–10 lakh medical emergency happens, how will you manage?
+                    </label>
+
+                    <div class="col-sm-6">
+
+                        <input type="checkbox" id="em_insurance" name="emergency_management[]"
+                            value="HEALTH INSURANCE POLICY, already taken">
+                        <label for="em_insurance">HEALTH INSURANCE POLICY, already taken</label><br>
+
+                        <input type="checkbox" id="em_corpus" name="emergency_management[]"
+                            value="RESERVED HEALTH CORPUS">
+                        <label for="em_corpus">RESERVED HEALTH CORPUS</label><br>
+
+                        <input type="checkbox" id="em_savings" name="emergency_management[]" value="SAVINGS/FD">
+                        <label for="em_savings">SAVINGS/FD</label><br>
+
+                        <input type="checkbox" id="em_borrowings" name="emergency_management[]" value="BORROWINGS">
+                        <label for="em_borrowings">BORROWINGS</label><br>
+
+                        <input type="checkbox" id="em_none" name="emergency_management[]" value="NONE OF THE ABOVE">
+                        <label for="em_none">None of the above</label>
+                    </div>
+                </div>
+
+                <!-- Q11 -->
+                <div class="form-group row mb-4">
+                    <label class="col-sm-6 col-form-label question-label">
+                        11. What is the main reason if you don't have health insurance?
+                    </label>
+
+                    <div class="col-sm-6">
+
+                        <input type="checkbox" id="reason_awareness" name="no_insurance_reason[]"
+                            value="Lack of awareness">
+                        <label for="reason_awareness">Lack of awareness</label><br>
+
+                        <input type="checkbox" id="reason_cost" name="no_insurance_reason[]" value="Cost concerns">
+                        <label for="reason_cost">Cost concerns</label><br>
+
+                        <input type="checkbox" id="reason_noneed" name="no_insurance_reason[]"
+                            value="No need of any fund for medical emergencies">
+                        <label for="reason_noneed">No need of any fund for medical emergencies</label><br>
+
+                        <input type="checkbox" id="reason_other" name="no_insurance_reason[]" value="Others">
+                        <label for="reason_other">Others, If any</label><br>
+
+                        <input type="checkbox" id="reason_none" name="no_insurance_reason[]" value="None of the above">
+                        <label for="reason_none">None of the above</label>
+                    </div>
+                </div>
+
+                <!-- Q12 -->
+                <div class="form-group row mb-4">
+                    <label class="col-sm-6 col-form-label question-label">
+                        12. What Concerns you most about health insurance?
+                    </label>
+
+                    <div class="col-sm-6">
+
+                        <input type="checkbox" id="concern_premium" name="insurance_concerns[]" value="HIGHER PREMIUMS">
+                        <label for="concern_premium">HIGHER PREMIUMS</label><br>
+
+                        <input type="checkbox" id="concern_claim" name="insurance_concerns[]" value="CLAIM REJECTIONS">
+                        <label for="concern_claim">CLAIM REJECTIONS</label><br>
+
+                        <input type="checkbox" id="concern_process" name="insurance_concerns[]"
+                            value="COMPLICATED PROCESS">
+                        <label for="concern_process">COMPLICATED PROCESS</label><br>
+
+                        <input type="checkbox" id="concern_trust" name="insurance_concerns[]" value="LACK OF TRUST">
+                        <label for="concern_trust">LACK OF TRUST</label><br>
+
+                        <input type="checkbox" id="concern_none" name="insurance_concerns[]" value="None of the above">
+                        <label for="concern_none">None of the above</label>
+                    </div>
+                </div>
+
+                <!-- Q13 -->
+                <div class="form-group row mb-4">
+                    <label class="col-sm-6 col-form-label question-label">
+                        13. Consultation Preference:<br>
+                        Would you like a free personalized health risk analysis for your family?<br>
+                        If yes, then Preferred mode:
+                    </label>
+
+                    <div class="col-sm-6">
+
+                        <input type="checkbox" id="consult_call" name="consultation_mode[]" value="CALL">
+                        <label for="consult_call">CALL</label><br>
+
+                        <input type="checkbox" id="consult_whatsapp" name="consultation_mode[]"
+                            value="WHATSAPP MESSAGES">
+                        <label for="consult_whatsapp">WHATSAPP MESSAGES</label><br>
+
+                        <input type="checkbox" id="consult_person" name="consultation_mode[]"
+                            value="IN-PERSON BRIEFING">
+                        <label for="consult_person">IN-PERSON BRIEFING</label><br>
+
+                        <input type="checkbox" id="consult_none" name="consultation_mode[]" value="None of the above">
+                        <label for="consult_none">None of the above</label>
+                    </div>
+                </div>
+
+                <!-- Q14 -->
+                <div class="form-group row mb-4">
+                    <label class="col-sm-6 col-form-label question-label">
+                        14. If any policy document exists. Please upload Document
+                    </label>
+
+                    <div class="col-sm-6">
+                        <input type="file" id="files" name="files[]" class="form-control" multiple
+                            accept=".pdf,.jpg,.jpeg,.png">
+                        <small class="text-muted">
+                            Allowed: PDF, JPG, JPEG, PNG. Maximum 5 files, 5 MB each.
+                        </small>
+                    </div>
+                </div>
+
+                <!-- SUBMIT -->
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-primary btn-lg px-5">
+                        SUBMIT HEALTH SURVEY
+                    </button>
+
+                    <button type="reset" class="btn btn-secondary btn-lg px-4 ms-2">
+                        RESET
+                    </button>
+                </div>
+
+            </fieldset>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
