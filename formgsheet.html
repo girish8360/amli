@@ -72,107 +72,149 @@ color:#fff;
                        required>
             </div>
         </div>
+            
+                <!-- DATE OF BIRTH -->
+                <div class="form-group row mb-3">
+                    <label class="col-sm-6 col-form-label question-label">
+                        DATE OF BIRTH :
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="date" class="form-control" id="dob" name="data[dob]" style="width:200px;" required>
+                    </div>
+                </div>
 
-        <!-- DATE OF BIRTH -->
-        <div class="form-group row mb-3">
-            <label class="col-sm-6 col-form-label question-label">
-                DATE OF BIRTH :
-            </label>
-            <div class="col-sm-6">
-                <input type="date"
-                       class="form-control"
-                       id="dob"
-                       name="data[dob]"
-                       style="width:200px;"
-                       required>
-            </div>
-        </div>
 
-         
-        <h2 class="text-center mt-4">CONTACT DETAILS</h2>
+                <h2 class="text-center mt-4">CONTACT DETAILS</h2>
 
-        <!-- MOBILE -->
-        <div class="form-group row mb-3">
-            <label class="col-sm-6 col-form-label question-label">
-                CONTACT No.
-            </label>
-            <div class="col-sm-6">
-                <input type="tel"
-                       id="mob"
-                       name="data[mobile]"
-                       class="form-control"
-                       maxlength="15"
-                       placeholder="Enter mobile number"
-                       inputmode="numeric"
-                       pattern="[0-9+\-\s]{10,15}"
-                       autocomplete="tel"
-                       required>
-            </div>
-        </div>
+                <!-- MOBILE -->
+                <div class="form-group row mb-3">
+                    <label class="col-sm-6 col-form-label question-label">
+                        CONTACT No.
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="tel" id="mob" name="data[mobile]" class="form-control" maxlength="15"
+                            placeholder="Enter mobile number" inputmode="numeric" pattern="[0-9+\-\s]{10,15}"
+                            autocomplete="tel" required>
+                    </div>
+                </div>
 
-        <!-- EMAIL -->
-        <div class="form-group row mb-3">
-            <label class="col-sm-6 col-form-label question-label">
-                Email ID
-            </label>
-            <div class="col-sm-6">
-                <input type="email"
-                       id="email"
-                       name="data[email]"
-                       class="form-control"
-                       maxlength="150"
-                       placeholder="Enter email"
-                       autocomplete="email">
-            </div>
-        </div>
+                <!-- EMAIL -->
+                <div class="form-group row mb-3">
+                    <label class="col-sm-6 col-form-label question-label">
+                        Email ID
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="email" id="email" name="data[email]" class="form-control" maxlength="150"
+                            placeholder="Enter email" autocomplete="email">
+                    </div>
+                </div>
+                <!-- GENDER -->
+                <div class="form-group row mb-3">
 
-        <!-- CITY -->
-        <div class="form-group row mb-3">
-            <label class="col-sm-6 col-form-label">
-                CITY as per Permanent Address ID:
-            </label>
-            <div class="col-sm-6">
-                <input type="text"
-                       id="city"
-                       name="data[city]"
-                       class="form-control"
-                       maxlength="60"
-                       placeholder="City"
-                       autocomplete="address-level2">
-            </div>
-        </div>
+                    <label class="col-sm-6 col-form-label question-label">
+                        GENDER :
+                    </label>
 
-        <!-- STATE -->
-        <div class="form-group row mb-3">
-            <label class="col-sm-6 col-form-label">
-                STATE as per Permanent Address ID:
-            </label>
-            <div class="col-sm-6">
-                <input type="text"
-                       id="state"
-                       name="data[state]"
-                       class="form-control"
-                       maxlength="60"
-                       placeholder="State"
-                       autocomplete="address-level1">
-            </div>
-        </div>
+                    <div class="col-sm-6">
 
-                 <!-- SUBMIT -->
-        <div class="text-center mt-4">
-            <button type="submit" class="btn btn-primary btn-lg px-5">
-                SUBMIT HEALTH SURVEY
-            </button>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="data[gender]" id="male" value="Male"
+                                required>
 
-            <button type="reset" class="btn btn-secondary btn-lg px-4 ms-2">
-                RESET
-            </button>
-        </div>
+                            <label class="form-check-label" for="male">
+                                Male
+                            </label>
+                        </div>
 
-    </fieldset>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="data[gender]" id="female" value="Female">
 
-</form>
+                            <label class="form-check-label" for="female">
+                                Female
+                            </label>
+                        </div>
 
+                    </div>
+
+                </div>
+                <!-- INSURANCE TYPE -->
+                <div class="form-group row mb-3">
+
+                    <label class="col-sm-6 col-form-label question-label">
+                        INSURANCE REQUIREMENT :
+                    </label>
+
+                    <div class="col-sm-6">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="data[insurance_type]" id="life_insurance"
+                                value="Life Insurance" required>
+
+                            <label class="form-check-label" for="life_insurance">
+                                LIFE INSURANCE
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="data[insurance_type]"
+                                id="health_insurance" value="Health Insurance">
+
+                            <label class="form-check-label" for="health_insurance">
+                                HEALTH INSURANCE
+                            </label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- CITY -->
+                <div class="form-group row mb-3">
+                    <label class="col-sm-6 col-form-label">
+                        CITY as per Permanent Address ID:
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="text" id="city" name="data[city]" class="form-control" maxlength="60"
+                            placeholder="City" autocomplete="address-level2">
+                    </div>
+                </div>
+
+                <!-- STATE -->
+                <div class="form-group row mb-3">
+                    <label class="col-sm-6 col-form-label">
+                        STATE as per Permanent Address ID:
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="text" id="state" name="data[state]" class="form-control" maxlength="60"
+                            placeholder="State" autocomplete="address-level1">
+                    </div>
+                </div>
+                <!-- MESSAGE -->
+                <div class="form-group row mb-3">
+                    <label class="col-sm-6 col-form-label">
+                        PLEASE PROVIDE ANY ADDITIONAL INFORMATION OR COMMENTS:
+                    </label>
+                    <div class="col-sm-6">
+                        <textarea name="data[message]" id="message" rows="10" cols="30" class="form-control"
+                            maxlength="500" placeholder="Additional information or comments"
+                            autocomplete="address-level1"></textarea>
+                    </div>
+
+                    <!-- SUBMIT -->
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary btn-lg px-5">
+                            SUBMIT
+                        </button>
+
+                        <button type="reset" class="btn btn-secondary btn-lg px-4 ms-2">
+                            RESET
+                        </button>
+                    </div>
+
+            </fieldset>
+
+        </form>
+           
 </div>
 
 </body>
