@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Girish Gaur - Advisor at Niva Bupa Health Insurance, Saharanpur, India">
+  <title>LIFE INSURANCE-BASICS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+<style>
+  body {
+    font-family: 'Times New Roman';
+    background: #fff;
+  }
+
+  .intro {
+    font-size: small;
+    text-align: justify;
+    font-weight: 18px;
+    background: darkblue;
+
+    font-family: 'Times New Roman';
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 10px;
+    border: 2px solid white;
+
+  }
+
+  .hero {
+    background: linear-gradient(90deg, #003366, #f17a2a);
+    color: azure;
+    padding-left: 20px;
+    padding-right: 15px;
+    border: 2px solid maroon;
+  }
+
+  .hero-img {
+    width: 25%;
+    height: 25%;
+
+    height: auto;
+    display: block;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+    object-fit: cover;
+  }
+
+  .card {
+    transition: .4s;
+    box-shadow: 15px 18px darkblue;
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+  }
+
+  footer ul {
+    padding-left: 0;
+  }
+
+  footer li {
+    padding: 4px 0;
+  }
+
+  .navbar .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+
+  .table td,
+  .table th {
+    vertical-align: middle;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+  }
+
+  .table-responsive table {
+    width: max-content;
+    min-width: 700px;
+    border-collapse: collapse;
+    width: auto;
+    background: transparent;
+    margin-left: 5px;
+    margin-right: 20px;
+  }
+
+  .table-responsive th {
+    font-size: 13px;
+    padding: 10px;
+    white-space: nowrap;
+
+    color: azure;
+    text-align: center;
+  }
+
+  .table-responsive td {
+    font-size: 12px;
+    padding: 8px;
+    white-space: nowrap;
+    padding: 5px;
+    border: 2px solid #fff;
+
+  }
+
+  .pillars {
+    padding: 2mm 16mm 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    background: maroon;
+    color: #fff;
+  }
+
+  .pillar {
+    padding: 7mm 6mm 6mm 0;
+    border-top: 1px solid var(--hair);
+  }
+
+  .pillar:nth-child(n+4) {
+    border-top: 1px solid var(--hair);
+  }
+
+  .pillar-head {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    gap: 9px;
+    margin-bottom: 7px;
+  }
+
+  .pillar h3 {
+    font-family: 'Times New Roman', serif;
+    font-weight: 00;
+    font-size: 24px;
+    margin: 0;
+    color: var(--navy);
+  }
+
+  .container01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #4203a9, #90bafc);
+
+    color: #fff;
+  }
+
+  .calculator {
+    width: 100vw;
+    max-width: 400px;
+
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .calculator h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  .input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .input-box input {
+    flex: 1;
+    padding: 14px 20px;
+    border: 0;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 16px;
+    position: relative;
+  }
+
+  .input-box input::webkit-calendar-picker-indicator {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+
+    transform: translateY(-50%);
+
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .input-box button {
+    padding: 15px 30px;
+    border: 0;
+    height: auto;
+    border-radius: 5px;
+    background-color: #ffff76;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    background-color: #fff;
+  }
+
+  #result span {
+    font-weight: bold;
+    color: black;
+  }
+
+  fieldset {
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+
+  legend h2 {
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .question-label {
+    font-weight: bold;
+  }
+
+  .form-control {
+    max-width: 400px;
+  }
+
+  .survey-section {
+    margin-top: 15px;
+  }
+
+  @media (max-width: 575px) {
+    .form-control {
+      max-width: 100%;
+    }
+
+    fieldset {
+      padding: 12px;
+    }
+  }
+</style>
+
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="text-white py-3" style="background:maroon;border:3px solid #ffff;">
+    <div class="container-fluid">
+
+      <div class="row align-items-center">
+
+        <div class="col-lg-3">
+
+          <img src="https://raw.githubusercontent.com/girish8360/amli/main/GridArt_20250228_090331226.jpg"
+            class="img-fluid" width="180" style="float:left;">
+
+
+
+        </div>
+
+        <div class="col-lg-12 text-center">
+          <h1>GIRISH GAUR</h1>
+          <h4>IRDAI Certified Insurance Advisor</h4>
+          <h2>AXIS MAX LIFE INSURANCE<br>
+            NIVA BUPA HEALTH INSURANCE</h2>
+
+          <p class="mb-0">
+            Life • Health • Pension .Term Insurance . ULIP
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- ================= NAVBAR ================= -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">HOME</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#https://girish8360.github.io/amli/GIRISH-LEAFLET.htm"> About Us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Insurance Products </a>
+
+            <ul class="dropdown-menu">
+              <li> <a class="dropdown-item" href="#">
+                  AXIS MAX LIFE INSURANCE
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="#">
+                  TERM INSURANCE
+                </a>
+              </li>
+              <li> <a class="dropdown-item" href="#">
+                  SAVING/ENDOWMENT PRODUCTS
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  ANNUITY PRODUCTS
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  ULIP PRODUCTS
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  NIVA BUPA HEALTH INSURANCE
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="#">
+                  HEALTHCARE PRODUCTS
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="#">
+                  PERSONAL ACCIDENTS PRODUCT
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="#">
+                  TRAVEL INSURANCE PRODUCTS
+                </a>
+              </li>
+
+
+            </ul>
+
+          </li>
+
+          <li class="nav-item">
+
+            <a class="nav-link" href="#">
+              Contact
+            </a>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- ================= HERO ================= -->
+
+  <section class="container-fluid p-0">
+    <div class="hero">
+      <div class="hero-img">
+        <img src="https://raw.githubusercontent.com/girish8360/girish8360/main/girish_snap.jpg" class="img-fluid w-100"
+          style="border-radius: 55%;">
+      </div>
+      <h2 class="text-left"> GIRISH GAUR </h2>
+      <h5><i>B.Sc., M.A.(ECO), PGDCA, PGDBA, Cert Oracle 8i</i></h5>
+      <h4>Certified Insurance Advisor</h4>
+      <h3>AXIS MAX LIFE INSURANCE<br>
+        NIVA BUPA HEALTH INSURANCE</h3>
+    </div>
+  </section>
+
+  <!-- ================= WELCOME ================= -->
+
+  <section class="container my-5" style="background:darkblue;color:#fff;">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="intro">
+          <p style="font-size:22px;"> With a distinguished professional journey spanning over three decades, a dynamic
+            professional I have demonstrated consistent excellence across industries.<br>
+
+            I began my career at STAR PAPER MILLS LTD., SAHARANPUR (U.P.), an ISO-9001 Certified Company & one of the
+            major flagship company of DUNCAN GOENKA GROUP where I dedicated 30 years as a SOFTWARE EXECUTIVE, playing
+            a
+            pivotal role in System Networking Management, Servers Management, Softwares & OS installations &
+            maintenance,
+            Software troubleshooting & database Management & thus driving technology-led operational efficiencies,
+            system
+            integration and digital innovation. <br>
+
+            Building on this solid foundation, I have transitioned into the Insurance services sector, where I am now
+            serving as a Certified Insurance Advisor, AXIS MAX LIFE INSURANCE & NIVA BUPA HEALTH INSURANCE located at
+            Saharanpur.<br> In this role, I would bring my deep understanding of customer needs, analytical thinking &
+            personalized service delivery to help individuals and families secure their health & navigating them to
+            stronger financial futures.<br>
+
+            I am committed to helping you navigate your Insurance options to ensure that you & your loved ones have
+            comprehensive life coverage & to offer tailored life insurance solutions, ensuring comprehensive
+            protection
+            and long-term wealth creation for my clients<br>
+            My ultimate goal is to assist you in making informed decisions that can enhance your financial value &
+            life
+            security.<br>
+            Therefore I would be delighted to assist you with a focus on helping individuals and families secure their
+            financial future with a variety of life insurance & health insurance products tailored to your needs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CARDS ================= -->
+
+  <section class="container my-5">
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+
+        <div class="card h-100 shadow">
+
+          <img src="https://raw.githubusercontent.com/girish8360/amli/main/GridArt_20250228_090331226.jpg"
+            class="card-img-top" style="width:50%;height:20%;">
+          <span><a target="_blank"
+              href="https://raw.githubusercontent.com/girish8360/girish8360/main/GridArt_20250228_090331226.jpg"
+              width="100px;height:100px;" style="float:left;padding-left:10px;"></a>
+
+
+            <div class="card-body">
+
+              <h4>Life Insurance</h4>
+
+              <p>
+
+                Financial protection for your family.
+
+              </p>
+
+              <a target="_blank" href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm"
+                class="btn btn-primary">
+
+                Know More </a>
+
+            </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+
+        <div class="card h-100 shadow">
+
+          <img src="https://raw.githubusercontent.com/girish8360/amli/main/nb.jpg" class="card-img-top"
+            style="width:50%;height:30%;">
+
+
+          <div class="card-body">
+
+            <h4>Health Insurance</h4>
+
+            <p>
+
+              Cashless treatment across India.
+
+            </p>
+            <a href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM" target="_blank" class="btn btn-success">
+
+
+              Know More
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+  </section>
+
+  <!-- ================= TABLE ================= -->
+  <section class="container my-5" style="background:darkblue;color:#fff;">
+    <div class="row">
+      <div class="col-lg-12" <div class="container01">
+        <div class="calculator">
+          <h2>CALCULATE AGE PLEASE</h2>
+          <div class="input-box">
+            <input type="date" id="date">
+            <button onclick="calculateAge()">Calculate Age</button>
+          </div>
+          <p id="result"></p>
+
+          <script>
+            let userInput = document.getElementById('date');
+            userInput.max = new Date().toISOString().split("T")[0];
+            let result = document.getElementById('result');
+
+            function calculateAge() {
+              let birthDate = new Date(userInput.value);
+              let d1 = birthDate.getTime();
+              let m1 = birthDate.getMonth() + 1;
+              let y1 = birthDate.getFullYear();
+
+              let today = new Date();
+              let d2 = today.getDate();
+              let m2 = today.getMonth() + 1;
+              let y2 = today.getFullYear();
+
+              let d3, m3, y3;
+
+              y3 = y2 - y1;
+              if (m2 >= m1) {
+                m3 = m2 - m1;
+              } else {
+                y3--;
+                m3 = 12 + m2 - m1;
+              }
+
+              if (d2 >= d1) {
+                d3 = d2 - d1;
+              } else {
+                m3--;
+                d3 = getDaysInMonth(y1, m1) + d2 - d1;
+
+              }
+              if (m3 < 0) {
+                m3 = 11;
+                y3--;
+              }
+              result.innerHTML = `Your age is: <span>${y3}</span> years, <span>${m3}</span> months 
+    old`;
+            }
+            function getDaysInMonth(year, month) {
+              return new Date(year, month, 0).getDate();
+            }
+
+          </script>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- ================= CONTACT ================= -->
+    <div class="container-fluid px-2 px-sm-3 px-md-4 px-lg-5 py-3">
+      <form class="form-inline" action="https://sheetdb.io/api/v1/emf2ys13fr3un" method="POST">
+
+        <!-- QUESTIONNAIRE INTEREST -->
+        <fieldset style="border:2px solid orange;">
+          <legend>
+            <h2 class="text-center">PERSONAL INFORMATION</h2>
+          </legend>
+
+          <!-- FULL NAME -->
+          <div class="form-group row mb-3">
+            <label class="col-sm-6 col-form-label question-label">
+              FULL NAME :
+            </label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="name" name="data[full_name]" placeholder="Enter FULL NAME"
+                maxlength="100" autocomplete="name" required>
+            </div>
+          </div>
+
+          <!-- DATE OF BIRTH -->
+          <div class="form-group row mb-3">
+            <label class="col-sm-6 col-form-label question-label">
+              DATE OF BIRTH :
+            </label>
+            <div class="col-sm-6">
+              <input type="date" class="form-control" id="dob" name="data[dob]" style="width:200px;" required>
+            </div>
+          </div>
+
+          <!-- AGE -->
+          <div class="form-group row mb-3">
+            <label for="age" class="col-sm-6 col-form-label question-label"> AGE AS ON DATE : </label>
+            <div class="col-sm-6">
+              <input type="number" class="form-control" id="age" name="data[age]"
+                placeholder="Age will be calculated automatically" readonly required>
+            </div>
+          </div>
+
+          <h2 class="text-center mt-4">CONTACT DETAILS</h2>
+
+          <!-- MOBILE -->
+          <div class="form-group row mb-3">
+            <label class="col-sm-6 col-form-label question-label">
+              CONTACT No.
+            </label>
+            <div class="col-sm-6">
+              <input type="tel" id="mob" name="data[mobile]" class="form-control" maxlength="15"
+                placeholder="Enter mobile number" inputmode="numeric" pattern="[0-9+\-\s]{10,15}" autocomplete="tel"
+                required>
+            </div>
+          </div>
+
+          <!-- EMAIL -->
+          <div class="form-group row mb-3">
+            <label class="col-sm-6 col-form-label question-label">
+              Email ID
+            </label>
+            <div class="col-sm-6">
+              <input type="email" id="email" name="data[email]" class="form-control" maxlength="150"
+                placeholder="Enter email" autocomplete="email">
+            </div>
+          </div>
+          <!-- GENDER -->
+          <div class="form-group row mb-3">
+
+            <label class="col-sm-6 col-form-label question-label">
+              GENDER :
+            </label>
+
+            <div class="col-sm-6">
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="data[gender]" id="male" value="Male" required>
+
+                <label class="form-check-label" for="male">
+                  Male
+                </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="data[gender]" id="female" value="Female">
+
+                <label class="form-check-label" for="female">
+                  Female
+                </label>
+              </div>
+
+            </div>
+
+          </div>
+          <!-- INSURANCE TYPE -->
+          <div class="form-group row mb-3">
+
+            <label class="col-sm-6 col-form-label question-label">
+              INSURANCE REQUIREMENT :
+            </label>
+
+            <div class="col-sm-6">
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="data[insurance_type]" id="life_insurance"
+                  value="Life Insurance" required>
+
+                <label class="form-check-label" for="life_insurance">
+                  LIFE INSURANCE
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="data[insurance_type]" id="health_insurance"
+                  value="Health Insurance">
+
+                <label class="form-check-label" for="health_insurance">
+                  HEALTH INSURANCE
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="data[insurance_type]" id="both_insurance"
+                  value="Both Life & Health Insurance">
+
+                <label class="form-check-label" for="both_insurance">
+                  BOTH LIFE & HEALTH INSURANCE
+                </label>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- CITY -->
+          <div class="form-group row mb-3">
+            <label class="col-sm-6 col-form-label">
+              CITY as per Permanent Address ID:
+            </label>
+            <div class="col-sm-6">
+              <input type="text" id="city" name="data[city]" class="form-control" maxlength="60" placeholder="City"
+                autocomplete="address-level2">
+            </div>
+          </div>
+
+          <!-- STATE -->
+          <div class="form-group row mb-3">
+            <label class="col-sm-6 col-form-label">
+              STATE as per Permanent Address ID:
+            </label>
+            <div class="col-sm-6">
+              <input type="text" id="state" name="data[state]" class="form-control" maxlength="60" placeholder="State"
+                autocomplete="address-level1">
+            </div>
+          </div>
+          <!-- MESSAGE -->
+          <div class="form-group row mb-3">
+            <label class="col-sm-6 col-form-label">
+              PLEASE PROVIDE ANY ADDITIONAL INFORMATION OR COMMENTS:
+            </label>
+            <div class="col-sm-6">
+              <textarea name="data[message]" id="message" rows="10" cols="30" class="form-control" maxlength="500"
+                placeholder="Additional information or comments" autocomplete="address-level1"></textarea>
+            </div>
+
+            <!-- SUBMIT -->
+            <div class="text-center mt-4">
+              <button type="submit" class="btn btn-primary btn-lg px-5">
+                SUBMIT
+              </button>
+
+              <button type="reset" class="btn btn-secondary btn-lg px-4 ms-2">
+                RESET
+              </button>
+            </div>
+
+        </fieldset>
+
+      </form>
+
+    </div>
+    <!-- ================= AUTOMATIC AGE CALCULATOR ================= -->
+    <script>
+      // <--GETTING REFERENCES TO THE DATE OF BIRTH AND AGE INPUT FIELDS -->
+      const dobField = document.getElementById("dob");
+      const ageField = document.getElementById("age");
+
+      // <--Prevent selecting a future date -->
+
+      dobField.max = new Date().toISOString().split("T")[0];
+
+      // <--Calculate age automatically when DOB changes -->
+      dobField.addEventListener("change", function () {
+
+        // Get selected DOB
+
+        const dobValue = dobField.value;
+
+        if (!dobValue) { ageField.value = ""; return; }
+
+        // Convert DOB into Date object
+
+        const birthDate = new Date(dobValue + "T00:00:00");
+
+        const today = new Date();
+
+        // Calculate initial age
+
+        let age = today.getFullYear() - birthDate.getFullYear();
+
+        // Calculate whether birthday has occurred this year
+
+        const monthDifference = today.getMonth() - birthDate.getMonth();
+        const dayDifference = today.getDate() - birthDate.getDate();
+
+        // If birthday has not occurred yet, subtract one year
+
+        if (monthDifference < 0 || (monthDifference === 0 && dayDifference < 0)) { age--; }
+
+        // Put calculated age into Age field
+
+        ageField.value = age;
+      }); 
+    </script>
+
+    <div class="col-lg-6">
+
+
+    </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="bg-dark text-white mt-5 py-4">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4">
+
+          <h5>Insurance Advisory</h5>
+
+          <p>
+
+            Life Insurance<br>
+
+            Health Insurance<br>
+
+            Retirement Planning
+
+          </p>
+
+        </div>
+
+        <div class="col-md-4">
+
+          <h5>Quick Links</h5>
+
+          <ul class="list-unstyled">
+
+            <li>Home</li>
+
+            <li>Products</li>
+
+            <li>Contact</li>
+
+            <li>Privacy Policy</li>
+
+          </ul>
+
+        </div>
+
+        <div class="col-md-4">
+
+          <h5>Contact</h5>
+
+          Email<br>
+
+          Phone<br>
+
+          Address
+
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="text-center">
+
+        © 2026 GIRISH GAUR. All rights reserved.
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
