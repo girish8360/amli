@@ -22,9 +22,21 @@
 
 </head>
 <style>
+ <style>
   body {
     font-family: 'Times New Roman';
     background: #fff;
+  }
+
+  ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    font-size: 1.55rem;
   }
 
   .intro {
@@ -65,11 +77,11 @@
 
   .card {
     transition: .4s;
-    box-shadow: 15px 18px darkblue;
+    box-shadow: 25px 28px 20px dodgerblue;
   }
 
   .card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-15px);
   }
 
   footer ul {
@@ -163,7 +175,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 25vh;
     width: 100%;
     background: linear-gradient(135deg, #4203a9, #90bafc);
 
@@ -171,14 +183,14 @@
   }
 
   .calculator {
-    width: 100vw;
+    width: 75vw;
     max-width: 400px;
 
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
   }
 
-  .calculator h2 {
+  .calculator h3 {
     text-align: center;
     margin-bottom: 20px;
     color: #fff;
@@ -275,6 +287,63 @@
       padding: 12px;
     }
   }
+
+  .container04 {
+    position: relative;
+    float: center;
+
+  }
+
+  .clock {
+    width: 200px;
+    height: 200px;
+    border-radius: 60%;
+
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .clock span {
+    position: absolute;
+    transform: rotate(calc(30deg*var(--i)));
+    inset-block: 9px;
+    text-align: center;
+  }
+
+  .clock span b {
+    transform: rotate(calc(-30deg*var(--i)));
+    display: inline-block;
+    font-size: 23px;
+  }
+
+  .clock::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 2;
+  }
+
+  .hand {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .hand i {
+    position: absolute;
+    background: var(--clr);
+    width: 4px;
+    height: var(--h);
+    border-radius: 8px;
+  }
 </style>
 
 
@@ -290,7 +359,7 @@
         <div class="col-lg-3">
 
           <img src="https://raw.githubusercontent.com/girish8360/amli/main/GridArt_20250228_090331226.jpg"
-            class="img-fluid" width="180" style="float:left;">
+            class="img-fluid" width="280" style="float:left;">
 
 
 
@@ -421,421 +490,499 @@
 
   <section class="container-fluid p-0">
     <div class="hero">
-      <div class="hero-img">
-        <img src="https://raw.githubusercontent.com/girish8360/girish8360/main/girish_snap.jpg" class="img-fluid w-100"
-          style="border-radius: 55%;">
-      </div>
-      <h2 class="text-left"> GIRISH GAUR </h2>
-      <h5><i>B.Sc., M.A.(ECO), PGDCA, PGDBA, Cert Oracle 8i</i></h5>
+      <h1 class="text-left"> GIRISH GAUR </h1>
+      <h4 style="font-weight-bold;"><i>B.Sc., M.A.(ECO), PGDCASA, PGDBA, Cert Oracle 8i</i></h4>
       <h4>Certified Insurance Advisor</h4>
       <h3>AXIS MAX LIFE INSURANCE<br>
         NIVA BUPA HEALTH INSURANCE</h3>
-    </div>
-  </section>
-
-  <!-- ================= WELCOME ================= -->
-
-  <section class="container my-5" style="background:darkblue;color:#fff;">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="intro">
-          <p style="font-size:22px;"> With a distinguished professional journey spanning over three decades, a dynamic
-            professional I have demonstrated consistent excellence across industries.<br>
-
-            I began my career at STAR PAPER MILLS LTD., SAHARANPUR (U.P.), an ISO-9001 Certified Company & one of the
-            major flagship company of DUNCAN GOENKA GROUP where I dedicated 30 years as a SOFTWARE EXECUTIVE, playing
-            a
-            pivotal role in System Networking Management, Servers Management, Softwares & OS installations &
-            maintenance,
-            Software troubleshooting & database Management & thus driving technology-led operational efficiencies,
-            system
-            integration and digital innovation. <br>
-
-            Building on this solid foundation, I have transitioned into the Insurance services sector, where I am now
-            serving as a Certified Insurance Advisor, AXIS MAX LIFE INSURANCE & NIVA BUPA HEALTH INSURANCE located at
-            Saharanpur.<br> In this role, I would bring my deep understanding of customer needs, analytical thinking &
-            personalized service delivery to help individuals and families secure their health & navigating them to
-            stronger financial futures.<br>
-
-            I am committed to helping you navigate your Insurance options to ensure that you & your loved ones have
-            comprehensive life coverage & to offer tailored life insurance solutions, ensuring comprehensive
-            protection
-            and long-term wealth creation for my clients<br>
-            My ultimate goal is to assist you in making informed decisions that can enhance your financial value &
-            life
-            security.<br>
-            Therefore I would be delighted to assist you with a focus on helping individuals and families secure their
-            financial future with a variety of life insurance & health insurance products tailored to your needs.
-          </p>
-        </div>
+      <div class="hero-img">
+        <img src="https://raw.githubusercontent.com/girish8360/girish8360/main/girish_snap.jpg" class="img-fluid w-55"
+          style="border-radius: 55%;">
       </div>
-    </div>
-  </section>
-
-  <!-- ================= CARDS ================= -->
-
-  <section class="container my-5">
-
-    <div class="row g-4">
-
-      <div class="col-md-6 col-lg-4">
-
-        <div class="card h-100 shadow">
-
-          <img src="https://raw.githubusercontent.com/girish8360/amli/main/GridArt_20250228_090331226.jpg"
-            class="card-img-top" style="width:50%;height:20%;">
-          <span><a target="_blank"
-              href="https://raw.githubusercontent.com/girish8360/girish8360/main/GridArt_20250228_090331226.jpg"
-              width="100px;height:100px;" style="float:left;padding-left:10px;"></a>
 
 
-            <div class="card-body">
 
-              <h4>Life Insurance</h4>
 
-              <p>
+      <!-- ================= WELCOME ================= -->
 
-                Financial protection for your family.
+      <section class="container my-5" style="background:darkblue;color:#fff;">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="intro">
+              <h2>ABOUT ME</h2>
+              <p style="font-size:25px;">
 
+                With a distinguished professional journey spanning over three decades, a
+                dynamic
+                professional I have demonstrated consistent excellence across industries.<br>
+
+                I began my career at STAR PAPER MILLS LTD., SAHARANPUR (U.P.), an ISO-9001 Certified Company & one of
+                the
+                major flagship company of DUNCAN GOENKA GROUP where I dedicated 30 years as a SOFTWARE EXECUTIVE,
+                playing
+                a
+                pivotal role in System Networking Management, Servers Management, Softwares & OS installations &
+                maintenance,
+                Software troubleshooting & database Management & thus driving technology-led operational efficiencies,
+                system
+                integration and digital innovation. <br>
+
+                Building on this solid foundation, I have transitioned into the Insurance services sector, where I am
+                now
+                serving as a Certified Insurance Advisor, AXIS MAX LIFE INSURANCE & NIVA BUPA HEALTH INSURANCE located
+                at
+                Saharanpur.<br> In this role, I would bring my deep understanding of customer needs, analytical thinking
+                &
+                personalized service delivery to help individuals and families secure their health & navigating them to
+                stronger financial futures.<br>
+
+                I am committed to helping you navigate your Insurance options to ensure that you & your loved ones have
+                comprehensive life coverage & to offer tailored life insurance solutions, ensuring comprehensive
+                protection
+                and long-term wealth creation for my clients<br>
+                My ultimate goal is to assist you in making informed decisions that can enhance your financial value &
+                life
+                security.<br>
+                Therefore I would be delighted to assist you with a focus on helping individuals and families secure
+                their
+                financial future with a variety of life insurance & health insurance products tailored to your needs.
               </p>
+              <h3>CORE COMPETENCIES</h3>
+              <ol style="font-size: medium;">
+                <li>Life Insurance</li>
+                <li>Health Insurance</li>
+                <li>Retirement Planning</li>
+                <li>Term Insurance</li>
+                <li>ULIP</li>
+              </ol>
 
-              <a target="_blank" href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm"
-                class="btn btn-primary">
+            </div>
+          </div>
+        </div>
+      </section>
 
-                Know More </a>
+      <!-- ================= CARDS ================= -->
+
+      <section class="container my-5">
+
+        <div class="row g-4">
+
+          <div class="col-md-6 col-lg-4">
+
+            <div class="card h-100 shadow">
+
+              <img src="https://raw.githubusercontent.com/girish8360/amli/main/GridArt_20250228_090331226.jpg"
+                class="card-img-top" style="width:50%;height:20%;">
+              <span><a target="_blank"
+                  href="https://raw.githubusercontent.com/girish8360/girish8360/main/GridArt_20250228_090331226.jpg"
+                  width="100px;height:100px;" style="float:left;padding-left:10px;"></a>
+
+
+                <div class="card-body">
+
+                  <h3>Life Insurance</h3>
+                  <h5>Financial protection for your family.</h5>
+
+                  <a target="_blank" href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm"
+                    class="btn btn-primary">
+
+                    Know More </a>
+
+                </div>
 
             </div>
 
-        </div>
-
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-
-        <div class="card h-100 shadow">
-
-          <img src="https://raw.githubusercontent.com/girish8360/amli/main/nb.jpg" class="card-img-top"
-            style="width:50%;height:30%;">
-
-
-          <div class="card-body">
-
-            <h4>Health Insurance</h4>
-
-            <p>
-
-              Cashless treatment across India.
-
-            </p>
-            <a href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM" target="_blank" class="btn btn-success">
-
-
-              Know More
-
-            </a>
-
           </div>
 
+          <div class="col-md-6 col-lg-4">
+
+            <div class="card h-100 shadow">
+
+              <img src="https://raw.githubusercontent.com/girish8360/amli/main/nb.jpg" class="card-img-top"
+                style="width:50%;height:30%;">
+
+
+              <div class="card-body">
+
+                <h3>Health Insurance</h3>
+                <h5>Health Protection beating Medical Inflation.</h5>
+
+                </p>
+                <a href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM" target="_blank"
+                  class="btn btn-success">
+
+
+                  Know More
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
         </div>
 
-      </div>
+      </section>
 
 
+      <!-- ================= TIME MESSAGE ================= -->
+      <section class="container my-5" style="background:maroon;color:#fff;">
+        <div class="row">
+          <div class="col-lg-12">
+            <p style="font-family:Times New Roman;font-style:italic;font-size: 25px;"><strong>In a world that moves at
+                an
+                ever-accelerating pace, time is our most valuable & irreversible asset<br>
+                Time never slows down, and life never waits.<br> Make today the moment you choose to protect
+                what matters most—your health and your financial security. </strong></p>
 
-    </div>
+            <div class="col-12 col-md-3 d-flex justify-content-center mt-3 mt-md-0">
+              <div class="container04" style="background:transparent;">
+                <div class="clock">
+                  <!-- Clock -->
 
-  </section>
+                  <div style="--clr:#ff3d58; --h:55px;" id="hour" class="hand"><i></i></div>
+                  <div style="--clr:#00a6ff;  --h:70px;" id="min" class="hand"><i></i></div>
+                  <div style="--clr:#ffffff;  --h:90px;" id="sec" class="hand"><i></i></div>
 
-  <!-- ================= TABLE ================= -->
-  <section class="container my-5" style="background:darkblue;color:#fff;">
-    <div class="row">
-      <div class="col-lg-12" <div class="container01">
-        <div class="calculator">
-          <h2>CALCULATE AGE PLEASE</h2>
-          <div class="input-box">
-            <input type="date" id="date">
-            <button onclick="calculateAge()">Calculate Age</button>
+                  <span style="--i:1;"><b>1</b></span>
+                  <span style="--i:2;"><b>2</b></span>
+                  <span style="--i:3;"><b>3</b></span>
+                  <span style="--i:4;"><b>4</b></span>
+                  <span style="--i:5;"><b>5</b></span>
+                  <span style="--i:6;"><b>6</b></span>
+                  <span style="--i:7;"><b>7</b></span>
+                  <span style="--i:8;"><b>8</b></span>
+                  <span style="--i:9;"><b>9</b></span>
+                  <span style="--i:10;"><b>10</b></span>
+                  <span style="--i:11;"><b>11</b></span>
+                  <span style="--i:12;"><b>12</b></span>
+                </div>
+
+              </div>
+              <script>
+                let hr = document.getElementById('hour');
+                let min = document.getElementById('min');
+                let sec = document.getElementById('sec');
+
+                function displayTime() {
+                  let date = new Date();
+
+                  // Getting hour, mins, secs from date
+                  let hh = date.getHours();
+                  let mm = date.getMinutes();
+                  let ss = date.getSeconds();
+
+                  let hRotation = 30 * hh + mm / 2;
+                  let mRotation = 6 * mm;
+                  let sRotation = 6 * ss;
+
+
+                  hr.style.transform = `rotate(${hRotation}deg)`;
+                  // hr.style.transform = `rotate(${hRotation}deg)`;
+                  // hr.style.transform = `rotate(${hRotation}deg)`;
+                  min.style.transform = `rotate(${mRotation}deg)`;
+                  sec.style.transform = `rotate(${sRotation}deg)`;
+                }
+                setInterval(displayTime, 1000);
+              </script>
+            </div>
           </div>
-          <p id="result"></p>
 
-          <script>
-            let userInput = document.getElementById('date');
-            userInput.max = new Date().toISOString().split("T")[0];
-            let result = document.getElementById('result');
+      </section>
+      <!-- =================AGE CALCULATOR ================= -->
+      <section class="container my-5" style="background:darkblue;color:#fff;">
+        <div class="row">
+          <div class="col-lg-12">
 
-            function calculateAge() {
-              let birthDate = new Date(userInput.value);
-              let d1 = birthDate.getTime();
-              let m1 = birthDate.getMonth() + 1;
-              let y1 = birthDate.getFullYear();
+            <div class="container01">
+              <div class="calculator">
+                <h3>AGE CALCULATOR</h3>
+                <div class="input-box">
+                  <input type="date" id="date">
+                  <button onclick="calculateAge()">Calculate Age</button>
+                </div>
+                <p id="result"></p>
 
-              let today = new Date();
-              let d2 = today.getDate();
-              let m2 = today.getMonth() + 1;
-              let y2 = today.getFullYear();
+                <script>
+                  let userInput = document.getElementById('date');
+                  userInput.max = new Date().toISOString().split("T")[0];
+                  let result = document.getElementById('result');
 
-              let d3, m3, y3;
+                  function calculateAge() {
+                    let birthDate = new Date(userInput.value);
+                    let d1 = birthDate.getTime();
+                    let m1 = birthDate.getMonth() + 1;
+                    let y1 = birthDate.getFullYear();
 
-              y3 = y2 - y1;
-              if (m2 >= m1) {
-                m3 = m2 - m1;
-              } else {
-                y3--;
-                m3 = 12 + m2 - m1;
-              }
+                    let today = new Date();
+                    let d2 = today.getDate();
+                    let m2 = today.getMonth() + 1;
+                    let y2 = today.getFullYear();
 
-              if (d2 >= d1) {
-                d3 = d2 - d1;
-              } else {
-                m3--;
-                d3 = getDaysInMonth(y1, m1) + d2 - d1;
+                    let d3, m3, y3;
 
-              }
-              if (m3 < 0) {
-                m3 = 11;
-                y3--;
-              }
-              result.innerHTML = `Your age is: <span>${y3}</span> years, <span>${m3}</span> months 
+                    y3 = y2 - y1;
+                    if (m2 >= m1) {
+                      m3 = m2 - m1;
+                    } else {
+                      y3--;
+                      m3 = 12 + m2 - m1;
+                    }
+
+                    if (d2 >= d1) {
+                      d3 = d2 - d1;
+                    } else {
+                      m3--;
+                      d3 = getDaysInMonth(y1, m1) + d2 - d1;
+
+                    }
+                    if (m3 < 0) {
+                      m3 = 11;
+                      y3--;
+                    }
+                    result.innerHTML = `Your age is: <span>${y3}</span> years, <span>${m3}</span> months 
     old`;
-            }
-            function getDaysInMonth(year, month) {
-              return new Date(year, month, 0).getDate();
-            }
+                  }
+                  function getDaysInMonth(year, month) {
+                    return new Date(year, month, 0).getDate();
+                  }
 
-          </script>
+                </script>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    </div>
-    <!-- ================= CONTACT ================= -->
-    <div class="container-fluid px-2 px-sm-3 px-md-4 px-lg-5 py-3">
-      <form class="form-inline" action="https://sheetdb.io/api/v1/emf2ys13fr3un" method="POST">
+        <!-- ================= CONTACT ================= -->
+        <div class="container-fluid px-2 px-sm-3 px-md-4 px-lg-5 py-3" style="background:maroon;color:#fff;">
+          <form class="form-inline" action="https://sheetdb.io/api/v1/emf2ys13fr3un" method="POST">
 
-        <!-- QUESTIONNAIRE INTEREST -->
-        <fieldset style="border:2px solid orange;">
-          <legend>
-            <h2 class="text-center">PERSONAL INFORMATION</h2>
-          </legend>
+            <!-- QUESTIONNAIRE INTEREST -->
+            <fieldset style="border:4px solid orange;">
+              <legend>
+                <h2 class="text-center mt-4">FEEDBACK FORM</h2>
 
-          <!-- FULL NAME -->
-          <div class="form-group row mb-3">
-            <label class="col-sm-6 col-form-label question-label">
-              FULL NAME :
-            </label>
-            <div class="col-sm-6">
-              <input type="text" class="form-control" id="name" name="data[full_name]" placeholder="Enter FULL NAME"
-                maxlength="100" autocomplete="name" required>
-            </div>
-          </div>
+                <p>We'll be happy to know your thoughts and suggestions! Please spare some moments to fill out
+                  the form
+                  below.</p>
+              </legend>
 
-          <!-- DATE OF BIRTH -->
-          <div class="form-group row mb-3">
-            <label class="col-sm-6 col-form-label question-label">
-              DATE OF BIRTH :
-            </label>
-            <div class="col-sm-6">
-              <input type="date" class="form-control" id="dob" name="data[dob]" style="width:200px;" required>
-            </div>
-          </div>
-
-          <!-- AGE -->
-          <div class="form-group row mb-3">
-            <label for="age" class="col-sm-6 col-form-label question-label"> AGE AS ON DATE : </label>
-            <div class="col-sm-6">
-              <input type="number" class="form-control" id="age" name="data[age]"
-                placeholder="Age will be calculated automatically" readonly required>
-            </div>
-          </div>
-
-          <h2 class="text-center mt-4">CONTACT DETAILS</h2>
-
-          <!-- MOBILE -->
-          <div class="form-group row mb-3">
-            <label class="col-sm-6 col-form-label question-label">
-              CONTACT No.
-            </label>
-            <div class="col-sm-6">
-              <input type="tel" id="mob" name="data[mobile]" class="form-control" maxlength="15"
-                placeholder="Enter mobile number" inputmode="numeric" pattern="[0-9+\-\s]{10,15}" autocomplete="tel"
-                required>
-            </div>
-          </div>
-
-          <!-- EMAIL -->
-          <div class="form-group row mb-3">
-            <label class="col-sm-6 col-form-label question-label">
-              Email ID
-            </label>
-            <div class="col-sm-6">
-              <input type="email" id="email" name="data[email]" class="form-control" maxlength="150"
-                placeholder="Enter email" autocomplete="email">
-            </div>
-          </div>
-          <!-- GENDER -->
-          <div class="form-group row mb-3">
-
-            <label class="col-sm-6 col-form-label question-label">
-              GENDER :
-            </label>
-
-            <div class="col-sm-6">
-
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="data[gender]" id="male" value="Male" required>
-
-                <label class="form-check-label" for="male">
-                  Male
+              <!-- FULL NAME -->
+              <div class="form-group row mb-3">
+                <label class="col-sm-6 col-form-label question-label">
+                  FULL NAME :
                 </label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="name" name="data[full_name]" placeholder="Enter FULL NAME"
+                    maxlength="100" autocomplete="name" required>
+                </div>
               </div>
 
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="data[gender]" id="female" value="Female">
-
-                <label class="form-check-label" for="female">
-                  Female
+              <!-- DATE OF BIRTH -->
+              <div class="form-group row mb-3">
+                <label class="col-sm-6 col-form-label question-label">
+                  DATE OF BIRTH :
                 </label>
+                <div class="col-sm-6">
+                  <input type="date" class="form-control" id="dob" name="data[dob]" style="width:200px;" required>
+                </div>
               </div>
 
-            </div>
-
-          </div>
-          <!-- INSURANCE TYPE -->
-          <div class="form-group row mb-3">
-
-            <label class="col-sm-6 col-form-label question-label">
-              INSURANCE REQUIREMENT :
-            </label>
-
-            <div class="col-sm-6">
-
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="data[insurance_type]" id="life_insurance"
-                  value="Life Insurance" required>
-
-                <label class="form-check-label" for="life_insurance">
-                  LIFE INSURANCE
-                </label>
+              <!-- AGE -->
+              <div class="form-group row mb-3">
+                <label for="age" class="col-sm-6 col-form-label question-label"> AGE AS ON DATE : </label>
+                <div class="col-sm-6">
+                  <input type="number" class="form-control" id="age" name="data[age]"
+                    placeholder="Age will be calculated automatically" readonly required>
+                </div>
               </div>
 
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="data[insurance_type]" id="health_insurance"
-                  value="Health Insurance">
 
-                <label class="form-check-label" for="health_insurance">
-                  HEALTH INSURANCE
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="data[insurance_type]" id="both_insurance"
-                  value="Both Life & Health Insurance">
 
-                <label class="form-check-label" for="both_insurance">
-                  BOTH LIFE & HEALTH INSURANCE
+              <!-- MOBILE -->
+              <div class="form-group row mb-3">
+                <label class="col-sm-6 col-form-label question-label">
+                  CONTACT No.
                 </label>
+                <div class="col-sm-6">
+                  <input type="tel" id="mob" name="data[mobile]" class="form-control" maxlength="15"
+                    placeholder="Enter mobile number" inputmode="numeric" pattern="[0-9+\-\s]{10,15}" autocomplete="tel"
+                    required>
+                </div>
               </div>
 
-            </div>
+              <!-- EMAIL -->
+              <div class="form-group row mb-3">
+                <label class="col-sm-6 col-form-label question-label">
+                  Email ID
+                </label>
+                <div class="col-sm-6">
+                  <input type="email" id="email" name="data[email]" class="form-control" maxlength="150"
+                    placeholder="Enter email" autocomplete="email">
+                </div>
+              </div>
+              <!-- GENDER -->
+              <div class="form-group row mb-3">
 
-          </div>
+                <label class="col-sm-6 col-form-label question-label">
+                  GENDER :
+                </label>
 
-          <!-- CITY -->
-          <div class="form-group row mb-3">
-            <label class="col-sm-6 col-form-label">
-              CITY as per Permanent Address ID:
-            </label>
-            <div class="col-sm-6">
-              <input type="text" id="city" name="data[city]" class="form-control" maxlength="60" placeholder="City"
-                autocomplete="address-level2">
-            </div>
-          </div>
+                <div class="col-sm-6">
 
-          <!-- STATE -->
-          <div class="form-group row mb-3">
-            <label class="col-sm-6 col-form-label">
-              STATE as per Permanent Address ID:
-            </label>
-            <div class="col-sm-6">
-              <input type="text" id="state" name="data[state]" class="form-control" maxlength="60" placeholder="State"
-                autocomplete="address-level1">
-            </div>
-          </div>
-          <!-- MESSAGE -->
-          <div class="form-group row mb-3">
-            <label class="col-sm-6 col-form-label">
-              PLEASE PROVIDE ANY ADDITIONAL INFORMATION OR COMMENTS:
-            </label>
-            <div class="col-sm-6">
-              <textarea name="data[message]" id="message" rows="10" cols="30" class="form-control" maxlength="500"
-                placeholder="Additional information or comments" autocomplete="address-level1"></textarea>
-            </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="data[gender]" id="male" value="Male" required>
 
-            <!-- SUBMIT -->
-            <div class="text-center mt-4">
-              <button type="submit" class="btn btn-primary btn-lg px-5">
-                SUBMIT
-              </button>
+                    <label class="form-check-label" for="male">
+                      Male
+                    </label>
+                  </div>
 
-              <button type="reset" class="btn btn-secondary btn-lg px-4 ms-2">
-                RESET
-              </button>
-            </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="data[gender]" id="female" value="Female">
 
-        </fieldset>
+                    <label class="form-check-label" for="female">
+                      Female
+                    </label>
+                  </div>
 
-      </form>
+                </div>
+
+              </div>
+              <!-- INSURANCE TYPE -->
+              <div class="form-group row mb-3">
+
+                <label class="col-sm-6 col-form-label question-label">
+                  INSURANCE REQUIREMENT :
+                </label>
+
+                <div class="col-sm-6">
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="data[insurance_type]" id="life_insurance"
+                      value="Life Insurance" required>
+
+                    <label class="form-check-label" for="life_insurance">
+                      LIFE INSURANCE
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="data[insurance_type]" id="health_insurance"
+                      value="Health Insurance">
+
+                    <label class="form-check-label" for="health_insurance">
+                      HEALTH INSURANCE
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="data[insurance_type]" id="both_insurance"
+                      value="Both Life & Health Insurance">
+
+                    <label class="form-check-label" for="both_insurance">
+                      BOTH LIFE & HEALTH INSURANCE
+                    </label>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- CITY -->
+              <div class="form-group row mb-3">
+                <label class="col-sm-6 col-form-label">
+                  CITY as per Permanent Address ID:
+                </label>
+                <div class="col-sm-6">
+                  <input type="text" id="city" name="data[city]" class="form-control" maxlength="60" placeholder="City"
+                    autocomplete="address-level2">
+                </div>
+              </div>
+
+              <!-- STATE -->
+              <div class="form-group row mb-3">
+                <label class="col-sm-6 col-form-label">
+                  STATE as per Permanent Address ID:
+                </label>
+                <div class="col-sm-6">
+                  <input type="text" id="state" name="data[state]" class="form-control" maxlength="60"
+                    placeholder="State" autocomplete="address-level1">
+                </div>
+              </div>
+              <!-- MESSAGE -->
+              <div class="form-group row mb-3">
+                <label class="col-sm-6 col-form-label">
+                  PLEASE PROVIDE ANY ADDITIONAL INFORMATION OR COMMENTS:
+                </label>
+                <div class="col-sm-6">
+                  <textarea name="data[message]" id="message" rows="10" cols="30" class="form-control" maxlength="500"
+                    placeholder="Additional information or comments" autocomplete="address-level1"></textarea>
+                </div>
+
+                <!-- SUBMIT -->
+                <div class="text-center mt-4">
+                  <button type="submit" class="btn btn-primary btn-lg px-5">
+                    SUBMIT
+                  </button>
+
+                  <button type="reset" class="btn btn-secondary btn-lg px-4 ms-2">
+                    RESET
+                  </button>
+                </div>
+
+            </fieldset>
+
+          </form>
+
+        </div>
+        <!-- ================= AUTOMATIC AGE CALCULATOR ================= -->
+        <script>
+          // <--GETTING REFERENCES TO THE DATE OF BIRTH AND AGE INPUT FIELDS -->
+          const dobField = document.getElementById("dob");
+          const ageField = document.getElementById("age");
+
+          // <--Prevent selecting a future date -->
+
+          dobField.max = new Date().toISOString().split("T")[0];
+
+          // <--Calculate age automatically when DOB changes -->
+          dobField.addEventListener("change", function () {
+
+            // Get selected DOB
+
+            const dobValue = dobField.value;
+
+            if (!dobValue) { ageField.value = ""; return; }
+
+            // Convert DOB into Date object
+
+            const birthDate = new Date(dobValue + "T00:00:00");
+
+            const today = new Date();
+
+            // Calculate initial age
+
+            let age = today.getFullYear() - birthDate.getFullYear();
+
+            // Calculate whether birthday has occurred this year
+
+            const monthDifference = today.getMonth() - birthDate.getMonth();
+            const dayDifference = today.getDate() - birthDate.getDate();
+
+            // If birthday has not occurred yet, subtract one year
+
+            if (monthDifference < 0 || (monthDifference === 0 && dayDifference < 0)) { age--; }
+
+            // Put calculated age into Age field
+
+            ageField.value = age;
+          }); 
+        </script>
+
+
 
     </div>
-    <!-- ================= AUTOMATIC AGE CALCULATOR ================= -->
-    <script>
-      // <--GETTING REFERENCES TO THE DATE OF BIRTH AND AGE INPUT FIELDS -->
-      const dobField = document.getElementById("dob");
-      const ageField = document.getElementById("age");
-
-      // <--Prevent selecting a future date -->
-
-      dobField.max = new Date().toISOString().split("T")[0];
-
-      // <--Calculate age automatically when DOB changes -->
-      dobField.addEventListener("change", function () {
-
-        // Get selected DOB
-
-        const dobValue = dobField.value;
-
-        if (!dobValue) { ageField.value = ""; return; }
-
-        // Convert DOB into Date object
-
-        const birthDate = new Date(dobValue + "T00:00:00");
-
-        const today = new Date();
-
-        // Calculate initial age
-
-        let age = today.getFullYear() - birthDate.getFullYear();
-
-        // Calculate whether birthday has occurred this year
-
-        const monthDifference = today.getMonth() - birthDate.getMonth();
-        const dayDifference = today.getDate() - birthDate.getDate();
-
-        // If birthday has not occurred yet, subtract one year
-
-        if (monthDifference < 0 || (monthDifference === 0 && dayDifference < 0)) { age--; }
-
-        // Put calculated age into Age field
-
-        ageField.value = age;
-      }); 
-    </script>
-
-    <div class="col-lg-6">
-
-
     </div>
-
-    </div>
-
   </section>
 
   <!-- ================= FOOTER ================= -->
@@ -905,7 +1052,6 @@
     </div>
 
   </footer>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
