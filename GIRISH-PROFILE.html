@@ -22,10 +22,22 @@
 
 </head>
 <style>
- <style>
-  body {
+ body {
     font-family: 'Times New Roman';
     background: #fff;
+  }
+
+  h2 {
+    text-align: center;
+    background: yellow;
+    font-weight: bold;
+
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 8px 10px orange;
+    font-family: 'Times New Roman';
   }
 
   ol {
@@ -38,6 +50,59 @@
     padding-left: 20px;
     font-size: 1.55rem;
   }
+
+  .custom-navbar {
+    background: darkblue;
+    border: 3px solid white;
+    padding: 8px 15px;
+  }
+
+  .custom-navbar .navbar-brand {
+    color: white;
+    font-weight: 600;
+  }
+
+  .custom-navbar .nav-link {
+    color: white !important;
+  }
+
+  .custom-navbar .nav-link:hover {
+    background-color: MAROON;
+    color: #ffff76;
+    !important;
+    border-radius: 5px;
+  }
+
+  .custom-navbar .dropdown-item:hover {
+    background-color: darkblue;
+    color: white;
+  }
+
+
+  /* MOBILE */
+  @media (max-width: 991.98px) {
+
+    .custom-navbar .navbar-nav {
+      width: 100%;
+    }
+
+    .custom-navbar .nav-item {
+      width: 100%;
+    }
+
+    .custom-navbar .nav-link {
+      padding: 11px 10px !important;
+    }
+
+    .custom-navbar .dropdown-menu {
+      position: static !important;
+      width: 100%;
+      margin: 0;
+      border: none;
+    }
+
+  }
+
 
   .intro {
     font-size: small;
@@ -83,6 +148,62 @@
   .card:hover {
     transform: translateY(-15px);
   }
+
+  .goals {
+    margin-bottom: 10mm;
+    background: #F4D068;
+    color: #4A0000;
+  }
+
+  .goals h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 34.5px;
+    color: var(--navy);
+    margin: 0 0 6mm;
+  }
+
+  .goals a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .goal-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+
+  }
+
+  .chip {
+    border: 3px solid darkblue;
+    color: var(--navy);
+    font-size: 25.3px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 6px;
+    letter-spacing: .01em;
+  }
+
+  .chip-alt {
+    border-color: 3px solid orange;
+    background: maroon;
+    color: #fff;
+  }
+
+  .chip-alt:hover {
+    background: #fff;
+    color: maroon;
+    cursor: pointer;
+  }
+
+  .chip:hover {
+    background: #fff;
+    color: maroon;
+
+    cursor: pointer;
+  }
+
 
   footer ul {
     padding-left: 0;
@@ -344,6 +465,84 @@
     height: var(--h);
     border-radius: 8px;
   }
+
+  .intro .sign {
+    margin-top: 8px;
+    font-family: 'Times New Roman', serif;
+    font-style: normal;
+    font-size: 25px;
+    color: var(--ink-soft);
+    letter-spacing: .03em;
+    text-align: right;
+    font-style: italic;
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 400px;
+    max-height: fit-content;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+
+  .slideshow-container img {
+    display: flex;
+    max-width: 400px;
+    max-height: 400px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
 </style>
 
 
@@ -362,118 +561,440 @@
             class="img-fluid" width="280" style="float:left;">
 
 
-
         </div>
 
         <div class="col-lg-12 text-center">
           <h1>GIRISH GAUR</h1>
           <h4>IRDAI Certified Insurance Advisor</h4>
-          <h2>AXIS MAX LIFE INSURANCE<br>
-            NIVA BUPA HEALTH INSURANCE</h2>
+          <h3>AXIS MAX LIFE INSURANCE<br>
+            NIVA BUPA HEALTH INSURANCE</h3>
 
           <p class="mb-0">
-            Life • Health • Pension .Term Insurance . ULIP
+            Life • Health • Pension • Term Insurance • ULIP
           </p>
-
         </div>
-
-
       </div>
-
     </div>
 
-  </header>
 
+    <!-- ================= SLIDESHOW ================= -->
+
+    <section class="container my-5" style="background: linear-gradient(45deg,orange,maroon);color:#fff;border:3px solid gold;
+">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="slideshow-container">
+
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">1 / 13</div>
+
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/NB-GWP.jpeg" class="img-fluid">
+                <div class="text">GROSS WRITTEN PREMIUM</div>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">2 / 13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/NB-PAT 2026.jpeg" class="img-fluid">
+                <div class="text">PROFIT AFTER TAX</div>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">3 / 13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/NB-NPS-2026.jpeg" class="img-fluid">
+                <div class="text">IMPROVED EXPERIENCE</div>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">4 / 13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/NB-CSR-2026.jpeg" class="img-fluid">
+                <div class="text">CLAIM SETTLEMENT RATIO</div>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">5 / 13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/NB-RHMS-2026.jpeg" class="img-fluid">
+                <div class="text">RETAIL HEALTH SHARE</div>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">6 / 13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/NF-GWP-2026.jpeg" class="img-fluid">
+                <div class="text">GROSS WRITTEN PREMIUM</div>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">7/ 13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/NB-GROWTRUST2026.jpeg"
+                  class="img-fluid">
+                <div class="text">GROWING TRUST</div>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">8 / 13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/SF.png" class="img-fluid">
+                <div class="text">SENIOR FIRST</div>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">9 / 13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/ASPIRE.png" class="img-fluid">
+                <div class="text">ASPIRE</div>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">10 / 13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/RA2 LEAFLET.jpg" class="img-fluid">
+                <div class="text">REASSURE 2.0</div>
+              </div>
+            </div>
+
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">11/ 13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/RA3.png" class="img-fluid">
+                <div class="text">REASSURE 3.0</div>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">12 / 13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/COVER.jpg" class="img-fluid">
+                <div class="text">REASSURE 3.0</div>
+              </div>
+            </div>
+
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">13 /13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/appreciation certificate.jpeg"
+                  class="img-fluid">
+
+                <div class="text">CREDENTIALS</div>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">13 /13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/CC KANTAL-05082026.jpg">
+
+                <div class="text">CREDENTIALS</div>
+              </div>
+            </div>
+
+
+          </div>
+          <br>
+
+          <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <script>
+            //--SLIDWSHOW --//
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) { slideIndex = 1 }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+          </script>
+
+        </div>
+      </div>
+
+    </section>
+  </header>
   <!-- ================= NAVBAR ================= -->
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar" style="background: #003366;color:#fff;">
 
     <div class="container-fluid">
 
-      <a class="navbar-brand" href="#">HOME</a>
+      <!-- HOME / BRAND -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <i class="fa-solid fa-house me-2"></i>
+        HOME
+      </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+      <!-- HAMBURGER BUTTON FOR SMALL SCREENS -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
 
         <span class="navbar-toggler-icon"></span>
 
       </button>
 
-      <div class="collapse navbar-collapse" id="navbar">
+
+      <!-- COLLAPSIBLE NAVIGATION -->
+      <div class="collapse navbar-collapse" id="mainNavbar">
 
         <ul class="navbar-nav ms-auto">
 
-          <li class="nav-item">
-            <a class="nav-link active" href="#">
-              Home
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#https://girish8360.github.io/amli/GIRISH-LEAFLET.htm"> About Us</a>
-          </li>
-
+          <!-- SEGMENTS -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-              Insurance Products </a>
+
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Segments </a>
 
             <ul class="dropdown-menu">
-              <li> <a class="dropdown-item" href="#">
-                  AXIS MAX LIFE INSURANCE
+
+              <li>
+                <a class="dropdown-item" href="https://girish8360.github.io/amli/libasic.htm" target="_blank"">
+                                     Basics-Life Insurance
+                </a>
+              </li>
+
+              <li>
+                <a class=" dropdown-item" href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS MAX LIFE LEAFLET.htm"
+                  target="_blank">
+                  Axis Max Life Insurance
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="https://girish8360.github.io/amli/hibasic.htm" target="_blank"">
+                  Basics-Health Insurance
+                </a>
+              </li>
+
+              <li>
+                <a class=" dropdown-item" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM"
+                  target="_blank">
+                  Niva Bupa Health Insurance
+                </a>
+              </li>
+
+            </ul>
+
+          </li>
+
+
+          <!-- HOME PAGE -->
+          <li class="nav-item dropdown">
+
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+
+              Home Page
+
+            </a>
+
+            <ul class="dropdown-menu">
+
+              <li>
+                <a class="dropdown-item" href="#">
+                  About Me
                 </a>
               </li>
 
               <li>
                 <a class="dropdown-item" href="#">
-                  TERM INSURANCE
-                </a>
-              </li>
-              <li> <a class="dropdown-item" href="#">
-                  SAVING/ENDOWMENT PRODUCTS
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">
-                  ANNUITY PRODUCTS
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">
-                  ULIP PRODUCTS
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">
-                  NIVA BUPA HEALTH INSURANCE
+                  Vision Statement
                 </a>
               </li>
 
               <li>
                 <a class="dropdown-item" href="#">
-                  HEALTHCARE PRODUCTS
+                  Feedback Form
                 </a>
               </li>
 
               <li>
                 <a class="dropdown-item" href="#">
-                  PERSONAL ACCIDENTS PRODUCT
+                  Survey Form
+                </a>
+              </li>
+
+            </ul>
+
+          </li>
+
+
+          <!-- LIFE INSURANCE -->
+          <li class="nav-item dropdown">
+
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+
+              Life Insurance
+
+            </a>
+
+            <ul class="dropdown-menu">
+
+              <li>
+                <a class="dropdown-item"
+                  href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#term"
+                  target="_blank">
+                  Term Products
                 </a>
               </li>
 
               <li>
-                <a class="dropdown-item" href="#">
-                  TRAVEL INSURANCE PRODUCTS
+                <a class="dropdown-item"
+                  href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#saving"
+                  target="_blank">
+                  Saving Products
                 </a>
               </li>
+
+              <li>
+                <a class="dropdown-item"
+                  href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#annuity"
+                  target="_blank">
+                  Annuity Products
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item"
+                  href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#ulip"
+                  target="_blank">
+                  ULIP Products
+                </a>
+              </li>
+
+            </ul>
+
+          </li>
+
+
+          <!-- HEALTH INSURANCE -->
+          <li class="nav-item dropdown">
+
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+
+              Health Insurance
+
+            </a>
+
+            <ul class="dropdown-menu">
+
+              <li>
+                <a class="dropdown-item" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#rea3"
+                  target="_blank">
+                  ReAssu₹e 3.0
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#rea2"
+                  target="_blank">
+                  ReAssu₹e 2.0
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#pa"
+                  target="_blank">
+                  PA Products
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#travel"
+                  target="_blank">
+                  Travel Insurance
+                </a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <!-- PDF DOCS -->
+          <!-- LIFE INSURANCE -->
+          <li class="nav-item dropdown">
+
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+
+              PDF Documents </a>
+
+            <ul class="dropdown-menu">
+
+              <li>
+                <a class="dropdown-item" href="https://girish8360.github.io/amli/BASICS OF LIFE INSURANCE.pdf"
+                  target="_blank">
+                  Basics of Life Insurance
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="https://girish8360.github.io/amli/BASICS OF HEALTH INSURANCE.pdf"
+                  target="_blank">
+                  Basics of Health Insurance
+                </a>
+              </li>
+
 
 
             </ul>
 
           </li>
 
+          <!-- CONTACT -->
           <li class="nav-item">
 
-            <a class="nav-link" href="#">
-              Contact
+            <a class="nav-link active" href="#">
+              Contact Us
             </a>
 
           </li>
@@ -486,12 +1007,15 @@
 
   </nav>
 
+
+  <!-- Bootstrap 5 JavaScript Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- ================= HERO ================= -->
 
   <section class="container-fluid p-0">
     <div class="hero">
       <h1 class="text-left"> GIRISH GAUR </h1>
-      <h4 style="font-weight-bold;"><i>B.Sc., M.A.(ECO), PGDCASA, PGDBA, Cert Oracle 8i</i></h4>
+      <h5 style="padding-left: 30px;"><b><i>B.Sc., M.A.(ECO),<br> PGDCASA, PGDBA, Cert Oracle 8i</i></b></h5>
       <h4>Certified Insurance Advisor</h4>
       <h3>AXIS MAX LIFE INSURANCE<br>
         NIVA BUPA HEALTH INSURANCE</h3>
@@ -501,15 +1025,13 @@
       </div>
 
 
-
-
       <!-- ================= WELCOME ================= -->
 
       <section class="container my-5" style="background:darkblue;color:#fff;">
         <div class="row">
           <div class="col-lg-12">
             <div class="intro">
-              <h2>ABOUT ME</h2>
+              <h2 style="color: black;font-weight: bold;">ABOUT ME</h2>
               <p style="font-size:25px;">
 
                 With a distinguished professional journey spanning over three decades, a
@@ -556,6 +1078,51 @@
                 <li>ULIP</li>
               </ol>
 
+            </div>
+          </div>
+        </div>
+        <div class="container my-5">
+          <div class="col-lg-12">
+            <div class="intro" style="background:darkgreen;color:#fff;font-style: italic;font-weight:normal;">
+              <h2 style="color: black;font-weight: bold;">VISION STATEMENT</h2>
+              <h3> BEYOND POLICIES. PROTECTING FUTURES.</h3>
+              <p style="font-size:25px;">&ldquo; Every family has its own needs, responsibilities, liabilities,
+                dreams,
+                and aspirations. <br>Rather than just selling Insurance, by the means of Investing Time & Energy I do
+                believe to
+                understand them, to
+                expertise in them & help create
+                the
+                right financial protection strategy.
+                <br>
+                From protecting your income and securing your health to preserving your wealth and planning for your
+                dreams, my commitment goes beyond selling a policy.<br>
+
+                I don’t believe in simply to assist you during the insurance purchasing process only but also to provide
+                assistance after sales service and claims settlement process. <br> I am here to help you navigate the
+                complex world of
+                insurance in a way that truly protects what you have, prepares you for what lies ahead, and helps you
+                pursue what you aspire to achieve..&rdquo;
+              </p>
+              <div class="sign">— Girish Gaur</div>
+            </div>
+            <div class="intro"
+              style="font-size: x-large;background:maroon;color:#fff;font-style: italic;font-weight:normal;">
+
+              हर परिवार की अपनी ज़रूरतें, ज़िम्मेदारियाँ, देनदारियाँ , सपने और आकांक्षाएँ होती हैं।<br>
+              सिर्फ
+              इंश्योरेंस बेचने के बजाय, मैं अपना समय और ऊर्जा निवेश करके उन्हें समझने, उनमें महारत हासिल करने और एक सही
+              वित्तीय सुरक्षा रणनीति तैयार करने में मदद करने पर विश्वास रखता हूँ। <br>आपकी आय
+              की सुरक्षा करने और आपके स्वास्थ्य को सुरक्षित रखने से लेकर, आपकी संपत्ति को बनाए रखने और आपके
+              सपनों की प्लानिंग करने तक—मेरी प्रतिबद्धता सिर्फ एक पॉलिसी बेचने तक सीमित नहीं है। <br>मैं सिर्फ
+              इंश्योरेंस खरीदने की प्रक्रिया के दौरान ही आपकी मदद करने पर विश्वास नहीं रखता, बल्कि बिक्री के बाद की
+              सेवाओं और क्लेम सेटलमेंट की प्रक्रिया में भी सहायता प्रदान करने में विश्वास रखता
+              हूँ। <br>मैं यहाँ इंश्योरेंस की इस उलझी हुई दुनिया में आपका मार्गदर्शन करने के लिए हूँ, ताकि सही मायने में
+              उस
+              चीज़ की रक्षा की जा सके जो आपके पास है, आपको आने वाले कल के लिए तैयार किया जा सके, और उन सपनों को पूरा
+              करने में मदद मिल सके जिन्हें आप हासिल करना चाहते हैं।&rdquo;
+              </p>
+              <div class="sign">— गिरीश गौड़</div>
             </div>
           </div>
         </div>
@@ -625,6 +1192,55 @@
 
       </section>
 
+      <!-- ================= CARDS ================= -->
+
+      <section class="container my-5" style="background:maroon;color:#fff;">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="goals">
+              <h2 style="color: black;font-weight: bold;">Let's become<br>Financially Strong</h2>
+              <div class="goal-chips">
+                <span class="chip" style="background:softgold;text:maroon;text-decoration: none;"> <a target="_blank"
+                    href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#term">TERM
+                    PRODUCTS <br>Family Protection</a></span>
+
+                <span class="chip"><a target="_blank"
+                    href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#saving">GUARANTEED<br>
+                    SAVING PRODUCTS</a></span>
+                <span class="chip"><a target="_blank"
+                    href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#ulip">
+                    ULIP PRODUCTS<br>Wealth Growth</a></span>
+
+                <span class="chip"><a target="_blank"
+                    href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#annuity">ANNUITY
+                    PRODUCTS<br>Retirement Planning
+                  </a></span>
+                <span class="chip"><a target="_blank"
+                    href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#swag">SWAG
+                    PRODUCTS<br>Long Term <br>Wealth Growth</a></span>
+                <span class="chip"><a target="_blank"
+                    href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#rea3">ReAssure 3.0
+                    <br>
+                    Medical Inflation Protection </a>
+                </span>
+
+                <span class="chip alt"><a target="_blank"
+                    href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#pa">PERSONAL
+                    ACCIDENT <br>PRODUCTS</a></span>
+                <span class="chip alt"><a target="_blank"> </a>
+
+                  <span class="chip alt"><a target="_blank"
+                      href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#travel">
+
+                      Travel Insurance</a> </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
 
       <!-- ================= TIME MESSAGE ================= -->
       <section class="container my-5" style="background:maroon;color:#fff;">
@@ -645,18 +1261,18 @@
                   <div style="--clr:#00a6ff;  --h:70px;" id="min" class="hand"><i></i></div>
                   <div style="--clr:#ffffff;  --h:90px;" id="sec" class="hand"><i></i></div>
 
-                  <span style="--i:1;"><b>1</b></span>
-                  <span style="--i:2;"><b>2</b></span>
-                  <span style="--i:3;"><b>3</b></span>
-                  <span style="--i:4;"><b>4</b></span>
-                  <span style="--i:5;"><b>5</b></span>
-                  <span style="--i:6;"><b>6</b></span>
-                  <span style="--i:7;"><b>7</b></span>
-                  <span style="--i:8;"><b>8</b></span>
-                  <span style="--i:9;"><b>9</b></span>
-                  <span style="--i:10;"><b>10</b></span>
-                  <span style="--i:11;"><b>11</b></span>
-                  <span style="--i:12;"><b>12</b></span>
+                  <span style="--i:1;"><b>I</b></span>
+                  <span style="--i:2;"><b>II</b></span>
+                  <span style="--i:3;"><b>III</b></span>
+                  <span style="--i:4;"><b>IV</b></span>
+                  <span style="--i:5;"><b>V</b></span>
+                  <span style="--i:6;"><b>VI</b></span>
+                  <span style="--i:7;"><b>VII</b></span>
+                  <span style="--i:8;"><b>VIII</b></span>
+                  <span style="--i:9;"><b>IX</b></span>
+                  <span style="--i:10;"><b>X</b></span>
+                  <span style="--i:11;"><b>XI</b></span>
+                  <span style="--i:12;"><b>XII</b></span>
                 </div>
 
               </div>
@@ -760,11 +1376,16 @@
             <!-- QUESTIONNAIRE INTEREST -->
             <fieldset style="border:4px solid orange;">
               <legend>
-                <h2 class="text-center mt-4">We’d love to know you better.</h2>
 
-                <p>Please spare a few moments to share your details.                
-                    This will enable us to understand your requirements better and  connect with you to provide relevant guidance and assistance. <br>
-                  We’ll be delighted to connect with you and provide assistance with solutions tailored to your needs. Thank you.</p>
+                <h3 class="text-center mt-4"><b>We’d love to know you better.</b></h3>
+                <h3 class="text-center"><b>YOUR FEEDBACK IS VALUABLE TO US</b></h3>
+                <p style="font-size: x-large;">We value your feedback and would love to hear your thoughts on our
+                  services.<br>
+                  Please
+                  take a moment to fill out feedback form and let us know how we can improve.
+                  Please take a few moments to share your details with us. This will help us understand your
+                  requirements better and enable us to connect with you to provide relevant guidance and
+                  assistance.Thanks You.</p>
               </legend>
 
               <!-- FULL NAME -->
@@ -790,7 +1411,7 @@
 
               <!-- AGE -->
               <div class="form-group row mb-3">
-                <label for="age" class="col-sm-6 col-form-label question-label"> AGE AS ON DATE : </label>
+                <label for="age" class="col-sm-6 col-form-label question-label"> AGE AS ON DATE (YEARS) : </label>
                 <div class="col-sm-6">
                   <input type="number" class="form-control" id="age" name="data[age]"
                     placeholder="Age will be calculated automatically" readonly required>
@@ -849,6 +1470,7 @@
                 </div>
 
               </div>
+
               <!-- INSURANCE TYPE -->
               <div class="form-group row mb-3">
 
@@ -899,7 +1521,10 @@
                 </div>
               </div>
 
-                  <!-- STATE/DISTRICT-->
+
+
+
+              <!-- STATE/DISTRICT-->
               <div class="form-group row mb-3">
                 <label class="col-sm-6 col-form-label question-label">
                   STATE/UT as per Permanent Address ID:
@@ -2017,7 +2642,7 @@
                 });
 
               </script>
-              
+
               <!-- MESSAGE -->
               <div class="form-group row mb-3">
                 <label class="col-sm-6 col-form-label">
@@ -2042,6 +2667,47 @@
             </fieldset>
 
           </form>
+          <!-- ================= SURVEYS ================= -->
+          <section class="container my-5" style="background:maroon;color:#fff;">
+            <div class="container my-5">
+              <div class="col-lg-12">
+                <div class="intro" style="background:darkblue;color:#fff;font-weight:normal;">
+
+                  <h1 id="feedback" style="text-align:center;background:maroon;color:#fff;"><b>SURVEY FORM</b> </h1>
+
+
+                  <h2 style="color: black;font-weight: bold;">WEALTH MANAGEMENT <br>SURVEY (WMS)</h2>
+                  <p style="font-size: x-large;"> As part of my commitment to offering you personalised and effective
+                    financial
+                    guidance, I am
+                    conducting a brief survey to better understand your current financial situation and future goals.
+                    Please spare your valubale moments to fill up attached <b>FEEDBACK FORM</b> in order to understand
+                    Wealth Management Strategy (WMS) in a better way & consequently let's navigate towards an effective
+                    Financial Security Management Strategy to safeguard your Financial Future.<br>
+                    Your input will help me assess your needs accurately and recommend the best financial solutions.I
+                    would be grateful if you could take a few minutes to complete the survey using the link below: </p>
+
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSc00eA7ZzaBbn5XT72spjy4vkYyA7P5oZrBYrvj70y2NLzXXA/viewform?usp=sf_link"
+                    target="_blank" class="btn btn-success btn-lg" role="button"><strong>Click here for FINANCIAL SURVEY
+                      FORM
+                    </strong></a>
+                  <hr>
+                  <h2 style="color: black;font-weight: bold;">HEALTH MANAGEMENT <br>SURVEY (HMS)</h2>
+                  <p style="font-size: x-large;">Please spare your valuable moments to fill out the attached <b>FEEDBACK
+                      FORM</b> to better
+                    understand the Health Management Strategy (HMS) and, consequently, let's navigate towards an
+                    effective Health Management Strategy to safeguard our health and reduce medical expenses due to
+                    unforeseen medical emergencies. Plese click the button to fill up this brief Health Survey Form.
+                  </p>
+
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSemtYqq2uhJ2KY9MPtYos7Fln_5xNvqasLrXdk77a0-9gFXMg/viewform?usp=sharing&ouid=110655948174661466563"
+                    target="_blank" class="btn btn-primary btn-lg" role="button"><strong>Click here for HEALTH SURVEY
+                      FORM </strong></a>
+
+                </div>
+              </div>
+
+          </section>
 
         </div>
         <!-- ================= AUTOMATIC AGE CALCULATOR ================= -->
@@ -2093,111 +2759,137 @@
     </div>
     </div>
   </section>
+
+
+
   <!-- ================= FOOTER ================= -->
 
-  <footer class="bg-dark text-white mt-5 py-4">
+  <section class="container my-5" style="background:maroon;color:#fff;">
+    <div class="container my-5">
+      <div class="col-lg-12">
+        <footer class="bg-dark text-white mt-5 py-4">
 
-    <div class="container">
+          <div class="container">
 
-      <div class="row">
+            <div class="row">
 
-        <div class="col-md-4">
+              <div class="col-md-4">
 
-          <h5>Insurance Advisory</h5>
+                <h5>Insurance Advisory</h5>
 
-          <p>
+                <p>
+                  Home <br>
+                  About Us <br>
+                  <a target="_blank"
+                    href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm"><span
+                      style="color:#fff;">Life Insurance</span></a><br>
 
-            <a target="_blank" href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm"><span
-                style="color:#fff;">Life Insurance</span></a><br>
+                  <a href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM" target="_blank"><span
+                      style="color:#fff;">Health Insurance</span></a><br>
+                </p>
 
+              </div>
 
+              <div class="col-md-4">
 
-            <a href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM" target="_blank"><span
-                style="color:#fff;">Health Insurance</span></a><br>
-
-           
-
-            Retirement Planning
-
-          </p>
-
-        </div>
-
-        <div class="col-md-4">
-
-          <h5>Quick Links</h5>
-
-          <ul class="list-unstyled">
-
-            <li>Home</li>
-
-            <li>Products</li>
-
-            <li>Contact</li>
+                <h5>Quick Links</h5>
 
 
-          </ul>
+                <p>
 
-        </div>
 
-        <div class="col-md-4">
+                <h5>Life Insurance Products</h5><br>
+                Term Insurance Products<br>
+                Savings Products <br>
+                ULIP Products<br>
+                Healthcare Products<br>
+                CIDR<br>
+                ADDB<br><br>
 
-          <h5>Contact</h5>
+                <h5>Health Insurance Products</h5><br>
+                ReAssure 3.0 UNLIMITED<br>
+                ReAssure 2.0<br>
+                Aspire<br>
+                Senior First<br>
+                Personal Accdeintal<br>
+                Travel Insurance
+                </p>
 
-          <i class="fa-solid fa-phone" style="font-size:30px;color:#fff;"></i>&nbsp;&nbsp;&nbsp;<span
-            style="font-weight:bold;">+91-790-628-4866,
-            <br>
-            885-966-2533</span><br>
 
-          <i class="fa-brands fa-whatsapp" style="background:darkgreen;color: white;font-size:40px"></i>
-          &nbsp;&nbsp;&nbsp;<span style="font-weight:bold;">+91-790-628-4866, <br> 885-966-2533 </span><br>
 
-          <i class="fa-solid fa-at" style="font-size:30px"></i>&nbsp;&nbsp;&nbsp;
-          <span style="font-weight:normal;">
-            <a href="mailto:girish.garry4u@gmail.com" style="color:#fff;">girish.garry4u@gmail.com</a>
-            <br>
-            <a href="mailto:girish.gaur@rediffmail.com" style="color:#fff;">girish.gaur@rediffmail.com</a>
-          </span><br>
 
-             <i class="fa-solid fa-globe me-2"></i>&nbsp;&nbsp;&nbsp;<span style="font-weight:normal;">VISIT US - SCAN QR
-            <img
-              src="https://raw.githubusercontent.com/girish8360/amli/e601d92ce1bfb06e20ef23ecc64f8b04549ae745/QR-GIRISH-PROFILE.jpeg"
-              class="img-fluid" width="75" ;height="75"><br>
-            <a href="https://girish8360.github.io/amli/GIRISH-PROFILE.html"
-              style="color:#fff;">https://girish8360.github.io/amli/GIRISH-PROFILE.html</a>
-          </span><br>
+              </div>
 
-          <i class="fa-brands fa-facebook" aria-hidden="true" style="background: #3B5998;
+              <div class="col-md-4">
+
+                <h5>Contact Us:</h5>
+
+                <i class="fa-solid fa-phone" style="font-size:30px;color:#fff;"></i>&nbsp;&nbsp;&nbsp;<span
+                  style="font-weight:bold;">+91-790-628-4866,
+                  <br>
+                  885-966-2533</span><br>
+
+                <i class="fa-brands fa-whatsapp" style="background:darkgreen;color: white;font-size:40px"></i>
+                &nbsp;&nbsp;&nbsp;<span style="font-weight:bold;">+91-790-628-4866, <br> 885-966-2533 </span><br>
+
+                <i class="fa-solid fa-at" style="font-size:30px"></i>&nbsp;&nbsp;&nbsp;
+                <span style="font-weight:normal;">
+                  <a href="mailto:girish.garry4u@gmail.com" style="color:#fff;">girish.garry4u@gmail.com</a>
+                  <br>
+                  <a href="mailto:girish.gaur@rediffmail.com" style="color:#fff;">girish.gaur@rediffmail.com</a>
+                </span><br>
+
+                <i class="fa-solid fa-globe me-2"></i>&nbsp;&nbsp;&nbsp;<span style="font-weight:normal;">VISIT US -
+                  SCAN QR
+                  <img
+                    src="https://raw.githubusercontent.com/girish8360/amli/e601d92ce1bfb06e20ef23ecc64f8b04549ae745/QR-GIRISH-PROFILE.jpeg"
+                    class="img-fluid" width="75" ;height="75"><br>
+                  <a href="https://girish8360.github.io/amli/GIRISH-PROFILE.html"
+                    style="color:#fff;">https://girish8360.github.io/amli/GIRISH-PROFILE.html</a>
+                </span><br>
+
+                <i class="fa-brands fa-facebook" aria-hidden="true" style="background: #3B5998;
 color: white;font-size:30px;"></i>&nbsp;&nbsp;&nbsp;<span style="font-weight:normal;"> SCAN QR
-            <img src="https://raw.githubusercontent.com/girish8360/amli/main/FACEBOOK PAGE GIRISH GAUR INSURELIFE.jpeg"
-              class="img-fluid" width="75" ;height="75"></span><br>
-          <i class="fas fa-map-marker-alt" style="font-size:30px"></i>&nbsp;&nbsp;&nbsp;
-          <span style="font-weight:bold;"> AXIS MAX LIFE INSURANCE <br>I<sup>st</sup> FLOOR,
-            TIRUPATI
-            TOWERS, <br>
-            DELHI ROAD<br>SAHARANPUR-247001 (U.P.) </span>
+                  <img
+                    src="https://raw.githubusercontent.com/girish8360/amli/main/FACEBOOK PAGE GIRISH GAUR INSURELIFE.jpeg"
+                    class="img-fluid" width="75" ;height="75"></span><br>
 
 
 
-        </div>
+                <i class="fas fa-map-marker-alt" style="font-size:30px"></i>&nbsp;&nbsp;&nbsp;
+                <span style="font-weight:bold;"> AXIS MAX LIFE INSURANCE <br>I<sup>st</sup> FLOOR,
+                  TIRUPATI
+                  TOWERS, <br>
+                  DELHI ROAD<br>SAHARANPUR-247001 (U.P.) </span>
 
+
+
+              </div>
+
+            </div>
+
+            <hr>
+
+            <div class="text-center">
+
+              © 2026 GIRISH GAUR. All rights reserved.
+
+            </div>
+
+          </div>
+
+
+
+
+          <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+          </script>
+        </footer>
       </div>
-
-      <hr>
-
-      <div class="text-center">
-
-        © 2026 GIRISH GAUR. All rights reserved.
-
-      </div>
-
     </div>
+  </section>
 
 
-  </footer>
-
- 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  
 
 </body>
 
