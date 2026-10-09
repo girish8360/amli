@@ -1,0 +1,3975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Girish Gaur - Advisor at Niva Bupa Health Insurance, Saharanpur, India">
+  <title>FEEDBACK FORM</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+<style>
+  body {
+    font-family: 'Times New Roman';
+    background: #fff;
+  }
+
+  h2 {
+    text-align: center;
+    background: yellow;
+    font-weight: bold;
+
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 8px 10px orange;
+    font-family: 'Times New Roman';
+  }
+
+  /* ================= HEADER ================= */
+
+  .main-header {
+    width: 100%;
+
+    border-bottom: 3px solid darkblue;
+    padding: 10px 15px;
+    background: maroon;
+    border: 3px solid orange;
+  }
+
+  .header-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  /* LOGOS */
+
+  .header-logo {
+    flex: 0 0 180px;
+    display: flex;
+    align-items: center;
+  }
+
+  .header-logo img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    display: block;
+  }
+
+  .left-logo {
+    justify-content: flex-start;
+    max-width: 550px;
+  }
+
+  .right-logo {
+    justify-content: flex-end;
+  }
+
+  /* CENTER NAME */
+
+  .header-title {
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    font-family: 'Times New Roman', serif;
+  }
+
+  .header-title h1 {
+    margin: 0;
+    color: #fff;
+    font-family: "Times New Roman";
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .header-title p {
+    margin: 3px 0 0;
+    color: #fff;
+    font-size: 20px;
+  }
+
+
+  /* ================= MOBILE ================= */
+
+  @media (max-width: 768px) {
+
+    .main-header {
+      padding: 8px 8px;
+    }
+
+    .header-container {
+      gap: 5px;
+    }
+
+    .header-logo {
+      flex: 0 0 75px;
+    }
+
+    .header-logo img {
+      max-width: 75px;
+    }
+
+    .header-title h1 {
+      font-size: 20px;
+    }
+
+    .header-title p {
+      font-size: 11px;
+      color: #fff;
+    }
+  }
+
+
+  /* ================= VERY SMALL MOBILE ================= */
+
+  @media (max-width: 400px) {
+
+    .header-container {
+      gap: 3px;
+    }
+
+    .header-logo {
+      flex: 0 0 60px;
+    }
+
+    .header-logo img {
+      max-width: 60px;
+    }
+
+    .header-title h1 {
+      font-size: 17px;
+    }
+
+    .header-title p {
+      font-size: 9px;
+    }
+  }
+
+  ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    font-size: 1.55rem;
+  }
+
+  .custom-navbar {
+    background: darkblue;
+    border: 3px solid white;
+    padding: 8px 15px;
+  }
+
+  .custom-navbar .navbar-brand {
+    color: white;
+    font-weight: 600;
+  }
+
+  .custom-navbar .nav-link {
+    color: white !important;
+  }
+
+  .custom-navbar .nav-link:hover {
+    background-color: MAROON;
+    color: #ffff76;
+    !important;
+    border-radius: 5px;
+  }
+
+  .custom-navbar .dropdown-item:hover {
+    background-color: darkblue;
+    color: white;
+  }
+
+
+  /* MOBILE */
+  @media (max-width: 991.98px) {
+
+    .custom-navbar .navbar-nav {
+      width: 100%;
+    }
+
+    .custom-navbar .nav-item {
+      width: 100%;
+    }
+
+    .custom-navbar .nav-link {
+      padding: 11px 10px !important;
+    }
+
+    .custom-navbar .dropdown-menu {
+      position: static !important;
+      width: 100%;
+      margin: 0;
+      border: none;
+    }
+
+  }
+
+  /* ================= FORM ================= */
+  fieldset {
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+
+  legend h2 {
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .question-label {
+    font-weight: bold;
+  }
+
+  .form-control {
+    max-width: 400px;
+  }
+
+  .survey-section {
+    margin-top: 15px;
+  }
+
+  @media (max-width: 575px) {
+    .form-control {
+      max-width: 100%;
+    }
+
+    fieldset {
+      padding: 12px;
+    }
+  }
+
+  /* INTRO */
+
+  .intro {
+    font-size: small;
+    text-align: justify;
+    font-weight: 18px;
+    background: darkblue;
+
+    font-family: 'Times New Roman';
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 10px;
+    border: 2px solid white;
+
+  }
+
+
+  /* HERO */
+
+  .hero {
+    background: linear-gradient(90deg, #003366, #f17a2a);
+    color: azure;
+    padding-left: 20px;
+    padding-right: 15px;
+    border: 2px solid maroon;
+  }
+
+  .hero-img {
+    width: 25%;
+    height: 25%;
+
+    height: auto;
+    display: block;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 3px solid gold;
+    object-fit: cover;
+  }
+
+
+  /* CARD */
+
+  .card {
+    transition: .4s;
+    box-shadow: 25px 28px 20px maroon;
+    ;
+  }
+
+  .card:hover {
+    transform: translateY(-15px);
+  }
+
+
+  /* GOALS */
+
+  .goals {
+    margin-bottom: 10mm;
+    background: #F4D068;
+    color: #4A0000;
+  }
+
+  .goals h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 34.5px;
+    color: var(--navy);
+    margin: 0 0 6mm;
+  }
+
+  .goals a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .goal-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+
+  }
+
+
+  /* CHIP*/
+
+  .chip {
+    border: 3px solid darkblue;
+    color: var(--navy);
+    font-size: 25.3px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 6px;
+    letter-spacing: .01em;
+  }
+
+  .chip-alt {
+    border-color: 3px solid orange;
+    background: maroon;
+    color: #fff;
+  }
+
+  .chip-alt:hover {
+    background: #fff;
+    color: maroon;
+    cursor: pointer;
+  }
+
+  .chip:hover {
+    background: #fff;
+    color: maroon;
+
+    cursor: pointer;
+  }
+
+
+  /* FOOTER */
+
+  footer ul {
+    padding-left: 0;
+  }
+
+  footer li {
+    padding: 4px 0;
+  }
+
+  .navbar .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+
+
+  /* TABLE */
+
+  .table td,
+  .table th {
+    vertical-align: middle;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+  }
+
+  .table-responsive table {
+    width: max-content;
+    min-width: 700px;
+    border-collapse: collapse;
+    width: auto;
+    background: transparent;
+    margin-left: 5px;
+    margin-right: 20px;
+  }
+
+  .table-responsive th {
+    font-size: 13px;
+    padding: 10px;
+    white-space: nowrap;
+
+    color: azure;
+    text-align: center;
+  }
+
+  .table-responsive td {
+    font-size: 12px;
+    padding: 8px;
+    white-space: nowrap;
+    padding: 5px;
+    border: 2px solid #fff;
+
+  }
+
+  .pillars {
+    padding: 2mm 16mm 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    background: maroon;
+    color: #fff;
+  }
+
+  .pillar {
+    padding: 7mm 6mm 6mm 0;
+    border-top: 1px solid var(--hair);
+  }
+
+  .pillar:nth-child(n+4) {
+    border-top: 1px solid var(--hair);
+  }
+
+  .pillar-head {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    gap: 9px;
+    margin-bottom: 7px;
+  }
+
+  .pillar h3 {
+    font-family: 'Times New Roman', serif;
+    font-weight: 00;
+    font-size: 24px;
+    margin: 0;
+    color: var(--navy);
+  }
+
+
+  /* CONTAINER01 */
+
+  .container01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
+    width: 100%;
+    background: linear-gradient(135deg, #4203a9, #90bafc);
+
+    color: #fff;
+  }
+
+
+  /* CALCULATOR */
+
+  .calculator {
+    width: 75vw;
+    max-width: 400px;
+
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .calculator h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  .input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .input-box input {
+    flex: 1;
+    padding: 14px 20px;
+    border: 0;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 16px;
+    position: relative;
+  }
+
+  .input-box input::webkit-calendar-picker-indicator {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+
+    transform: translateY(-50%);
+
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .input-box button {
+    padding: 15px 30px;
+    border: 0;
+    height: auto;
+    border-radius: 5px;
+    background-color: #ffff76;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    background-color: #fff;
+  }
+
+  #result span {
+    font-weight: bold;
+    color: black;
+  }
+
+  /* FIELDSET */
+
+  fieldset {
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+
+  legend h2 {
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .question-label {
+    font-weight: bold;
+
+  }
+
+  .form-control {
+    max-width: 400px;
+
+
+  }
+
+  .survey-section {
+    margin-top: 15px;
+  }
+
+  @media (max-width: 575px) {
+    .form-control {
+      max-width: 100%;
+      padding-left: 15px;
+
+    }
+
+    fieldset {
+      padding: 12px;
+    }
+  }
+
+  .container04 {
+    position: relative;
+    float: center;
+
+  }
+
+  .clock {
+    width: 200px;
+    height: 200px;
+    border-radius: 60%;
+
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .clock span {
+    position: absolute;
+    transform: rotate(calc(30deg*var(--i)));
+    inset-block: 9px;
+    text-align: center;
+  }
+
+  .clock span b {
+    transform: rotate(calc(-30deg*var(--i)));
+    display: inline-block;
+    font-size: 23px;
+  }
+
+  .clock::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 2;
+  }
+
+  .hand {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .hand i {
+    position: absolute;
+    background: var(--clr);
+    width: 4px;
+    height: var(--h);
+    border-radius: 8px;
+  }
+
+  .intro .sign {
+    margin-top: 8px;
+    font-family: 'Times New Roman', serif;
+    font-style: normal;
+    font-size: 25px;
+    color: var(--ink-soft);
+    letter-spacing: .03em;
+    text-align: right;
+    font-style: italic;
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 400px;
+    max-height: fit-content;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* 
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: transparent;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  */ .active {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+
+  .slideshow-container img {
+    display: flex;
+    max-width: 400px;
+    max-height: 400px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  .footer {
+    width: 100%;
+    background: #8b0000;
+    overflow: hidden;
+  }
+
+  /*
+      The original artwork is 1459 × 342.
+      Keeping this aspect ratio makes the clickable overlay positions
+      line up with the artwork at every screen width.
+    */
+  .footer-inner {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1459 / 342;
+    max-width: 1459px;
+    margin: 0 auto;
+  }
+
+  .footer-art {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+
+  .hotspot {
+    position: absolute;
+    display: block;
+    z-index: 5;
+    cursor: pointer;
+    border-radius: 8px;
+    outline: none;
+  }
+
+  /* Invisible hover/focus feedback */
+  .hotspot:hover,
+  .hotspot:focus-visible {
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .35);
+  }
+
+  /*
+      Coordinates are percentages of the ORIGINAL 1459 × 342 artwork.
+      They therefore remain correctly aligned when the footer scales.
+    */
+
+  /* Telephone numbers */
+  .phone1 {
+    left: 0.7%;
+    top: 66%;
+    width: 19%;
+    height: 22%;
+  }
+
+  .phone2 {
+    left: 0.7%;
+    top: 84%;
+    width: 19%;
+    height: 15%;
+  }
+
+  /* WhatsApp numbers */
+  .whatsapp1 {
+    left: 24.0%;
+    top: 66%;
+    width: 18.5%;
+    height: 22%;
+  }
+
+  .whatsapp2 {
+    left: 24.0%;
+    top: 84%;
+    width: 18.5%;
+    height: 15%;
+  }
+
+  /* Email addresses */
+  .email1 {
+    left: 42.2%;
+    top: 66%;
+    width: 28.0%;
+    height: 18%;
+  }
+
+  .email2 {
+    left: 42.2%;
+    top: 83%;
+    width: 28.0%;
+    height: 16%;
+  }
+
+  /* Website globe + QR code */
+  .website {
+    left: 70.5%;
+    top: 66%;
+    width: 10.5%;
+    height: 29%;
+  }
+
+  /* Facebook icon + QR code */
+  .facebook {
+    left: 82.0%;
+    top: 66%;
+    width: 9.0%;
+    height: 29%;
+  }
+
+  /*
+      Optional mobile fallback:
+      the artwork remains intact and scales proportionally.
+      Hotspots become slightly larger to make tapping easier.
+    */
+  @media (max-width: 600px) {
+    .hotspot {
+      border-radius: 5px;
+    }
+
+    .phone1,
+    .phone2 {
+      width: 21%;
+    }
+
+    .whatsapp1,
+    .whatsapp2 {
+      width: 20%;
+    }
+
+    .email1,
+    .email2 {
+      width: 30%;
+    }
+
+    .website {
+      width: 12%;
+    }
+
+    .facebook {
+      width: 11%;
+    }
+  }
+
+  .table {
+    width: auto;
+    background: maroon;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 25px;
+
+  }
+
+  td {
+    padding: 5px;
+    border: 2px solid #fff;
+    color: white;
+    font-size: 25px;
+    font-weight: normal;
+  }
+
+  th {
+    background: darkblue;
+    color: white;
+    font-family: 'Times New Roman';
+  }
+
+
+  .custom-media {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+
+
+  ol {
+    font-size: 25px;
+    padding-left: 50px;
+    padding-right: 20px;
+    font-family: arial;
+  }
+
+  .table {
+    width: auto;
+    background: maroon;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 25px;
+
+  }
+
+  td {
+    padding: 5px;
+    border: 2px solid #fff;
+    color: white;
+    font-size: 25px;
+    font-weight: normal;
+  }
+
+  th {
+    background: darkblue;
+    color: white;
+    font-family: 'Times New Roman';
+  }
+
+  @media only screen and (max-width:475px) {
+    .custom-media {
+
+      th,
+      td {
+        display: block;
+        width: auto;
+        text-align: justify;
+      }
+    }
+  }
+
+  ul1 {
+    list-style-type: disc;
+    font-weight: normal;
+  }
+
+  ul1 li {
+    font-size: 25px;
+    padding: 2px;
+    margin-left: 25px;
+  }
+
+  section {
+    background-color: maroon;
+    color: white;
+    padding: 20px;
+    max-width: auto;
+    margin: 0 auto;
+    font-family: Times, 'Times New Roman', serif;
+  }
+
+  .responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .container1 {
+    text-align: justify;
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border: 3px solid blue;
+    font-family: Times New Roman;
+  }
+
+  .container2 {
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    background: maroon;
+    color: white;
+    width: auto;
+    font-family: Times New Roman;
+  }
+
+
+  .container3 {
+    text-align: justify;
+    background: darkblue;
+    color: white;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    font-family: 'Times New Roman';
+  }
+
+
+  h2 {
+    text-align: center;
+    background: yellow;
+    font-weight: bold;
+    color: black;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 10px 13px orange;
+    font-family: 'Times New Roman';
+  }
+
+  h3 {
+    text-align: center;
+    background: darkblue;
+
+    font-weight: bold;
+    color: #fff;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-weight: 25px;
+    box-shadow: 10px 13px skyblue;
+    font-family: 'Times New Roman';
+  }
+
+  p {
+    font-weight: bold;
+    text-align: justify;
+    font-family: 'Times New Roman';
+    padding: 10px;
+    margin: 5px;
+    font-size: 25px;
+    font-weight: normal;
+  }
+
+  p1 {
+
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    color: darkblue;
+    padding-left: 20px;
+    padding-right: 10px;
+
+    font-size: 25px;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .table {
+    width: auto;
+    background: maroon;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 25px;
+
+  }
+
+  td {
+    padding: 5px;
+    border: 2px solid #fff;
+    color: white;
+    font-size: 25px;
+    font-weight: normal;
+  }
+
+  th {
+    background: darkblue;
+    color: white;
+    font-family: 'Times New Roman';
+
+
+    text-align: center;
+  }
+
+  /* RESPONSIVE FOOTER */
+
+  .professional-footer {
+    background: maroon;
+    color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 25px 15px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+
+  .footer-top {
+    padding: 10px 0 20px;
+  }
+
+
+  .footer-profile {
+    width: 220px;
+    max-width: 85%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+
+  .footer-name {
+    color: #ffffff;
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+    font-size: clamp(28px, 4vw, 42px);
+    margin-bottom: 5px;
+  }
+
+
+  .footer-designation {
+    color: #ffffff;
+    margin: 5px 0;
+    font-size: clamp(17px, 2vw, 23px);
+  }
+
+
+  .footer-companies {
+
+    color: #ffffff;
+    font-size: clamp(15px, 1.8vw, 20px);
+    font-weight: bold;
+    line-height: 1.6;
+  }
+
+
+  .footer-nb-logo {
+    width: 180px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+
+  /* CONTACT AREA */
+
+  .footer-contact {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 20px 0 10px;
+  }
+
+
+  .footer-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    text-align: left;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+
+  .footer-icon {
+    font-size: 30px;
+    min-width: 35px;
+  }
+
+
+  .whatsapp-icon {
+    background: darkgreen;
+    color: white;
+    font-size: 32px;
+    padding: 5px;
+    border-radius: 6px;
+    min-width: 40px;
+    text-align: center;
+  }
+
+
+  .facebook-icon {
+    background: #3B5998;
+    color: white;
+    font-size: 32px;
+    padding: 6px 10px;
+    border-radius: 6px;
+  }
+
+
+  .footer-item a {
+    color: #ffffff;
+    text-decoration: none;
+    word-break: break-word;
+  }
+
+
+  .footer-item a:hover {
+    text-decoration: underline;
+  }
+
+
+  .email-section {
+    word-break: break-word;
+  }
+
+
+  .footer-qr {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    margin-top: 5px;
+  }
+
+
+  .social-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 20px 0;
+  }
+
+
+  .facebook-title {
+    font-size: 18px;
+    margin-left: 8px;
+  }
+
+
+  .footer-social-qr {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    margin-top: 10px;
+  }
+
+
+  /* COPYRIGHT */
+
+  .footer-copyright {
+    background: #5a0000;
+    margin: 20px -15px 0;
+    padding: 12px 10px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+
+  /* ================= MOBILE ================= */
+
+  @media (max-width: 575.98px) {
+    .professional-footer {
+      padding: 20px 10px 0;
+    }
+
+
+    .footer-profile {
+      width: 180px;
+    }
+
+
+    .footer-name {
+      font-size: 30px;
+    }
+
+
+    .footer-designation {
+      font-size: 17px;
+    }
+
+    .footer-companies {
+      font-size: 15px;
+    }
+
+
+    .footer-nb-logo {
+      width: 160px;
+    }
+
+
+    .footer-contact {
+      padding-top: 10px;
+    }
+
+
+    .footer-item {
+      justify-content: flex-start;
+      padding: 15px 20px;
+      font-size: 15px;
+    }
+
+
+    .footer-icon {
+      font-size: 27px;
+    }
+
+
+    .whatsapp-icon {
+      font-size: 30px;
+    }
+
+
+    .footer-copyright {
+      font-size: 13px;
+    }
+  }
+
+
+  /* ================= VERY SMALL PHONES ================= */
+
+  @media (max-width: 375px) {
+    .footer-profile {
+      width: 150px;
+    }
+
+
+    .footer-name {
+      font-size: 27px;
+    }
+
+    .footer-designation {
+      font-size: 15px;
+    }
+
+
+    .footer-companies {
+      font-size: 13px;
+    }
+
+
+    .footer-item {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 14px;
+
+    }
+
+  }
+
+  #successMessage {
+    display: none;
+    margin: 30px auto;
+    padding: 25px;
+    max-width: 700px;
+    text-align: center;
+    background: #f0fff4;
+    border: 2px solid #28a745;
+    border-radius: 10px;
+    color: #155724;
+    font-size: 18px;
+    line-height: 1.7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  #successMessage strong {
+    font-size: 20px;
+  }
+</style>
+
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="main-header">
+    <div class="header-container">
+
+
+      <!-- LEFT: AXIS MAX LIFE -->
+      <div class="header-logo left-logo">
+
+        <img src="https://raw.githubusercontent.com/girish8360/amli/main/GridArt_20250228_090331226.jpg"
+          class="img-fluid" style="float:left;">
+
+      </div>
+
+      <!-- CENTER: YOUR NAME -->
+      <div class="header-title">
+        <h1>GIRISH GAUR</h1>
+        <h4 style="color:#fff;font-weight: bold;font-family: 'Times New Roman', serif;">Certified Insurance Advisor</h4>
+        <h4 style="color:#fff;font-weight: bold;font-family: 'Times New Roman', serif;">AXIS MAX LIFE INSURANCE<br>
+          NIVA BUPA HEALTH INSURANCE</h4>
+
+        <p class=" mb-0" style="text-align: center;font-size: x-large;">
+          Life • Health • Pension • Term Insurance • ULIP
+        </p>
+
+
+        </p>
+      </div>
+
+      <!-- RIGHT: NIVA BUPA -->
+      <div class="header-logo right-logo">
+        <img src="https://raw.githubusercontent.com/girish8360/amli/main/nb.jpg" alt="Niva Bupa Health Insurance">
+      </div>
+
+    </div>
+
+    <!-- ================= SLIDESHOW ================= -->
+
+    <section class="container my-5"
+      style="background: linear-gradient(45deg,orange,maroon);color:#fff;border:3px solid gold;">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="slideshow-container">
+
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">1 / 14</div>
+
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/AMLI RIDER.jpg" class="responsive-img">
+
+
+                <div class="text">INFLATION</div>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">2 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/IMG-20250222-WA0028.jpg"
+                  class="responsive-img">
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">3 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/MAX-LI-04.jpg" class="responsive-img">
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">4 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/STAR.jpeg.jpg" class="responsive-img">
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">5 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/STEP.jpg" class="responsive-img">
+
+              </div>
+            </div>
+
+
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">6 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/IMG-20240924-WA0006.jpg"
+                  class="responsive-img">
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">7 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/SWAG BENEFITS.jpg"
+                  class="responsive-img">
+
+              </div>
+            </div>
+
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">8 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/AMLI BHAROSA.jpg"
+                  class="responsive-img">
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">9 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/AXIS MAX LIFE-BHAROSA.jpg"
+                  class="responsive-img">
+
+              </div>
+            </div>
+
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">10 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/PLAN TYPE.jpeg.jpg"
+                  class="responsive-img">
+
+
+              </div>
+            </div>
+
+
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">12 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/IMG-20240924-WA0019.jpg"
+                  class="responsive-img">
+
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">13 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/IMG-20241123-WA0047.jpg"
+                  class="responsive-img">
+
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">14 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/IMG-20241130-WA0045.jpg"
+                  class="responsive-img">
+
+
+              </div>
+            </div>
+
+
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">15 / 14</div>
+
+                <img src="https://github.com/girish8360/amli/raw/main/IMG-20240924-WA0007.jpg" class="responsive-img">
+
+              </div>
+            </div>
+
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">1 / 13</div>
+
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/NB-GWP.jpeg" class="img-fluid">
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">2 / 13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/NB-PAT 2026.jpeg" class="img-fluid">
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">3 / 13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/NB-NPS-2026.jpeg" class="img-fluid">
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">4 / 13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/NB-CSR-2026.jpeg" class="img-fluid">
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">5 / 13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/NB-RHMS-2026.jpeg" class="img-fluid">
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">6 / 13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/NF-GWP-2026.jpeg" class="img-fluid">
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">7/ 13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/NB-GROWTRUST2026.jpeg"
+                  class="img-fluid">
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">8 / 13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/SF.png" class="img-fluid">
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">9 / 13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/ASPIRE.png" class="img-fluid">
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">10 / 13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/RA2 LEAFLET.jpg" class="img-fluid">
+
+              </div>
+            </div>
+
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">11/ 13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/RA3.png" class="img-fluid">
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">12 / 13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/COVER.jpg" class="img-fluid">
+
+              </div>
+            </div>
+
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">13 /13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/appreciation certificate.jpeg"
+                  class="img-fluid">
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">13 /13</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/CC KANTAL-05082026.jpg">
+
+
+              </div>
+            </div>
+
+
+          </div>
+          <br>
+
+          <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <script>
+            //--SLIDWSHOW --//
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) { slideIndex = 1 }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+          </script>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ================= TIME MESSAGE ================= -->
+    <section class="container my-5" style="background: linear-gradient(60deg,maroon, orange);color:#fff;">
+      <div class="row">
+        <div class="col-lg-12">
+          <p style="font-family:Times New Roman;font-style:italic;font-size: 25px;"><strong>In a world that moves at
+              an
+              ever-accelerating pace, time is our most valuable & irreversible asset<br>
+              Time never slows down, and life never waits.<br> Make today the moment you choose to protect
+              what matters most—your health and your financial security. </strong></p>
+
+          <div class="col-12 col-md-3 d-flex justify-content-center mt-3 mt-md-0">
+            <div class="container04" style="background:transparent;">
+              <div class="clock">
+                <!-- Clock -->
+
+                <div style="--clr:#ff3d58; --h:55px;" id="hour" class="hand"><i></i></div>
+                <div style="--clr:#00a6ff;  --h:70px;" id="min" class="hand"><i></i></div>
+                <div style="--clr:#ffffff;  --h:90px;" id="sec" class="hand"><i></i></div>
+
+                <span style="--i:1;"><b>I</b></span>
+                <span style="--i:2;"><b>II</b></span>
+                <span style="--i:3;"><b>III</b></span>
+                <span style="--i:4;"><b>IV</b></span>
+                <span style="--i:5;"><b>V</b></span>
+                <span style="--i:6;"><b>VI</b></span>
+                <span style="--i:7;"><b>VII</b></span>
+                <span style="--i:8;"><b>VIII</b></span>
+                <span style="--i:9;"><b>IX</b></span>
+                <span style="--i:10;"><b>X</b></span>
+                <span style="--i:11;"><b>XI</b></span>
+                <span style="--i:12;"><b>XII</b></span>
+              </div>
+
+            </div>
+            <script>
+              let hr = document.getElementById('hour');
+              let min = document.getElementById('min');
+              let sec = document.getElementById('sec');
+
+              function displayTime() {
+                let date = new Date();
+
+                // Getting hour, mins, secs from date
+                let hh = date.getHours();
+                let mm = date.getMinutes();
+                let ss = date.getSeconds();
+
+                let hRotation = 30 * hh + mm / 2;
+                let mRotation = 6 * mm;
+                let sRotation = 6 * ss;
+
+
+                hr.style.transform = `rotate(${hRotation}deg)`;
+                // hr.style.transform = `rotate(${hRotation}deg)`;
+                // hr.style.transform = `rotate(${hRotation}deg)`;
+                min.style.transform = `rotate(${mRotation}deg)`;
+                sec.style.transform = `rotate(${sRotation}deg)`;
+              }
+              setInterval(displayTime, 1000);
+            </script>
+
+
+          </div>
+        </div>
+        <p id="demo"
+          style="background:maroon;color:#fff;font-weight: bolder;font-family: 'Times New Roman';font-size:30px;">
+        </p>
+        <script>
+          const d = new Date();
+          document.getElementById("demo").innerHTML = d;
+
+
+
+        </script>
+    </section>
+  </header>
+  <!-- ================= NAVBAR ================= -->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar" style="background: #003366;color:#fff;">
+
+    <div class="container-fluid">
+
+      <!-- HOME / BRAND -->
+      <a class="navbar-brand d-flex align-items-center" href="https://girish8360.github.io/amli/GIRISH-PROFILE.html">
+        <i class="fa-solid fa-house me-2"></i>
+        HOME
+      </a>
+
+      <!-- HAMBURGER BUTTON FOR SMALL SCREENS -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+
+      <!-- COLLAPSIBLE NAVIGATION -->
+      <div class="collapse navbar-collapse" id="mainNavbar">
+
+        <ul class="navbar-nav ms-auto">
+
+          <!-- SEGMENTS -->
+          <li class="nav-item dropdown">
+
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Segments </a>
+
+            <ul class="dropdown-menu">
+
+              <li>
+                <a class="dropdown-item" href="https://girish8360.github.io/amli/libasic.htm" target="_blank"">
+                                     Basics-Life Insurance
+                </a>
+              </li>
+
+              <li>
+                <a class=" dropdown-item" href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS MAX LIFE LEAFLET.htm"
+                  target="_blank">
+                  Axis Max Life Insurance
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="https://girish8360.github.io/amli/hibasic.htm" target="_blank"">
+                  Basics-Health Insurance
+                </a>
+              </li>
+
+              <li>
+                <a class=" dropdown-item" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM"
+                  target="_blank">
+                  Niva Bupa Health Insurance
+                </a>
+              </li>
+
+            </ul>
+
+          </li>
+
+
+          <!-- LIFE INSURANCE -->
+          <li class="nav-item dropdown">
+
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+
+              Life Insurance
+
+            </a>
+
+            <ul class="dropdown-menu">
+
+              <li>
+                <a class="dropdown-item"
+                  href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#term"
+                  target="_blank">
+                  Term Products
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item"
+                  href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#saving"
+                  target="_blank">
+                  Saving Products
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item"
+                  href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#annuity"
+                  target="_blank">
+                  Annuity Products
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item"
+                  href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#ulip"
+                  target="_blank">
+                  ULIP Products
+                </a>
+              </li>
+
+            </ul>
+
+          </li>
+
+
+          <!-- HEALTH INSURANCE -->
+          <li class="nav-item dropdown">
+
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+
+              Health Insurance
+
+            </a>
+
+            <ul class="dropdown-menu">
+
+              <li>
+                <a class="dropdown-item" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#rea3"
+                  target="_blank">
+                  ReAssu₹e 3.0
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#rea2"
+                  target="_blank">
+                  ReAssu₹e 2.0
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#pa"
+                  target="_blank">
+                  PA Products
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#travel"
+                  target="_blank">
+                  Travel Insurance
+                </a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <!-- HOME PAGE -->
+          <li class="nav-item dropdown">
+
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              FORMS & SURVEYS
+            </a>
+
+            <ul class="dropdown-menu">
+
+              <li>
+
+                <a class="dropdown-item"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSc00eA7ZzaBbn5XT72spjy4vkYyA7P5oZrBYrvj70y2NLzXXA/viewform?usp=sf_link"
+                  target="_blank"> <span>Wealth Management Survey</span></a>
+
+
+              </li>
+
+              <li>
+                <a class="dropdown-item"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSemtYqq2uhJ2KY9MPtYos7Fln_5xNvqasLrXdk77a0-9gFXMg/viewform?usp=sharing&ouid=110655948174661466563"
+                  target="_blank"> <span>Health Management Survey</span></a>
+              </li>
+
+
+              <li>
+                <a class="dropdown-item" href="https://girish8360.github.io/amli/GIRISH-PROFILE.html#feedback"
+                  target="_blank"> <span>Feedback Form</span></a>
+
+              </li>
+
+            </ul>
+
+          </li>
+
+          <!-- PDF DOCS -->
+          <!-- LIFE INSURANCE -->
+          <li class="nav-item dropdown">
+
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+
+              PDF Documents </a>
+
+            <ul class="dropdown-menu">
+
+              <li>
+                <a class="dropdown-item" href="https://girish8360.github.io/amli/BASICS OF LIFE INSURANCE.pdf"
+                  target="_blank">
+                  Basics of Life Insurance
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="https://girish8360.github.io/amli/BASICS OF HEALTH INSURANCE.pdf"
+                  target="_blank">
+                  Basics of Health Insurance
+                </a>
+              </li>
+
+
+
+            </ul>
+
+          </li>
+
+          <!-- CONTACT -->
+          <li class="nav-item">
+
+            <a class="nav-link active" href="#contact">
+              Contact Us
+            </a>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <!-- Bootstrap 5 JavaScript Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- <!-- ================= HERO ================= -->
+
+  <section class="container-fluid p-0">
+    <div class="hero">
+      <h1 class="text-left"> GIRISH GAUR </h1>
+      <h5 style="padding-left: 30px;"><b><i>B.Sc., M.A.(ECO),<br> PGDCASA, PGDBA, Cert Oracle 8i</i></b></h5>
+      <h4>Certified Insurance Advisor <br>
+        AXIS MAX LIFE INSURANCE<br>
+        NIVA BUPA HEALTH INSURANCE</h4>
+      <div class="hero-img">
+        <img src="https://raw.githubusercontent.com/girish8360/girish8360/main/girish_snap.jpg" class="img-fluid w-55"
+          style="border-radius: 55%;">
+      </div>
+
+      <h2 style="color:black;font-weight:bold;">CONTACT US </h2>
+
+      <!-- ================= WELCOME ================= -->
+
+      <!-- <form class="form-inline" action="https://sheetdb.io/api/v1/emf2ys13fr3un" method="POST"> -->
+      <!--EXISTING FORM------->
+      <div class="container-fluid px-2 px-sm-3 px-md-4 px-lg-5 py-3"
+        style="background:maroon;color:#fff;padding-left:auto;">
+
+
+
+        <form class="form-inline" action="https://sheetdb.io/api/v1/emf2ys13fr3un" method="POST" id="FeedbackForm"
+          target="sheetdbTarget">
+
+          <!-- QUESTIONNAIRE INTEREST -->
+          <fieldset style="border:4px solid orange; padding-left:30px;padding-right:20px;">
+            <legend>
+
+              <h3 id="feedback" class="text-center mt-4"><b>We’d love to know you better.</b></h3>
+              <h3 class="text-center"><b>YOUR FEEDBACK IS VALUABLE TO US</b></h3>
+              <p style="font-size: x-large;font-family: 'Times New Roman';">We value your feedback and would love to
+                hear your
+                thoughts on our
+                services.<br>
+                Please
+                take a moment to fill out feedback form and let us know how we can improve.
+                Please take a few moments to share your details with us. This will help us understand your
+                requirements better and enable us to connect with you to provide relevant guidance and
+                assistance.Thanks You.</p>
+            </legend>
+
+            <fieldset style="border:4px solid orange; padding-left:30px;padding-right:20px;font-size:22px;">
+
+              <legend>
+                <h2 style="color:black">PERSONAL INFORMATION</h2>
+              </legend>
+
+
+              <!-- FULL NAME -->
+              <div class="form-group row mb-3">
+                <label class="col-sm-6 col-form-label question-label">
+                  FULL NAME :
+                </label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="name" name="data[full_name]" placeholder="Enter FULL NAME"
+                    maxlength="100" autocomplete="name" required>
+                </div>
+              </div>
+
+              <!-- DATE OF BIRTH -->
+              <div class="form-group row mb-3">
+                <label class="col-sm-6 col-form-label question-label">
+                  DATE OF BIRTH :
+                </label>
+                <div class="col-sm-6">
+                  <input type="date" class="form-control" id="dob" name="data[dob]" style="width:200px;" required>
+                </div>
+              </div>
+
+              <!-- AGE -->
+              <div class="form-group row mb-3">
+                <label for="age" class="col-sm-6 col-form-label question-label"> AGE AS ON DATE (YEARS) : </label>
+                <div class="col-sm-6">
+                  <input type="number" class="form-control" id="age" name="data[age]"
+                    placeholder="Age will be calculated automatically" readonly required>
+                </div>
+              </div>
+
+              <!-- ================= AUTOMATIC AGE CALCULATOR ================= -->
+              <script>
+                // <--GETTING REFERENCES TO THE DATE OF BIRTH AND AGE INPUT FIELDS -->
+                const dobField = document.getElementById("dob");
+                const ageField = document.getElementById("age");
+
+                // <--Prevent selecting a future date -->
+
+                dobField.max = new Date().toISOString().split("T")[0];
+
+                // <--Calculate age automatically when DOB changes -->
+                dobField.addEventListener("change", function () {
+
+                  // Get selected DOB
+
+                  const dobValue = dobField.value;
+
+                  if (!dobValue) { ageField.value = ""; return; }
+
+                  // Convert DOB into Date object
+
+                  const birthDate = new Date(dobValue + "T00:00:00");
+
+                  const today = new Date();
+
+                  // Calculate initial age
+
+                  let age = today.getFullYear() - birthDate.getFullYear();
+
+                  // Calculate whether birthday has occurred this year
+
+                  const monthDifference = today.getMonth() - birthDate.getMonth();
+                  const dayDifference = today.getDate() - birthDate.getDate();
+
+                  // If birthday has not occurred yet, subtract one year
+
+                  if (monthDifference < 0 || (monthDifference === 0 && dayDifference < 0)) { age--; }
+
+                  // Put calculated age into Age field
+
+                  ageField.value = age;
+                }); 
+              </script>
+
+              <!-- MOBILE -->
+              <div class="form-group row mb-3">
+                <label class="col-sm-6 col-form-label question-label">
+                  CONTACT No.
+                </label>
+                <div class="col-sm-6">
+                  <input type="tel" id="mob" name="data[mobile]" class="form-control" maxlength="15"
+                    placeholder="Enter mobile number" inputmode="numeric" pattern="[0-9+\-\s]{10,15}" autocomplete="tel"
+                    required>
+                </div>
+              </div>
+
+              <!-- EMAIL -->
+              <div class="form-group row mb-3">
+                <label class="col-sm-6 col-form-label question-label">
+                  Email ID
+                </label>
+                <div class="col-sm-6">
+                  <input type="email" id="email" name="data[email]" class="form-control" maxlength="150"
+                    placeholder="Enter email" autocomplete="email">
+                </div>
+              </div>
+
+              <!-- GENDER -->
+              <div class="form-group row mb-3">
+
+                <label class="col-sm-6 col-form-label question-label">
+                  GENDER :
+                </label>
+
+                <div class="col-sm-6">
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="data[gender]" id="male" value="Male" required>
+
+                    <label class="form-check-label" for="male">
+                      Male
+                    </label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="data[gender]" id="female" value="Female">
+
+                    <label class="form-check-label" for="female">
+                      Female
+                    </label>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!---MARITAL STATUS-->
+              <div class="form-group row mb-3">
+
+                <label class="col-sm-6 col-form-label question-label">
+                  MARITAL STATUS :
+                </label>
+
+                <div class="col-sm-6">
+                  <input type="radio" name="data[marital_status]" value="Married" class="form-check-input" id="married"
+                    required>
+
+                  <label for="married" class="form-check-label">
+                    Married
+                  </label>
+
+                  <input type="radio" name="data[marital_status]" value="Single" class="form-check-input" id="single">
+
+                  <label for="single" class="form-check-label">
+                    Single
+                  </label>
+                </div>
+
+                <!--city--->
+
+                <div class="form-group row mb-3">
+                  <label class="col-sm-6 col-form-label question-label">
+                    CITY
+                  </label>
+
+                  <div class="col-sm-6">
+                    <input type="text" id="city" name="data[city]" class="form-control" maxlength="150"
+                      placeholder="city" autocomplete="address-level2">
+                  </div>
+                </div>
+
+                <!-- =========================================================
+     STATE → DISTRICT DEPENDENT DROPDOWN
+     ========================================================= -->
+
+                <div class="form-group row mb-3">
+
+                  <label class="col-sm-6 col-form-label question-label">
+                    STATE as per ID:
+                  </label>
+
+                  <div class="col-sm-6">
+                    <select class="form-select" id="state" name="data[state]" class="form-control" maxlength="60"
+                      placeholder="State/UT" autocomplete="address-level1">
+                      <option value="" selected disabled>
+                        -- Select State / UT --
+                      </option>
+
+                      <optgroup label="States">
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                      </optgroup>
+
+                      <optgroup label="Union Territories">
+                        <option value="Andaman and Nicobar Islands">
+                          Andaman and Nicobar Islands
+                        </option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Dadra and Nagar Haveli and Daman and Diu">
+                          Dadra and Nagar Haveli and Daman and Diu
+                        </option>
+                        <option value="Delhi">Delhi (NCT)</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Ladakh">Ladakh</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Puducherry">Puducherry</option>
+                      </optgroup>
+
+                    </select>
+
+                  </div>
+                </div>
+
+                <!-- ================= DISTRICT ================= -->
+                <!-- STATE/DISTRICT-->
+
+                <div class="form-group row mb-3">
+                  <label class="col-sm-6 col-form-label question-label">
+                    DISTRICT as per Permanent Address ID:
+                  </label>
+
+                  <div class="col-sm-6">
+
+                    <select class="form-select" id="district" name="data[district]" class="form-control" maxlength="60"
+                      placeholder="District" autocomplete="address-level1">
+                      <option value="" selected>
+                        -- First Select State / UT --
+                      </option>
+                    </select>
+                  </div>
+                </div>
+
+
+
+                <!-- =========================================================
+     JAVASCRIPT
+     ========================================================= -->
+
+                <script>
+
+                  const districts = {
+
+                    /* ================= ANDHRA PRADESH ================= */
+
+                    "Andhra Pradesh": [
+                      "Alluri Sitharama Raju",
+                      "Anakapalli",
+                      "Anantapur",
+                      "Annamayya",
+                      "Bapatla",
+                      "Chittoor",
+                      "Dr. B.R. Ambedkar Konaseema",
+                      "East Godavari",
+                      "Eluru",
+                      "Guntur",
+                      "Kakinada",
+                      "Krishna",
+                      "Kurnool",
+                      "Nandyal",
+                      "NTR",
+                      "Palnadu",
+                      "Parvathipuram Manyam",
+                      "Prakasam",
+                      "Sri Potti Sriramulu Nellore",
+                      "Sri Sathya Sai",
+                      "Srikakulam",
+                      "Tirupati",
+                      "Visakhapatnam",
+                      "Vizianagaram",
+                      "West Godavari"
+                    ],
+
+                    /* ================= ARUNACHAL PRADESH ================= */
+
+                    "Arunachal Pradesh": [
+                      "Anjaw",
+                      "Bichom",
+                      "Changlang",
+                      "Dibang Valley",
+                      "East Kameng",
+                      "East Siang",
+                      "Itanagar Capital Complex",
+                      "Kamle",
+                      "Keyi Panyor",
+                      "Kra Daadi",
+                      "Kurung Kumey",
+                      "Lepa Rada",
+                      "Lohit",
+                      "Longding",
+                      "Lower Dibang Valley",
+                      "Lower Siang",
+                      "Lower Subansiri",
+                      "Namsai",
+                      "Pakke Kessang",
+                      "Papum Pare",
+                      "Shi Yomi",
+                      "Siang",
+                      "Tawang",
+                      "Tirap",
+                      "Upper Siang",
+                      "Upper Subansiri",
+                      "West Kameng",
+                      "West Siang"
+                    ],
+
+                    /* ================= ASSAM ================= */
+
+                    "Assam": [
+                      "Baksa",
+                      "Bajali",
+                      "Barpeta",
+                      "Biswanath",
+                      "Bongaigaon",
+                      "Cachar",
+                      "Charaideo",
+                      "Chirang",
+                      "Darrang",
+                      "Dhemaji",
+                      "Dhubri",
+                      "Dibrugarh",
+                      "Dima Hasao",
+                      "Goalpara",
+                      "Golaghat",
+                      "Hailakandi",
+                      "Hojai",
+                      "Jorhat",
+                      "Kamrup",
+                      "Kamrup Metropolitan",
+                      "Karbi Anglong",
+                      "Karimganj",
+                      "Kokrajhar",
+                      "Lakhimpur",
+                      "Majuli",
+                      "Morigaon",
+                      "Nagaon",
+                      "Nalbari",
+                      "Sivasagar",
+                      "Sonitpur",
+                      "South Salmara-Mankachar",
+                      "Tamulpur",
+                      "Tinsukia",
+                      "Udalguri",
+                      "West Karbi Anglong"
+                    ],
+
+                    /* ================= BIHAR ================= */
+
+                    "Bihar": [
+                      "Araria",
+                      "Arwal",
+                      "Aurangabad",
+                      "Banka",
+                      "Begusarai",
+                      "Bhagalpur",
+                      "Bhojpur",
+                      "Buxar",
+                      "Darbhanga",
+                      "East Champaran",
+                      "Gaya",
+                      "Gopalganj",
+                      "Jamui",
+                      "Jehanabad",
+                      "Kaimur",
+                      "Katihar",
+                      "Khagaria",
+                      "Kishanganj",
+                      "Lakhisarai",
+                      "Madhepura",
+                      "Madhubani",
+                      "Munger",
+                      "Muzaffarpur",
+                      "Nalanda",
+                      "Nawada",
+                      "Patna",
+                      "Purnia",
+                      "Rohtas",
+                      "Saharsa",
+                      "Samastipur",
+                      "Saran",
+                      "Sheikhpura",
+                      "Sheohar",
+                      "Sitamarhi",
+                      "Siwan",
+                      "Supaul",
+                      "Vaishali",
+                      "West Champaran"
+                    ],
+
+                    /* ================= CHHATTISGARH ================= */
+
+                    "Chhattisgarh": [
+                      "Balod",
+                      "Baloda Bazar",
+                      "Balrampur-Ramanujganj",
+                      "Bastar",
+                      "Bemetara",
+                      "Bijapur",
+                      "Bilaspur",
+                      "Dantewada",
+                      "Dhamtari",
+                      "Durg",
+                      "Gariaband",
+                      "Gaurela-Pendra-Marwahi",
+                      "Janjgir-Champa",
+                      "Jashpur",
+                      "Kabirdham",
+                      "Kanker",
+                      "Khairagarh-Chhuikhadan-Gandai",
+                      "Kondagaon",
+                      "Korba",
+                      "Koriya",
+                      "Mahasamund",
+                      "Manendragarh-Chirmiri-Bharatpur",
+                      "Mohla-Manpur-Ambagarh Chowki",
+                      "Mungeli",
+                      "Narayanpur",
+                      "Raigarh",
+                      "Raipur",
+                      "Rajnandgaon",
+                      "Sarangarh-Bilaigarh",
+                      "Sukma",
+                      "Surajpur",
+                      "Surguja"
+                    ],
+
+                    /* ================= GOA ================= */
+
+                    "Goa": [
+                      "North Goa",
+                      "South Goa"
+                    ],
+
+                    /* ================= GUJARAT ================= */
+
+                    "Gujarat": [
+                      "Ahmedabad",
+                      "Amreli",
+                      "Anand",
+                      "Aravalli",
+                      "Banaskantha",
+                      "Bharuch",
+                      "Bhavnagar",
+                      "Botad",
+                      "Chhota Udaipur",
+                      "Dahod",
+                      "Dang",
+                      "Devbhoomi Dwarka",
+                      "Gandhinagar",
+                      "Gir Somnath",
+                      "Jamnagar",
+                      "Junagadh",
+                      "Kheda",
+                      "Kutch",
+                      "Mahisagar",
+                      "Mehsana",
+                      "Morbi",
+                      "Narmada",
+                      "Navsari",
+                      "Panchmahal",
+                      "Patan",
+                      "Porbandar",
+                      "Rajkot",
+                      "Sabarkantha",
+                      "Surat",
+                      "Surendranagar",
+                      "Tapi",
+                      "Vadodara",
+                      "Valsad"
+                    ],
+
+                    /* ================= HARYANA ================= */
+
+                    "Haryana": [
+                      "Ambala",
+                      "Bhiwani",
+                      "Charkhi Dadri",
+                      "Faridabad",
+                      "Fatehabad",
+                      "Gurugram",
+                      "Hisar",
+                      "Jhajjar",
+                      "Jind",
+                      "Kaithal",
+                      "Karnal",
+                      "Kurukshetra",
+                      "Mahendragarh",
+                      "Nuh",
+                      "Palwal",
+                      "Panchkula",
+                      "Panipat",
+                      "Rewari",
+                      "Rohtak",
+                      "Sirsa",
+                      "Sonipat",
+                      "Yamunanagar"
+                    ],
+
+                    /* ================= HIMACHAL PRADESH ================= */
+
+                    "Himachal Pradesh": [
+                      "Bilaspur",
+                      "Chamba",
+                      "Hamirpur",
+                      "Kangra",
+                      "Kinnaur",
+                      "Kullu",
+                      "Lahaul and Spiti",
+                      "Mandi",
+                      "Shimla",
+                      "Sirmaur",
+                      "Solan",
+                      "Una"
+                    ],
+
+                    /* ================= JHARKHAND ================= */
+
+                    "Jharkhand": [
+                      "Bokaro",
+                      "Chatra",
+                      "Deoghar",
+                      "Dhanbad",
+                      "Dumka",
+                      "East Singhbhum",
+                      "Garhwa",
+                      "Giridih",
+                      "Godda",
+                      "Gumla",
+                      "Hazaribagh",
+                      "Jamtara",
+                      "Khunti",
+                      "Koderma",
+                      "Latehar",
+                      "Lohardaga",
+                      "Pakur",
+                      "Palamu",
+                      "Ramgarh",
+                      "Ranchi",
+                      "Sahebganj",
+                      "Seraikela Kharsawan",
+                      "Simdega",
+                      "West Singhbhum"
+                    ],
+
+                    /* ================= KARNATAKA ================= */
+
+                    "Karnataka": [
+                      "Bagalkot",
+                      "Ballari",
+                      "Belagavi",
+                      "Bengaluru Rural",
+                      "Bengaluru Urban",
+                      "Bidar",
+                      "Chamarajanagar",
+                      "Chikballapur",
+                      "Chikkamagaluru",
+                      "Chitradurga",
+                      "Dakshina Kannada",
+                      "Davanagere",
+                      "Dharwad",
+                      "Gadag",
+                      "Hassan",
+                      "Haveri",
+                      "Kalaburagi",
+                      "Kodagu",
+                      "Kolar",
+                      "Koppal",
+                      "Mandya",
+                      "Mysuru",
+                      "Raichur",
+                      "Ramanagara",
+                      "Shivamogga",
+                      "Tumakuru",
+                      "Udupi",
+                      "Uttara Kannada",
+                      "Vijayanagara",
+                      "Vijayapura",
+                      "Yadgir"
+                    ],
+
+                    /* ================= KERALA ================= */
+
+                    "Kerala": [
+                      "Alappuzha",
+                      "Ernakulam",
+                      "Idukki",
+                      "Kannur",
+                      "Kasaragod",
+                      "Kollam",
+                      "Kottayam",
+                      "Kozhikode",
+                      "Malappuram",
+                      "Palakkad",
+                      "Pathanamthitta",
+                      "Thiruvananthapuram",
+                      "Thrissur",
+                      "Wayanad"
+                    ],
+
+                    /* ================= MADHYA PRADESH ================= */
+
+                    "Madhya Pradesh": [
+                      "Agar Malwa",
+                      "Alirajpur",
+                      "Anuppur",
+                      "Ashoknagar",
+                      "Balaghat",
+                      "Barwani",
+                      "Betul",
+                      "Bhind",
+                      "Bhopal",
+                      "Burhanpur",
+                      "Chhatarpur",
+                      "Chhindwara",
+                      "Damoh",
+                      "Datia",
+                      "Dewas",
+                      "Dhar",
+                      "Dindori",
+                      "Guna",
+                      "Gwalior",
+                      "Harda",
+                      "Indore",
+                      "Jabalpur",
+                      "Jhabua",
+                      "Katni",
+                      "Khandwa",
+                      "Khargone",
+                      "Maihar",
+                      "Mandla",
+                      "Mandsaur",
+                      "Mauganj",
+                      "Morena",
+                      "Narmadapuram",
+                      "Narsinghpur",
+                      "Neemuch",
+                      "Niwari",
+                      "Panna",
+                      "Raisen",
+                      "Rajgarh",
+                      "Ratlam",
+                      "Rewa",
+                      "Sagar",
+                      "Satna",
+                      "Sehore",
+                      "Seoni",
+                      "Shahdol",
+                      "Shajapur",
+                      "Sheopur",
+                      "Shivpuri",
+                      "Sidhi",
+                      "Singrauli",
+                      "Tikamgarh",
+                      "Ujjain",
+                      "Umaria",
+                      "Vidisha"
+                    ],
+
+                    /* ================= MAHARASHTRA ================= */
+
+                    "Maharashtra": [
+                      "Ahmednagar",
+                      "Akola",
+                      "Amravati",
+                      "Beed",
+                      "Bhandara",
+                      "Buldhana",
+                      "Chandrapur",
+                      "Chhatrapati Sambhajinagar",
+                      "Dharashiv",
+                      "Dhule",
+                      "Gadchiroli",
+                      "Gondia",
+                      "Hingoli",
+                      "Jalgaon",
+                      "Jalna",
+                      "Kolhapur",
+                      "Latur",
+                      "Mumbai City",
+                      "Mumbai Suburban",
+                      "Nagpur",
+                      "Nanded",
+                      "Nandurbar",
+                      "Nashik",
+                      "Palghar",
+                      "Parbhani",
+                      "Pune",
+                      "Raigad",
+                      "Ratnagiri",
+                      "Sangli",
+                      "Satara",
+                      "Sindhudurg",
+                      "Solapur",
+                      "Thane",
+                      "Wardha",
+                      "Washim",
+                      "Yavatmal"
+                    ],
+
+                    /* ================= MANIPUR ================= */
+
+                    "Manipur": [
+                      "Bishnupur",
+                      "Chandel",
+                      "Churachandpur",
+                      "Imphal East",
+                      "Imphal West",
+                      "Jiribam",
+                      "Kakching",
+                      "Kamjong",
+                      "Kangpokpi",
+                      "Noney",
+                      "Pherzawl",
+                      "Senapati",
+                      "Tamenglong",
+                      "Tengnoupal",
+                      "Thoubal",
+                      "Ukhrul"
+                    ],
+
+                    /* ================= MEGHALAYA ================= */
+
+                    "Meghalaya": [
+                      "East Garo Hills",
+                      "East Jaintia Hills",
+                      "East Khasi Hills",
+                      "Eastern West Khasi Hills",
+                      "North Garo Hills",
+                      "Ri Bhoi",
+                      "South Garo Hills",
+                      "South West Garo Hills",
+                      "South West Khasi Hills",
+                      "West Garo Hills",
+                      "West Jaintia Hills",
+                      "West Khasi Hills"
+                    ],
+
+                    /* ================= MIZORAM ================= */
+
+                    "Mizoram": [
+                      "Aizawl",
+                      "Champhai",
+                      "Hnahthial",
+                      "Khawzawl",
+                      "Kolasib",
+                      "Lawngtlai",
+                      "Lunglei",
+                      "Mamit",
+                      "Saitual",
+                      "Serchhip",
+                      "Siaha"
+                    ],
+
+                    /* ================= NAGALAND ================= */
+
+                    "Nagaland": [
+                      "Chumoukedima",
+                      "Dimapur",
+                      "Kiphire",
+                      "Kohima",
+                      "Longleng",
+                      "Mokokchung",
+                      "Mon",
+                      "Niuland",
+                      "Noklak",
+                      "Peren",
+                      "Phek",
+                      "Shamator",
+                      "Tseminyu",
+                      "Tuensang",
+                      "Wokha",
+                      "Zunheboto"
+                    ],
+
+                    /* ================= ODISHA ================= */
+
+                    "Odisha": [
+                      "Angul",
+                      "Balangir",
+                      "Balasore",
+                      "Bargarh",
+                      "Bhadrak",
+                      "Boudh",
+                      "Cuttack",
+                      "Deogarh",
+                      "Dhenkanal",
+                      "Gajapati",
+                      "Ganjam",
+                      "Jagatsinghpur",
+                      "Jajpur",
+                      "Jharsuguda",
+                      "Kalahandi",
+                      "Kandhamal",
+                      "Kendrapara",
+                      "Kendujhar",
+                      "Khordha",
+                      "Koraput",
+                      "Malkangiri",
+                      "Mayurbhanj",
+                      "Nabarangpur",
+                      "Nayagarh",
+                      "Nuapada",
+                      "Puri",
+                      "Rayagada",
+                      "Sambalpur",
+                      "Subarnapur",
+                      "Sundargarh"
+                    ],
+
+                    /* ================= PUNJAB ================= */
+
+                    "Punjab": [
+                      "Amritsar",
+                      "Barnala",
+                      "Bathinda",
+                      "Faridkot",
+                      "Fatehgarh Sahib",
+                      "Fazilka",
+                      "Ferozepur",
+                      "Gurdaspur",
+                      "Hoshiarpur",
+                      "Jalandhar",
+                      "Kapurthala",
+                      "Ludhiana",
+                      "Malerkotla",
+                      "Mansa",
+                      "Moga",
+                      "Pathankot",
+                      "Patiala",
+                      "Rupnagar",
+                      "Sahibzada Ajit Singh Nagar",
+                      "Sangrur",
+                      "Shaheed Bhagat Singh Nagar",
+                      "Sri Muktsar Sahib",
+                      "Tarn Taran"
+                    ],
+
+                    /* ================= RAJASTHAN ================= */
+
+                    "Rajasthan": [
+                      "Ajmer",
+                      "Alwar",
+                      "Balotra",
+                      "Banswara",
+                      "Baran",
+                      "Barmer",
+                      "Beawar",
+                      "Bharatpur",
+                      "Bhilwara",
+                      "Bikaner",
+                      "Bundi",
+                      "Chittorgarh",
+                      "Churu",
+                      "Dausa",
+                      "Deeg",
+                      "Dholpur",
+                      "Didwana-Kuchamana",
+                      "Dudu",
+                      "Dungarpur",
+                      "Hanumangarh",
+                      "Jaipur",
+                      "Jaisalmer",
+                      "Jalore",
+                      "Jhalawar",
+                      "Jhunjhunu",
+                      "Jodhpur",
+                      "Karauli",
+                      "Khairthal-Tijara",
+                      "Kota",
+                      "Kotputli-Behror",
+                      "Nagaur",
+                      "Neem Ka Thana",
+                      "Pali",
+                      "Phalodi",
+                      "Pratapgarh",
+                      "Rajsamand",
+                      "Salumbar",
+                      "Sawai Madhopur",
+                      "Sikar",
+                      "Sirohi",
+                      "Sri Ganganagar",
+                      "Tonk",
+                      "Udaipur"
+                    ],
+
+                    /* ================= SIKKIM ================= */
+
+                    "Sikkim": [
+                      "Gangtok",
+                      "Gyalshing",
+                      "Mangan",
+                      "Namchi",
+                      "Pakyong",
+                      "Soreng"
+                    ],
+
+                    /* ================= TAMIL NADU ================= */
+
+                    "Tamil Nadu": [
+                      "Ariyalur",
+                      "Chengalpattu",
+                      "Chennai",
+                      "Coimbatore",
+                      "Cuddalore",
+                      "Dharmapuri",
+                      "Dindigul",
+                      "Erode",
+                      "Kallakurichi",
+                      "Kancheepuram",
+                      "Karur",
+                      "Krishnagiri",
+                      "Madurai",
+                      "Mayiladuthurai",
+                      "Nagapattinam",
+                      "Namakkal",
+                      "Nilgiris",
+                      "Perambalur",
+                      "Pudukkottai",
+                      "Ramanathapuram",
+                      "Ranipet",
+                      "Salem",
+                      "Sivaganga",
+                      "Tenkasi",
+                      "Thanjavur",
+                      "Theni",
+                      "Thoothukudi",
+                      "Tiruchirappalli",
+                      "Tirunelveli",
+                      "Tirupathur",
+                      "Tiruppur",
+                      "Tiruvallur",
+                      "Tiruvannamalai",
+                      "Tiruvarur",
+                      "Vellore",
+                      "Viluppuram",
+                      "Virudhunagar"
+                    ],
+
+                    /* ================= TELANGANA ================= */
+
+                    "Telangana": [
+                      "Adilabad",
+                      "Bhadradri Kothagudem",
+                      "Hanamkonda",
+                      "Hyderabad",
+                      "Jagtial",
+                      "Jangaon",
+                      "Jayashankar Bhupalpally",
+                      "Jogulamba Gadwal",
+                      "Kamareddy",
+                      "Karimnagar",
+                      "Khammam",
+                      "Komaram Bheem Asifabad",
+                      "Mahabubabad",
+                      "Mahbubnagar",
+                      "Mancherial",
+                      "Medak",
+                      "Medchal-Malkajgiri",
+                      "Mulugu",
+                      "Nagarkurnool",
+                      "Nalgonda",
+                      "Narayanpet",
+                      "Nirmal",
+                      "Nizamabad",
+                      "Peddapalli",
+                      "Rajanna Sircilla",
+                      "Rangareddy",
+                      "Sangareddy",
+                      "Siddipet",
+                      "Suryapet",
+                      "Vikarabad",
+                      "Wanaparthy",
+                      "Warangal",
+                      "Yadadri Bhuvanagiri"
+                    ],
+
+                    /* ================= TRIPURA ================= */
+
+                    "Tripura": [
+                      "Dhalai",
+                      "Gomati",
+                      "Khowai",
+                      "North Tripura",
+                      "Sepahijala",
+                      "South Tripura",
+                      "Unakoti",
+                      "West Tripura"
+                    ],
+
+                    /* =====================================================
+                       UTTAR PRADESH
+                       ===================================================== */
+
+                    "Uttar Pradesh": [
+
+                      "Agra",
+                      "Aligarh",
+                      "Ambedkar Nagar",
+                      "Amethi",
+                      "Amroha",
+                      "Auraiya",
+                      "Ayodhya",
+                      "Azamgarh",
+                      "Baghpat",
+                      "Bahraich",
+                      "Ballia",
+                      "Balrampur",
+                      "Banda",
+                      "Barabanki",
+                      "Bareilly",
+                      "Basti",
+                      "Bhadohi",
+                      "Bijnor",
+                      "Budaun",
+                      "Bulandshahr",
+                      "Chandauli",
+                      "Chitrakoot",
+                      "Deoria",
+                      "Etah",
+                      "Etawah",
+                      "Farrukhabad",
+                      "Fatehpur",
+                      "Firozabad",
+                      "Gautam Buddha Nagar",
+                      "Ghaziabad",
+                      "Ghazipur",
+                      "Gonda",
+                      "Gorakhpur",
+                      "Hamirpur",
+                      "Hapur",
+                      "Hardoi",
+                      "Hathras",
+                      "Jalaun",
+                      "Jaunpur",
+                      "Jhansi",
+                      "Kannauj",
+                      "Kanpur Dehat",
+                      "Kanpur Nagar",
+                      "Kasganj",
+                      "Kaushambi",
+                      "Kheri",
+                      "Kushinagar",
+                      "Lalitpur",
+                      "Lucknow",
+                      "Maharajganj",
+                      "Mahoba",
+                      "Mainpuri",
+                      "Mathura",
+                      "Mau",
+                      "Meerut",
+                      "Mirzapur",
+                      "Moradabad",
+                      "Muzaffarnagar",
+                      "Pilibhit",
+                      "Pratapgarh",
+                      "Prayagraj",
+                      "Raebareli",
+                      "Rampur",
+                      "Saharanpur",
+                      "Sambhal",
+                      "Sant Kabir Nagar",
+                      "Shahjahanpur",
+                      "Shamli",
+                      "Shravasti",
+                      "Siddharthnagar",
+                      "Sitapur",
+                      "Sonbhadra",
+                      "Sultanpur",
+                      "Unnao",
+                      "Varanasi"
+                    ],
+
+                    /* ================= UTTARAKHAND ================= */
+
+                    "Uttarakhand": [
+                      "Almora",
+                      "Bageshwar",
+                      "Chamoli",
+                      "Champawat",
+                      "Dehradun",
+                      "Haridwar",
+                      "Nainital",
+                      "Pauri Garhwal",
+                      "Pithoragarh",
+                      "Rudraprayag",
+                      "Tehri Garhwal",
+                      "Udham Singh Nagar",
+                      "Uttarkashi"
+                    ],
+
+                    /* ================= WEST BENGAL ================= */
+
+                    "West Bengal": [
+                      "Alipurduar",
+                      "Bankura",
+                      "Birbhum",
+                      "Cooch Behar",
+                      "Dakshin Dinajpur",
+                      "Darjeeling",
+                      "Hooghly",
+                      "Howrah",
+                      "Jalpaiguri",
+                      "Jhargram",
+                      "Kalimpong",
+                      "Kolkata",
+                      "Malda",
+                      "Murshidabad",
+                      "Nadia",
+                      "North 24 Parganas",
+                      "Paschim Bardhaman",
+                      "Paschim Medinipur",
+                      "Purba Bardhaman",
+                      "Purba Medinipur",
+                      "Purulia",
+                      "South 24 Parganas",
+                      "Uttar Dinajpur"
+                    ],
+
+                    /* =====================================================
+                       UNION TERRITORIES
+                       ===================================================== */
+
+                    "Andaman and Nicobar Islands": [
+                      "Nicobar",
+                      "North and Middle Andaman",
+                      "South Andaman"
+                    ],
+
+                    "Chandigarh": [
+                      "Chandigarh"
+                    ],
+
+                    "Dadra and Nagar Haveli and Daman and Diu": [
+                      "Dadra and Nagar Haveli",
+                      "Daman",
+                      "Diu"
+                    ],
+
+                    "Delhi": [
+                      "Central Delhi",
+                      "East Delhi",
+                      "New Delhi",
+                      "North Delhi",
+                      "North East Delhi",
+                      "North West Delhi",
+                      "Shahdara",
+                      "South Delhi",
+                      "South East Delhi",
+                      "South West Delhi",
+                      "West Delhi"
+                    ],
+
+                    "Jammu and Kashmir": [
+                      "Anantnag",
+                      "Bandipora",
+                      "Baramulla",
+                      "Budgam",
+                      "Doda",
+                      "Ganderbal",
+                      "Jammu",
+                      "Kathua",
+                      "Kishtwar",
+                      "Kulgam",
+                      "Kupwara",
+                      "Poonch",
+                      "Pulwama",
+                      "Rajouri",
+                      "Ramban",
+                      "Reasi",
+                      "Samba",
+                      "Shopian",
+                      "Srinagar",
+                      "Udhampur"
+                    ],
+
+                    "Ladakh": [
+                      "Kargil",
+                      "Leh"
+                    ],
+
+                    "Lakshadweep": [
+                      "Agatti",
+                      "Amini",
+                      "Andrott",
+                      "Bitra",
+                      "Chetlat",
+                      "Kadmat",
+                      "Kalpeni",
+                      "Kavaratti",
+                      "Kiltan",
+                      "Minicoy"
+                    ],
+
+                    "Puducherry": [
+                      "Karaikal",
+                      "Mahe",
+                      "Puducherry",
+                      "Yanam"
+                    ]
+
+                  };
+
+
+                  /* =========================================================
+                     STATE CHANGE EVENT
+                     ========================================================= */
+
+                  document.getElementById("state").addEventListener("change", function () {
+
+                    const selectedState = this.value;
+
+                    const districtDropdown =
+                      document.getElementById("district");
+
+
+                    /* Clear existing districts */
+
+                    districtDropdown.innerHTML =
+                      '<option value="">-- Select District --</option>';
+
+
+                    /* If no state selected */
+
+                    if (!selectedState) {
+
+                      districtDropdown.disabled = true;
+
+                      return;
+                    }
+
+
+                    /* Get districts */
+
+                    const stateDistricts =
+                      districts[selectedState] || [];
+
+
+                    /* Add districts */
+
+                    stateDistricts.forEach(function (district) {
+
+                      const option =
+                        document.createElement("option");
+
+                      option.value = district;
+                      option.textContent = district;
+
+                      districtDropdown.appendChild(option);
+
+                    });
+
+
+                    /* Enable district dropdown */
+
+                    districtDropdown.disabled = false;
+
+                  });
+
+                </script>
+
+                <legend>
+                  <h2 style="color:black">PREFERRED QUERY</h2>
+                </legend>
+
+                <!-- INSURANCE TYPE -->
+                <div class="form-group row mb-3">
+
+                  <label class="col-sm-6 col-form-label question-label">
+                    INSURANCE REQUIREMENT :
+                  </label>
+
+
+                  <div class="col-sm-6">
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="data[insurance_type]" id="life_insurance"
+                        value="Life Insurance" required>
+
+                      <label class="form-check-label" for="life_insurance">
+                        LIFE INSURANCE
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="data[insurance_type]" id="health_insurance"
+                        value="Health Insurance">
+
+                      <label class="form-check-label" for="health_insurance">
+                        HEALTH INSURANCE
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="data[insurance_type]" id="both_insurance"
+                        value="Both Life & Health Insurance">
+
+                      <label class="form-check-label" for="both_insurance">
+                        BOTH LIFE & HEALTH INSURANCE
+                      </label>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <!-- MESSAGE -->
+                <div class="form-group row mb-3">
+                  <label class="col-sm-6 col-form-label">
+                    PLEASE PROVIDE ANY ADDITIONAL INFORMATION OR COMMENTS:
+                  </label>
+                  <div class="col-sm-6">
+                    <textarea name="data[message]" id="message" rows="10" cols="30" class="form-control" maxlength="500"
+                      placeholder="Additional information or comments" autocomplete="address-level1"></textarea>
+                  </div>
+
+
+            </fieldset>
+
+
+
+            <!-- SUBMIT -->
+            <div class="text-center mt-4">
+              <button type="submit" class="btn btn-primary btn-lg px-5" id="submitBtn" name="submit">
+                SUBMIT
+              </button>
+
+              <button type="reset" class="btn btn-secondary btn-lg px-4 ms-2">
+                RESET
+              </button>
+            </div>
+
+        </form>
+        <!-- SUCCESS MESSAGE 
+<!-- THANK YOU MESSAGE: hidden until submission succeeds -->
+
+        <!-- THANK YOU MESSAGE: hidden until submission succeeds -->
+        <div id="successMessage" class="text-center p-4" style="display:none;">
+          <div style="font-size:60px; color:green;">&#10004;</div>
+          <h2>Thank You!</h2>
+          <h4>Your feedback has been submitted successfully.</h4>
+          <p>Thank you for your valuable time.</p>
+          <p>I will get in touch with you shortly.</p>
+          <p><strong>— Girish Gaur</strong></p>
+
+          <button type="button" id="submitAnotherBtn" class="btn btn-primary">
+            Submit Another Response
+          </button>
+        </div>
+
+        <div id="submissionMessage" role="status" aria-live="polite"></div>
+
+
+
+        <script>
+
+          const form = document.getElementById("FeedbackForm");
+          const successMessage = document.getElementById("successMessage");
+          const submissionMessage = document.getElementById("submissionMessage");
+          const submitAnotherBtn = document.getElementById("submitAnotherBtn");
+
+          const SHEETDB_URL = "https://sheetdb.io/api/v1/emf2ys13fr3un";
+
+          form.addEventListener("submit", async function (event) {
+            event.preventDefault();
+
+            const submitBtn = form.querySelector('[type="submit"]');
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = "SUBMITTING...";
+            submissionMessage.textContent = "";
+
+            try {
+              const response = await fetch(SHEETDB_URL, {
+                method: "POST",
+                body: new FormData(form)
+              });
+
+              if (!response.ok) {
+                throw new Error("Submission failed. Please try again.");
+              }
+
+              // Confirm that the server returned a successful response.
+              const result = await response.json();
+
+              // Only now show the Thank You message.
+              form.reset();
+              // form.style.display = "none";
+              successMessage.style.display = "block";
+
+            } catch (error) {
+              submissionMessage.textContent =
+                "We could not confirm your submission. Please check your connection and try again. If you have already submitted, please avoid resubmitting until the sheet is checked.";
+
+              submissionMessage.style.color = "white";
+              console.error("Submission error:", error);
+
+            } finally {
+              submitBtn.disabled = false;
+              submitBtn.textContent = "SUBMIT";
+            }
+          });
+
+          submitAnotherBtn.addEventListener("click", function () {
+            // successMessage.style.display = "none";
+            submissionMessage.textContent = "";
+            form.reset();
+            form.style.display = "block";
+          });
+        </script>
+
+
+
+
+        <!-- ================= CARDS ================= -->
+
+        <section class="container my-5">
+
+          <div class="row g-4">
+
+            <div class="col-md-4 col-lg-4">
+
+              <div class="card h-100 shadow">
+
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/GridArt_20250228_090331226.jpg"
+                  class="card-img-top" style="width:50%;height:20%;">
+
+
+                <div class="card-body">
+
+                  <h3 style="color:#fff;">Life Insurance</h3>
+                  <h5>Financial protection for your family.</h5>
+
+                  <a target="_blank" href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm"
+                    class="btn btn-primary" style="color:#fff;">
+
+                    Know More </a>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+
+              <div class="card h-100 shadow">
+
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/nb.jpg" target="_blank"
+                  class="card-img-top" style="width:50%;height:30%;">
+
+
+                <div class="card-body">
+
+                  <h3 style="color:#fff;">Health Insurance</h3>
+                  <h5>Health Protection beating Medical Inflation.</h5>
+
+                  </p>
+                  <a target="_blank" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM"
+                    class="btn btn-success">
+
+
+                    Know More
+
+                  </a>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+
+              <div class="card h-100 shadow">
+
+                <img src="https://raw.githubusercontent.com/girish8360/girish8360/main/girish_snap.jpg"
+                  class="card-img-top" style="border-radius: 55%;width:30%;height:30%;">
+
+                <div class=" card-body">
+
+                  <h3 style="color:#fff;">Profile Page</h3>
+                  <h5>Back to Home</h5>
+
+                  </p>
+                  <a target="_blank" href="https://girish8360.github.io/amli/GIRISH-PROFILE.html">
+                    <span" target="_blank" class="btn btn-warning">
+
+
+                      Home Page
+
+                  </a>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <section class="container my-5" style="background:maroon;color:#fff;">
+          <div class="container my-5">
+            <div class="col-lg-12">
+              <footer class="bg-dark text-white mt-5 py-4">
+
+                <div class="container">
+
+                  <div class="row">
+
+                    <div class="col-md-4">
+
+                      <h5 id="contact" style="font-style: italic;">Insurance Advisory</h5>
+
+
+
+                      <a href="https://girish8360.github.io/amli/GIRISH-PROFILE.html" target="_blank"><span
+                          style="color:#fff;">Home</span></a><br>
+                      <a href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#amli"
+                        target="_blank"><span style="color:#fff;">About Us-Axis Max Life</span></a><br>
+
+                      <a href="file:///C:/Users/GIRISH%20GAUR/Downloads/INSURANCE%20DATA/GIRISH-NB-LEAFLET.HTM#nb"
+                        target="_blank">
+                        <span style="color:#fff;">About Us-Niva Bupa Health </span></a><br>
+
+
+                      <a target="_blank"
+                        href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm"><span
+                          style="color:#fff;">Life Insurance</span></a><br>
+
+
+
+                      <a href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM" target="_blank"><span
+                          style="color:#fff;">Health Insurance</span></a><br>
+
+
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                      <h5>Quick Links</h5>
+                      <p>
+                      <h5><b><i>Life Insurance Products</i></b></h5>
+
+                      <a target="_blank" href="https://girish8360.github.io/amli/term product.html"><span
+                          style="color:#fff;">Term Insurance</span></a><br>
+                      <a target="_blank"
+                        href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#saving"><span
+                          style="color:#fff;">Savings Products</span></a><br>
+                      <a target="_blank"
+                        href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#annuity"><span
+                          style="color:#fff;">Annuity Products</span></a><br>
+                      <a target="_blank"
+                        href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#ulip"><span
+                          style="color:#fff;">ULIP Products</span></a><br>
+                      <a target="_blank"
+                        href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#rider"><span
+                          style="color:#fff;">Riders</span></a><br>
+                      <a target="_blank"
+                        href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#healthcare"><span
+                          style="color:#fff;">Healthcare Products</span></a> <br><br>
+
+
+                      <h5><b><i>Health Insurance Products</i></b></h5>
+
+                      <a target="_blank" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#rea3"><span
+                          style="color:#fff;">ReAssure 3.0 UNLIMITED</span></a><br>
+
+                      <a target="_blank" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#rea2"><span
+                          style="color:#fff;">ReAssure 2.0</span></a><br>
+                      <a target="_blank" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#aspire"><span
+                          style="color:#fff;">Aspire</span></a><br>
+                      <a target="_blank" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#senior"><span
+                          style="color:#fff;">Senior First</span></a><br>
+                      <a target="_blank" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#personal"><span
+                          style="color:#fff;">Personal Accident</span></a><br>
+                      <a target="_blank" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#travel"><span
+                          style="color:#fff;">Travel Insurance</span></a><br><br>
+
+
+                      <h5><b><i>Management Surveys</i></b></h5>
+
+
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc00eA7ZzaBbn5XT72spjy4vkYyA7P5oZrBYrvj70y2NLzXXA/viewform?usp=sf_link"
+                        target="_blank"> <span style="color:#fff;">Wealth Management Survey</span></a><br>
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSemtYqq2uhJ2KY9MPtYos7Fln_5xNvqasLrXdk77a0-9gFXMg/viewform?usp=sharing&ouid=110655948174661466563"
+                        target="_blank"> <span style="color:#fff;">Health Management Survey</span></a><br><br>
+
+
+                      <h5><b><i>Feedback Form</i></b></h5>
+                      <a href="https://girish8360.github.io/amli/GIRISH-PROFILE.html#feedback" target="_blank">
+                        <span style="color:#fff;">Feedback Form</span></a>
+                      </p>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                      <h5>Contact Us:</h5>
+                      <div class="footer-item" style="gap:5px;">
+
+                        <i class="fa-solid fa-phone me-2" style="font-size:30px;color:#fff;"></i><span
+                          style="font-weight:bold;">+91-790-628-4866,
+                          <br>
+                          885-966-2533</span><br>
+                      </div>
+                      <div class="footer-item" style="gap:5px;">
+                        <i class="fa-brands fa-whatsapp me=2"
+                          style="background:darkgreen;color: white;font-size:40px"></i>
+                        <span style="font-weight:bold;">+91-790-628-4866, <br> 885-966-2533 </span><br>
+                      </div>
+
+                      <div class="footer-item" style="gap:5px;">
+                        <i class="fa-solid fa-at me-2" style="font-size:30px"></i>
+                        <span style="font-weight:normal;">
+                          <a href="mailto:girish.garry4u@gmail.com" style="color:#fff;">girish.garry4u@gmail.com</a>
+                          <br>
+                          <a href="mailto:girish.gaur@rediffmail.com" style="color:#fff;">girish.gaur@rediffmail.com</a>
+                        </span><br>
+                      </div>
+
+                      <div class="footer-item" style="gap:5px;">
+
+                        <i class="fa-solid fa-globe me-2" style="font-size:30px"></i> <span
+                          style="font-weight:normal;">VISIT
+                          US
+                          -
+                          SCAN QR<br>
+                          <img
+                            src="https://raw.githubusercontent.com/girish8360/amli/e601d92ce1bfb06e20ef23ecc64f8b04549ae745/QR-GIRISH-PROFILE.jpeg"
+                            class="img-fluid" width="75" ;height="75"><br>
+                          <a href="https://girish8360.github.io/amli/GIRISH-PROFILE.html" style="color:#fff;">
+                            Click to Visit</a>
+                        </span><br>
+                      </div>
+
+
+                      <div class="footer-item" style="gap:5px;">
+                        <i class="fa-brands fa-facebook me-2" aria-hidden="true" style="background: #3B5998;
+color: white;font-size:30px;"></i> <span style="font-weight:normal;"> SCAN QR<br>
+                          <img
+                            src="https://raw.githubusercontent.com/girish8360/amli/main/FACEBOOK PAGE GIRISH GAUR INSURELIFE.jpeg"
+                            class="img-fluid" width="75" ;height="75"></span><br>
+                      </div>
+
+                      <div class="footer-item" style="gap:5px;">
+                        <i class="fas fa-map-marker-alt me-2" style="font-size:30px"></i>
+                        <span style="font-weight:bold;"> AXIS MAX LIFE INSURANCE <br>I<sup>st</sup> FLOOR,
+                          TIRUPATI
+                          TOWERS, <br>
+                          DELHI ROAD<br>SAHARANPUR-247001 (U.P.) </span><br><br>
+                      </div>
+
+                      <div class="footer-item" style="gap:5px;">
+
+                        <i class="fas fa-map-marker-alt me-2" style="font-size:30px"></i>
+                        <span style="font-weight:bold;"> NIVA BUPA HEALTH INSURANCE <br>
+                          G-17 & G-24 <br>
+                          UPPER GROUND FLOOR,<br>
+                          PARSVNATH PLAZA<br>
+                          COURT ROAD<br>
+                          SAHARANPUR-247001 (U.P.)
+                        </span><br><br>
+                      </div>
+
+
+                    </div>
+
+                  </div>
+                  <!-- ================= RESPONSIVE FOOTER ================= -->
+                  <footer class="professional-footer">
+
+                    <div class="container-fluid">
+
+                      <!-- TOP SECTION -->
+                      <div class="row align-items-center footer-top">
+
+                        <!-- Advisor Photo -->
+                        <div class="col-12 col-md-3 text-center mb-3 mb-md-0">
+                          <img
+                            src="https://raw.githubusercontent.com/girish8360/amli/main/GridArt_20250228_090331226.jpg"
+                            class="footer-profile" alt="Girish Gaur">
+                        </div>
+
+                        <!-- Advisor Details -->
+                        <div class="col-12 col-md-6 text-center mb-3 mb-md-0">
+
+                          <h1 class="footer-name">GIRISH GAUR</h1>
+
+                          <h5 class="footer-designation">
+                            <strong>
+                              Certified Insurance Advisor
+                            </strong>
+                          </h5>
+
+                          <div class="footer-companies">
+                            AXIS MAX LIFE INSURANCE<br>
+                            NIVA BUPA HEALTH INSURANCE
+                          </div>
+
+                        </div>
+
+                        <!-- Niva Bupa Logo -->
+                        <div class="col-12 col-md-3 text-center">
+
+                          <img src="https://raw.githubusercontent.com/girish8360/amli/main/nb.jpg"
+                            class="footer-nb-logo" alt="Niva Bupa Health Insurance">
+
+                        </div>
+
+                      </div>
+
+                      <!-- CONTACT SECTION -->
+                      <div class="row footer-contact">
+
+                        <!-- Phone -->
+                        <div class="col-12 col-sm-6 col-lg-3 footer-item">
+
+                          <i class="fa-solid fa-phone footer-icon"></i>
+
+                          <div>
+                            <strong>CALL</strong><br>
+                            +91-7906284866<br>
+                            +91-8859662533
+                          </div>
+
+                        </div>
+
+
+                        <!-- WhatsApp -->
+                        <div class="col-12 col-sm-6 col-lg-3 footer-item">
+
+                          <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+
+                          <div>
+                            <strong>WHATSAPP</strong><br>
+                            +91-7906284866<br>
+                            +91-8859662533
+                          </div>
+
+                        </div>
+
+
+                        <!-- Email -->
+                        <div class="col-12 col-sm-6 col-lg-3 footer-item">
+
+                          <i class="fa-solid fa-at footer-icon"></i>
+
+                          <div class="email-section">
+
+                            <strong>EMAIL</strong><br>
+
+                            <a href="mailto:girish.garry4u@gmail.com">
+                              girish.garry4u@gmail.com
+                            </a>
+
+                            <br>
+
+                            <a href="mailto:girish.gaur@rediffmail.com">
+                              girish.gaur@rediffmail.com
+                            </a>
+
+                          </div>
+
+                        </div>
+
+
+                        <!-- QR Code -->
+                        <div class="col-12 col-sm-6 col-lg-3 footer-item">
+
+                          <i class="fa-solid fa-globe footer-icon"></i>
+
+                          <div>
+                            <strong>VISIT / CONNECT</strong><br>
+
+                            <img
+                              src="https://raw.githubusercontent.com/girish8360/amli/e601d92ce1bfb06e20ef23ecc64f8b04549ae745/QR-GIRISH-PROFILE.jpeg"
+                              class="footer-qr" alt="Website QR Code">
+
+                          </div>
+
+                        </div>
+                      </div>
+
+
+
+                      <!-- SOCIAL MEDIA -->
+                      <div class="row social-section">
+
+                        <div class="col-12 text-center">
+
+                          <i class="fa-brands fa-facebook facebook-icon"></i>
+
+                          <strong class="facebook-title">
+
+                          </strong>
+
+
+
+                          <img
+                            src="https://raw.githubusercontent.com/girish8360/amli/main/FACEBOOK PAGE GIRISH GAUR INSURELIFE.jpeg"
+                            class="footer-social-qr" alt="Facebook Page QR Code">
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+
+                    <!-- COPYRIGHT -->
+                    <div class="footer-copyright" style="text-align: center;font-weight: bold;font-size: medium;">
+
+                      © 2026 GIRISH GAUR. All rights reserved.<br>
+                      Compiled & Designed by- GIRISH GAUR
+
+                    </div>
+
+                  </footer>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+</body>
+
+</html>
