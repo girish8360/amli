@@ -32,6 +32,7 @@
     background-color: #003366;
 
     color: #fff;
+    box-sizing: border-box;
 
   }
 
@@ -39,73 +40,90 @@
     max-width: 100%;
     height: auto;
     display: block;
-       vertical-align: middle;
+    vertical-align: middle;
   }
 
+ 
 
-  .container-fluid {
-    border: 2px;
-    width: auto;
+  ul1 {
+    list-style-type: disc;
+    font-weight: normal;
   }
 
+  ul1 li {
+    font-size: 25px;
+    padding: 2px;
+    margin-left: 25px;
+  }
+
+  section {
+    background-color: maroon;
+    color: white;
+    padding: 20px;
+    max-width: auto;
+    margin: 0 auto;
+    font-family: Times, 'Times New Roman', serif;
+  }
+
+  
   .container1 {
     text-align: justify;
+    background: #003366;
     max-width: auto;
-    margin-left: 2px;
-    margin-right: 1px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 5px;
-    background: maroon;
-    border: 3px solid orange;
+    border: 3px solid rgb(3, 3, 92);
+    font-family: Times New Roman;
+    border: 2px solid white;
   }
 
   .container2 {
     text-align: justify;
-
-    margin-left: 1px;
+    margin-left: auto;
+    margin-right: auto;
     background: maroon;
     color: white;
     width: auto;
-
+    font-family: Times New Roman;
   }
 
 
   .container3 {
     text-align: justify;
-    background: white;
-    color: darkblue;
+    background: darkblue;
+    color: white;
     font-size: 25px;
-    margin-left: 3px;
+    margin-left: auto;
+    margin-right: auto;
     width: auto;
-  }
-
-  h4 {
-    margin: 0;
-    font-size: 35px;
     font-family: 'Times New Roman';
-    background: maroon;
-    box-shadow: 10px 13px orange;
-  }
 
+    border: 2px solid white;
+  }
 
 
   h2 {
     text-align: center;
-    background: yellow;
+    background: gold;
+
     font-weight: bold;
-    font-family: 'Times New Roman';
-    color: black;
     padding-left: 15%;
     padding-right: 15%;
     margin-left: 5%;
     margin-right: 5%;
     box-shadow: 10px 13px orange;
+    font-family: 'Times New Roman';
+    color: black;
+
+
   }
 
   h3 {
     text-align: center;
     background: darkblue;
+
     font-weight: bold;
-    font-family: 'Times New Roman';
     color: #fff;
     padding-left: 15%;
     padding-right: 15%;
@@ -113,193 +131,8 @@
     margin-right: 5%;
     font-weight: 25px;
     box-shadow: 10px 13px skyblue;
-
-  }
-
-
-  .topnav02 {
-    overflow: hidden;
-    background-color: maroon;
-    padding: 5px;
-  }
-
-  .topnav02 a {
-    float: left;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    display: block;
-    color: white;
-    font-family: 'Times New Roman';
-    text-align: center;
-    padding: 3px;
-    font-weight: normal;
-    border: 1px solid white;
-    font-size: 10px;
-  }
-
-  .topnav02 a:hover {
-    background-color: darkblue;
-    color: #fff;
-  }
-
-  /* Create a right-aligned (split) link inside the navigation bar */
-  .topnav02 a.split {
-    float: right;
-    background-color: linear-gradient(200deg, #f17a2a, #003366);
-    color: white;
-    font-weight: bolder;
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 1px;
-    padding: 6px;
-    overflow: hidden;
-    font-weight: normal;
-  }
-
-  ul li {
-    float: left;
-  }
-
-  ul li a {
-    display: block;
-    color: white;
-    font-family: 'Times New Roman';
-    text-align: center;
-    padding: 3px;
-    text-decoration: none;
-    border: 1px solid white;
-
-    font-size: 20px;
-  }
-
-  li a:hover {
-    background-color: #111111;
-    color: #fff;
-  }
-
-  ul li ul li {
-    display: none;
-    float: none;
-  }
-
-  ul li:hover ul li {
-    display: block;
-    background: darkblue;
-    color: white;
-  }
-
-  ul1 {
-    font-size: 25px;
-    padding-left: 25 px;
-    padding-right: 10px;
-    font-family: arial;
-    list-style-type: disc;
-    font-weight: normal;
-  }
-
-  ul1 li {
-    font-size: 25px;
-    padding-left: 20 px;
-    font-family: 'Times New Roman';
-    margin-left: 50px;
-  }
-
-  dl {
-    list-style-type: disc;
-    font-weight: bold;
-    font-size: 30px;
-    padding-left: 50 px;
-    padding-right: 5px;
-    font-family: arial;
-  }
-
-  dl dt {
-    font-size: 25px;
-    padding-left: 15px;
-    padding-right: 5px;
-    margin-left: 20px;
-    font-family: arial;
-  }
-
-  dl dd {
-    font-size: 25px;
-    padding-left: 25px;
-    padding-right: 5px;
-    margin-left: 20px;
-    font-family: arial;
-  }
-
-  @media only screen and (max-width: 475px) {
-    .responsive {
-      width: 100%;
-    }
-  }
-
-
-  @media only screen and (max-width:475px) {
-
-    .custom-media {
-
-      th,
-      td {
-        display: block;
-        width: auto;
-        text-align: justify;
-        font-family: 'Times New Roman';
-        margin-left: 40px;
-        margin-right: 20px;
-      }
-    }
-  }
-
-
-  .table {
-    width: auto;
-    background: darkblue;
-    margin-left: 50px;
-    padding-left: 8px;
-    margin-right: 20px;
-    font-family: 'Times New Roman';
-    font-size: 25px;
-
-  }
-
-  td {
-    padding: 5px;
-    border: 2px solid #fff;
-    color: white;
-    font-size: 25px;
-    font-weight: normal;
     font-family: 'Times New Roman';
   }
-
-  th {
-    background: gray;
-    color: black;
-    text-align: center;
-    font-family: 'Times New Roman';
-  }
-
-
-  ol {
-    font-size: 25px;
-    padding-left: 20px;
-    margin-left: 20px;
-    padding-right: 20px;
-    font-family: 'Times New Roman';
-  }
-
-  ol li {
-    font-size: 25px;
-    padding-left: 30 px;
-    font-family: 'Times New Roman';
-    margin-left: 30px;
-    font-weight: normal;
-  }
-
 
   p {
     font-weight: bold;
@@ -311,76 +144,15 @@
     font-weight: normal;
   }
 
-  header {
-    background: linear-gradient(130deg, #f17a2a, #003366);
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-  }
-
-  header h1 {
-    margin: 0;
-    font-size: 35px;
-    font-family: 'Times New Roman';
-  }
-
-  header h2 {
-    margin: 5px 0 20px;
-    font-size: 1.5em;
-  }
-
-  section {
-    background-color: #003366;
-    color: white;
-    padding: 20px;
-    max-width: 1500px;
-    margin: 0 auto;
-  }
-
-  .services,
-  .contact-info {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .service-item,
-  .contact-item {
-    background-color: #003366;
-    color: azure;
-    padding: 15px;
-    margin: 10px;
-    flex-basis: 45%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    font-size: 30px;
-  }
-
-  .contact-item a {
-    background: linear-gradient(90deg, #003366, #f17a2a);
-    text-decoration: none;
-  }
-
-  footer {
-    background: linear-gradient(180deg, #f17a2a, #003366);
-    font-size: 20px;
-    font-family: 'Times New Roman';
-    padding: 10px;
-    color: white;
-    text-align: justify;
-    max-width: 1500px;
-
-  }
-
   p1 {
 
     text-align: justify;
-    font-family: 'Times New Roman';
+    font-family: Arial, Helvetica, sans-serif;
     background: white;
-    color: #ffff;
+    color: darkblue;
     padding-left: 20px;
     padding-right: 10px;
-    margin: 5px;
+
     font-size: 25px;
   }
 
@@ -390,33 +162,915 @@
     align-items: center;
   }
 
-  .flex-container>div {}
 
-  .split {
-    float: right;
+  /* ================= HEADER ================= */
+
+  .main-header {
+    width: 100%;
+   background: linear-gradient(145deg, #003366, #f17a2a);
+
+    /* Maroon */
+    padding: 12px 10px;
+    box-sizing: border-box;
+  }
+
+  .header-container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+    box-sizing: border-box;
+  }
+
+
+  /* ================= LOGOS ================= */
+
+  .header-logo {
+    flex: 0 0 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+  }
+
+  .header-logo img {
     display: block;
-    color: white;
-    font-family: times new roman;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: contain;
+  }
+
+
+  /* LEFT AXIS MAX LIFE LOGO */
+
+  .left-logo {
+    text-align: left;
+  }
+ 
+
+  /* ================= CENTER CONTENT ================= */
+
+  .header-title {
+    flex: 1;
+    min-width: 0;
+
     text-align: center;
-    padding: 3px;
-    text-decoration: none;
-    border: 1px solid white;
-    font-size: 20px;
-    padding-right: 5px;
+    color: #ffffff;
+
+    font-family: "Times New Roman", serif;
+
+    box-sizing: border-box;
   }
 
-  .split hover {
-    background: black;
-    color: white;
-    cursor: pointer;
+  .header-title h1 {
+    margin: 0 0 5px 0;
+
+    font-size: clamp(28px, 4vw, 48px);
+    line-height: 1.1;
+
+    font-weight: bold;
+    color: #ffffff;
+text-align:center;
   }
 
-  @media only screen and (max-width: 475px) {
-    .responsive {
-      width: 100%;
+  .header-title h4 {
+    margin: 5px 0;
+
+    font-size: clamp(16px, 2vw, 24px);
+    line-height: 1.3;
+text-align:center;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .header-title p {
+    margin: 12px 0 0 0;
+
+    font-size: clamp(15px, 1.8vw, 25px);
+    line-height: 1.4;
+
+    color: #ffffff;
+    text-align: center;
+  }
+
+
+  /* ================================================= */
+  /* TABLET */
+  /* ================================================= */
+
+  @media (max-width: 900px) {
+
+    .header-container {
+      gap: 12px;
+    }
+
+    .header-logo {
+      flex: 0 0 180px;
+    }
+
+    .header-logo img {
+      max-width: 180px;
+    }
+
+    .right-logo img {
+      max-width: 150px;
+    }
+
+    .header-title h1 {
+      font-size: 32px;
+    }
+
+    .header-title h4 {
+      font-size: 17px;
+    }
+
+    .header-title p {
+      font-size: 16px;
     }
   }
 
+
+  /* ================================================= */
+  /* MOBILE */
+  /* ================================================= */
+
+  @media (max-width: 600px) {
+
+    .main-header {
+      padding: 15px 8px;
+    }
+
+    .header-container {
+
+      /* Stack everything vertically */
+
+      display: flex;
+      flex-direction: column;
+
+      width: 100%;
+
+      gap: 12px;
+    }
+
+
+    /* Logos become full-width blocks */
+
+    .header-logo {
+      flex: none;
+
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+    }
+
+
+    /* Axis Max Life */
+
+    .left-logo img {
+      width: auto;
+      max-width: 250px;
+      max-height: 100px;
+    }
+
+
+    /* Center information */
+
+    .header-title {
+      width: 100%;
+      padding: 0 5px;
+    }
+
+    .header-title h1 {
+      font-size: 30px;
+      line-height: 1.1;
+    }
+
+    .header-title h4 {
+      font-size: 17px;
+      line-height: 1.3;
+    }
+
+    .header-title p {
+      font-size: 16px;
+      line-height: 1.4;
+      margin-top: 10px;
+    }
+
+
+    /* Niva Bupa */
+
+    .right-logo img {
+      width: auto;
+      max-width: 200px;
+      max-height: 90px;
+    }
+  }
+
+
+  /* ================================================= */
+  /* VERY SMALL MOBILE DEVICES */
+  /* ================================================= */
+
+  @media (max-width: 400px) {
+
+    .main-header {
+      padding: 10px 5px;
+    }
+
+    .left-logo img {
+      max-width: 210px;
+      max-height: 85px;
+    }
+
+    .header-title h1 {
+      font-size: 26px;
+    }
+
+    .header-title h4 {
+      font-size: 15px;
+    }
+
+    .header-title p {
+      font-size: 14px;
+    }
+
+    .right-logo img {
+      max-width: 170px;
+      max-height: 75px;
+    }
+  }
+
+
+  /* ================= MOBILE ================= */
+
+  @media (max-width: 768px) {
+
+    .main-header {
+      padding: 8px 8px;
+    }
+
+    .header-container {
+      gap: 5px;
+    }
+
+    .header-logo {
+      flex: 0 0 75px;
+    }
+
+    .header-logo img {
+      max-width: 75px;
+    }
+
+    .header-title h1 {
+      font-size: 20px;
+    }
+
+    .header-title p {
+      font-size: 11px;
+      color: #fff;
+    }
+  }
+
+
+  /* ================= VERY SMALL MOBILE ================= */
+
+  @media (max-width: 400px) {
+
+    .header-container {
+      gap: 3px;
+    }
+
+    .header-logo {
+      flex: 0 0 60px;
+    }
+
+    .header-logo img {
+      max-width: 60px;
+    }
+
+    .header-title h1 {
+      font-size: 17px;
+    }
+
+    .header-title p {
+      font-size: 9px;
+    }
+  }
+
+  ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    font-size: 1.55rem;
+    font-weight: normal;
+  }
+
+  /* ================= NAVBAR ================= */
+
+  .responsive-navbar {
+    background: darkblue;
+    border: 3px solid white;
+    padding: 8px 15px;
+  }
+
+
+
+  */ .responsive-navbar .navbar-brand {
+    color: white;
+    font-weight: 600;
+  }
+
+  .responsive-navbar .nav-link {
+    color: white !important;
+  }
+
+
+  .responsive-navbar .nav-link:hover {
+    background-color: MAROON;
+    color: #ffff76;
+    !important;
+    border-radius: 5px;
+  }
+
+  .responsive-navbar .dropdown-item:hover {
+    background-color: darkblue;
+    color: white;
+  }
+
+
+  /* ================= MOBILE ================= */
+
+  @media (max-width: 991.98px) {
+
+    .responsive-navbar .navbar-nav {
+      width: 100%;
+    }
+
+    .responsive-navbar .nav-item {
+      width: 100%;
+    }
+
+    .responsive-navbar .nav-link {
+      padding: 11px 10px !important;
+    }
+
+    .responsive-navbar .dropdown-menu {
+      position: static !important;
+      width: 100%;
+      margin: 0;
+      border: none;
+    }
+
+  }
+
+  /* ================= NESTED TERM PLAN SUBMENU-DESKTOP ================= */
+
+  .responsive-navbar .dropdown-submenu {
+    position: relative;
+  }
+
+  /* Arrow for Term Plan */
+  .responsive-navbar .dropdown-submenu>.dropdown-toggle::after {
+    float: right;
+    margin-top: 6px;
+    transform: rotate(-90deg);
+  }
+
+  /* Hide nested submenu initially */
+  .responsive-navbar .dropdown-submenu>.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+    margin-left: 2px;
+    min-width: 180px;
+  }
+
+  /* Show nested submenu on desktop hover */
+  @media (min-width: 992px) {
+
+    .responsive-navbar .dropdown-submenu:hover>.dropdown-menu {
+      display: block;
+    }
+
+  }
+
+  /* =========================================================
+   NESTED SUBMENU - MOBILE / SAMSUNG
+   ========================================================= */
+
+  .responsive-navbar .dropdown-submenu>.dropdown-menu {
+    position: static !important;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    background: #f8f9fa;
+  }
+
+  /* Nested submenu items */
+  .responsive-navbar .dropdown-submenu>.dropdown-menu .dropdown-item {
+    padding-left: 45px;
+    background: #f8f9fa;
+    color: #003366;
+  }
+
+  /* Hover */
+  .responsive-navbar .dropdown-submenu>.dropdown-menu .dropdown-item:hover {
+    background: #003366;
+    color: #ffffff;
+    border: 2px soild #fff;
+  }
+
+  /* Arrow points downward on mobile */
+  .responsive-navbar .dropdown-submenu>.dropdown-toggle::after {
+    transform: rotate(0deg);
+  }
+
+
+
+  /* INTRO */
+
+  .intro {
+    font-size: small;
+    text-align: justify;
+    font-weight: 18px;
+    background: darkblue;
+
+    font-family: 'Times New Roman';
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 10px;
+    border: 2px solid white;
+
+  }
+
+
+  /* HERO */
+
+  .hero {
+    background: linear-gradient(90deg, #003366, #f17a2a);
+    color: azure;
+    padding-left: 20px;
+    padding-right: 15px;
+    border: 2px solid maroon;
+  }
+
+  .hero-img {
+    width: 25%;
+    height: 25%;
+
+    height: auto;
+    display: block;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+    object-fit: cover;
+  }
+
+
+  /* CARD */
+
+  .card {
+    transition: .4s;
+    box-shadow: 25px 28px 20px maroon;
+    ;
+  }
+
+  .card:hover {
+    transform: translateY(-15px);
+  }
+
+
+  /* GOALS */
+
+  .goals {
+    margin-bottom: 10mm;
+    background: #F4D068;
+    color: #4A0000;
+  }
+
+  .goals h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 34.5px;
+    color: var(--navy);
+    margin: 0 0 6mm;
+  }
+
+  .goals a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .goal-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+
+  }
+
+
+  /* CHIP*/
+
+  .chip {
+    border: 3px solid darkblue;
+    color: var(--navy);
+    font-size: 25.3px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 6px;
+    letter-spacing: .01em;
+  }
+
+  .chip-alt {
+    border-color: 3px solid orange;
+    background: maroon;
+    color: #fff;
+  }
+
+  .chip-alt:hover {
+    background: #fff;
+    color: maroon;
+    cursor: pointer;
+  }
+
+  .chip:hover {
+    background: #fff;
+    color: maroon;
+
+    cursor: pointer;
+  }
+
+
+  /* FOOTER */
+
+  footer ul {
+    padding-left: 0;
+  }
+
+  footer li {
+    padding: 4px 0;
+  }
+
+  .navbar .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+
+
+  /* TABLE */
+
+  /* ================================
+   RESPONSIVE CUSTOM TABLE
+   ================================ */
+
+  .custom-media {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    background-color: maroon !important;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+  }
+
+  /* Table rows */
+  .custom-media tr {
+    border: 2px solid #ffffff !important;
+  }
+
+  /* Table cells */
+  .custom-media td {
+    padding: 5px !important;
+    border: 2px solid #ffffff !important;
+    color: #ffffff !important;
+    background-color: maroon !important;
+    font-size: 25px;
+    font-weight: normal;
+  }
+
+  /* Table headings */
+  .custom-media th {
+    padding: 5px !important;
+    border: 2px solid #ffffff !important;
+    background-color: darkblue !important;
+    color: #ffffff !important;
+    font-family: "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  /* =================================
+   MOBILE: STACK EACH ROW VERTICALLY
+   ================================= */
+
+  @media (max-width: 767px) {
+
+    .custom-media,
+    .custom-media tbody,
+    .custom-media tr,
+    .custom-media td {
+      display: block !important;
+      width: 100% !important;
+    }
+
+    .custom-media {
+      background-color: maroon !important;
+    }
+
+    .custom-media tr {
+      margin-bottom: 10px;
+      border: 2px solid #ffffff !important;
+    }
+
+    .custom-media td {
+      box-sizing: border-box;
+      padding: 8px 10px !important;
+      border: 1px solid #ffffff !important;
+      background-color: maroon !important;
+      color: #ffffff !important;
+      text-align: left;
+    }
+
+    .custom-media th {
+      display: block !important;
+      width: 100% !important;
+      box-sizing: border-box;
+      background-color: darkblue !important;
+      color: #ffffff !important;
+      border: 2px solid #ffffff !important;
+    }
+  }
+
+
+
+  .table td,
+  .table th {
+    vertical-align: middle;
+  }
+
+
+  .table-responsive {
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+  }
+
+  .table-responsive table {
+    width: max-content;
+    min-width: 700px;
+    border-collapse: collapse;
+    width: auto;
+    background: transparent;
+    margin-left: 5px;
+    margin-right: 20px;
+  }
+
+  .table-responsive th {
+    font-size: 13px;
+    padding: 10px;
+    white-space: nowrap;
+
+    color: azure;
+    text-align: center;
+  }
+
+  .table-responsive td {
+    font-size: 12px;
+    padding: 8px;
+    white-space: nowrap;
+    padding: 5px;
+    border: 2px solid #fff;
+
+  }
+
+  .table {
+    width: auto;
+    background: maroon;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 25px;
+
+  }
+
+  td {
+    padding: 5px;
+    border: 2px solid #fff;
+    color: white;
+    font-size: 25px;
+    font-weight: normal;
+  }
+
+  th {
+    background: darkblue;
+    color: white;
+    font-family: 'Times New Roman';
+    text-align: center;
+  }
+
+  tr {
+    border: 2px solid black;
+  }
+
+  @media only screen and (max-width:475px) {
+    .custom-media {
+
+      th,
+      td {
+        display: block;
+        width: auto;
+        text-align: justify;
+      }
+    }
+  }
+
+  /* <---PILLARS-----> */
+
+
+  .pillars {
+    padding: 2mm 16mm 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    background: maroon;
+    color: #fff;
+  }
+
+  .pillar {
+    padding: 7mm 6mm 6mm 0;
+    border-top: 1px solid var(--hair);
+  }
+
+  .pillar:nth-child(n+4) {
+    border-top: 1px solid var(--hair);
+  }
+
+  .pillar-head {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    gap: 9px;
+    margin-bottom: 7px;
+  }
+
+  .pillar h3 {
+    font-family: 'Times New Roman', serif;
+    font-weight: 00;
+    font-size: 24px;
+    margin: 0;
+    color: var(--navy);
+  }
+
+
+  /* CONTAINER01 */
+
+  .container01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
+    width: 100%;
+    background: linear-gradient(135deg, #4203a9, #90bafc);
+
+    color: #fff;
+  }
+
+
+  /* CALCULATOR */
+
+  .calculator {
+    width: 75vw;
+    max-width: 400px;
+
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .calculator h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  .input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .input-box input {
+    flex: 1;
+    padding: 14px 20px;
+    border: 0;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 16px;
+    position: relative;
+  }
+
+  .input-box input::webkit-calendar-picker-indicator {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+
+    transform: translateY(-50%);
+
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .input-box button {
+    padding: 15px 30px;
+    border: 0;
+    height: auto;
+    border-radius: 5px;
+    background-color: #ffff76;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    background-color: #fff;
+  }
+
+  #result span {
+    font-weight: bold;
+    color: black;
+  }
+
+  /* FIELDSET */
+
+  fieldset {
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+
+  legend h2 {
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .question-label {
+    font-weight: bold;
+  }
+
+  .form-control {
+    max-width: 400px;
+
+  }
+
+  .survey-section {
+    margin-top: 15px;
+  }
+
+  @media (max-width: 575px) {
+    .form-control {
+      max-width: 100%;
+      padding-left: 15px;
+
+    }
+
+    fieldset {
+      padding: 12px;
+    }
+  }
 
   .container04 {
     position: relative;
@@ -424,12 +1078,11 @@
 
   }
 
-
   .clock {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 60%;
-    background-color: #212121;
+
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.9);
     display: flex;
@@ -449,7 +1102,6 @@
     transform: rotate(calc(-30deg*var(--i)));
     display: inline-block;
     font-size: 23px;
-    font-family: 'Times New Roman';
   }
 
   .clock::before {
@@ -477,45 +1129,15 @@
     border-radius: 8px;
   }
 
-  @media (max-width: 475px) {
-
-    table {
-      width: auto;
-      margin-left: 40px;
-      margin-right: 20px;
-    }
-
-    td {
-      display: block;
-      width: 100%;
-    }
-
-    .clock {
-      width: 200px;
-      height: 200px;
-    }
-
-    .responsive-video {
-      max-width: 100%;
-    }
-  }
-
-  .table-wrapper {
-    width: 100%;
-    overflow-x: hidden;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-
-  .mySlides {
-    display: none;
-  }
-
-  img {
-    vertical-align: middle;
+  .intro .sign {
+    margin-top: 8px;
+    font-family: 'Times New Roman', serif;
+    font-style: normal;
+    font-size: 25px;
+    color: var(--ink-soft);
+    letter-spacing: .03em;
+    text-align: right;
+    font-style: italic;
   }
 
   /* Slideshow container */
@@ -585,39 +1207,542 @@
     }
   }
 
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .text {
-      font-size: 11px
+  .footer {
+    width: 100%;
+    background: #8b0000;
+    overflow: hidden;
+  }
+
+  /*
+      The original artwork is 1459 × 342.
+      Keeping this aspect ratio makes the clickable overlay positions
+      line up with the artwork at every screen width.
+    */
+  .footer-inner {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1459 / 342;
+    max-width: 1459px;
+    margin: 0 auto;
+  }
+
+  .footer-art {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+
+  .hotspot {
+    position: absolute;
+    display: block;
+    z-index: 5;
+    cursor: pointer;
+    border-radius: 8px;
+    outline: none;
+  }
+
+  /* Invisible hover/focus feedback */
+  .hotspot:hover,
+  .hotspot:focus-visible {
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .35);
+  }
+
+
+  /* RESPONSIVE FOOTER */
+
+  .professional-footer {
+    background: maroon;
+    color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 25px 15px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+
+  .footer-top {
+    padding: 10px 0 20px;
+  }
+
+
+  .footer-profile {
+    width: 220px;
+    max-width: 85%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+
+  .footer-name {
+    color: #ffffff;
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+    font-size: clamp(28px, 4vw, 42px);
+    margin-bottom: 5px;
+  }
+
+
+  .footer-designation {
+    color: #ffffff;
+    margin: 5px 0;
+    font-size: clamp(17px, 2vw, 23px);
+  }
+
+
+  .footer-companies {
+
+    color: #ffffff;
+    font-size: clamp(15px, 1.8vw, 20px);
+    font-weight: bold;
+    line-height: 1.6;
+  }
+
+
+  .footer-nb-logo {
+    width: 180px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+
+  /* CONTACT AREA */
+
+  .footer-contact {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 20px 0 10px;
+  }
+
+
+  .footer-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    text-align: left;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+
+  .footer-icon {
+    font-size: 30px;
+    min-width: 35px;
+  }
+
+
+  .whatsapp-icon {
+    background: darkgreen;
+    color: white;
+    font-size: 32px;
+    padding: 5px;
+    border-radius: 6px;
+    min-width: 40px;
+    text-align: center;
+  }
+
+
+  .facebook-icon {
+    background: #3B5998;
+    color: white;
+    font-size: 32px;
+    padding: 6px 10px;
+    border-radius: 6px;
+  }
+
+
+  .footer-item a {
+    color: #ffffff;
+    text-decoration: none;
+    word-break: break-word;
+  }
+
+
+  .footer-item a:hover {
+    text-decoration: underline;
+  }
+
+
+  .email-section {
+    word-break: break-word;
+  }
+
+
+  .footer-qr {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    margin-top: 5px;
+  }
+
+
+  .social-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 20px 0;
+  }
+
+
+  .facebook-title {
+    font-size: 18px;
+    margin-left: 8px;
+  }
+
+
+  .footer-social-qr {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    margin-top: 10px;
+  }
+
+
+  /* COPYRIGHT */
+
+  .footer-copyright {
+    background: #5a0000;
+    margin: 20px -15px 0;
+    padding: 12px 10px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+
+  /* ================= MOBILE ================= */
+
+  @media (max-width: 575.98px) {
+    .professional-footer {
+      padding: 20px 10px 0;
+    }
+
+
+    .footer-profile {
+      width: 180px;
+    }
+
+
+    .footer-name {
+      font-size: 30px;
+    }
+
+
+    .footer-designation {
+      font-size: 17px;
+    }
+
+    .footer-companies {
+      font-size: 15px;
+    }
+
+
+    .footer-nb-logo {
+      width: 160px;
+    }
+
+
+    .footer-contact {
+      padding-top: 10px;
+    }
+
+
+    .footer-item {
+      justify-content: flex-start;
+      padding: 15px 20px;
+      font-size: 15px;
+    }
+
+
+    .footer-icon {
+      font-size: 27px;
+    }
+
+
+    .whatsapp-icon {
+      font-size: 30px;
+    }
+
+
+    .footer-copyright {
+      font-size: 13px;
+    }
+  }
+
+
+  /* ================= VERY SMALL PHONES ================= */
+
+  @media (max-width: 375px) {
+    .footer-profile {
+      width: 150px;
+    }
+
+
+    .footer-name {
+      font-size: 27px;
+    }
+
+    .footer-designation {
+      font-size: 15px;
+    }
+
+
+    .footer-companies {
+      font-size: 13px;
+    }
+
+
+    .footer-item {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 14px;
+
+    }
+
+  }
+
+  /* MAGAZINE-STYLE CONTACT INTRODUCTION */
+  .magazine-message {
+    max-width: auto;
+    margin: 25px auto;
+    padding: 32px 35px;
+    background: #f5ece8;
+    color: darkblue;
+    border: 1px solid #e7dfd5;
+    border-top: 5px solid #812632;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+  /* Small editorial label */
+  .magazine-label {
+    color: darkblue;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  /* Main magazine headline */
+  .magazine-message h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(27px, 4vw, 39px);
+    line-height: 1.2;
+    font-weight: bold;
+    color: #222222;
+    margin: 0 0 12px;
+  }
+
+  /* Decorative subtitle */
+  .magazine-subtitle {
+    font-size: 17px;
+    font-style: italic;
+    color: darkblue;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+
+  /* Paragraph formatting */
+  .magazine-message p {
+    margin: 0 0 18px;
+    text-align: justify;
+  }
+
+  /* Newspaper-style opening letter */
+  .magazine-opening::first-letter {
+    float: left;
+    font-size: 58px;
+    line-height: 0.85;
+    padding-right: 9px;
+    padding-top: 7px;
+    color: #812632;
+    font-weight: bold;
+  }
+
+  /* Highlighted call to action */
+  .magazine-highlight {
+    background: #f5ece8;
+    border-left: 4px solid #812632;
+    padding: 18px 20px;
+    margin: 25px 0;
+    color: #51252a;
+
+    font-size: 17px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.7;
+  }
+
+  /* Privacy section */
+  .magazine-privacy {
+    border-top: 1px solid #d8c9c0;
+    border-bottom: 1px solid #d8c9c0;
+    padding: 18px 0;
+    margin-top: 20px;
+    background: lightgray;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .magazine-privacy h3 {
+    text-align: center;
+    color: lightgray;
+    font-size: 21px;
+    margin: 0 0 12px font-weight: bold;
+  }
+
+  /* Advisor signature */
+  .magazine-signature {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .magazine-signature strong {
+    display: block;
+    color: #812632;
+    font-size: 23px;
+    letter-spacing: 1.5px;
+
+  }
+
+  .magazine-signature span {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #666666;
+    margin-top: 5px;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  /* Mobile-friendly layout */
+  @media (max-width: 600px) {
+    .magazine-message {
+      padding: 23px 19px;
+      font-size: 15px;
+      line-height: 1.8;
+      margin: 15px auto;
+    }
+
+    .magazine-message p {
+      text-align: left;
+    }
+
+    .magazine-opening::first-letter {
+      font-size: 48px;
+    }
+
+    .magazine-highlight {
+      padding: 14px;
+      font-size: 16px;
     }
   }
 </style>
+  
 
-<body>
-  <div class="container-fluid" style="background:gray;">
-    <div class="row">
-      <div class="col-sm-12">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
 
-        <div class="responsive">
+      const submenuLinks = document.querySelectorAll(
+        ".responsive-navbar .dropdown-submenu > .dropdown-toggle"
+      );
+
+      submenuLinks.forEach(function (link) {
+
+        link.addEventListener("click", function (e) {
+
+          e.preventDefault();
+          e.stopPropagation();
+
+          const submenu = this.nextElementSibling;
+
+          if (submenu.style.display === "block") {
+            submenu.style.display = "none";
+          } else {
+            submenu.style.display = "block";
+          }
+
+        });
+
+      });
+
+    });
+  </script>
+
+  <body>
+
+    <!-- ================= HEADER -AXIS MAX LIFE================= -->
+
+    <header class="main-header">
+
+      <div class="header-container">
+
+
+        <!-- ================================= -->
+        <!-- LEFT: AXIS MAX LIFE -->
+        <!-- ================================= -->
+
+        <div class="header-logo left-logo">
+
+          <img src="https://raw.githubusercontent.com/girish8360/amli/main/GridArt_20250228_090331226.jpg"
+            alt="Axis Max Life Insurance">
+
+        </div>
+
+
+        <!-- ================================= -->
+        <!-- CENTER: GIRISH GAUR -->
+        <!-- ================================= -->
+
+        <div class="header-title">
+
+          <h1>GIRISH GAUR</h1>
+
+          <h4>
+            Certified Insurance Advisor
+          </h4>
+
+          <h4>
+            AXIS MAX LIFE INSURANCE<br>
+            NIVA BUPA HEALTH INSURANCE
+          </h4>
+
+          <p>
+            Life • Health • Pension • Term Insurance • ULIP
+          </p>
+
+        </div>
 
 
 
-          <header>
-            <img src="https://raw.githubusercontent.com/girish8360/amli/main/GridArt_20250228_090331226.jpg"
-              style="float:left; width: 300px;padding-left:30px;">
-            <h1 style="margin-left:5%;margin-right:25%;color:azure; text-align:center;font-weight:bolder">GIRISH GAUR
-              <br>
-              Certified Insurance Advisor,<br> AXIS MAX LIFE INSURANCE
-            </h1>
 
-          </header>
-          <div class="container3" style="background:maroon; width:auto;">
+      </div>
+
+
+      <!-- ================= SLIDESHOW ================= -->
+
+      <section class="container my-5"
+        style="background: linear-gradient(45deg,orange,maroon);color:#fff;border:3px solid gold;">
+        <div class="row">
+          <div class="col-lg-12">
             <div class="slideshow-container">
+
 
 
               <div class="mySlides fade">
                 <div class="img">
-                  <div class="numbertext">1 /  16</div>
+                  <div class="numbertext">1 / 14</div>
 
                   <img src="https://raw.githubusercontent.com/girish8360/amli/main/AMLI RIDER.jpg"
                     class="responsive-img">
@@ -629,16 +1754,7 @@
 
               <div class="mySlides fade">
                 <div class="img">
-                  <div class="numbertext">2 /  16</div>
-                  <img src="https://raw.githubusercontent.com/girish8360/amli/main/RETIREMENT CORPUS.jpeg"
-                    class="responsive-img">
-                  <div class="text">MONTHLY EXPENSES</div>
-                </div>
-              </div>
-
-                 <div class="mySlides fade">
-                <div class="img">
-                  <div class="numbertext">3 /  16</div>
+                  <div class="numbertext">2 / 14</div>
                   <img src="https://raw.githubusercontent.com/girish8360/amli/main/IMG-20250222-WA0028.jpg"
                     class="responsive-img">
                   <div class="text">MONTHLY EXPENSES</div>
@@ -647,7 +1763,7 @@
 
               <div class="mySlides fade">
                 <div class="img">
-                  <div class="numbertext">4 / 16</div>
+                  <div class="numbertext">3 / 14</div>
                   <img src="https://raw.githubusercontent.com/girish8360/amli/main/MAX-LI-04.jpg"
                     class="responsive-img">
                   <div class="text">IMPROVED EXPERIENCE</div>
@@ -656,7 +1772,7 @@
 
               <div class="mySlides fade">
                 <div class="img">
-                  <div class="numbertext">5 /  16</div>
+                  <div class="numbertext">4 / 14</div>
                   <img src="https://raw.githubusercontent.com/girish8360/amli/main/STAR.jpeg.jpg"
                     class="responsive-img">
                   <div class="text">TAX PAYABLE</div>
@@ -665,7 +1781,7 @@
 
               <div class="mySlides fade">
                 <div class="img">
-                  <div class="numbertext">6 / 15</div>
+                  <div class="numbertext">5 / 14</div>
                   <img src="https://raw.githubusercontent.com/girish8360/amli/main/STEP.jpg" class="responsive-img">
                   <div class="text">MF TYPE</div>
                 </div>
@@ -675,7 +1791,7 @@
 
               <div class="mySlides fade">
                 <div class="img">
-                  <div class="numbertext">7 /  16</div>
+                  <div class="numbertext">6 / 14</div>
                   <img src="https://raw.githubusercontent.com/girish8360/amli/main/IMG-20240924-WA0006.jpg"
                     class="responsive-img">
                   <div class="text">MF ROI</div>
@@ -684,7 +1800,7 @@
 
               <div class="mySlides fade">
                 <div class="img">
-                  <div class="numbertext">8 /  16</div>
+                  <div class="numbertext">7 / 14</div>
                   <img src="https://raw.githubusercontent.com/girish8360/amli/main/SWAG BENEFITS.jpg"
                     class="responsive-img">
                   <div class="text">ROI GOLD</div>
@@ -694,27 +1810,26 @@
 
               <div class="mySlides fade">
                 <div class="img">
-                  <div class="numbertext">9 /  16</div>
-                  <img src="https://raw.githubusercontent.com/girish8360/amli/main/AXIS MAX LIFE-BHAROSA.jpg" 
-                    class="responsive-img">
-                  <div class="text">ROI-PPF</div>
-                </div>
-              </div>
-
-                  <div class="mySlides fade">
-                <div class="img">
-                  <div class="numbertext">10 /  16</div>
+                  <div class="numbertext">8 / 14</div>
                   <img src="https://raw.githubusercontent.com/girish8360/amli/main/AMLI BHAROSA.jpg"
                     class="responsive-img">
                   <div class="text">ROI-PPF</div>
                 </div>
               </div>
 
+              <div class="mySlides fade">
+                <div class="img">
+                  <div class="numbertext">9 / 14</div>
+                  <img src="https://raw.githubusercontent.com/girish8360/amli/main/AXIS MAX LIFE-BHAROSA.jpg"
+                    class="responsive-img">
+                  <div class="text">ROI-PPF</div>
+                </div>
+              </div>
 
 
               <div class="mySlides fade">
                 <div class="img">
-                  <div class="numbertext">11 /  16</div>
+                  <div class="numbertext">10 / 14</div>
                   <img src="https://raw.githubusercontent.com/girish8360/amli/main/PLAN TYPE.jpeg.jpg"
                     class="responsive-img">
 
@@ -724,7 +1839,7 @@
 
               <div class="mySlides fade">
                 <div class="img">
-                  <div class="numbertext">12 /  16</div>
+                  <div class="numbertext">11 / 14</div>
                   <img src="https://raw.githubusercontent.com/girish8360/amli/main/IMG-20240924-WA0015.jpg"
                     class="responsive-img">
 
@@ -734,7 +1849,7 @@
 
               <div class="mySlides fade">
                 <div class="img">
-                  <div class="numbertext">13 /  16</div>
+                  <div class="numbertext">12 / 14</div>
                   <img src="https://raw.githubusercontent.com/girish8360/amli/main/IMG-20240924-WA0019.jpg"
                     class="responsive-img">
 
@@ -744,7 +1859,7 @@
 
               <div class="mySlides fade">
                 <div class="img">
-                  <div class="numbertext">14 /  16</div>
+                  <div class="numbertext">13 / 14</div>
                   <img src="https://raw.githubusercontent.com/girish8360/amli/main/IMG-20241123-WA0047.jpg"
                     class="responsive-img">
 
@@ -754,7 +1869,7 @@
 
               <div class="mySlides fade">
                 <div class="img">
-                  <div class="numbertext">15 /  16</div>
+                  <div class="numbertext">14 / 14</div>
                   <img src="https://raw.githubusercontent.com/girish8360/amli/main/IMG-20241130-WA0045.jpg"
                     class="responsive-img">
 
@@ -766,7 +1881,7 @@
 
               <div class="mySlides fade">
                 <div class="img">
-                  <div class="numbertext">16 / 16</div>
+                  <div class="numbertext">15 / 14</div>
 
                   <img src="https://github.com/girish8360/amli/raw/main/IMG-20240924-WA0007.jpg" class="responsive-img">
                   <div class="text">RETIREMENT
@@ -774,188 +1889,336 @@
                 </div>
               </div>
             </div>
-            <br>
-
-            <div style="text-align:center">
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-                 <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-                 <span class="dot"></span>
-            </div>
-            <p1>
 
 
-<div class="container1" style="background:maroon; width:auto;">
-                <ul style="decoration:none;">
-
-                  <li><a id="home"><b>HOME</b></a></li>
-                  <li><a href="#amli"><b>ABOUT US<b></a></Li>
-                  <li><a href="#typeprod"><b>TYPES OF PRODUCTS</b></a>
-                    <ul>
-                      <li><a href="#newprod"><b>NEW PRODUCTS</b></a>
-                        <ul>
-                          <li> <a href="#">STAR</a></li>
-                          <li> <a href="#">SMART WIBE</a></li>
-                                 <li> <a href="#">SMART RISE</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#prod"><b>MAJOR PRODUCTS</b></a></li>
-                      <li><a href="#rider"><b>RIDERS</b></a></li>
-                    </ul>
-                  </li>
-
-                  <li> <a href="#term"><b>TERM PLANS</b></a>
-                    <ul>
-                      <li> <a href="#star">STAR</a></li>
-                      <li> <a href="#stpp">STPP</a></li>
-                      <li> <a href="#step">STEP</a></li>
-                    </ul>
-                  </li>
-                  <li> <a href="#saving"><b>SAVING PRODUCTS</b></a>
-                    <ul>
-                      <li> <a href="#swag">SWAG</a></li>
-                      <li> <a href="#swagpar">SWAG PAR</a></li>
-                      <li> <a href="#swagnopar">SWAG NON PAR</a></li>
-                      <li> <a href="#wibe1">SMART WIBE</a></li>
-                           <li> <a href="#sap">SAVINGS ADVANTAGE PLAN</a></li>
-                      <li> <a href="#swp">SMART WEALTH PLAN</a></li>
-                           <li> <a href="#swip"> SMART WEALTH INCOME PLAN (SWIP)</a></li>
-                            <li> <a href="#endow"><b>ENDOWMENT PRODUCTS</b></a>
-                    </ul>
-                  </li>
-              
-                  <li> <a href="#ulip"><b>ULIP PLANS</b></a>
-                    <ul>
-                      <li> <a href="#fwa">FLEXI WEALTH ADVANTAGE</a></li>
-                      <li> <a href="#pwp">PLATINUM WEALTH PLAN</a></li>
-                      <li> <a href="#fwp">FLEXI WEALTH PLUS</a></li>
-                      <li> <a href="#fts">FAST TRACK SUPLER</a></li>
-                    </ul>
-                  </li>
-                  <li> <a href="#annuity">ANNUITY PLANS</a>
-                    <ul>
-                      <li> <a href="#swagpen">SMART WEALTH<br> ANNUITY
-                          GUARANTEED<br>
-                          PENSION PLAN<br>(SWAG-PENSION)</a></li>
-<li><a href="#rise">SMART RETIREMNT INCOME<br>with SUSTAINED EARNINGS PLAN (SMART RISE)</a></li>
-                      <li> <a href="#glip">GLIP</a></li>
-                      <li> <a href="#miap">MIAP</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#healthcare"><b>HEALTHCARE PRODUCTS</b></a> </li>
-
-                  <li><a href="#contact" class="split">CONTACT US</a></li>
-                </ul>
-              </div>
-             
-
-              <section>
-                <table class="table custom-media" style="width:auto;background:transparent;">
-                  <td style="border:1px solid maroon;">
-                    <h1 style="font-size:40px;"><strong>GIRISH GAUR</strong> <br>
-                      <span style="font-size:25px;font-style:italic;padding-left:45px;"><b> B.Sc.,M.A.(Eco.),<br>
-                          PGDCASA,
-                          PGDBA, Cert. in Oracle 8<i>i</i><br>Certified Insurance Advisor</b></span><br>
-                      AXIS MAX LIFE INSURANCE
-                    </h1>
-                  </td>
-                  <td style="border:1px solid transparent;"></td>
-                  <td style="border:1px solid transparent;">
-                    <p>Perfect time is <br>to protect your life NOW:</p>
-                    <div class="container04">
-                      <div class="clock">
-
-                        <div style="--clr:#ff3d58; --h:55px;" id="hour" class="hand"><i></i></div>
-                        <div style="--clr:#00a6ff;  --h:70px;" id="min" class="hand"><i></i></div>
-                        <div style="--clr:#ffffff;  --h:90px;" id="sec" class="hand"><i></i></div>
-
-                        <span style="--i:1;"><b>I</b></span>
-                        <span style="--i:2;"><b>II</b></span>
-                        <span style="--i:3;"><b>III</b></span>
-                        <span style="--i:4;"><b>IV</b></span>
-                        <span style="--i:5;"><b>V</b></span>
-                        <span style="--i:6;"><b>VI</b></span>
-                        <span style="--i:7;"><b>VII</b></span>
-                        <span style="--i:8;"><b>VIII</b></span>
-                        <span style="--i:9;"><b>IX</b></span>
-                        <span style="--i:10;"><b>X</b></span>
-                        <span style="--i:11;"><b>XI</b></span>
-                        <span style="--i:12;"><b>XII</b></span>
-                      </div>
-
-                    </div>
-                    <script>
-                      let hr = document.getElementById('hour');
-                      let min = document.getElementById('min');
-                      let sec = document.getElementById('sec');
-
-                      function displayTime() {
-                        let date = new Date();
-
-                        // Getting hour, mins, secs from date
-                        let hh = date.getHours();
-                        let mm = date.getMinutes();
-                        let ss = date.getSeconds();
-
-                        let hRotation = 30 * hh + mm / 2;
-                        let mRotation = 6 * mm;
-                        let sRotation = 6 * ss;
-
-
-                        hr.style.transform = `rotate(${hRotation}deg)`;
-                        // hr.style.transform = `rotate(${hRotation}deg)`;
-                        // hr.style.transform = `rotate(${hRotation}deg)`;
-                        min.style.transform = `rotate(${mRotation}deg)`;
-                        sec.style.transform = `rotate(${sRotation}deg)`;
-                      }
-                      setInterval(displayTime, 1000);
-
-                      //--SLIDWSHOW --//
-                      let slideIndex = 0;
-                      showSlides();
-
-                      function showSlides() {
-                        let i;
-                        let slides = document.getElementsByClassName("mySlides");
-                        let dots = document.getElementsByClassName("dot");
-                        for (i = 0; i < slides.length; i++) {
-                          slides[i].style.display = "none";
-                        }
-                        slideIndex++;
-                        if (slideIndex > slides.length) { slideIndex = 1 }
-                        for (i = 0; i < dots.length; i++) {
-                          dots[i].className = dots[i].className.replace(" active", "");
-                        }
-                        slides[slideIndex - 1].style.display = "block";
-                        dots[slideIndex - 1].className += " active";
-                        setTimeout(showSlides, 2000); // Change image every 2 seconds
-                      }
-                    </script>
-                    <p id="demo"
-                      style="background:maroon;color:#fff;font-weight: bolder;font-size: larger;font-size:30px;">
-                    </p>
-                    <script>
-                      const d = new Date();
-                      document.getElementById("demo").innerHTML = d; 
-                    </script>
-                  </td>
-                </table>
           </div>
+          <br>
+
+          <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
 
 
-          <div class="container2">
+            <script>
+              //--SLIDWSHOW --//
+              let slideIndex = 0;
+              showSlides();
+
+              function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+              }
+            </script>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ================= TIME MESSAGE ================= -->
+      <section class="container my-5" style="background: linear-gradient(60deg,maroon, orange);color:#fff;">
+        <div class="row">
+          <div class="col-lg-12">
+            <p style="font-family:Times New Roman;font-style:italic;font-size: 25px;"><strong>In a world that moves at
+                an
+                ever-accelerating pace, time is our most valuable & irreversible asset<br>
+                Time never slows down, and life never waits.<br> Make today the moment you choose to protect
+                what matters most—your health and your financial security. </strong></p>
+
+            <div class="col-12 col-md-3 d-flex justify-content-center mt-3 mt-md-0">
+              <div class="container04" style="background:transparent;">
+                <div class="clock">
+                  <!-- Clock -->
+
+                  <div style="--clr:#ff3d58; --h:55px;" id="hour" class="hand"><i></i></div>
+                  <div style="--clr:#00a6ff;  --h:70px;" id="min" class="hand"><i></i></div>
+                  <div style="--clr:#ffffff;  --h:90px;" id="sec" class="hand"><i></i></div>
+
+                  <span style="--i:1;"><b>I</b></span>
+                  <span style="--i:2;"><b>II</b></span>
+                  <span style="--i:3;"><b>III</b></span>
+                  <span style="--i:4;"><b>IV</b></span>
+                  <span style="--i:5;"><b>V</b></span>
+                  <span style="--i:6;"><b>VI</b></span>
+                  <span style="--i:7;"><b>VII</b></span>
+                  <span style="--i:8;"><b>VIII</b></span>
+                  <span style="--i:9;"><b>IX</b></span>
+                  <span style="--i:10;"><b>X</b></span>
+                  <span style="--i:11;"><b>XI</b></span>
+                  <span style="--i:12;"><b>XII</b></span>
+                </div>
+
+              </div>
+              <script>
+                let hr = document.getElementById('hour');
+                let min = document.getElementById('min');
+                let sec = document.getElementById('sec');
+
+                function displayTime() {
+                  let date = new Date();
+
+                  // Getting hour, mins, secs from date
+                  let hh = date.getHours();
+                  let mm = date.getMinutes();
+                  let ss = date.getSeconds();
+
+                  let hRotation = 30 * hh + mm / 2;
+                  let mRotation = 6 * mm;
+                  let sRotation = 6 * ss;
+
+
+                  hr.style.transform = `rotate(${hRotation}deg)`;
+                  // hr.style.transform = `rotate(${hRotation}deg)`;
+                  // hr.style.transform = `rotate(${hRotation}deg)`;
+                  min.style.transform = `rotate(${mRotation}deg)`;
+                  sec.style.transform = `rotate(${sRotation}deg)`;
+                }
+                setInterval(displayTime, 1000);
+              </script>
+
+
+            </div>
+          </div>
+          <p id="demo"
+            style="background:maroon;color:#fff;font-weight: bolder;font-family: 'Times New Roman';font-size:30px;">
+          </p>
+          <script>
+            const d = new Date();
+            document.getElementById("demo").innerHTML = d;
+
+
+
+          </script>
+      </section>
+    </header>
+    <!-- ================= NAVBAR ================= -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark responsive-navbar" aria-label="Main navigation">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="https://girish8360.github.io/amli/GIRISH-PROFILE.html"
+          id="home">
+          <i class="fa-solid fa-house me-2" aria-hidden="true"></i>
+          <span>HOME</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar" aria-expanded="false" aria-label="Open or close navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-lg-auto">
+
+            <!-- MAIN MENU -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Main Menu</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item"
+                    href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#amli"
+                    target="_blank" rel="noopener">About Us – Axis Max Life Insurance</a>
+                </li>
+
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle submenu-toggle" href="#new-products" aria-expanded="false">New
+                    Products</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://girish8360.github.io/amli/libasic.htm#tax"
+                        target="_blank" rel="noopener">STAR ULIP</a></li>
+                    <li><a class="dropdown-item" href="https://girish8360.github.io/amli/libasic.htm#invstock"
+                        target="_blank" rel="noopener">SMART WIBE</a></li>
+                    <li><a class="dropdown-item" href="https://girish8360.github.io/amli/libasic.htm#invmf"
+                        target="_blank" rel="noopener">SMART RISE</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle submenu-toggle" href="#riders"
+                    aria-expanded="false">Riders</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://girish8360.github.io/amli/libasic.htm#tax"
+                        target="_blank" rel="noopener">CIDR</a></li>
+                    <li><a class="dropdown-item" href="https://girish8360.github.io/amli/libasic.htm#invstock"
+                        target="_blank" rel="noopener">ADDB</a></li>
+                    <li><a class="dropdown-item" href="https://girish8360.github.io/amli/libasic.htm#invmf"
+                        target="_blank" rel="noopener">WOP</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle submenu-toggle" href="#forms" aria-expanded="false">Forms
+                    &amp; Surveys</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://girish8360.github.io/amli/libasic.htm#tax"
+                        target="_blank" rel="noopener">Wealth Management Survey (WMS)</a></li>
+                    <li><a class="dropdown-item" href="https://girish8360.github.io/amli/libasic.htm#invstock"
+                        target="_blank" rel="noopener">Health Management Survey (HMS)</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+
+            <!-- TERM PRODUCTS -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Term Products</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#star"
+                    target="_blank" rel="noopener">Smart Term with <br>Accelerated Return<br> (STAR)</a></li>
+                <li><a class="dropdown-item" href="#stpp"
+                    target="_blank" rel="noopener">Smart Term Plan <br> Plus (STPP)</a></li>
+                <li><a class="dropdown-item" href="#step"
+                    target="_blank" rel="noopener">Smart Total Elite<br> Protection Plan (STEP)</a></li>
+              </ul>
+            </li>
+
+            <!-- Annuity Products -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Annuity Products</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#swagpen" target="_blank" rel="noopener">SMART WEALTH<br> ANNUITY
+                    GUARANTEED<br>
+                    PENSION PLAN<br>(SWAG-PENSION)</a></li>
+                <li><a class="dropdown-item" href="#rise" target="_blank" rel="noopener">SMART RETIREMNT INCOME<br>with
+                    SUSTAINED EARNINGS<br> PLAN (SMART
+                    RISE)</a></li>
+                <li><a class="dropdown-item" href="#glip" target="_blank" rel="noopener">Guaranteed Lifetime Income<br>
+                    (GLIP)</a></li>
+                <li><a class="dropdown-item" href="#miap" target="_blank" rel="noopener">MIAP </a></li>
+
+              </ul>
+            </li>
+
+            <!-- SAVING Products -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Saving Products</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#swag" target="_blank" rel="noopener">SWAG</a></li>
+                <li><a class="dropdown-item" href="#swagpar" target="_blank" rel="noopener">SWAG PAR</a></li>
+                <li><a class="dropdown-item" href="#swagnopar" target="_blank" rel="noopener">SWAG NON PAR</a></li>
+                <li><a class="dropdown-item" href="#wibe" target="_blank" rel="noopener">SMART WIBE</a></li>
+                <li><a class="dropdown-item" href="#sap" target="_blank" rel="noopener">SAVINGS ADVANTAGE PLAN</a></li>
+                <li><a class="dropdown-item" href="#swp" target="_blank" rel="noopener">SMART WEALTH PLAN</a></li>
+                <li><a class="dropdown-item" href="#swip" target="_blank" rel="noopener"> SMART WEALTH INCOME PLAN
+                    (SWIP)</a></li>
+                <li><a class="dropdown-item" href="#endow" target="_blank" rel="noopener">ENDOWMENT PRODUCTS</a></li>
+              </ul>
+            </li>
+
+
+            <!-- PDF DOCUMENTS -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">PDF Documents</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://girish8360.github.io/amli/BASICS%20OF%20LIFE%20INSURANCE.pdf"
+                    target="_blank" rel="noopener">Basics of Life Insurance</a></li>
+                <li><a class="dropdown-item"
+                    href="https://girish8360.github.io/amli/BASICS%20OF%20HEALTH%20INSURANCE.pdf" target="_blank"
+                    rel="noopener">Basics of Health Insurance</a></li>
+              </ul>
+            </li>
+
+            <!-- CONTACT -->
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Bootstrap 5 JS bundle is required for hamburger and first-level dropdowns. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Bootstrap does not natively operate nested dropdowns, so handle submenu toggles.
+      document.querySelectorAll(".responsive-navbar .submenu-toggle").forEach(function (toggle) {
+        toggle.addEventListener("click", function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+
+          const submenu = toggle.nextElementSibling;
+          if (!submenu || !submenu.classList.contains("dropdown-menu")) return;
+
+          const parentMenu = toggle.closest(".dropdown-menu");
+          parentMenu.querySelectorAll(":scope > .dropdown-submenu > .dropdown-menu.show").forEach(function (openMenu) {
+            if (openMenu !== submenu) {
+              openMenu.classList.remove("show");
+              const siblingToggle = openMenu.previousElementSibling;
+              if (siblingToggle) siblingToggle.setAttribute("aria-expanded", "false");
+            }
+          });
+
+          const isOpen = submenu.classList.toggle("show");
+          toggle.setAttribute("aria-expanded", String(isOpen));
+        });
+      });
+
+      // Close open nested menus when the top-level Bootstrap dropdown closes.
+      document.querySelectorAll(".responsive-navbar .nav-item.dropdown").forEach(function (item) {
+        item.addEventListener("hidden.bs.dropdown", function () {
+          item.querySelectorAll(".dropdown-submenu > .dropdown-menu.show").forEach(function (menu) {
+            menu.classList.remove("show");
+          });
+          item.querySelectorAll(".submenu-toggle[aria-expanded='true']").forEach(function (toggle) {
+            toggle.setAttribute("aria-expanded", "false");
+          });
+        });
+      });
+    </script>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="container-fluid p-0">
+
+
+      <!-- ================= WELCOME ================= -->
+
+      <section class="container my-5" style="background:darkblue;color:#fff;border:2px solid #fff;">
+        <div class="row">
+          <div class="col-lg-12">
+
+
+ 
             <h2 id="amli"><b> AXIS MAX LIFE INSURANCE CO. LTD.</b></h2>
 
             <table class="table custom-media" style="width:auto;">
