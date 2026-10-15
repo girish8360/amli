@@ -166,6 +166,151 @@
     }
   }
 
+  
+  /* ================= MAGAZINE ================= */
+   /* MAGAZINE-STYLE CONTACT INTRODUCTION */
+  .magazine-message {
+    max-width: auto;
+    margin: 25px auto;
+    padding: 32px 35px;
+    background: #f5ece8;
+    color: darkblue;
+    border: 1px solid #e7dfd5;
+    border-top: 5px solid #812632;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+  /* Small editorial label */
+  .magazine-label {
+    color: darkblue;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  /* Main magazine headline */
+  .magazine-message h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(27px, 4vw, 39px);
+    line-height: 1.2;
+    font-weight: bold;
+    color: #222222;
+    margin: 0 0 12px;
+  }
+
+  /* Decorative subtitle */
+  .magazine-subtitle {
+    font-size: 17px;
+    font-style: italic;
+    color: darkblue;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+
+  /* Paragraph formatting */
+  .magazine-message p {
+    margin: 0 0 18px;
+    text-align: justify;
+  }
+
+  /* Newspaper-style opening letter */
+  .magazine-opening::first-letter {
+    float: left;
+    font-size: 58px;
+    line-height: 0.85;
+    padding-right: 9px;
+    padding-top: 7px;
+    color: #812632;
+    font-weight: bold;
+  }
+
+  /* Highlighted call to action */
+  .magazine-highlight {
+    background: #f5ece8;
+    border-left: 4px solid #812632;
+    padding: 18px 20px;
+    margin: 25px 0;
+    color: #51252a;
+
+    font-size: 17px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.7;
+  }
+
+  /* Privacy section */
+  .magazine-privacy {
+    border-top: 1px solid #d8c9c0;
+    border-bottom: 1px solid #d8c9c0;
+    padding: 18px 0;
+    margin-top: 20px;
+    background: lightgray;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .magazine-privacy h3 {
+    text-align: center;
+    color: lightgray;
+    font-size: 21px;
+    margin: 0 0 12px font-weight: bold;
+  }
+
+  /* Advisor signature */
+  .magazine-signature {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .magazine-signature strong {
+    display: block;
+    color: #812632;
+    font-size: 23px;
+    letter-spacing: 1.5px;
+
+  }
+
+  .magazine-signature span {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #666666;
+    margin-top: 5px;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  /* Mobile-friendly layout */
+  @media (max-width: 600px) {
+    .magazine-message {
+      padding: 23px 19px;
+      font-size: 15px;
+      line-height: 1.8;
+      margin: 15px auto;
+    }
+
+    .magazine-message p {
+      text-align: left;
+    }
+
+    .magazine-opening::first-letter {
+      font-size: 48px;
+    }
+
+    .magazine-highlight {
+      padding: 14px;
+      font-size: 16px;
+    }
+  }
+
+
+
   ol {
     list-style-type: decimal;
     padding-left: 20px;
@@ -1733,7 +1878,7 @@
                 I am committed to helping you navigate your Insurance options to ensure that you & your loved ones have
                 comprehensive life coverage & to offer tailored life insurance solutions, ensuring comprehensive
                 protection
-                and long-term wealth creation for my clients<br>
+                and long-term wealth creation for my clients <br>
                 My ultimate goal is to assist you in making informed decisions that can enhance your financial value &
                 life
                 security.<br>
@@ -1771,7 +1916,7 @@
                 dreams, my commitment goes beyond selling a policy.<br>
 
                 I don’t believe in simply assisting you during the insurance purchasing process, but also in providing
-                assistance after sales service and the claims settlement process. <br> I am here to help you navigate the
+                assistance after-sales service and the claims settlement process. <br> I am here to help you navigate the
                 complex world of
                 insurance in a way that truly protects what you have, prepares you for what lies ahead, and helps you
                 pursue what you aspire to achieve..&rdquo;
@@ -2060,15 +2205,76 @@
               <legend>
 
                 <h3 id ="feedback" class="text-center mt-4"><b>We’d love to know you better.</b></h3>
-                <h3 class="text-center"><b>YOUR FEEDBACK IS VALUABLE TO US</b></h3>
-                <p style="font-size: x-large;">We value your feedback and would love to hear your thoughts on our
-                  services.<br>
-                  Please
-                  take a moment to fill out feedback form and let us know how we can improve.
-                  Please take a few moments to share your details with us. This will help us understand your
-                  requirements better and enable us to connect with you to provide relevant guidance and
-                  assistance.Thanks You.</p>
-              </legend>
+                 <!-- QUESTIONNAIRE INTEREST -->
+          <fieldset style="border:4px solid orange; padding-left:30px;padding-right:20px;">
+            <legend>
+
+              <h3 id="feedback" class="text-center mt-4"><b>We’d love to know you better.</b></h3>
+              <h3 class="text-center"><b>Let’s Connect to Secure What Matters Most</b></h3>
+
+              <div class="magazine-message">
+                <h2 style="padding-left:0px;padding-right:20px;">Your Future Deserves a Thoughtful Plan.</h2>
+
+                <div class="magazine-subtitle">
+                  Protect what matters. Plan for what lies ahead.
+                </div>
+
+                <p class="magazine-opening">
+                  Every individual and family has unique financial
+                  goals and protection needs. I would be glad to
+                  learn about your requirements through your contact
+                  details and a few basic details about your needs,
+                  goals and aspirations, so I can guide you towards
+                  suitable insurance solutions.
+                </p>
+
+                <p>
+                  Whether you are exploring Health Insurance, Life
+                  Insurance, financial protection, or long-term
+                  security for your family, I look forward to
+                  assisting you with personalised guidance, informed
+                  choices, and professional support.
+                </p>
+
+                <p>
+                  Your details will help me connect with you and
+                  provide guidance relevant to your requirements.
+                </p>
+
+                <div class="magazine-highlight">
+                  Take the first step towards protecting your health,
+                  securing your family's future, and safeguarding
+                  your financial well-being.
+                </div>
+
+                <div class="magazine-privacy">
+
+                  <h3><strong>Your Privacy Matters</strong></h3>
+
+                  <p>
+                    Your contact details will be used to respond to
+                    your enquiry and provide relevant insurance-related
+                    guidance. Your information will be handled
+                    responsibly in accordance with the applicable
+                    privacy policy.
+                  </p>
+
+                </div>
+
+                <p style="text-align:center; margin-top:22px;">
+                  Thank you for your time and trust.
+                </p>
+
+                <div class="magazine-signature">
+                  <strong>GIRISH GAUR</strong>
+                  <span>Certified Insurance Advisor</span>
+                </div>
+
+              </div>
+
+
+            </legend>
+
 
               <!-- FULL NAME -->
               <div class="form-group row mb-3">
@@ -2124,6 +2330,7 @@
                     placeholder="Enter email" autocomplete="email">
                 </div>
               </div>
+            
               <!-- GENDER -->
               <div class="form-group row mb-3">
 
@@ -2152,6 +2359,28 @@
                 </div>
 
               </div>
+
+                  <!---MARITAL STATUS-->
+              <div class="form-group row mb-3">
+
+                <label class="col-sm-6 col-form-label question-label">
+                  MARITAL STATUS :
+                </label>
+
+                <div class="col-sm-6">
+                  <input type="radio" name="data[marital_status]" value="Married" class="form-check-input" id="married"
+                    required>
+
+                  <label for="married" class="form-check-label">
+                    Married
+                  </label>
+
+                  <input type="radio" name="data[marital_status]" value="Single" class="form-check-input" id="single">
+
+                  <label for="single" class="form-check-label">
+                    Single
+                  </label>
+                </div>
 
               <!-- INSURANCE TYPE -->
               <div class="form-group row mb-3">
@@ -3379,7 +3608,7 @@
                       FORM</b> to better
                     understand the Health Management Strategy (HMS) and, consequently, let's navigate towards an
                     effective Health Management Strategy to safeguard our health and reduce medical expenses due to
-                    unforeseen medical emergencies. Plese click the button to fill up this brief Health Survey Form.
+                    unforeseen medical emergencies. Please click the button to fill up this brief Health Survey Form.
                   </p>
 
                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSemtYqq2uhJ2KY9MPtYos7Fln_5xNvqasLrXdk77a0-9gFXMg/viewform?usp=sharing&ouid=110655948174661466563"
@@ -3534,8 +3763,8 @@
 
 
                 <h5><b><i>Feedback Form</i></b></h5>
-                <a href="https://girish8360.github.io/amli/GIRISH-PROFILE.html#feedback" target="_blank"> <span
-                    style="color:#fff;">Feedback Form</span></a>
+                <a href="https://girish8360.github.io/amli/contactus.html" target="_blank"> <span
+                    style="color:#fff;">Connect Us</span></a>
                 </p>
 
               </div>
