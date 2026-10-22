@@ -928,8 +928,8 @@
 
   /*
       Optional mobile fallback:
-      the artwork remains intact and scales proportionally.
-      Hotspots become slightly larger to make tapping easier.
+      The artwork remains intact and scales proportionally.
+      Hotspots become slightly larger to make tapping.
     */
   @media (max-width: 600px) {
     .hotspot {
@@ -1323,11 +1323,138 @@
     }
 
   }
+
+  
+  /* APPOINTMENT SCHEDULE */
+  /* Prevent padding from increasing element widths */
+  .appointment-section,
+  .appointment-section * {
+    box-sizing: border-box;
+  }
+
+  /* Main Section */
+  .appointment-section {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 45px 20px;
+    overflow-wrap: anywhere;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172b4d;
+    background: #f4f7fb;
+  }
+
+  /* Content Container */
+  .appointment-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  /* Heading */
+  .appointment-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .appointment-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #9b1c31;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+  }
+
+  .appointment-header h2 {
+    margin: 0 0 15px;
+    color: #172b4d;
+    font-size: clamp(25px, 4vw, 36px);
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+  }
+
+  .appointment-header>p {
+    max-width: 720px;
+    margin: 0 auto;
+    color: darkblue;
+    font-size: 20px;
+    line-height: 1.8;
+  }
+
+  /* Booking Card */
+  .appointment-card {
+    width: 100%;
+    min-width: 0;
+    background: #ffffff;
+    border: 1px solid #e0e6ef;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 28px rgba(23, 43, 77, 0.08);
+  }
+
+  /* Card Header */
+  .appointment-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 22px 25px;
+    background: #ffffff;
+    border-bottom: 1px solid #e8edf4;
+  }
+
+  .appointment-icon {
+    display: flex;
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    background: #f9e9ed;
+    border-radius: 12px;
+    font-size: 25px;
+  }
+
+  .appointment-card-header h3 {
+    margin: 0 0 7px;
+    color: #172b4d;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .appointment-card-header p {
+    margin: 0;
+    color: #657186;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* Responsive Calendar Area */
+  .appointment-calendar {
+    width: 100%;
+    min-width: 0;
+    height: 760px;
+    padding: 0;
+    background: #ffffff;
+    overflow: hidden;
+  }
+
+  .appointment-calendar iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    border: 0;
+    background: #ffffff;
+  }
+
 </style>
 
 
 <body>
 
+  <!-- ================= HEADER ================= -->
+  
   <!-- ================= HEADER ================= -->
 
   <header class="main-header">
@@ -1346,10 +1473,10 @@
       <div class="header-title">
         <h1>GIRISH GAUR</h1>
         <h4 style="color:#fff;font-weight: bold;font-family: 'Times New Roman', serif;">Certified Insurance Advisor</h4>
-        <h3 style="color:#fff;font-weight: bold;font-family: 'Times New Roman', serif;">AXIS MAX LIFE INSURANCE<br>
-          NIVA BUPA HEALTH INSURANCE</h3>
+        <h4 style="color:#fff;font-weight: bold;font-family: 'Times New Roman', serif;">AXIS MAX LIFE INSURANCE<br>
+          NIVA BUPA HEALTH INSURANCE</h4>
 
-        <p class=" mb-0">
+        <p class=" mb-0" style="text-align: center;font-size: x-large;">
           Life • Health • Pension • Term Insurance • ULIP
         </p>
 
@@ -1366,28 +1493,149 @@
 
     <!-- ================= SLIDESHOW ================= -->
 
-    <section class="container my-5" style="background: linear-gradient(45deg,orange,maroon);color:#fff;border:3px solid gold;">
+    <section class="container my-5"
+      style="background: linear-gradient(45deg,orange,maroon);color:#fff;border:3px solid gold;">
       <div class="row">
         <div class="col-lg-12">
           <div class="slideshow-container">
 
- <div class="mySlides fade">
-                <div class="img">
-                  <div class="numbertext">8 / 14</div>
-                  <img src="https://raw.githubusercontent.com/girish8360/amli/main/AMLI BHAROSA.jpg"
-                    class="img-fluid">
-                  <div class="text">ROI-PPF</div>
-                </div>
-              </div>
 
-              <div class="mySlides fade">
-                <div class="img">
-                  <div class="numbertext">8 / 14</div>
-                  <img src="https://raw.githubusercontent.com/girish8360/amli/main/AXIS MAX LIFE-BHAROSA.jpg"
-                    class="img-fluid">
-                  <div class="text">ROI-PPF</div>
-                </div>
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">1 / 14</div>
+
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/AMLI RIDER.jpg" class="responsive-img">
+
+
+                <div class="text">INFLATION</div>
               </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">2 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/IMG-20250222-WA0028.jpg"
+                  class="responsive-img">
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">3 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/MAX-LI-04.jpg" class="responsive-img">
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">4 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/STAR.jpeg.jpg" class="responsive-img">
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">5 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/STEP.jpg" class="responsive-img">
+
+              </div>
+            </div>
+
+
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">6 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/IMG-20240924-WA0006.jpg"
+                  class="responsive-img">
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">7 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/SWAG BENEFITS.jpg"
+                  class="responsive-img">
+
+              </div>
+            </div>
+
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">8 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/AMLI BHAROSA.jpg"
+                  class="responsive-img">
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">9 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/AXIS MAX LIFE-BHAROSA.jpg"
+                  class="responsive-img">
+
+              </div>
+            </div>
+
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">10 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/PLAN TYPE.jpeg.jpg"
+                  class="responsive-img">
+
+
+              </div>
+            </div>
+
+
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">12 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/IMG-20240924-WA0019.jpg"
+                  class="responsive-img">
+
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">13 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/IMG-20241123-WA0047.jpg"
+                  class="responsive-img">
+
+
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">14 / 14</div>
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/IMG-20241130-WA0045.jpg"
+                  class="responsive-img">
+
+
+              </div>
+            </div>
+
+
+
+            <div class="mySlides fade">
+              <div class="img">
+                <div class="numbertext">15 / 14</div>
+
+                <img src="https://github.com/girish8360/amli/raw/main/IMG-20240924-WA0007.jpg" class="responsive-img">
+
+              </div>
+            </div>
 
 
             <div class="mySlides fade">
@@ -1395,7 +1643,7 @@
                 <div class="numbertext">1 / 13</div>
 
                 <img src="https://raw.githubusercontent.com/girish8360/amli/main/NB-GWP.jpeg" class="img-fluid">
-                <div class="text">GROSS WRITTEN PREMIUM</div>
+
               </div>
             </div>
 
@@ -1403,7 +1651,7 @@
               <div class="img">
                 <div class="numbertext">2 / 13</div>
                 <img src="https://raw.githubusercontent.com/girish8360/amli/main/NB-PAT 2026.jpeg" class="img-fluid">
-                <div class="text">PROFIT AFTER TAX</div>
+
               </div>
             </div>
 
@@ -1411,7 +1659,7 @@
               <div class="img">
                 <div class="numbertext">3 / 13</div>
                 <img src="https://raw.githubusercontent.com/girish8360/amli/main/NB-NPS-2026.jpeg" class="img-fluid">
-                <div class="text">IMPROVED EXPERIENCE</div>
+
               </div>
             </div>
 
@@ -1419,7 +1667,7 @@
               <div class="img">
                 <div class="numbertext">4 / 13</div>
                 <img src="https://raw.githubusercontent.com/girish8360/amli/main/NB-CSR-2026.jpeg" class="img-fluid">
-                <div class="text">CLAIM SETTLEMENT RATIO</div>
+
               </div>
             </div>
 
@@ -1427,7 +1675,7 @@
               <div class="img">
                 <div class="numbertext">5 / 13</div>
                 <img src="https://raw.githubusercontent.com/girish8360/amli/main/NB-RHMS-2026.jpeg" class="img-fluid">
-                <div class="text">RETAIL HEALTH SHARE</div>
+
               </div>
             </div>
 
@@ -1435,7 +1683,7 @@
               <div class="img">
                 <div class="numbertext">6 / 13</div>
                 <img src="https://raw.githubusercontent.com/girish8360/amli/main/NF-GWP-2026.jpeg" class="img-fluid">
-                <div class="text">GROSS WRITTEN PREMIUM</div>
+
               </div>
             </div>
 
@@ -1444,7 +1692,7 @@
                 <div class="numbertext">7/ 13</div>
                 <img src="https://raw.githubusercontent.com/girish8360/amli/main/NB-GROWTRUST2026.jpeg"
                   class="img-fluid">
-                <div class="text">GROWING TRUST</div>
+
               </div>
             </div>
 
@@ -1452,7 +1700,7 @@
               <div class="img">
                 <div class="numbertext">8 / 13</div>
                 <img src="https://raw.githubusercontent.com/girish8360/amli/main/SF.png" class="img-fluid">
-                <div class="text">SENIOR FIRST</div>
+
               </div>
             </div>
 
@@ -1460,7 +1708,7 @@
               <div class="img">
                 <div class="numbertext">9 / 13</div>
                 <img src="https://raw.githubusercontent.com/girish8360/amli/main/ASPIRE.png" class="img-fluid">
-                <div class="text">ASPIRE</div>
+
               </div>
             </div>
 
@@ -1468,7 +1716,7 @@
               <div class="img">
                 <div class="numbertext">10 / 13</div>
                 <img src="https://raw.githubusercontent.com/girish8360/amli/main/RA2 LEAFLET.jpg" class="img-fluid">
-                <div class="text">REASSURE 2.0</div>
+
               </div>
             </div>
 
@@ -1477,7 +1725,7 @@
               <div class="img">
                 <div class="numbertext">11/ 13</div>
                 <img src="https://raw.githubusercontent.com/girish8360/amli/main/RA3.png" class="img-fluid">
-                <div class="text">REASSURE 3.0</div>
+
               </div>
             </div>
 
@@ -1485,7 +1733,7 @@
               <div class="img">
                 <div class="numbertext">12 / 13</div>
                 <img src="https://raw.githubusercontent.com/girish8360/amli/main/COVER.jpg" class="img-fluid">
-                <div class="text">REASSURE 3.0</div>
+
               </div>
             </div>
 
@@ -1496,7 +1744,6 @@
                 <img src="https://raw.githubusercontent.com/girish8360/amli/main/appreciation certificate.jpeg"
                   class="img-fluid">
 
-                <div class="text">CREDENTIALS</div>
               </div>
             </div>
 
@@ -1505,7 +1752,7 @@
                 <div class="numbertext">13 /13</div>
                 <img src="https://raw.githubusercontent.com/girish8360/amli/main/CC KANTAL-05082026.jpg">
 
-                <div class="text">CREDENTIALS</div>
+
               </div>
             </div>
 
@@ -1514,7 +1761,20 @@
           <br>
 
           <div style="text-align:center">
-              <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+
+            <span class="dot"></span>
+            <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
@@ -1558,7 +1818,86 @@
       </div>
 
     </section>
+
+    <!-- ================= TIME MESSAGE ================= -->
+    <section class="container my-5" style="background: linear-gradient(60deg,maroon, orange);color:#fff;">
+      <div class="row">
+        <div class="col-lg-12">
+          <p style="font-family:Times New Roman;font-style:italic;font-size: 25px;"><strong>In a world that moves at
+              an
+              ever-accelerating pace, time is our most valuable & irreversible asset<br>
+              Time never slows down, and life never waits.<br> Make today the moment you choose to protect
+              what matters most—your health and your financial security. </strong></p>
+
+          <div class="col-12 col-md-3 d-flex justify-content-center mt-3 mt-md-0">
+            <div class="container04" style="background:transparent;">
+              <div class="clock">
+                <!-- Clock -->
+
+                <div style="--clr:#ff3d58; --h:55px;" id="hour" class="hand"><i></i></div>
+                <div style="--clr:#00a6ff;  --h:70px;" id="min" class="hand"><i></i></div>
+                <div style="--clr:#ffffff;  --h:90px;" id="sec" class="hand"><i></i></div>
+
+                <span style="--i:1;"><b>I</b></span>
+                <span style="--i:2;"><b>II</b></span>
+                <span style="--i:3;"><b>III</b></span>
+                <span style="--i:4;"><b>IV</b></span>
+                <span style="--i:5;"><b>V</b></span>
+                <span style="--i:6;"><b>VI</b></span>
+                <span style="--i:7;"><b>VII</b></span>
+                <span style="--i:8;"><b>VIII</b></span>
+                <span style="--i:9;"><b>IX</b></span>
+                <span style="--i:10;"><b>X</b></span>
+                <span style="--i:11;"><b>XI</b></span>
+                <span style="--i:12;"><b>XII</b></span>
+              </div>
+
+            </div>
+            <script>
+              let hr = document.getElementById('hour');
+              let min = document.getElementById('min');
+              let sec = document.getElementById('sec');
+
+              function displayTime() {
+                let date = new Date();
+
+                // Getting hour, mins, secs from date
+                let hh = date.getHours();
+                let mm = date.getMinutes();
+                let ss = date.getSeconds();
+
+                let hRotation = 30 * hh + mm / 2;
+                let mRotation = 6 * mm;
+                let sRotation = 6 * ss;
+
+
+                hr.style.transform = `rotate(${hRotation}deg)`;
+                // hr.style.transform = `rotate(${hRotation}deg)`;
+                // hr.style.transform = `rotate(${hRotation}deg)`;
+                min.style.transform = `rotate(${mRotation}deg)`;
+                sec.style.transform = `rotate(${sRotation}deg)`;
+              }
+              setInterval(displayTime, 1000);
+            </script>
+
+
+          </div>
+        </div>
+        <p id="demo"
+          style="background:maroon;color:#fff;font-weight: bolder;font-family: 'Times New Roman';font-size:30px;">
+        </p>
+        <script>
+          const d = new Date();
+          document.getElementById("demo").innerHTML = d;
+
+
+
+        </script>
+    </section>
   </header>
+
+
+  
   <!-- ================= NAVBAR ================= -->
 
   <!-- Font Awesome -->
@@ -1855,9 +2194,9 @@
                 dynamic
                 professional I have demonstrated consistent excellence across industries.<br>
 
-                I began my career at STAR PAPER MILLS LTD., SAHARANPUR (U.P.), an ISO-9001 Certified Company & one of
+                I began my career at <b><i>STAR PAPER MILLS LTD., SAHARANPUR (U.P.)</i></b>, an ISO-9001-certified company and one of
                 the
-                major flagship company of DUNCAN GOENKA GROUP, where I dedicated 30 years as a SOFTWARE EXECUTIVE,
+                major flagship companies of DUNCAN GOENKA GROUP, where I dedicated 30 years as a SOFTWARE EXECUTIVE,
                 playing
                 a
                 pivotal role in System Networking Management, Server Management, Software & OS installations &
@@ -1937,7 +2276,7 @@
               हूँ। <br>मैं यहाँ इंश्योरेंस की इस उलझी हुई दुनिया में आपका मार्गदर्शन करने के लिए हूँ, ताकि सही मायने में
               उस
               चीज़ की रक्षा की जा सके जो आपके पास है, आपको आने वाले कल के लिए तैयार किया जा सके, और उन सपनों को पूरा
-              करने में मदद मिल सके जिन्हें आप हासिल करना चाहते हैं।&rdquo;
+              करने में मदद मिल सके जिसे आप हासिल करना चाहते हैं।&rdquo;
               </p>
               <div class="sign">— गिरीश गौड़</div>
             </div>
@@ -1945,200 +2284,32 @@
         </div>
       </section>
 
-      <!-- ================= CARDS ================= -->
-
-      <section class="container my-5">
-
-        <div class="row g-4">
-
-          <div class="col-md-6 col-lg-4">
-
-            <div class="card h-100 shadow">
-
-              <img src="https://raw.githubusercontent.com/girish8360/amli/main/GridArt_20250228_090331226.jpg"
-                class="card-img-top" style="width:50%;height:20%;">
-              <span><a target="_blank"
-                  href="https://raw.githubusercontent.com/girish8360/girish8360/main/GridArt_20250228_090331226.jpg"
-                  width="100px;height:100px;" style="float:left;padding-left:10px;"></a>
-
-
-                <div class="card-body">
-
-                  <h3>Life Insurance</h3>
-                  <h5>Financial protection for your family.</h5>
-
-                  <a target="_blank" href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm"
-                    class="btn btn-primary">
-
-                    Know More </a>
-
-                </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-
-            <div class="card h-100 shadow">
-
-              <img src="https://raw.githubusercontent.com/girish8360/amli/main/nb.jpg" class="card-img-top"
-                style="width:50%;height:30%;">
-
-
-              <div class="card-body">
-
-                <h3>Health Insurance</h3>
-                <h5>Health Protection beating Medical Inflation.</h5>
-
-                </p>
-                <a href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM" target="_blank"
-                  class="btn btn-success">
-
-
-                  Know More
-
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-
-      </section>
-
-      <!-- ================= CARDS ================= -->
-
-      <section class="container my-5" style="background:maroon;color:#fff;">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="goals">
-              <h2 style="color: black;font-weight: bold;">Let's become<br>Financially Strong</h2>
-              <div class="goal-chips">
-                <span class="chip" style="background:softgold;text:maroon;text-decoration: none;"> <a target="_blank"
-                    href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#term">TERM
-                    PRODUCTS <br>Family Protection</a></span>
-
-                <span class="chip"><a target="_blank"
-                    href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#saving">GUARANTEED<br>
-                    SAVING PRODUCTS</a></span>
-                <span class="chip"><a target="_blank"
-                    href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#ulip">
-                    ULIP PRODUCTS<br>Wealth Growth</a></span>
-
-                <span class="chip"><a target="_blank"
-                    href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#annuity">ANNUITY
-                    PRODUCTS<br>Retirement Planning
-                  </a></span>
-                <span class="chip"><a target="_blank"
-                    href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#swag">SWAG
-                    PRODUCTS<br>Long Term <br>Wealth Growth</a></span>
-                <span class="chip"><a target="_blank"
-                    href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#rea3">ReAssure 3.0
-                    <br>
-                    Medical Inflation Protection </a>
-                </span>
-
-                <span class="chip alt"><a target="_blank"
-                    href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#pa">PERSONAL
-                    ACCIDENT <br>PRODUCTS</a></span>
-                <span class="chip alt"><a target="_blank"> </a>
-
-                  <span class="chip alt"><a target="_blank"
-                      href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#travel">
-
-                      Travel Insurance</a> </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-
-
-      <!-- ================= TIME MESSAGE ================= -->
-      <section class="container my-5"  style="background: linear-gradient(86deg,maroon, orange);color:#fff;box-shadow: 25px 25px yellow;">
-
-        <div class="row">
-          <div class="col-lg-12">
-            <p style="font-family:Times New Roman;font-style:italic;font-size: 25px;"><strong>In a world that moves at
-                an
-                ever-accelerating pace, time is our most valuable & irreversible asset<br>
-                Time never slows down, and life never waits.<br> Make today the moment you choose to protect
-                what matters most—your health and your financial security. </strong></p>
-
-            <div class="col-12 col-md-3 d-flex justify-content-center mt-3 mt-md-0">
-              <div class="container04" style="background:transparent;">
-                <div class="clock">
-                  <!-- Clock -->
-
-                  <div style="--clr:#ff3d58; --h:55px;" id="hour" class="hand"><i></i></div>
-                  <div style="--clr:#00a6ff;  --h:70px;" id="min" class="hand"><i></i></div>
-                  <div style="--clr:#ffffff;  --h:90px;" id="sec" class="hand"><i></i></div>
-
-                  <span style="--i:1;"><b>I</b></span>
-                  <span style="--i:2;"><b>II</b></span>
-                  <span style="--i:3;"><b>III</b></span>
-                  <span style="--i:4;"><b>IV</b></span>
-                  <span style="--i:5;"><b>V</b></span>
-                  <span style="--i:6;"><b>VI</b></span>
-                  <span style="--i:7;"><b>VII</b></span>
-                  <span style="--i:8;"><b>VIII</b></span>
-                  <span style="--i:9;"><b>IX</b></span>
-                  <span style="--i:10;"><b>X</b></span>
-                  <span style="--i:11;"><b>XI</b></span>
-                  <span style="--i:12;"><b>XII</b></span>
-                </div>
-
-              </div>
-              <script>
-                let hr = document.getElementById('hour');
-                let min = document.getElementById('min');
-                let sec = document.getElementById('sec');
-
-                function displayTime() {
-                  let date = new Date();
-
-                  // Getting hour, mins, secs from date
-                  let hh = date.getHours();
-                  let mm = date.getMinutes();
-                  let ss = date.getSeconds();
-
-                  let hRotation = 30 * hh + mm / 2;
-                  let mRotation = 6 * mm;
-                  let sRotation = 6 * ss;
-
-
-                  hr.style.transform = `rotate(${hRotation}deg)`;
-                  // hr.style.transform = `rotate(${hRotation}deg)`;
-                  // hr.style.transform = `rotate(${hRotation}deg)`;
-                  min.style.transform = `rotate(${mRotation}deg)`;
-                  sec.style.transform = `rotate(${sRotation}deg)`;
-                }
-                setInterval(displayTime, 1000);
-              </script>
-            </div>
-          </div>
-    <p id="demo"
-            style="background:maroon;color:#fff;font-weight: bolder;font-family: 'Times New Roman';font-size:30px;">
-          </p>
-          <script>
-            const d = new Date();
-            document.getElementById("demo").innerHTML = d;
-
-
-
-          </script>
-      </section>
+   
       <!-- =================AGE CALCULATOR ================= -->
       <section class="container my-5" style="background:darkblue;color:#fff;">
         <div class="row">
           <div class="col-lg-12">
 
             <div class="container01">
+              <p>### **Time Moves Forward. Responsibilities Grow. Is Your Protection Keeping Pace?**
+
+**Every passing year adds value to our experience, but it can also add to our responsibilities.** Time never stands still, and neither does life. As we grow older, our family commitments, financial liabilities, healthcare needs, and aspirations often grow with us.
+
+The age you see on this calculator is more than just a number. It is a reminder of the time that has passed, the responsibilities you carry today, and the future you still wish to secure.<br>
+
+**Your present age is not just a milestone in life; it is an opportunity to make wiser decisions for tomorrow.**<br>
+
+The right time to think about health insurance, life insurance, and financial protection is not when uncertainties arise, but while you have the opportunity to plan ahead. Acting at the right time may help you access more suitable protection options, subject to eligibility, underwriting, policy terms, and conditions.
+
+Don't let another year pass without reviewing what matters most. Give your health, your family's financial security, and your peace of mind the attention they deserve.<br>
+
+**Because time is precious, responsibilities are real, and peace of mind begins with timely preparation.**<br>
+
+*Your age tells you how far you have travelled. Your decisions today can help shape how securely you travel ahead.*<br>
+
+**Take a moment to reflect. Take a step towards protection. The right time to plan for tomorrow is today.**<br>
+ 
+ </p>
               <div class="calculator">
                 <h3>AGE CALCULATOR</h3>
                 <div class="input-box">
@@ -2196,6 +2367,7 @@
             </div>
           </div>
         </div>
+        
         <!-- ================= FEEDBACK================= -->
         <div class="container-fluid px-2 px-sm-3 px-md-4 px-lg-5 py-3" style="background:maroon;color:#fff;">
           <form class="form-inline" action="https://sheetdb.io/api/v1/emf2ys13fr3un" method="POST">
@@ -3582,6 +3754,229 @@
             </fieldset>
 
           </form>
+                  <!-- SUCCESS MESSAGE 
+<!-- THANK YOU MESSAGE: hidden until submission succeeds -->
+
+        <!-- THANK YOU MESSAGE: hidden until submission succeeds -->
+        <div id="successMessage" class="text-center p-4" style="display:none;">
+          <div style="font-size:60px; color:green;">&#10004;</div>
+          <h2>Thank You!</h2>
+          <h4>Your feedback has been submitted successfully.</h4>
+          <p>Thank you for your valuable time.</p>
+          <p>I will get in touch with you shortly.</p>
+          <p><strong>— Girish Gaur</strong></p>
+
+          <button type="button" id="submitAnotherBtn" class="btn btn-primary">
+            Submit Another Response
+          </button>
+        </div>
+
+        <div id="submissionMessage" role="status" aria-live="polite"></div>
+
+
+
+        <script>
+
+          const form = document.getElementById("FeedbackForm");
+          const successMessage = document.getElementById("successMessage");
+          const submissionMessage = document.getElementById("submissionMessage");
+          const submitAnotherBtn = document.getElementById("submitAnotherBtn");
+
+          const SHEETDB_URL = "https://sheetdb.io/api/v1/emf2ys13fr3un";
+
+          form.addEventListener("submit", async function (event) {
+            event.preventDefault();
+
+            const submitBtn = form.querySelector('[type="submit"]');
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = "SUBMITTING...";
+            submissionMessage.textContent = "";
+
+            try {
+              const response = await fetch(SHEETDB_URL, {
+                method: "POST",
+                body: new FormData(form)
+              });
+
+              if (!response.ok) {
+                throw new Error("Submission failed. Please try again.");
+              }
+
+              // Confirm that the server returned a successful response.
+              const result = await response.json();
+
+              // Only now show the Thank You message.
+              form.reset();
+              // form.style.display = "none";
+              successMessage.style.display = "block";
+
+            } catch (error) {
+              submissionMessage.textContent =
+                "We could not confirm your submission. Please check your connection and try again. If you have already submitted, please avoid resubmitting until the sheet is checked.";
+
+              submissionMessage.style.color = "white";
+              console.error("Submission error:", error);
+
+            } finally {
+              submitBtn.disabled = false;
+              submitBtn.textContent = "SUBMIT";
+            }
+          });
+
+          submitAnotherBtn.addEventListener("click", function () {
+            // successMessage.style.display = "none";
+            submissionMessage.textContent = "";
+            form.reset();
+            form.style.display = "block";
+          });
+        </script>
+
+                   <!-- APPOINTMNET SCHEDULE  -->
+
+        <section class="appointment-section" id="appointment">
+          <div class="appointment-container">
+
+            <!-- Section Heading -->
+            <div class="appointment-header">
+              <span class="appointment-tag">PERSONALISED GUIDANCE</span>
+
+              <h2>Book an Appointment</h2>
+
+              <p>
+                Choose a convenient date and time for a personalised
+                discussion about your health insurance, life insurance,
+                or financial protection requirements.
+              </p>
+            </div>
+
+            <!-- Appointment Booking Card -->
+            <div class="appointment-card">
+
+              <div class="appointment-card-header">
+                <div class="appointment-icon" aria-hidden="true">
+                  &#128197;
+                </div>
+
+                <div>
+                  <h3 style="color:white;">Schedule Your Consultation</h3>
+                  <p>Select a suitable date and available time slot.</p>
+                </div>
+              </div>
+
+              <!-- Google Calendar Booking Page -->
+              <div class="appointment-calendar">
+                <iframe src="https://calendar.app.google/9asNfd5gsiUBKmwPA" style="border:0" width="100%" height="700"
+                  frameborder="0">
+
+                </iframe>
+              </div>
+
+              <div class="appointment-footer">
+                <p class="appointment-thankyou">
+                  We look forward to assisting you with personalised
+                  insurance guidance.
+                </p>
+
+                <p class="advisor-name">Girish Gaur</p>
+                <p class="advisor-designation">
+                  Certified Insurance Advisor
+
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+
+        <!-- ================= CARDS ================= -->
+
+        <section class="container my-5">
+
+          <div class="row g-4">
+
+            <div class="col-md-4 col-lg-4">
+
+              <div class="card h-100 shadow">
+
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/GridArt_20250228_090331226.jpg"
+                  class="card-img-top" style="width:50%;height:20%;">
+
+
+                <div class="card-body">
+
+                  <h3 style="color:#fff;">Life Insurance</h3>
+                  <h5>Financial protection for your family.</h5>
+
+                  <a target="_blank" href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm"
+                    class="btn btn-primary" style="color:#fff;">
+
+                    Know More </a>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+
+              <div class="card h-100 shadow">
+
+                <img src="https://raw.githubusercontent.com/girish8360/amli/main/nb.jpg" target="_blank"
+                  class="card-img-top" style="width:50%;height:30%;">
+
+
+                <div class="card-body">
+
+                  <h3 style="color:#fff;">Health Insurance</h3>
+                  <h5>Health Protection beating Medical Inflation.</h5>
+
+                  </p>
+                  <a target="_blank" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM"
+                    class="btn btn-success">
+
+
+                    Know More
+
+                  </a>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+
+              <div class="card h-100 shadow">
+
+                <img src="https://raw.githubusercontent.com/girish8360/girish8360/main/girish_snap.jpg"
+                  class="card-img-top" style="border-radius: 55%;width:30%;height:30%;">
+
+                <div class=" card-body">
+
+                  <h3 style="color:#fff;">Profile Page</h3>
+                  <h5>Back to Home</h5>
+
+                  </p>
+                  <a target="_blank" href="https://girish8360.github.io/amli/GIRISH-PROFILE.html">
+                    <span" target="_blank" class="btn btn-warning">
+
+
+                      Home Page
+
+                  </a>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
           <!-- ================= SURVEYS ================= -->
           <section class="container my-5" style="background:maroon;color:#fff;">
             <div class="container my-5">
