@@ -520,6 +520,275 @@
   }
 
 
+  /* APPOINTMENT SCHEDULE */
+  /* Prevent padding from increasing element widths */
+  .appointment-section,
+  .appointment-section * {
+    box-sizing: border-box;
+  }
+
+  /* Main Section */
+  .appointment-section {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 45px 20px;
+    overflow-wrap: anywhere;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172b4d;
+    background: #f4f7fb;
+  }
+
+  /* Content Container */
+  .appointment-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  /* Heading */
+  .appointment-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .appointment-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #9b1c31;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+  }
+
+  .appointment-header h2 {
+    margin: 0 0 15px;
+    color: #172b4d;
+    font-size: clamp(25px, 4vw, 36px);
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+  }
+
+  .appointment-header>p {
+    max-width: 720px;
+    margin: 0 auto;
+    color: darkblue;
+    font-size: 20px;
+    line-height: 1.8;
+  }
+
+  /* Booking Card */
+  .appointment-card {
+    width: 100%;
+    min-width: 0;
+    background: #ffffff;
+    border: 1px solid #e0e6ef;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 28px rgba(23, 43, 77, 0.08);
+  }
+
+  /* Card Header */
+  .appointment-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 22px 25px;
+    background: #ffffff;
+    border-bottom: 1px solid #e8edf4;
+  }
+
+  .appointment-icon {
+    display: flex;
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    background: #f9e9ed;
+    border-radius: 12px;
+    font-size: 25px;
+  }
+
+  .appointment-card-header h3 {
+    margin: 0 0 7px;
+    color: #172b4d;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .appointment-card-header p {
+    margin: 0;
+    color: #657186;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* Responsive Calendar Area */
+  .appointment-calendar {
+    width: 100%;
+    min-width: 0;
+    height: 760px;
+    padding: 0;
+    background: #ffffff;
+    overflow: hidden;
+  }
+
+  .appointment-calendar iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    border: 0;
+    background: #ffffff;
+  }
+
+  /* Footer */
+  .appointment-footer {
+    padding: 22px 25px 25px;
+    text-align: center;
+    background: #fafbfd;
+    border-top: 1px solid #e8edf4;
+  }
+
+  .appointment-thankyou {
+    margin: 0 0 15px;
+    color: #536176;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .appointment-name,
+  .advisor-name {
+    margin: 0 0 5px;
+    color: #9b1c31;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .advisor-designation {
+    margin: 0;
+    color: #657186;
+    font-size: 13px;
+  }
+
+  /* Tablet */
+  @media (max-width: 768px) {
+    .appointment-section {
+      padding: 32px 15px;
+    }
+
+    .appointment-header {
+      margin-bottom: 24px;
+    }
+
+    .appointment-header>p {
+      font-size: 15px;
+    }
+
+    .appointment-card {
+      border-radius: 12px;
+    }
+
+    .appointment-card-header {
+      padding: 18px;
+      gap: 12px;
+    }
+
+    .appointment-card-header h3 {
+      font-size: 18px;
+    }
+
+    .appointment-calendar {
+      height: 720px;
+    }
+
+    .appointment-footer {
+      padding: 20px 16px;
+    }
+  }
+
+  /* Mobile Phones */
+  @media (max-width: 480px) {
+    .appointment-section {
+      padding: 25px 10px;
+    }
+
+    .appointment-header {
+      margin-bottom: 20px;
+    }
+
+    .appointment-tag {
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+
+    .appointment-header h2 {
+      font-size: 25px;
+    }
+
+    .appointment-header>p {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .appointment-card {
+      border-radius: 10px;
+    }
+
+    .appointment-card-header {
+      align-items: flex-start;
+      padding: 15px 12px;
+      gap: 10px;
+    }
+
+    .appointment-icon {
+      flex-basis: 38px;
+      width: 38px;
+      height: 38px;
+      font-size: 20px;
+      border-radius: 9px;
+    }
+
+    .appointment-card-header h3 {
+      font-size: 16px;
+    }
+
+    .appointment-card-header p {
+      font-size: 12px;
+    }
+
+    .appointment-calendar {
+      height: 700px;
+    }
+
+    .appointment-footer {
+      padding: 18px 12px;
+    }
+
+    .appointment-thankyou {
+      font-size: 13px;
+    }
+
+    .advisor-name {
+      font-size: 17px;
+    }
+  }
+
+  /* Very Small Screens */
+  @media (max-width: 350px) {
+    .appointment-section {
+      padding: 20px 6px;
+    }
+
+    .appointment-header h2 {
+      font-size: 22px;
+    }
+
+    .appointment-calendar {
+      height: 680px;
+    }
+  }
   /* FOOTER */
 
   footer ul {
@@ -3829,10 +4098,64 @@
 
             </div>
           </div>
+ 
 
+ <!-- APPOINTMNET SCHEDULE  -->
+
+        <section class="appointment-section" id="appointment">
+          <div class="appointment-container">
+
+            <!-- Section Heading -->
+            <div class="appointment-header">
+              <span class="appointment-tag">PERSONALISED GUIDANCE</span>
+
+              <h2>Book an Appointment</h2>
+
+              <p>
+                Choose a convenient date and time for a personalised
+                discussion about your health insurance, life insurance,
+                or financial protection requirements.
+              </p>
+            </div>
+
+            <!-- Appointment Booking Card -->
+            <div class="appointment-card">
+
+              <div class="appointment-card-header">
+                <div class="appointment-icon" aria-hidden="true">
+                  &#128197;
+                </div>
+
+                <div>
+                  <h3 style="color:white;">Schedule Your Consultation</h3>
+                  <p>Select a suitable date and available time slot.</p>
+                </div>
+              </div>
+
+              <!-- Google Calendar Booking Page -->
+              <div class="appointment-calendar">
+                <iframe src="https://calendar.app.google/9asNfd5gsiUBKmwPA" style="border:0" width="100%" height="700"
+                  frameborder="0">
+
+                </iframe>
+              </div>
+
+              <div class="appointment-footer">
+                <p class="appointment-thankyou">
+                  We look forward to assisting you with personalised
+                  insurance guidance.
+                </p>
+
+                <p class="advisor-name">Girish Gaur</p>
+                <p class="advisor-designation">
+                  Certified Insurance Advisor
+
+                </p>
+              </div>
+
+            </div>
+          </div>
         </section>
-
-
         <!-- ================= FOOTER ================= -->
 
         <section class="container my-5" style="background:maroon;color:#fff;">
@@ -3892,7 +4215,12 @@
                           style="color:#fff;">ULIP Products</span></a><br>
                       <a target="_blank"
                         href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#rider"><span
-                          style="color:#fff;">Riders</span></a><br>
+                          style="color:#fff;">Riders-Axis Max life </span></a><br>
+                        
+                           <a target="_blank" href="https://girish8360.github.io/amli/nbrider.htm#nbrider"> <span
+                          style="color:#fff;">Riders-Niva Bupa</span></a><br>
+
+                        
                       <a target="_blank"
                         href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#healthcare"><span
                           style="color:#fff;">Healthcare Products</span></a> <br><br>
@@ -3926,7 +4254,7 @@
 
                       <h5><b><i>Feedback Form</i></b></h5>
                       <a href="https://girish8360.github.io/amli/GIRISH-PROFILE.html#feedback" target="_blank">
-                        <span style="color:#fff;">Feedback Form</span></a>
+                        <span style="color:#fff;">Connect Us</span></a>
                       </p>
 
                     </div>
