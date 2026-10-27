@@ -1,0 +1,4583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Girish Gaur — Certified Insurance Advisor | Axis Max Life &amp; Niva Bupa, Saharanpur</title>
+  <meta name="description"
+    content="Girish Gaur, Certified Insurance Advisor (Axis Max Life Insurance & Niva Bupa Health Insurance), Saharanpur. Life insurance, health insurance, term plans, retirement planning and ULIP — with personal guidance and claims support.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<style>
+  :root {
+
+    --mint: #e8f5ef;
+    --mint2: #f3faf6;
+    --sky: #eef4fb;
+    --ink: #17262e;
+    --muted: #5a6b72;
+    --line: #dde7e2;
+    --amber: #e8a33d;
+    --radius: 16px;
+    --shadow: 0 10px 30px rgba(10, 80, 58, .10);
+    --shadow-lg: 0 22px 50px rgba(10, 80, 58, .16);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+  }
+
+  html {
+    scroll-behavior: smooth
+  }
+
+  body {
+    font-family: 'Times New Roman';
+
+    color: var(--ink);
+    background: #fff;
+    line-height: 1.65;
+    font-size: 16.5px
+  }
+
+  .responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+
+  }
+
+  .wrap {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 22px
+  }
+
+  h1,
+  h2,
+  h3 {
+    line-height: 1.22;
+    letter-spacing: -.01em;
+
+
+  }
+
+  .eyebrow {
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    font-size: .72rem;
+    font-weight: 700;
+    color: var(--darkblue)
+  }
+
+  .btn {
+    display: inline-block;
+    padding: .85rem 1.7rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: .98rem;
+    text-decoration: none;
+    transition: .2s;
+    border: 1px solid transparent;
+    cursor: pointer;
+    text-align: center
+  }
+
+  .btn-green {
+    background: var(--green);
+    color: #fff;
+    box-shadow: 0 8px 18px rgba(10, 108, 79, .28)
+  }
+
+  .btn-green:hover {
+    background: var(--green2);
+    transform: translateY(-1px)
+  }
+
+  .btn-outline {
+    border-color: #bcd6cb;
+    color: var(--green-dark);
+    background: #fff
+  }
+
+  .btn-outline:hover {
+    border-color: var(--green);
+    color: var(--green)
+  }
+
+  .btn-white {
+    background: #fff;
+    color: var(--green-dark)
+  }
+
+  .btn-white:hover {
+    transform: translateY(-1px)
+  }
+
+  /* Top strip + nav */
+  .topstrip {
+    background: var(--darkblue);
+    color: #cfe6da;
+    font-size: .82rem
+  }
+
+  .topstrip .wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .45rem 22px;
+    flex-wrap: wrap
+  }
+
+  .topstrip b {
+    color: #fff;
+    font-weight: 600
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255, 255, 255, .97);
+    border-bottom: 1px solid var(--line)
+  }
+
+  .nav-in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .75rem 0
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    text-decoration: none;
+    color: var(--ink)
+  }
+
+  .brand .mark {
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+    background: var(--green);
+    display: grid;
+    place-items: center;
+    flex: none
+  }
+
+  .brand .bt {
+    line-height: 1.15
+  }
+
+  .brand .bt b {
+    font-size: 1.06rem;
+    display: block
+  }
+
+  .brand .bt span {
+    font-size: .72rem;
+    color: var(--muted);
+    font-weight: 600;
+    letter-spacing: .06em;
+    text-transform: uppercase
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center
+  }
+
+  .nav-links a {
+    color: var(--ink);
+    text-decoration: none;
+    font-size: .93rem;
+    font-weight: 500
+  }
+
+  .nav-links a:hover {
+    color: var(--green)
+  }
+
+  .nav-cta {
+    padding: .55rem 1.2rem;
+    font-size: .9rem;
+    border-radius: 10px
+  }
+
+  @media(max-width:860px) {
+    .nav-links a:not(.nav-cta) {
+      display: none
+    }
+  }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(180deg, var(--mint2), #fff);
+    padding: 3.6rem 0 3rem;
+    border-bottom: 1px solid var(--line)
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    gap: 2.6rem;
+    align-items: start
+  }
+
+  @media(max-width:900px) {
+    .hero-grid {
+      grid-template-columns: 1fr
+    }
+  }
+
+  .hero h1 {
+    font-size: clamp(2.1rem, 4.4vw, 3.2rem);
+    font-weight: 800
+  }
+
+  .hero h1 .hl {
+    color: var(--green)
+  }
+
+  .hero .sub {
+    margin: 1rem 0 1.4rem;
+    color: var(--muted);
+    font-size: 1.08rem;
+    max-width: 33rem
+  }
+
+  .trustrow {
+    display: flex;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.6rem
+  }
+
+  .trustrow div {
+    display: flex;
+    gap: .5rem;
+    align-items: flex-start;
+    font-size: .9rem;
+    font-weight: 500;
+    max-width: 15rem
+  }
+
+  .trustrow svg {
+    flex: none;
+    margin-top: .15rem
+  }
+
+  .advisor-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    box-shadow: var(--shadow-lg);
+    padding: 1.2rem;
+    display: flex;
+    gap: 1.1rem;
+    align-items: center;
+    max-width: 30rem
+  }
+
+  .advisor-card img {
+    width: 96px;
+    height: 96px;
+    border-radius: 14px;
+    object-fit: cover
+  }
+
+  .advisor-card h3 {
+    font-size: 1.12rem
+  }
+
+  .advisor-card p {
+    font-size: .86rem;
+    color: var(--muted);
+    line-height: 1.5
+  }
+
+  .advisor-card .cred {
+    font-size: .78rem;
+    color: var(--green);
+    font-weight: 600
+  }
+
+  .form-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    box-shadow: var(--shadow-lg);
+    padding: 1.7rem
+  }
+
+  .form-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: .3rem
+  }
+
+  .form-card>p {
+    font-size: .92rem;
+    color: var(--muted);
+    margin-bottom: 1.1rem
+  }
+
+  form {
+    display: grid;
+    gap: .85rem
+  }
+
+  label {
+    font-weight: 600;
+    font-size: .88rem;
+    display: block;
+    margin-bottom: .35rem
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: .75rem .95rem;
+    border: 1px solid #cfdcd6;
+    border-radius: 10px;
+    font: inherit;
+    background: #fff;
+    color: var(--ink)
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: 2px solid #9fd3bd;
+    border-color: var(--green)
+  }
+
+  .err {
+    color: #b3261e;
+    font-size: .83rem;
+    display: none;
+    margin-top: .3rem
+  }
+
+  .success {
+    display: none;
+    background: var(--mint);
+    border: 1px solid #bfe3d2;
+    border-radius: 12px;
+    padding: 1.1rem 1.2rem;
+    font-size: .95rem
+  }
+
+  .privacy-note {
+    font-size: .8rem;
+    color: var(--muted);
+    margin-top: .8rem
+  }
+
+  /* Insurer strip */
+  .insurers {
+    padding: 1.6rem 0;
+    border-bottom: 1px solid var(--line)
+  }
+
+  .insurers .wrap {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between
+  }
+
+  .insurers p {
+    font-size: .82rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--muted)
+  }
+
+  .insurer {
+    font-weight: 800;
+    font-size: 1.12rem;
+    color: var(--ink)
+  }
+
+  .insurer span {
+    display: block;
+    font-size: .78rem;
+    font-weight: 600;
+    color: var(--muted);
+    letter-spacing: .02em
+  }
+
+  /* Sections */
+  section {
+    padding: 4rem 0
+  }
+
+  .alt {
+    background: var(--mint2)
+  }
+
+  .sec-head {
+    max-width: 46rem;
+    margin-bottom: 2.1rem
+  }
+
+  .sec-head h2 {
+    font-size: clamp(1.7rem, 3.2vw, 2.35rem);
+    margin: .45rem 0 .55rem
+  }
+
+  .sec-head p {
+    color: var(--muted)
+  }
+
+  /* Stages */
+  .stages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem
+  }
+
+  @media(max-width:860px) {
+    .stages {
+      grid-template-columns: 1fr
+    }
+  }
+
+  .stage {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 1.6rem;
+    box-shadow: var(--shadow)
+  }
+
+  .stage .n {
+    display: inline-grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--mint);
+    color: var(--green-dark);
+    font-weight: 800;
+    font-size: .92rem;
+    margin-bottom: .8rem
+  }
+
+  .stage h3 {
+    font-size: 1.12rem;
+    margin-bottom: .35rem
+  }
+
+  .stage p {
+    font-size: .93rem;
+    color: var(--muted)
+  }
+
+  .stage ul {
+    margin: .7rem 0 0 1.05rem;
+    font-size: .92rem;
+    color: var(--ink)
+  }
+
+  .stage li {
+    margin-bottom: .25rem
+  }
+
+  /* Products */
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.4rem
+  }
+
+  @media(max-width:820px) {
+    .products {
+      grid-template-columns: 1fr
+    }
+  }
+
+  .product {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow)
+  }
+
+  .product img {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+
+
+  }
+
+  .product .p-in {
+    padding: 1.6rem
+  }
+
+  .product .tag {
+    display: inline-block;
+    background: var(--mint);
+    color: var(--green-dark);
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    border-radius: 999px;
+    padding: .25rem .7rem;
+    margin-bottom: .7rem
+  }
+
+  .product h3 {
+    font-size: 2.4rem
+  }
+
+  .product>p,
+  .product .p-in>p {
+    color: var(--muted);
+    font-size: .96rem;
+    margin: .35rem 0 .9rem
+  }
+
+  .product ul {
+    margin: 0 0 1.2rem 0;
+    list-style: none
+  }
+
+  .product li {
+    padding: .32rem 0 .32rem 1.6rem;
+    position: relative;
+    font-size: .95rem
+  }
+
+  .product li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--green);
+    font-weight: 800
+  }
+
+  .grid5 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1.6rem
+  }
+
+  .skill {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    transition: .2s
+  }
+
+  .skill:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow)
+  }
+
+  .skill h3 {
+    font-size: 1.02rem;
+    margin-bottom: .25rem
+  }
+
+  .skill p {
+    font-size: .88rem;
+    color: var(--muted)
+  }
+
+  /* Support band */
+  .support {
+    background: var(--green-dark);
+    color: #e6f2ec;
+    border-radius: 24px;
+    padding: 2.4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem
+  }
+
+  @media(max-width:860px) {
+    .support {
+      grid-template-columns: 1fr
+    }
+  }
+
+  .support h3 {
+    color: #fff;
+    font-size: 1.15rem;
+    margin-bottom: .4rem
+  }
+
+  .support p {
+    font-size: .94rem;
+    color: #c4ded1
+  }
+
+  .support .ic {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, .12);
+    display: grid;
+    place-items: center;
+    margin-bottom: .9rem
+  }
+
+  /* About */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 2.6rem;
+    align-items: start
+  }
+
+  @media(max-width:860px) {
+    .two-col {
+      grid-template-columns: 1fr
+    }
+  }
+
+  .about p {
+    margin-bottom: 1rem;
+    color: #33454e
+  }
+
+  .about p strong {
+    color: var(--ink)
+  }
+
+  .timeline {
+    border-left: 2px solid var(--line);
+    padding-left: 1.4rem;
+    display: grid;
+    gap: 1.5rem
+  }
+
+  .tl {
+    position: relative
+  }
+
+  .tl::before {
+    content: "";
+    position: absolute;
+    left: -1.4rem;
+    top: .42rem;
+    transform: translateX(-50%);
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--green);
+    box-shadow: 0 0 0 4px #fff
+  }
+
+  .tl h3 {
+    font-size: 1.08rem
+  }
+
+  .tl .when {
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--green)
+  }
+
+  .tl p {
+    color: var(--muted);
+    font-size: .94rem;
+    margin-top: .2rem
+  }
+
+  /* Vision */
+  .vision {
+    background: linear-gradient(160deg, #0a6c4f, #074d38);
+    color: #eaf5ef
+  }
+
+  .vision h2 {
+    font-size: clamp(1.9rem, 4vw, 2.9rem);
+    max-width: 44rem
+  }
+
+  .vision h2 .hl {
+    color: #ffd98a
+  }
+
+  .vision blockquote {
+    max-width: 52rem;
+    font-size: 1.08rem;
+    line-height: 1.8;
+    color: #d9ebe1;
+    margin-top: 1.4rem
+  }
+
+  .vision blockquote p {
+    margin-bottom: 1rem
+  }
+
+  .vision .sign {
+    color: #ffd98a;
+    font-weight: 700
+  }
+
+  .hindi {
+    font-family: 'Noto Sans Devanagari', 'Inter', sans-serif;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    margin-top: 2.2rem;
+    padding-top: 1.9rem;
+    max-width: 52rem;
+    color: #cfe4d8;
+    font-size: 1.02rem;
+    line-height: 1.95
+  }
+
+  .hindi p {
+    margin-bottom: 1rem
+  }
+
+  /* Calculator */
+  .calc-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 2.1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.2rem
+  }
+
+  @media(max-width:820px) {
+    .calc-card {
+      grid-template-columns: 1fr
+    }
+  }
+
+  .age-out {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .8rem;
+    margin-top: 1.1rem
+  }
+
+  .age-box {
+    background: var(--mint2);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: .95rem;
+    text-align: center
+  }
+
+  .age-box b {
+    font-size: 1.85rem;
+    display: block;
+    font-weight: 800;
+    color: var(--green-dark)
+  }
+
+  .age-box span {
+    font-size: .74rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 700
+  }
+
+  .age-extra {
+    margin-top: 1rem;
+    color: var(--muted);
+    font-size: .94rem
+  }
+
+  .age-extra b {
+    color: var(--ink)
+  }
+
+  .calc-note {
+    color: var(--muted);
+    font-size: .96rem
+  }
+
+  .calc-note p {
+    margin-bottom: .85rem
+  }
+
+  .calc-note strong {
+    color: var(--ink)
+  }
+
+  /* Surveys */
+  .surveys {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.4rem
+  }
+
+  @media(max-width:760px) {
+    .surveys {
+      grid-template-columns: 1fr
+    }
+  }
+
+  .survey {
+    border-radius: 20px;
+    padding: 2rem;
+    color: #fff
+  }
+
+  .survey.wms {
+    background: linear-gradient(140deg, #0d8562, #074d38)
+  }
+
+  .survey.hms {
+    background: linear-gradient(140deg, #1d6fb8, #144e80)
+  }
+
+  .survey h3 {
+    font-size: 1.45rem;
+    margin-bottom: .5rem
+  }
+
+  .survey p {
+    color: #e6f0ea;
+    font-size: .96rem;
+    margin-bottom: 1.3rem;
+    max-width: 27rem
+  }
+
+  .survey .tag {
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: .16em;
+    font-size: .7rem;
+    color: rgba(255, 255, 255, .75);
+    margin-bottom: .8rem
+  }
+
+  /* FAQ */
+  .faq {
+    max-width: 52rem
+  }
+
+  .faq details {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1rem 1.2rem;
+    margin-bottom: .7rem
+  }
+
+  .faq summary {
+    font-weight: 600;
+    cursor: pointer
+  }
+
+  .faq details p {
+    color: var(--muted);
+    font-size: .95rem;
+    margin-top: .5rem
+  }
+
+  footer {
+    background: #0c1f27;
+    color: #a9bcc2;
+    padding: 3rem 0 2.2rem;
+    font-size: .92rem
+  }
+
+  footer .f-brand {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 800
+  }
+
+  footer .cols {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 2rem;
+    margin: 1.3rem 0 2rem
+  }
+
+  @media(max-width:760px) {
+    footer .cols {
+      grid-template-columns: 1fr
+    }
+  }
+
+  footer a {
+    color: #d5e2e6;
+    text-decoration: none
+  }
+
+  footer a:hover {
+    color: #fff
+  }
+
+  footer .h {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: .5rem
+  }
+
+  .disclaimer {
+    border-top: 1px solid rgba(255, 255, 255, .13);
+    padding-top: 1.1rem;
+    font-size: .79rem;
+    color: #7e969e;
+    line-height: 1.6
+  }
+
+
+  /* Appointment booking */
+  .booking-panel {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #29466c;
+    border-radius: 14px;
+    background: #0b2144
+  }
+
+  .booking-panel p {
+    color: #d1def0;
+    font-size: .92rem;
+    margin-bottom: .75rem
+  }
+
+  .booking-panel .booking-note {
+    font-size: .78rem;
+    color: #c1cee0;
+    margin: .65rem 0 0
+  }
+
+  .btn-book {
+    display: block;
+    width: 100%;
+    background: #f5c76b;
+    color: #081b3a;
+    border: 1px solid #f5c76b;
+    font-weight: 800
+  }
+
+  .btn-book:hover {
+    background: #ffda8a;
+    transform: translateY(-1px)
+  }
+
+  .nav-book {
+    margin-left: .45rem
+  }
+
+  /* Professional navy-and-white theme */
+  :root {
+    --green: #174ea6;
+    --green2: #2563eb;
+    --green-dark: #081b3a;
+    --mint: #18365d;
+    --mint2: #0b2144;
+    --sky: #122d52;
+    --ink: #f7faff;
+    --muted: #c1cee0;
+    --line: #29466c;
+    --amber: #f5c76b;
+    --shadow: 0 10px 30px rgba(0, 0, 0, .22);
+    --shadow-lg: 0 22px 50px rgba(0, 0, 0, .32);
+  }
+
+  html {
+    scroll-padding-top: 80px
+  }
+
+  body {
+    background: #071a35;
+    color: #f7faff
+  }
+
+  .topstrip {
+    background: #041127;
+    color: #d9e7fb
+  }
+
+  nav {
+    background: rgba(7, 26, 53, .97);
+    border-bottom-color: #29466c;
+    backdrop-filter: blur(12px)
+  }
+
+  .brand {
+    color: #fff
+  }
+
+  .brand .mark {
+    background: #174ea6
+  }
+
+  .brand .bt span {
+    color: #c1cee0
+  }
+
+  .nav-links a {
+    color: #e8f0fc
+  }
+
+  .nav-links a:hover {
+    color: #8ebcff
+  }
+
+  .btn-green {
+    background: #1d5fd0;
+    color: #fff;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .25)
+  }
+
+  .btn-green:hover {
+    background: #3478e8
+  }
+
+  .btn-outline {
+    border-color: #7294c4;
+    color: #fff;
+    background: #10294c
+  }
+
+  .btn-outline:hover {
+    border-color: #a8c9ff;
+    color: #fff;
+    background: #17365f
+  }
+
+  .btn-white {
+    background: #fff;
+    color: #0b2144
+  }
+
+  .hero {
+    background: radial-gradient(ellipse at top right, #173965 0%, #0b2144 45%, #071a35 100%);
+    border-bottom-color: #29466c
+  }
+
+  .hero h1 .hl {
+    color: #9ec5ff
+  }
+
+  .eyebrow {
+    color: #9ec5ff
+  }
+
+  .hero .sub,
+  .trustrow div {
+    color: #e1eaf8
+  }
+
+  .trustrow svg {
+    stroke: #9ec5ff
+  }
+
+  .advisor-card,
+  .form-card,
+  .stage,
+  .product,
+  .skill,
+  .calc-card,
+  .faq details {
+    background: #10294c;
+    color: #f7faff;
+    border-color: #29466c;
+  }
+
+  .advisor-card p,
+  .form-card>p,
+  .stage p,
+  .product>p,
+  .product .p-in>p,
+  .skill p,
+  .sec-head p,
+  .calc-note,
+  .age-extra,
+  .faq details p {
+    color: #c1cee0
+  }
+
+  .advisor-card .cred {
+    color: #9ec5ff
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="date"],
+  select,
+  textarea {
+    background: #f8fbff;
+    color: #14243a;
+    border-color: #b6c7df;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #64758b
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: 2px solid #8ebcff;
+    border-color: #3478e8
+  }
+
+  .success {
+    background: #153c36;
+    border-color: #397d70;
+    color: #f3fffb
+  }
+
+  .privacy-note {
+    color: #c1cee0
+  }
+
+  .insurers {
+    background: #0a1f3d;
+    border-bottom-color: #29466c
+  }
+
+  .insurers p,
+  .insurer span {
+    color: #c1cee0
+  }
+
+  .insurer {
+    color: #fff
+  }
+
+  section {
+    background: #071a35
+  }
+
+  .alt {
+    background: #0b2144
+  }
+
+  .sec-head h2,
+  .stage h3,
+  .product h3,
+  .skill h3,
+  .form-card h3,
+  .advisor-card h3,
+  .calc-note strong,
+  .about p strong,
+  .tl h3 {
+    color: #fff
+  }
+
+  .stage .n {
+    background: #1b3c68;
+    color: #dceaff
+  }
+
+  .product .tag {
+    background: #1b3c68;
+    color: #dceaff
+  }
+
+  .product li::before {
+    color: #9ec5ff
+  }
+
+  .support {
+    background: linear-gradient(135deg, #102e57, #06152e);
+    border: 1px solid #29466c
+  }
+
+  .support p {
+    color: #d1def0
+  }
+
+  .support .ic {
+    background: rgba(158, 197, 255, .15)
+  }
+
+  .about p {
+    color: #d1def0
+  }
+
+  .timeline {
+    border-left-color: #29466c
+  }
+
+  .tl::before {
+    background: #78a9f7;
+    box-shadow: 0 0 0 4px #0b2144
+  }
+
+  .tl .when {
+    color: #9ec5ff
+  }
+
+  .vision {
+    background: linear-gradient(145deg, #102f5b, #06152e);
+    color: #f7faff
+  }
+
+  .vision h2 .hl,
+  .vision .sign {
+    color: #f5c76b
+  }
+
+  .vision blockquote {
+    color: #e1eaf8
+  }
+
+  .hindi {
+    color: #d1def0;
+    border-top-color: rgba(255, 255, 255, .2)
+  }
+
+  .age-box {
+    background: #0b2144;
+    border-color: #29466c
+  }
+
+  .age-box b {
+    color: #fff
+  }
+
+  .age-box span {
+    color: #c1cee0
+  }
+
+  .survey.wms {
+    background: linear-gradient(140deg, #174ea6, #081b3a)
+  }
+
+  .survey.hms {
+    background: linear-gradient(140deg, #155e9b, #0a2344)
+  }
+
+  .survey p {
+    color: #edf4ff
+  }
+
+  .faq summary {
+    color: #fff
+  }
+
+  footer {
+    background: #030d20;
+    color: #c1cee0
+  }
+
+  footer a {
+    color: #dce8f8
+  }
+
+  .disclaimer {
+    color: #9aacc4;
+    border-top-color: rgba(255, 255, 255, .15)
+  }
+
+  ::selection {
+    background: #3478e8;
+    color: #fff
+  }
+
+  @media(prefers-reduced-motion:reduce) {
+    html {
+      scroll-behavior: auto
+    }
+
+    *,
+    *::before,
+    *::after {
+      transition: none !important
+    }
+  }
+
+
+
+
+  ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    font-size: 1.55rem;
+  }
+
+  .custom-navbar {
+    background: darkblue;
+    border: 3px solid white;
+    padding: 8px 15px;
+  }
+
+  .custom-navbar .navbar-brand {
+    color: white;
+    font-weight: 600;
+  }
+
+  .custom-navbar .nav-link {
+    color: white !important;
+  }
+
+  .custom-navbar .nav-link:hover {
+    background-color: MAROON;
+    color: #ffff76;
+    !important;
+    border-radius: 5px;
+  }
+
+  .custom-navbar .dropdown-item:hover {
+    background-color: darkblue;
+    color: white;
+  }
+
+
+  /* MOBILE */
+  @media (max-width: 991.98px) {
+
+    .custom-navbar .navbar-nav {
+      width: 100%;
+    }
+
+    .custom-navbar .nav-item {
+      width: 100%;
+    }
+
+    .custom-navbar .nav-link {
+      padding: 11px 10px !important;
+    }
+
+    .custom-navbar .dropdown-menu {
+      position: static !important;
+      width: 100%;
+      margin: 0;
+      border: none;
+    }
+
+  }
+
+  /* ================= FORM ================= */
+  fieldset {
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+
+  legend h2 {
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .question-label {
+    font-weight: bold;
+  }
+
+  .form-control {
+    max-width: 400px;
+  }
+
+  .survey-section {
+    margin-top: 15px;
+  }
+
+  @media (max-width: 575px) {
+    .form-control {
+      max-width: 100%;
+    }
+
+    fieldset {
+      padding: 12px;
+    }
+  }
+
+  /* INTRO */
+
+  .intro {
+    font-size: small;
+    text-align: justify;
+
+    background: darkblue;
+
+    font-family: 'Times New Roman';
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 10px;
+    border: 2px solid white;
+
+  }
+
+
+  /* HERO */
+
+  .hero-img {
+    width: 25%;
+    height: 25%;
+
+    height: auto;
+    display: block;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 3px solid gold;
+    object-fit: cover;
+  }
+
+
+  /* CARD */
+
+  .card {
+    transition: .4s;
+    box-shadow: 25px 28px 20px maroon;
+    ;
+  }
+
+  .card:hover {
+    transform: translateY(-15px);
+  }
+
+
+  /* GOALS */
+
+  .goals {
+    margin-bottom: 10mm;
+    background: #F4D068;
+    color: #4A0000;
+  }
+
+  .goals h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 34.5px;
+    color: var(--navy);
+    margin: 0 0 6mm;
+  }
+
+  .goals a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .goal-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+
+  }
+
+
+  /* CHIP*/
+
+  .chip {
+    border: 3px solid darkblue;
+    color: var(--navy);
+    font-size: 25.3px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 6px;
+    letter-spacing: .01em;
+  }
+
+  .chip-alt {
+    border-color: 3px solid orange;
+    background: maroon;
+    color: #fff;
+  }
+
+  .chip-alt:hover {
+    background: #fff;
+    color: maroon;
+    cursor: pointer;
+  }
+
+  .chip:hover {
+    background: #fff;
+    color: maroon;
+
+    cursor: pointer;
+  }
+
+  /* APPOINTMENT SCHEDULE */
+  /* Prevent padding from increasing element widths */
+  .appointment-section,
+  .appointment-section * {
+    box-sizing: border-box;
+  }
+
+  /* Main Section */
+  .appointment-section {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 45px 20px;
+    overflow-wrap: anywhere;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172b4d;
+    background: #f4f7fb;
+  }
+
+  /* Content Container */
+  .appointment-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  /* Heading */
+  .appointment-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .appointment-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #9b1c31;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+  }
+
+  .appointment-header h2 {
+    margin: 0 0 15px;
+    color: #172b4d;
+    font-size: clamp(25px, 4vw, 36px);
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+  }
+
+  .appointment-header>p {
+    max-width: 720px;
+    margin: 0 auto;
+    color: darkblue;
+    font-size: 20px;
+    line-height: 1.8;
+  }
+
+  /* Booking Card */
+  .appointment-card {
+    width: 100%;
+    min-width: 0;
+    background: #ffffff;
+    border: 1px solid #e0e6ef;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 28px rgba(23, 43, 77, 0.08);
+  }
+
+  /* Card Header */
+  .appointment-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 22px 25px;
+    background: #ffffff;
+    border-bottom: 1px solid #e8edf4;
+  }
+
+  .appointment-icon {
+    display: flex;
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    background: #f9e9ed;
+    border-radius: 12px;
+    font-size: 25px;
+  }
+
+  .appointment-card-header h3 {
+    margin: 0 0 7px;
+    color: #172b4d;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .appointment-card-header p {
+    margin: 0;
+    color: #657186;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* Responsive Calendar Area */
+  .appointment-calendar {
+    width: 100%;
+    min-width: 0;
+    height: 760px;
+    padding: 0;
+    background: #ffffff;
+    overflow: hidden;
+  }
+
+  .appointment-calendar iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    border: 0;
+    background: #ffffff;
+  }
+
+  /* Footer */
+  .appointment-footer {
+    padding: 22px 25px 25px;
+    text-align: center;
+    background: #fafbfd;
+    border-top: 1px solid #e8edf4;
+  }
+
+  .appointment-thankyou {
+    margin: 0 0 15px;
+    color: #536176;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .appointment-name,
+  .advisor-name {
+    margin: 0 0 5px;
+    color: #9b1c31;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .advisor-designation {
+    margin: 0;
+    color: #657186;
+    font-size: 13px;
+  }
+
+  /* Tablet */
+  @media (max-width: 768px) {
+    .appointment-section {
+      padding: 32px 15px;
+    }
+
+    .appointment-header {
+      margin-bottom: 24px;
+    }
+
+    .appointment-header>p {
+      font-size: 15px;
+    }
+
+    .appointment-card {
+      border-radius: 12px;
+    }
+
+    .appointment-card-header {
+      padding: 18px;
+      gap: 12px;
+    }
+
+    .appointment-card-header h3 {
+      font-size: 18px;
+    }
+
+    .appointment-calendar {
+      height: 720px;
+    }
+
+    .appointment-footer {
+      padding: 20px 16px;
+    }
+  }
+
+  /* Mobile Phones */
+  @media (max-width: 480px) {
+    .appointment-section {
+      padding: 25px 10px;
+    }
+
+    .appointment-header {
+      margin-bottom: 20px;
+    }
+
+    .appointment-tag {
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+
+    .appointment-header h2 {
+      font-size: 25px;
+    }
+
+    .appointment-header>p {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .appointment-card {
+      border-radius: 10px;
+    }
+
+    .appointment-card-header {
+      align-items: flex-start;
+      padding: 15px 12px;
+      gap: 10px;
+    }
+
+    .appointment-icon {
+      flex-basis: 38px;
+      width: 38px;
+      height: 38px;
+      font-size: 20px;
+      border-radius: 9px;
+    }
+
+    .appointment-card-header h3 {
+      font-size: 16px;
+    }
+
+    .appointment-card-header p {
+      font-size: 12px;
+    }
+
+    .appointment-calendar {
+      height: 700px;
+    }
+
+    .appointment-footer {
+      padding: 18px 12px;
+    }
+
+    .appointment-thankyou {
+      font-size: 13px;
+    }
+
+    .advisor-name {
+      font-size: 17px;
+    }
+  }
+
+  /* Very Small Screens */
+  @media (max-width: 350px) {
+    .appointment-section {
+      padding: 20px 6px;
+    }
+
+    .appointment-header h2 {
+      font-size: 22px;
+    }
+
+    .appointment-calendar {
+      height: 680px;
+    }
+  }
+
+
+
+
+  /* FOOTER */
+
+  footer ul {
+    padding-left: 0;
+  }
+
+  footer li {
+    padding: 4px 0;
+  }
+
+  .navbar .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+
+
+
+  .pillars {
+    padding: 2mm 16mm 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    background: maroon;
+    color: #fff;
+  }
+
+  .pillar {
+    padding: 7mm 6mm 6mm 0;
+    border-top: 1px solid var(--hair);
+  }
+
+  .pillar:nth-child(n+4) {
+    border-top: 1px solid var(--hair);
+  }
+
+  .pillar-head {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    gap: 9px;
+    margin-bottom: 7px;
+  }
+
+  .pillar h3 {
+    font-family: 'Times New Roman', serif;
+    font-weight: 00;
+    font-size: 24px;
+    margin: 0;
+    color: var(--navy);
+  }
+
+
+  /* CALCULATOR */
+
+  .calculator {
+    width: 75vw;
+    max-width: 400px;
+
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .calculator h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  .input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .input-box input {
+    flex: 1;
+    padding: 14px 20px;
+    border: 0;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 16px;
+    position: relative;
+  }
+
+  .input-box input::webkit-calendar-picker-indicator {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+
+    transform: translateY(-50%);
+
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .input-box button {
+    padding: 15px 30px;
+    border: 0;
+    height: auto;
+    border-radius: 5px;
+    background-color: #ffff76;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    background-color: #fff;
+  }
+
+  #result span {
+    font-weight: bold;
+    color: black;
+  }
+
+  /* FIELDSET */
+
+  fieldset {
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+
+  legend h2 {
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .question-label {
+    font-weight: bold;
+
+  }
+
+  .form-control {
+    max-width: 400px;
+
+
+  }
+
+  .survey-section {
+    margin-top: 15px;
+  }
+
+  @media (max-width: 575px) {
+    .form-control {
+      max-width: 100%;
+      padding-left: 15px;
+
+    }
+
+    fieldset {
+      padding: 12px;
+    }
+  }
+
+
+
+  ol {
+    font-size: 25px;
+    padding-left: 50px;
+    padding-right: 20px;
+    font-family: arial;
+  }
+
+
+
+  ul1 {
+    list-style-type: disc;
+    font-weight: normal;
+  }
+
+  ul1 li {
+    font-size: 25px;
+    padding: 2px;
+    margin-left: 25px;
+  }
+
+  section {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    max-width: auto;
+    margin: 0 auto;
+    font-family: Times, 'Times New Roman', serif;
+  }
+
+  .responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+  /* RESPONSIVE FOOTER */
+
+  .professional-footer {
+    background: maroon;
+    color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 25px 15px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+
+  .footer-top {
+    padding: 10px 0 20px;
+  }
+
+
+  .footer-profile {
+    width: 220px;
+    max-width: 85%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+
+  .footer-name {
+    color: #ffffff;
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+    font-size: clamp(28px, 4vw, 42px);
+    margin-bottom: 5px;
+  }
+
+
+  .footer-designation {
+    color: #ffffff;
+    margin: 5px 0;
+    font-size: clamp(17px, 2vw, 23px);
+  }
+
+
+  .footer-companies {
+
+    color: #ffffff;
+    font-size: clamp(15px, 1.8vw, 20px);
+    font-weight: bold;
+    line-height: 1.6;
+  }
+
+
+  .footer-nb-logo {
+    width: 180px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+
+  /* CONTACT AREA */
+
+  .footer-contact {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 20px 0 10px;
+  }
+
+
+  .footer-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    text-align: left;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+
+  .footer-icon {
+    font-size: 30px;
+    min-width: 35px;
+  }
+
+
+  .whatsapp-icon {
+    background: darkgreen;
+    color: white;
+    font-size: 32px;
+    padding: 5px;
+    border-radius: 6px;
+    min-width: 40px;
+    text-align: center;
+  }
+
+
+  .facebook-icon {
+    background: #3B5998;
+    color: white;
+    font-size: 32px;
+    padding: 6px 10px;
+    border-radius: 6px;
+  }
+
+
+  .footer-item a {
+    color: #ffffff;
+    text-decoration: none;
+    word-break: break-word;
+  }
+
+
+  .footer-item a:hover {
+    text-decoration: underline;
+  }
+
+
+  .email-section {
+    word-break: break-word;
+  }
+
+
+  .footer-qr {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-top: 5px;
+  }
+
+
+  .social-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 20px 0;
+  }
+
+
+  .facebook-title {
+    font-size: 18px;
+    margin-left: 8px;
+  }
+
+
+  .footer-social-qr {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    margin-top: 10px;
+  }
+
+
+  /* COPYRIGHT */
+
+  .footer-copyright {
+    background: #5a0000;
+    margin: 20px -15px 0;
+    padding: 12px 10px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+
+  /* ================= MOBILE ================= */
+
+  @media (max-width: 575.98px) {
+    .professional-footer {
+      padding: 20px 10px 0;
+    }
+
+
+    .footer-profile {
+      width: 180px;
+    }
+
+
+    .footer-name {
+      font-size: 30px;
+    }
+
+
+    .footer-designation {
+      font-size: 17px;
+    }
+
+    .footer-companies {
+      font-size: 15px;
+    }
+
+
+    .footer-nb-logo {
+      width: 160px;
+    }
+
+
+    .footer-contact {
+      padding-top: 10px;
+    }
+
+
+    .footer-item {
+      justify-content: flex-start;
+      padding: 15px 20px;
+      font-size: 15px;
+    }
+
+
+    .footer-icon {
+      font-size: 27px;
+    }
+
+
+    .whatsapp-icon {
+      font-size: 30px;
+    }
+
+
+    .footer-copyright {
+      font-size: 13px;
+    }
+  }
+
+
+  /* ================= VERY SMALL PHONES ================= */
+
+  @media (max-width: 375px) {
+    .footer-profile {
+      width: 150px;
+    }
+
+
+    .footer-name {
+      font-size: 27px;
+    }
+
+    .footer-designation {
+      font-size: 15px;
+    }
+
+
+    .footer-companies {
+      font-size: 13px;
+    }
+
+
+    .footer-item {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 14px;
+
+    }
+
+  }
+
+  #successMessage {
+    display: none;
+    margin: 30px auto;
+    padding: 25px;
+    max-width: 700px;
+    text-align: center;
+    background: #f0fff4;
+    border: 2px solid #28a745;
+    border-radius: 10px;
+    color: #155724;
+    font-size: 18px;
+    line-height: 1.7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  #successMessage strong {
+    font-size: 20px;
+  }
+</style>
+</head>
+
+<body>
+
+  <div class="topstrip">
+    <div class="wrap">
+      <span><b>Girish Gaur</b> · Certified Insurance Advisor · Saharanpur, Uttar Pradesh</span>
+      <span>Axis Max Life Insurance &nbsp;|&nbsp; Niva Bupa Health Insurance</span>
+    </div>
+  </div>
+
+  <nav>
+    <div class="wrap nav-in">
+      <a class="brand" href="#top">
+        <span class="mark"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+            <path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6l7-3z" stroke-linejoin="round" />
+            <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg></span>
+        <span class="bt"><b>Girish Gaur</b><span>Insurance Advisor</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#plans">Plans</a>
+        <a href="#about">About</a>
+        <a href="#vision">Vision</a>
+        <a href="#age">Age Calculator</a>
+        <a href="#surveys">Surveys</a>
+        <a class="btn btn-outline nav-cta" href="#connect">Request a Callback</a>
+        <a class="btn btn-green nav-cta nav-book" href="https://calendly.com/girish-garry4u/30min" target="_blank"
+          rel="noopener noreferrer">Book Appointment</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Life &amp; Health Insurance, Done Personally</p>
+        <h1>Protect your family&rsquo;s future, <span class="hl">with a plan built around you.</span></h1>
+        <p class="sub">I&rsquo;m Girish Gaur, a Certified Insurance Advisor in Saharanpur. I help individuals and
+          families choose the right life and health cover — and I stay with you through after-sales service and claims,
+          not just the purchase.</p>
+        <div class="trustrow">
+          <div><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#0a6c4f" stroke-width="2.2">
+              <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>Personalised advice, never a one-size policy</div>
+          <div><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#0a6c4f" stroke-width="2.2">
+              <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>Claims &amp; after-sales support included</div>
+          <div><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#0a6c4f" stroke-width="2.2">
+              <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>30+ years of trusted professional service</div>
+        </div>
+        <div class="advisor-card">
+          <img src="https://raw.githubusercontent.com/girish8360/girish8360/main/girish_snap.jpg"
+            alt="Portrait of Girish Gaur">
+          <div>
+            <h3>Girish Gaur</h3>
+            <p>Certified Insurance Advisor — Axis Max Life Insurance &amp; Niva Bupa Health Insurance</p>
+            <p class="cred">B.Sc. · M.A. (Economics) · PGDCASA · PGDBA · Cert. Oracle 8i</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card" id="connect">
+        <h3>Request a free callback</h3>
+        <p>Share a few details and I&rsquo;ll guide you to cover that fits your family, your goals and your budget.</p>
+        <form class="form-inline" action="https://sheetdb.io/api/v1/emf2ys13fr3un" method="POST" id="FeedbackForm"
+          target="sheetdbTarget">
+
+          <div>
+            <label for="fName">Full name *</label>
+            <input type="text" class="form-control" id="name" name="data[full_name]" placeholder="Enter FULL NAME"
+              maxlength="100" autocomplete="name" required>
+
+            <p class="err" id="eName">Please enter your name.</p>
+          </div>
+
+          <div>
+            <label for="dob">Date of Birth *</label>
+            <input type="date" class="form-control" id="dob" name="data[dob]" style="width:200px;" required>
+
+            <p class="err" id="eName">Please enter your Date Of Birth .</p>
+          </div>
+
+          <div>
+            <label for="age"> Age (Years)</label>
+            <input type="number" class="form-control" id="age" name="data[age]"
+              placeholder="Age will be calculated automatically" readonly required>
+
+          </div>
+          <!-- ================= AUTOMATIC AGE CALCULATOR ================= -->
+          <script>
+            // <--GETTING REFERENCES TO THE DATE OF BIRTH AND AGE INPUT FIELDS -->
+            const dobField = document.getElementById("dob");
+            const ageField = document.getElementById("age");
+
+            // <--Prevent selecting a future date -->
+
+            dobField.max = new Date().toISOString().split("T")[0];
+
+            // <--Calculate age automatically when DOB changes -->
+            dobField.addEventListener("change", function () {
+
+              // Get selected DOB
+
+              const dobValue = dobField.value;
+
+              if (!dobValue) { ageField.value = ""; return; }
+
+              // Convert DOB into Date object
+
+              const birthDate = new Date(dobValue + "T00:00:00");
+
+              const today = new Date();
+
+              // Calculate initial age
+
+              let age = today.getFullYear() - birthDate.getFullYear();
+
+              // Calculate whether birthday has occurred this year
+
+              const monthDifference = today.getMonth() - birthDate.getMonth();
+              const dayDifference = today.getDate() - birthDate.getDate();
+
+              // If birthday has not occurred yet, subtract one year
+
+              if (monthDifference < 0 || (monthDifference === 0 && dayDifference < 0)) { age--; }
+
+              // Put calculated age into Age field
+
+              ageField.value = age;
+            }); 
+          </script>
+
+          <div>
+            <label for="fPhone">Phone / WhatsApp</label>
+            <input type="tel" id="mob" name="data[mobile]" class="form-control" maxlength="15"
+              placeholder="Enter mobile number" inputmode="numeric" pattern="[0-9+\-\s]{10,15}" autocomplete="tel"
+              required>
+
+          </div>
+
+          <div>
+            <label for="email">Email ID</label>
+            <input type="email" id="email" name="data[email]" class="form-control" maxlength="150"
+              placeholder="Enter email" autocomplete="email">
+
+          </div>
+
+          <div>
+            <label for="marital_status">Marital Status</label>
+
+
+            <select name="data[marital_status]" id="life_insurance">
+              <option>Single </option>
+              <option>Married</option>
+
+            </select>
+          </div>
+
+          <div>
+            <label for="gender">Gender</label>
+
+
+
+            <select name="data[gender]" id="life_insurance">
+              <option>Male </option>
+              <option>Female</option>
+
+            </select>
+          </div>
+
+
+          <div>
+            <label for="state">State (As per ID)</label>
+            <select class="form-select" id="state" name="data[state]" class="form-control" maxlength="60"
+              placeholder="State/UT" autocomplete="address-level1">
+              <option value="" selected disabled>
+                -- Select State / UT --
+              </option>
+
+              <optgroup label="States">
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+              </optgroup>
+
+              <optgroup label="Union Territories">
+                <option value="Andaman and Nicobar Islands">
+                  Andaman and Nicobar Islands
+                </option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Dadra and Nagar Haveli and Daman and Diu">
+                  Dadra and Nagar Haveli and Daman and Diu
+                </option>
+                <option value="Delhi">Delhi (NCT)</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Ladakh">Ladakh</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Puducherry">Puducherry</option>
+              </optgroup>
+
+            </select>
+
+          </div>
+
+          <div>
+            <label for="state">District (As per ID)</label>
+            <select class="form-select" id="district" name="data[district]" class="form-control" maxlength="60"
+              placeholder="District" autocomplete="address-level1">
+              <option value="" selected>
+                -- First Select State / UT --
+              </option>
+            </select>
+            <!-- =========================================================
+     JAVASCRIPT
+     ========================================================= -->
+
+            <script>
+
+              const districts = {
+
+                /* ================= ANDHRA PRADESH ================= */
+
+                "Andhra Pradesh": [
+                  "Alluri Sitharama Raju",
+                  "Anakapalli",
+                  "Anantapur",
+                  "Annamayya",
+                  "Bapatla",
+                  "Chittoor",
+                  "Dr. B.R. Ambedkar Konaseema",
+                  "East Godavari",
+                  "Eluru",
+                  "Guntur",
+                  "Kakinada",
+                  "Krishna",
+                  "Kurnool",
+                  "Nandyal",
+                  "NTR",
+                  "Palnadu",
+                  "Parvathipuram Manyam",
+                  "Prakasam",
+                  "Sri Potti Sriramulu Nellore",
+                  "Sri Sathya Sai",
+                  "Srikakulam",
+                  "Tirupati",
+                  "Visakhapatnam",
+                  "Vizianagaram",
+                  "West Godavari"
+                ],
+
+                /* ================= ARUNACHAL PRADESH ================= */
+
+                "Arunachal Pradesh": [
+                  "Anjaw",
+                  "Bichom",
+                  "Changlang",
+                  "Dibang Valley",
+                  "East Kameng",
+                  "East Siang",
+                  "Itanagar Capital Complex",
+                  "Kamle",
+                  "Keyi Panyor",
+                  "Kra Daadi",
+                  "Kurung Kumey",
+                  "Lepa Rada",
+                  "Lohit",
+                  "Longding",
+                  "Lower Dibang Valley",
+                  "Lower Siang",
+                  "Lower Subansiri",
+                  "Namsai",
+                  "Pakke Kessang",
+                  "Papum Pare",
+                  "Shi Yomi",
+                  "Siang",
+                  "Tawang",
+                  "Tirap",
+                  "Upper Siang",
+                  "Upper Subansiri",
+                  "West Kameng",
+                  "West Siang"
+                ],
+
+                /* ================= ASSAM ================= */
+
+                "Assam": [
+                  "Baksa",
+                  "Bajali",
+                  "Barpeta",
+                  "Biswanath",
+                  "Bongaigaon",
+                  "Cachar",
+                  "Charaideo",
+                  "Chirang",
+                  "Darrang",
+                  "Dhemaji",
+                  "Dhubri",
+                  "Dibrugarh",
+                  "Dima Hasao",
+                  "Goalpara",
+                  "Golaghat",
+                  "Hailakandi",
+                  "Hojai",
+                  "Jorhat",
+                  "Kamrup",
+                  "Kamrup Metropolitan",
+                  "Karbi Anglong",
+                  "Karimganj",
+                  "Kokrajhar",
+                  "Lakhimpur",
+                  "Majuli",
+                  "Morigaon",
+                  "Nagaon",
+                  "Nalbari",
+                  "Sivasagar",
+                  "Sonitpur",
+                  "South Salmara-Mankachar",
+                  "Tamulpur",
+                  "Tinsukia",
+                  "Udalguri",
+                  "West Karbi Anglong"
+                ],
+
+                /* ================= BIHAR ================= */
+
+                "Bihar": [
+                  "Araria",
+                  "Arwal",
+                  "Aurangabad",
+                  "Banka",
+                  "Begusarai",
+                  "Bhagalpur",
+                  "Bhojpur",
+                  "Buxar",
+                  "Darbhanga",
+                  "East Champaran",
+                  "Gaya",
+                  "Gopalganj",
+                  "Jamui",
+                  "Jehanabad",
+                  "Kaimur",
+                  "Katihar",
+                  "Khagaria",
+                  "Kishanganj",
+                  "Lakhisarai",
+                  "Madhepura",
+                  "Madhubani",
+                  "Munger",
+                  "Muzaffarpur",
+                  "Nalanda",
+                  "Nawada",
+                  "Patna",
+                  "Purnia",
+                  "Rohtas",
+                  "Saharsa",
+                  "Samastipur",
+                  "Saran",
+                  "Sheikhpura",
+                  "Sheohar",
+                  "Sitamarhi",
+                  "Siwan",
+                  "Supaul",
+                  "Vaishali",
+                  "West Champaran"
+                ],
+
+                /* ================= CHHATTISGARH ================= */
+
+                "Chhattisgarh": [
+                  "Balod",
+                  "Baloda Bazar",
+                  "Balrampur-Ramanujganj",
+                  "Bastar",
+                  "Bemetara",
+                  "Bijapur",
+                  "Bilaspur",
+                  "Dantewada",
+                  "Dhamtari",
+                  "Durg",
+                  "Gariaband",
+                  "Gaurela-Pendra-Marwahi",
+                  "Janjgir-Champa",
+                  "Jashpur",
+                  "Kabirdham",
+                  "Kanker",
+                  "Khairagarh-Chhuikhadan-Gandai",
+                  "Kondagaon",
+                  "Korba",
+                  "Koriya",
+                  "Mahasamund",
+                  "Manendragarh-Chirmiri-Bharatpur",
+                  "Mohla-Manpur-Ambagarh Chowki",
+                  "Mungeli",
+                  "Narayanpur",
+                  "Raigarh",
+                  "Raipur",
+                  "Rajnandgaon",
+                  "Sarangarh-Bilaigarh",
+                  "Sukma",
+                  "Surajpur",
+                  "Surguja"
+                ],
+
+                /* ================= GOA ================= */
+
+                "Goa": [
+                  "North Goa",
+                  "South Goa"
+                ],
+
+                /* ================= GUJARAT ================= */
+
+                "Gujarat": [
+                  "Ahmedabad",
+                  "Amreli",
+                  "Anand",
+                  "Aravalli",
+                  "Banaskantha",
+                  "Bharuch",
+                  "Bhavnagar",
+                  "Botad",
+                  "Chhota Udaipur",
+                  "Dahod",
+                  "Dang",
+                  "Devbhoomi Dwarka",
+                  "Gandhinagar",
+                  "Gir Somnath",
+                  "Jamnagar",
+                  "Junagadh",
+                  "Kheda",
+                  "Kutch",
+                  "Mahisagar",
+                  "Mehsana",
+                  "Morbi",
+                  "Narmada",
+                  "Navsari",
+                  "Panchmahal",
+                  "Patan",
+                  "Porbandar",
+                  "Rajkot",
+                  "Sabarkantha",
+                  "Surat",
+                  "Surendranagar",
+                  "Tapi",
+                  "Vadodara",
+                  "Valsad"
+                ],
+
+                /* ================= HARYANA ================= */
+
+                "Haryana": [
+                  "Ambala",
+                  "Bhiwani",
+                  "Charkhi Dadri",
+                  "Faridabad",
+                  "Fatehabad",
+                  "Gurugram",
+                  "Hisar",
+                  "Jhajjar",
+                  "Jind",
+                  "Kaithal",
+                  "Karnal",
+                  "Kurukshetra",
+                  "Mahendragarh",
+                  "Nuh",
+                  "Palwal",
+                  "Panchkula",
+                  "Panipat",
+                  "Rewari",
+                  "Rohtak",
+                  "Sirsa",
+                  "Sonipat",
+                  "Yamunanagar"
+                ],
+
+                /* ================= HIMACHAL PRADESH ================= */
+
+                "Himachal Pradesh": [
+                  "Bilaspur",
+                  "Chamba",
+                  "Hamirpur",
+                  "Kangra",
+                  "Kinnaur",
+                  "Kullu",
+                  "Lahaul and Spiti",
+                  "Mandi",
+                  "Shimla",
+                  "Sirmaur",
+                  "Solan",
+                  "Una"
+                ],
+
+                /* ================= JHARKHAND ================= */
+
+                "Jharkhand": [
+                  "Bokaro",
+                  "Chatra",
+                  "Deoghar",
+                  "Dhanbad",
+                  "Dumka",
+                  "East Singhbhum",
+                  "Garhwa",
+                  "Giridih",
+                  "Godda",
+                  "Gumla",
+                  "Hazaribagh",
+                  "Jamtara",
+                  "Khunti",
+                  "Koderma",
+                  "Latehar",
+                  "Lohardaga",
+                  "Pakur",
+                  "Palamu",
+                  "Ramgarh",
+                  "Ranchi",
+                  "Sahebganj",
+                  "Seraikela Kharsawan",
+                  "Simdega",
+                  "West Singhbhum"
+                ],
+
+                /* ================= KARNATAKA ================= */
+
+                "Karnataka": [
+                  "Bagalkot",
+                  "Ballari",
+                  "Belagavi",
+                  "Bengaluru Rural",
+                  "Bengaluru Urban",
+                  "Bidar",
+                  "Chamarajanagar",
+                  "Chikballapur",
+                  "Chikkamagaluru",
+                  "Chitradurga",
+                  "Dakshina Kannada",
+                  "Davanagere",
+                  "Dharwad",
+                  "Gadag",
+                  "Hassan",
+                  "Haveri",
+                  "Kalaburagi",
+                  "Kodagu",
+                  "Kolar",
+                  "Koppal",
+                  "Mandya",
+                  "Mysuru",
+                  "Raichur",
+                  "Ramanagara",
+                  "Shivamogga",
+                  "Tumakuru",
+                  "Udupi",
+                  "Uttara Kannada",
+                  "Vijayanagara",
+                  "Vijayapura",
+                  "Yadgir"
+                ],
+
+                /* ================= KERALA ================= */
+
+                "Kerala": [
+                  "Alappuzha",
+                  "Ernakulam",
+                  "Idukki",
+                  "Kannur",
+                  "Kasaragod",
+                  "Kollam",
+                  "Kottayam",
+                  "Kozhikode",
+                  "Malappuram",
+                  "Palakkad",
+                  "Pathanamthitta",
+                  "Thiruvananthapuram",
+                  "Thrissur",
+                  "Wayanad"
+                ],
+
+                /* ================= MADHYA PRADESH ================= */
+
+                "Madhya Pradesh": [
+                  "Agar Malwa",
+                  "Alirajpur",
+                  "Anuppur",
+                  "Ashoknagar",
+                  "Balaghat",
+                  "Barwani",
+                  "Betul",
+                  "Bhind",
+                  "Bhopal",
+                  "Burhanpur",
+                  "Chhatarpur",
+                  "Chhindwara",
+                  "Damoh",
+                  "Datia",
+                  "Dewas",
+                  "Dhar",
+                  "Dindori",
+                  "Guna",
+                  "Gwalior",
+                  "Harda",
+                  "Indore",
+                  "Jabalpur",
+                  "Jhabua",
+                  "Katni",
+                  "Khandwa",
+                  "Khargone",
+                  "Maihar",
+                  "Mandla",
+                  "Mandsaur",
+                  "Mauganj",
+                  "Morena",
+                  "Narmadapuram",
+                  "Narsinghpur",
+                  "Neemuch",
+                  "Niwari",
+                  "Panna",
+                  "Raisen",
+                  "Rajgarh",
+                  "Ratlam",
+                  "Rewa",
+                  "Sagar",
+                  "Satna",
+                  "Sehore",
+                  "Seoni",
+                  "Shahdol",
+                  "Shajapur",
+                  "Sheopur",
+                  "Shivpuri",
+                  "Sidhi",
+                  "Singrauli",
+                  "Tikamgarh",
+                  "Ujjain",
+                  "Umaria",
+                  "Vidisha"
+                ],
+
+                /* ================= MAHARASHTRA ================= */
+
+                "Maharashtra": [
+                  "Ahmednagar",
+                  "Akola",
+                  "Amravati",
+                  "Beed",
+                  "Bhandara",
+                  "Buldhana",
+                  "Chandrapur",
+                  "Chhatrapati Sambhajinagar",
+                  "Dharashiv",
+                  "Dhule",
+                  "Gadchiroli",
+                  "Gondia",
+                  "Hingoli",
+                  "Jalgaon",
+                  "Jalna",
+                  "Kolhapur",
+                  "Latur",
+                  "Mumbai City",
+                  "Mumbai Suburban",
+                  "Nagpur",
+                  "Nanded",
+                  "Nandurbar",
+                  "Nashik",
+                  "Palghar",
+                  "Parbhani",
+                  "Pune",
+                  "Raigad",
+                  "Ratnagiri",
+                  "Sangli",
+                  "Satara",
+                  "Sindhudurg",
+                  "Solapur",
+                  "Thane",
+                  "Wardha",
+                  "Washim",
+                  "Yavatmal"
+                ],
+
+                /* ================= MANIPUR ================= */
+
+                "Manipur": [
+                  "Bishnupur",
+                  "Chandel",
+                  "Churachandpur",
+                  "Imphal East",
+                  "Imphal West",
+                  "Jiribam",
+                  "Kakching",
+                  "Kamjong",
+                  "Kangpokpi",
+                  "Noney",
+                  "Pherzawl",
+                  "Senapati",
+                  "Tamenglong",
+                  "Tengnoupal",
+                  "Thoubal",
+                  "Ukhrul"
+                ],
+
+                /* ================= MEGHALAYA ================= */
+
+                "Meghalaya": [
+                  "East Garo Hills",
+                  "East Jaintia Hills",
+                  "East Khasi Hills",
+                  "Eastern West Khasi Hills",
+                  "North Garo Hills",
+                  "Ri Bhoi",
+                  "South Garo Hills",
+                  "South West Garo Hills",
+                  "South West Khasi Hills",
+                  "West Garo Hills",
+                  "West Jaintia Hills",
+                  "West Khasi Hills"
+                ],
+
+                /* ================= MIZORAM ================= */
+
+                "Mizoram": [
+                  "Aizawl",
+                  "Champhai",
+                  "Hnahthial",
+                  "Khawzawl",
+                  "Kolasib",
+                  "Lawngtlai",
+                  "Lunglei",
+                  "Mamit",
+                  "Saitual",
+                  "Serchhip",
+                  "Siaha"
+                ],
+
+                /* ================= NAGALAND ================= */
+
+                "Nagaland": [
+                  "Chumoukedima",
+                  "Dimapur",
+                  "Kiphire",
+                  "Kohima",
+                  "Longleng",
+                  "Mokokchung",
+                  "Mon",
+                  "Niuland",
+                  "Noklak",
+                  "Peren",
+                  "Phek",
+                  "Shamator",
+                  "Tseminyu",
+                  "Tuensang",
+                  "Wokha",
+                  "Zunheboto"
+                ],
+
+                /* ================= ODISHA ================= */
+
+                "Odisha": [
+                  "Angul",
+                  "Balangir",
+                  "Balasore",
+                  "Bargarh",
+                  "Bhadrak",
+                  "Boudh",
+                  "Cuttack",
+                  "Deogarh",
+                  "Dhenkanal",
+                  "Gajapati",
+                  "Ganjam",
+                  "Jagatsinghpur",
+                  "Jajpur",
+                  "Jharsuguda",
+                  "Kalahandi",
+                  "Kandhamal",
+                  "Kendrapara",
+                  "Kendujhar",
+                  "Khordha",
+                  "Koraput",
+                  "Malkangiri",
+                  "Mayurbhanj",
+                  "Nabarangpur",
+                  "Nayagarh",
+                  "Nuapada",
+                  "Puri",
+                  "Rayagada",
+                  "Sambalpur",
+                  "Subarnapur",
+                  "Sundargarh"
+                ],
+
+                /* ================= PUNJAB ================= */
+
+                "Punjab": [
+                  "Amritsar",
+                  "Barnala",
+                  "Bathinda",
+                  "Faridkot",
+                  "Fatehgarh Sahib",
+                  "Fazilka",
+                  "Ferozepur",
+                  "Gurdaspur",
+                  "Hoshiarpur",
+                  "Jalandhar",
+                  "Kapurthala",
+                  "Ludhiana",
+                  "Malerkotla",
+                  "Mansa",
+                  "Moga",
+                  "Pathankot",
+                  "Patiala",
+                  "Rupnagar",
+                  "Sahibzada Ajit Singh Nagar",
+                  "Sangrur",
+                  "Shaheed Bhagat Singh Nagar",
+                  "Sri Muktsar Sahib",
+                  "Tarn Taran"
+                ],
+
+                /* ================= RAJASTHAN ================= */
+
+                "Rajasthan": [
+                  "Ajmer",
+                  "Alwar",
+                  "Balotra",
+                  "Banswara",
+                  "Baran",
+                  "Barmer",
+                  "Beawar",
+                  "Bharatpur",
+                  "Bhilwara",
+                  "Bikaner",
+                  "Bundi",
+                  "Chittorgarh",
+                  "Churu",
+                  "Dausa",
+                  "Deeg",
+                  "Dholpur",
+                  "Didwana-Kuchamana",
+                  "Dudu",
+                  "Dungarpur",
+                  "Hanumangarh",
+                  "Jaipur",
+                  "Jaisalmer",
+                  "Jalore",
+                  "Jhalawar",
+                  "Jhunjhunu",
+                  "Jodhpur",
+                  "Karauli",
+                  "Khairthal-Tijara",
+                  "Kota",
+                  "Kotputli-Behror",
+                  "Nagaur",
+                  "Neem Ka Thana",
+                  "Pali",
+                  "Phalodi",
+                  "Pratapgarh",
+                  "Rajsamand",
+                  "Salumbar",
+                  "Sawai Madhopur",
+                  "Sikar",
+                  "Sirohi",
+                  "Sri Ganganagar",
+                  "Tonk",
+                  "Udaipur"
+                ],
+
+                /* ================= SIKKIM ================= */
+
+                "Sikkim": [
+                  "Gangtok",
+                  "Gyalshing",
+                  "Mangan",
+                  "Namchi",
+                  "Pakyong",
+                  "Soreng"
+                ],
+
+                /* ================= TAMIL NADU ================= */
+
+                "Tamil Nadu": [
+                  "Ariyalur",
+                  "Chengalpattu",
+                  "Chennai",
+                  "Coimbatore",
+                  "Cuddalore",
+                  "Dharmapuri",
+                  "Dindigul",
+                  "Erode",
+                  "Kallakurichi",
+                  "Kancheepuram",
+                  "Karur",
+                  "Krishnagiri",
+                  "Madurai",
+                  "Mayiladuthurai",
+                  "Nagapattinam",
+                  "Namakkal",
+                  "Nilgiris",
+                  "Perambalur",
+                  "Pudukkottai",
+                  "Ramanathapuram",
+                  "Ranipet",
+                  "Salem",
+                  "Sivaganga",
+                  "Tenkasi",
+                  "Thanjavur",
+                  "Theni",
+                  "Thoothukudi",
+                  "Tiruchirappalli",
+                  "Tirunelveli",
+                  "Tirupathur",
+                  "Tiruppur",
+                  "Tiruvallur",
+                  "Tiruvannamalai",
+                  "Tiruvarur",
+                  "Vellore",
+                  "Viluppuram",
+                  "Virudhunagar"
+                ],
+
+                /* ================= TELANGANA ================= */
+
+                "Telangana": [
+                  "Adilabad",
+                  "Bhadradri Kothagudem",
+                  "Hanamkonda",
+                  "Hyderabad",
+                  "Jagtial",
+                  "Jangaon",
+                  "Jayashankar Bhupalpally",
+                  "Jogulamba Gadwal",
+                  "Kamareddy",
+                  "Karimnagar",
+                  "Khammam",
+                  "Komaram Bheem Asifabad",
+                  "Mahabubabad",
+                  "Mahbubnagar",
+                  "Mancherial",
+                  "Medak",
+                  "Medchal-Malkajgiri",
+                  "Mulugu",
+                  "Nagarkurnool",
+                  "Nalgonda",
+                  "Narayanpet",
+                  "Nirmal",
+                  "Nizamabad",
+                  "Peddapalli",
+                  "Rajanna Sircilla",
+                  "Rangareddy",
+                  "Sangareddy",
+                  "Siddipet",
+                  "Suryapet",
+                  "Vikarabad",
+                  "Wanaparthy",
+                  "Warangal",
+                  "Yadadri Bhuvanagiri"
+                ],
+
+                /* ================= TRIPURA ================= */
+
+                "Tripura": [
+                  "Dhalai",
+                  "Gomati",
+                  "Khowai",
+                  "North Tripura",
+                  "Sepahijala",
+                  "South Tripura",
+                  "Unakoti",
+                  "West Tripura"
+                ],
+
+                /* =====================================================
+                   UTTAR PRADESH
+                   ===================================================== */
+
+                "Uttar Pradesh": [
+
+                  "Agra",
+                  "Aligarh",
+                  "Ambedkar Nagar",
+                  "Amethi",
+                  "Amroha",
+                  "Auraiya",
+                  "Ayodhya",
+                  "Azamgarh",
+                  "Baghpat",
+                  "Bahraich",
+                  "Ballia",
+                  "Balrampur",
+                  "Banda",
+                  "Barabanki",
+                  "Bareilly",
+                  "Basti",
+                  "Bhadohi",
+                  "Bijnor",
+                  "Budaun",
+                  "Bulandshahr",
+                  "Chandauli",
+                  "Chitrakoot",
+                  "Deoria",
+                  "Etah",
+                  "Etawah",
+                  "Farrukhabad",
+                  "Fatehpur",
+                  "Firozabad",
+                  "Gautam Buddha Nagar",
+                  "Ghaziabad",
+                  "Ghazipur",
+                  "Gonda",
+                  "Gorakhpur",
+                  "Hamirpur",
+                  "Hapur",
+                  "Hardoi",
+                  "Hathras",
+                  "Jalaun",
+                  "Jaunpur",
+                  "Jhansi",
+                  "Kannauj",
+                  "Kanpur Dehat",
+                  "Kanpur Nagar",
+                  "Kasganj",
+                  "Kaushambi",
+                  "Kheri",
+                  "Kushinagar",
+                  "Lalitpur",
+                  "Lucknow",
+                  "Maharajganj",
+                  "Mahoba",
+                  "Mainpuri",
+                  "Mathura",
+                  "Mau",
+                  "Meerut",
+                  "Mirzapur",
+                  "Moradabad",
+                  "Muzaffarnagar",
+                  "Pilibhit",
+                  "Pratapgarh",
+                  "Prayagraj",
+                  "Raebareli",
+                  "Rampur",
+                  "Saharanpur",
+                  "Sambhal",
+                  "Sant Kabir Nagar",
+                  "Shahjahanpur",
+                  "Shamli",
+                  "Shravasti",
+                  "Siddharthnagar",
+                  "Sitapur",
+                  "Sonbhadra",
+                  "Sultanpur",
+                  "Unnao",
+                  "Varanasi"
+                ],
+
+                /* ================= UTTARAKHAND ================= */
+
+                "Uttarakhand": [
+                  "Almora",
+                  "Bageshwar",
+                  "Chamoli",
+                  "Champawat",
+                  "Dehradun",
+                  "Haridwar",
+                  "Nainital",
+                  "Pauri Garhwal",
+                  "Pithoragarh",
+                  "Rudraprayag",
+                  "Tehri Garhwal",
+                  "Udham Singh Nagar",
+                  "Uttarkashi"
+                ],
+
+                /* ================= WEST BENGAL ================= */
+
+                "West Bengal": [
+                  "Alipurduar",
+                  "Bankura",
+                  "Birbhum",
+                  "Cooch Behar",
+                  "Dakshin Dinajpur",
+                  "Darjeeling",
+                  "Hooghly",
+                  "Howrah",
+                  "Jalpaiguri",
+                  "Jhargram",
+                  "Kalimpong",
+                  "Kolkata",
+                  "Malda",
+                  "Murshidabad",
+                  "Nadia",
+                  "North 24 Parganas",
+                  "Paschim Bardhaman",
+                  "Paschim Medinipur",
+                  "Purba Bardhaman",
+                  "Purba Medinipur",
+                  "Purulia",
+                  "South 24 Parganas",
+                  "Uttar Dinajpur"
+                ],
+
+                /* =====================================================
+                   UNION TERRITORIES
+                   ===================================================== */
+
+                "Andaman and Nicobar Islands": [
+                  "Nicobar",
+                  "North and Middle Andaman",
+                  "South Andaman"
+                ],
+
+                "Chandigarh": [
+                  "Chandigarh"
+                ],
+
+                "Dadra and Nagar Haveli and Daman and Diu": [
+                  "Dadra and Nagar Haveli",
+                  "Daman",
+                  "Diu"
+                ],
+
+                "Delhi": [
+                  "Central Delhi",
+                  "East Delhi",
+                  "New Delhi",
+                  "North Delhi",
+                  "North East Delhi",
+                  "North West Delhi",
+                  "Shahdara",
+                  "South Delhi",
+                  "South East Delhi",
+                  "South West Delhi",
+                  "West Delhi"
+                ],
+
+                "Jammu and Kashmir": [
+                  "Anantnag",
+                  "Bandipora",
+                  "Baramulla",
+                  "Budgam",
+                  "Doda",
+                  "Ganderbal",
+                  "Jammu",
+                  "Kathua",
+                  "Kishtwar",
+                  "Kulgam",
+                  "Kupwara",
+                  "Poonch",
+                  "Pulwama",
+                  "Rajouri",
+                  "Ramban",
+                  "Reasi",
+                  "Samba",
+                  "Shopian",
+                  "Srinagar",
+                  "Udhampur"
+                ],
+
+                "Ladakh": [
+                  "Kargil",
+                  "Leh"
+                ],
+
+                "Lakshadweep": [
+                  "Agatti",
+                  "Amini",
+                  "Andrott",
+                  "Bitra",
+                  "Chetlat",
+                  "Kadmat",
+                  "Kalpeni",
+                  "Kavaratti",
+                  "Kiltan",
+                  "Minicoy"
+                ],
+
+                "Puducherry": [
+                  "Karaikal",
+                  "Mahe",
+                  "Puducherry",
+                  "Yanam"
+                ]
+
+              };
+
+
+              /* =========================================================
+                 STATE CHANGE EVENT
+                 ========================================================= */
+
+              document.getElementById("state").addEventListener("change", function () {
+
+                const selectedState = this.value;
+
+                const districtDropdown =
+                  document.getElementById("district");
+
+
+                /* Clear existing districts */
+
+                districtDropdown.innerHTML =
+                  '<option value="">-- Select District --</option>';
+
+
+                /* If no state selected */
+
+                if (!selectedState) {
+
+                  districtDropdown.disabled = true;
+
+                  return;
+                }
+
+
+                /* Get districts */
+
+                const stateDistricts =
+                  districts[selectedState] || [];
+
+
+                /* Add districts */
+
+                stateDistricts.forEach(function (district) {
+
+                  const option =
+                    document.createElement("option");
+
+                  option.value = district;
+                  option.textContent = district;
+
+                  districtDropdown.appendChild(option);
+
+                });
+
+
+                /* Enable district dropdown */
+
+                districtDropdown.disabled = false;
+
+              });
+
+            </script>
+
+
+            <div>
+              <label for="fInterest">I&rsquo;m interested in</label>
+
+
+              <select name="data[insurance_type]" id="life_insurance">
+                <option>Life Insurance</option>
+                <option>Health Insurance</option>
+                <option>Term Insurance</option>
+                <option>Retirement Planning</option>
+                <option>ULIP</option>
+                <option>Not sure yet — please guide me</option>
+              </select>
+            </div>
+            <div>
+              <label for="fMsg">Anything I should know? <span
+                  style="color:var(--muted);font-weight:400">(optional)</span></label>
+              <textarea name="data[message]" id="message" rows="5" cols="30" class="form-control" maxlength="500"
+                placeholder="Additional information Your family, your goals, what you'd like to protect…"
+                autocomplete="address-level1"></textarea>
+
+
+            </div>
+            <!-- SUBMIT -->
+            <div class="text-center mt-4">
+              <button type="submit" class="btn btn-primary btn-lg px-5" id="submitBtn" name="submit">
+                Request a Callback
+              </button>
+
+              <button type="reset" class="btn btn-secondary btn-lg px-4 ms-2">
+                RESET
+              </button>
+            </div>
+
+
+            <!-- SUCCESS MESSAGE ---->
+            <!-- THANK YOU MESSAGE: hidden until submission succeeds -->
+
+            <!-- THANK YOU MESSAGE: hidden until submission succeeds -->
+            <div id="successMessage" class="text-center p-4" style="display:none;">
+              <div style="font-size:60px; color:green;">&#10004;</div>
+              <h2>Thank You!</h2>
+              <h4>Your feedback has been submitted successfully.</h4>
+              <p>Thank you for your valuable time.</p>
+              <p>I will get in touch with you shortly.</p>
+              <p><strong>— Girish Gaur</strong></p>
+
+              <button type="button" id="submitAnotherBtn" class="btn btn-primary">
+                Submit Another Response
+              </button>
+            </div>
+
+            <div id="submissionMessage" role="status" aria-live="polite"></div>
+
+            <script>
+
+              const form = document.getElementById("FeedbackForm");
+              const successMessage = document.getElementById("successMessage");
+              const submissionMessage = document.getElementById("submissionMessage");
+              const submitAnotherBtn = document.getElementById("submitAnotherBtn");
+
+              const SHEETDB_URL = "https://sheetdb.io/api/v1/emf2ys13fr3un";
+
+              form.addEventListener("submit", async function (event) {
+                event.preventDefault();
+
+                const submitBtn = form.querySelector('[type="submit"]');
+
+                submitBtn.disabled = true;
+                submitBtn.textContent = "SUBMITTING...";
+                submissionMessage.textContent = "";
+
+                try {
+                  const response = await fetch(SHEETDB_URL, {
+                    method: "POST",
+                    body: new FormData(form)
+                  });
+
+                  if (!response.ok) {
+                    throw new Error("Submission failed. Please try again.");
+                  }
+
+                  // Confirm that the server returned a successful response.
+                  const result = await response.json();
+
+                  // Only now show the Thank You message.
+                  form.reset();
+                  // form.style.display = "none";
+                  successMessage.style.display = "block";
+
+                } catch (error) {
+                  submissionMessage.textContent =
+                    "We could not confirm your submission. Please check your connection and try again. If you have already submitted, please avoid resubmitting until the sheet is checked.";
+
+                  submissionMessage.style.color = "white";
+                  console.error("Submission error:", error);
+
+                } finally {
+                  submitBtn.disabled = false;
+                  submitBtn.textContent = "SUBMIT";
+                }
+              });
+
+              submitAnotherBtn.addEventListener("click", function () {
+                // successMessage.style.display = "none";
+                submissionMessage.textContent = "";
+                form.reset();
+                form.style.display = "block";
+              });
+            </script>
+
+
+            <div class="success" id="leadSuccess">
+              <p id="successText"></p>
+              <p style="margin-top:.7rem"><button class="btn btn-outline" id="copyBtn" type="button"
+                  style="padding:.55rem 1.1rem">Copy My Details</button></p>
+            </div>
+            <p class="privacy-note"><strong>Your privacy matters.</strong> Your details will be used only to respond to
+              your enquiry and provide relevant insurance guidance, handled responsibly per the applicable privacy
+              policy.
+            </p>
+        </form>
+        <div class="booking-panel" id="book-appointment">
+          <h3 style="font-size:1.08rem;margin-bottom:.4rem">Prefer to choose your own time?</h3>
+          <p>Book a convenient 30-minute insurance consultation directly through my online appointment calendar.</p>
+          <a class="btn btn-book" href="https://calendly.com/girish-garry4u/30min" target="_blank"
+            rel="noopener noreferrer">Book an Appointment Online ↗</a>
+          <p class="booking-note">Choose an available time on the booking page. Your appointment confirmation and
+            calendar details will be provided through Calendly.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="insurers">
+    <div class="wrap">
+      <p>Advising on products from</p>
+      <div class="insurer">Axis Max Life Insurance<span>Life cover, term plans, retirement &amp; ULIP</span></div>
+      <div class="insurer">Niva Bupa Health Insurance<span>Health cover for individuals &amp; families</span></div>
+      <div class="insurer">Saharanpur<span>Serving families across the region</span></div>
+    </div>
+  </div>
+
+  <section id="plans">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Start With Your Stage of Life</p>
+        <h2>Different stages, different protection</h2>
+        <p>Every family has its own needs, responsibilities, liabilities, dreams and aspirations. The right cover
+          depends on where you are in life.</p>
+      </div>
+      <div class="stages">
+        <div class="stage">
+          <span class="n">1</span>
+          <h3>Starting Out</h3>
+          <p>You&rsquo;ve begun earning. Lock in protection while you&rsquo;re young and healthy.</p>
+          <ul>
+            <li>Term insurance for income protection</li>
+            <li>A basic health cover of your own</li>
+            <li>Small, regular savings habits</li>
+          </ul>
+        </div>
+        <div class="stage">
+          <span class="n">2</span>
+          <h3>Growing Family</h3>
+          <p>Dependents, a home, school fees ahead. Your cover must grow with your responsibilities.</p>
+          <ul>
+            <li>Family floater health insurance</li>
+            <li>Life cover sized to your liabilities</li>
+            <li>Plans for children&rsquo;s goals</li>
+          </ul>
+        </div>
+        <div class="stage">
+          <span class="n">3</span>
+          <h3>Planning Retirement</h3>
+          <p>Protect your savings from medical shocks and build an income for the years after work.</p>
+          <ul>
+            <li>Retirement &amp; pension planning</li>
+            <li>Stronger health cover for senior years</li>
+            <li>Wealth preservation with ULIP options</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="products">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Plans I Advise On</p>
+        <h2>Two foundations of a secure family</h2>
+      </div>
+      <div class="products">
+        <article class="product">
+          <div class="product-img">
+            <img src="https://raw.githubusercontent.com/girish8360/amli/main/GridArt_20250228_090331226.jpg"
+              class="card-img-top" style="width:50%;height:20%;">
+          </div>
+
+          <div class="p-in">
+            <h4 class="tag" style="font-size:x-large;">AXIS MAX LIFE INSURANCE </h4>
+            <h4>Life Insurance</h4>
+            <p>Financial protection for your family — comprehensive life coverage and long-term wealth creation.</p>
+            <ul>
+              <li>Term insurance for pure income protection</li>
+              <li>Retirement planning for life after work</li>
+              <li>ULIP plans combining cover with wealth creation</li>
+              <li>Guidance at purchase, and support at claim time</li>
+            </ul>
+            <a target="_blank" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM" class="btn btn-warning">
+
+
+              Know More</a>
+
+          </div>
+        </article>
+        <article class="product">
+          <img src="https://raw.githubusercontent.com/girish8360/amli/main/nb.jpg" target="_blank" class="card-img-top"
+            style="width:70%;height:15%;">
+
+          <div class="p-in">
+            <h4 class="tag" style="font-size:x-large;">NIVA BUPA HEALTH INSURANCE</h4>
+            <h4>Health Insurance</h4>
+            <p>Health protection that helps your savings survive a hospital bill — cover that beats medical inflation.
+            </p>
+            <ul>
+              <li>Individual and family floater options</li>
+              <li>Cover for unforeseen medical emergencies</li>
+              <li>Help choosing the right sum insured</li>
+              <li>Support through the claims process</li>
+            </ul>
+            <a target="_blank" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM" class="btn btn-primary">
+
+
+              Know More
+
+            </a>
+
+
+        </article>
+      </div>
+
+      <div class="grid5">
+        <div class="skill">
+          <h3>Life Insurance</h3>
+          <p>Cover that keeps your family&rsquo;s future secure, whatever tomorrow brings.</p>
+        </div>
+        <div class="skill">
+          <h3>Health Insurance</h3>
+          <p>Protection against rising medical costs and emergencies.</p>
+        </div>
+        <div class="skill">
+          <h3>Retirement Planning</h3>
+          <p>So your lifestyle never has to retire when you do.</p>
+        </div>
+        <div class="skill">
+          <h3>Term Insurance</h3>
+          <p>High-value income protection at a sensible cost.</p>
+        </div>
+        <div class="skill">
+          <h3>ULIP</h3>
+          <p>Insurance and long-term wealth creation in one strategy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section>
+    <div class="wrap">
+      <div class="support">
+        <div>
+          <div class="ic"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9">
+              <circle cx="11" cy="11" r="7" />
+              <path d="M21 21l-4.3-4.3" stroke-linecap="round" />
+            </svg></div>
+          <h3>Advice before answers</h3>
+          <p>I invest time in understanding your needs, responsibilities and dreams first — then recommend, never the
+            other way round.</p>
+        </div>
+        <div>
+          <div class="ic"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9">
+              <path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6l7-3z" stroke-linejoin="round" />
+              <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></div>
+          <h3>Claims support</h3>
+          <p>My commitment does not end at the sale. I assist you through after-sales service and the claims settlement
+            process.</p>
+        </div>
+        <div>
+          <div class="ic"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9">
+              <path d="M4 19V5M4 19h16M7 15l4-5 3 3 5-7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></div>
+          <h3>Plans that keep pace</h3>
+          <p>As your family and responsibilities grow, we review your cover so your protection keeps pace with your
+            life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">About Your Advisor</p>
+        <h2>Thirty years of service behind every recommendation</h2>
+      </div>
+      <div class="two-col">
+        <div class="about">
+          <p>With a distinguished professional journey spanning over three decades, I have demonstrated consistent
+            excellence across industries.</p>
+          <p>I began my career at <strong>Star Paper Mills Ltd., Saharanpur (U.P.)</strong> — an ISO-9001-certified
+            company and one of the major flagship companies of the <strong>Duncan Goenka Group</strong> — where I
+            dedicated 30 years as a <strong>Software Executive</strong>, playing a pivotal role in systems networking
+            management, server management, software &amp; OS installation and maintenance, software troubleshooting and
+            database management, driving technology-led operational efficiencies, system integration and digital
+            innovation.</p>
+          <p>Building on this solid foundation, I have transitioned into the insurance services sector, where I now
+            serve as a <strong>Certified Insurance Advisor — Axis Max Life Insurance &amp; Niva Bupa Health
+              Insurance</strong>, located at Saharanpur.</p>
+          <p>In this role, I bring my deep understanding of customer needs, analytical thinking and personalised service
+            delivery to help individuals and families secure their health and navigate towards stronger financial
+            futures — with comprehensive life coverage, tailored insurance solutions, and long-term wealth creation.</p>
+          <p>My ultimate goal is to assist you in making informed decisions that enhance your financial value and life
+            security.</p>
+        </div>
+        <div class="timeline">
+          <div class="tl">
+            <p class="when">30 Years</p>
+            <h3>Software Executive — Star Paper Mills Ltd.</h3>
+            <p>Systems, servers, databases and digital innovation at a Duncan Goenka Group flagship company, Saharanpur.
+            </p>
+          </div>
+          <div class="tl">
+            <p class="when">Today</p>
+            <h3>Certified Insurance Advisor</h3>
+            <p>Life insurance with Axis Max Life and health insurance with Niva Bupa — personalised protection
+              strategies for families in and around Saharanpur.</p>
+          </div>
+          <div class="tl">
+            <p class="when">Always</p>
+            <h3>After-Sales &amp; Claims Support</h3>
+            <p>Assistance not just while you buy a policy, but through after-sales service and the claims settlement
+              process as well.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="vision" class="vision">
+    <div class="wrap">
+      <p class="eyebrow" style="color:#ffd98a">Vision Statement</p>
+      <h2>Beyond Policies. <span class="hl">Protecting Futures.</span></h2>
+      <blockquote>
+        <p>&ldquo;Every family has its own needs, responsibilities, liabilities, dreams, and aspirations. Rather than
+          just selling insurance, I invest my time and energy in understanding them, building expertise in them, and
+          helping create the right financial protection strategy.</p>
+        <p>From protecting your income and securing your health to preserving your wealth and planning for your dreams,
+          my commitment goes beyond selling a policy. I don&rsquo;t believe in simply assisting you during the insurance
+          purchasing process, but also in providing assistance with after-sales service and the claims settlement
+          process.</p>
+        <p>I am here to help you navigate the complex world of insurance in a way that truly protects what you have,
+          prepares you for what lies ahead, and helps you pursue what you aspire to achieve.&rdquo;</p>
+        <p class="sign">— Girish Gaur</p>
+      </blockquote>
+      <div class="hindi" lang="hi">
+        <p>हर परिवार की अपनी ज़रूरतें, ज़िम्मेदारियाँ, देनदारियाँ, सपने और आकांक्षाएँ होती हैं। सिर्फ़ इंश्योरेंस बेचने
+          के बजाय, मैं अपना समय और ऊर्जा निवेश करके उन्हें समझने, उनमें महारत हासिल करने और एक सही वित्तीय सुरक्षा
+          रणनीति तैयार करने में मदद करने पर विश्वास रखता हूँ।</p>
+        <p>आपकी आय की सुरक्षा करने और आपके स्वास्थ्य को सुरक्षित रखने से लेकर, आपकी संपत्ति को बनाए रखने और आपके सपनों
+          की प्लानिंग करने तक — मेरी प्रतिबद्धता सिर्फ़ एक पॉलिसी बेचने तक सीमित नहीं है। मैं सिर्फ़ इंश्योरेंस खरीदने
+          की प्रक्रिया के दौरान ही आपकी मदद करने पर विश्वास नहीं रखता, बल्कि बिक्री के बाद की सेवाओं और क्लेम सेटलमेंट
+          की प्रक्रिया में भी सहायता प्रदान करने में विश्वास रखता हूँ।</p>
+        <p>मैं यहाँ इंश्योरेंस की इस उलझी हुई दुनिया में आपका मार्गदर्शन करने के लिए हूँ, ताकि सही मायने में उस चीज़ की
+          रक्षा की जा सके जो आपके पास है, आपको आने वाले कल के लिए तैयार किया जा सके, और उन सपनों को पूरा करने में मदद
+          मिल सके जिसे आप हासिल करना चाहते हैं।</p>
+        <p class="sign">— गिरीश गौड़</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="age">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Age Is Passing</p>
+        <h2>
+          Time moves forward. Responsibilities grow.
+          Is your protection keeping pace?
+        </h2>
+      </div>
+
+      <div class="calc-card">
+        <div>
+          <label for="dob1">Enter your date of birth</label>
+
+          <input type="date" id="dob1" name="dob1">
+
+          <div class="age-out" id="ageOut" style="visibility:hidden">
+            <div class="age-box">
+              <b id="aYears">–</b>
+              <span>Years</span>
+            </div>
+
+            <div class="age-box">
+              <b id="aMonths">–</b>
+              <span>Months</span>
+            </div>
+
+            <div class="age-box">
+              <b id="aDays">–</b>
+              <span>Days</span>
+            </div>
+          </div>
+
+          <p class="age-extra" id="ageExtra" aria-live="polite"></p>
+        </div>
+
+        <div class="calc-note">
+          <p>
+            The age you see on this calculator is more than just a number.
+            It is a reminder of the time that has passed, the
+            responsibilities you carry today, and the future you still
+            wish to secure.
+          </p>
+
+          <p>
+            Every passing year adds value to our experience, but it can
+            also add to our responsibilities — family commitments,
+            financial liabilities, healthcare needs and aspirations
+            grow with us.
+          </p>
+
+          <p>
+            The right time to think about health insurance, life insurance
+            and financial protection is not when uncertainties arise,
+            but while you have the opportunity to plan ahead. Acting at
+            the right time may help you access more suitable protection
+            options, subject to eligibility, underwriting, policy terms
+            and conditions.
+          </p>
+
+          <p>
+            <strong>
+              Your age tells you how far you have travelled. Your
+              decisions today can help shape how securely you travel
+              ahead. The right time to plan for tomorrow is today.
+            </strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      function initAgeCalculator() {
+        const dobInput = document.getElementById("dob1");
+        const ageOut = document.getElementById("ageOut");
+        const yearsEl = document.getElementById("aYears");
+        const monthsEl = document.getElementById("aMonths");
+        const daysEl = document.getElementById("aDays");
+        const extraEl = document.getElementById("ageExtra");
+
+        // Stop if the required HTML elements are missing.
+        if (
+          !dobInput || !ageOut || !yearsEl ||
+          !monthsEl || !daysEl || !extraEl
+        ) {
+          console.error("Age calculator elements were not found.");
+          return;
+        }
+
+        // Prevent selecting a future date of birth.
+        const today = new Date();
+        const todayString =
+          today.getFullYear() + "-" +
+          String(today.getMonth() + 1).padStart(2, "0") + "-" +
+          String(today.getDate()).padStart(2, "0");
+
+        dobInput.max = todayString;
+
+        function calculateAge() {
+          const value = dobInput.value;
+
+          if (!value) {
+            ageOut.style.visibility = "hidden";
+            yearsEl.textContent = "–";
+            monthsEl.textContent = "–";
+            daysEl.textContent = "–";
+            extraEl.textContent = "";
+            return;
+          }
+
+          // Parse the date in local calendar terms.
+          const parts = value.split("-").map(Number);
+          const birthYear = parts[0];
+          const birthMonth = parts[1] - 1;
+          const birthDay = parts[2];
+
+          const birthDate = new Date(
+            birthYear, birthMonth, birthDay
+          );
+
+          // Reject invalid dates and future birthdays.
+          if (
+            birthDate.getFullYear() !== birthYear ||
+            birthDate.getMonth() !== birthMonth ||
+            birthDate.getDate() !== birthDay ||
+            birthDate > today
+          ) {
+            ageOut.style.visibility = "hidden";
+            extraEl.textContent =
+              "Please enter a valid date of birth.";
+            return;
+          }
+
+          let years = today.getFullYear() - birthYear;
+          let months = today.getMonth() - birthMonth;
+          let days = today.getDate() - birthDay;
+
+          if (days < 0) {
+            months--;
+
+            // Borrow the actual number of days from the
+            // previous calendar month.
+            const previousMonthDays = new Date(
+              today.getFullYear(),
+              today.getMonth(),
+              0
+            ).getDate();
+
+            days += previousMonthDays;
+          }
+
+          if (months < 0) {
+            years--;
+            months += 12;
+          }
+
+          yearsEl.textContent = years;
+          monthsEl.textContent = months;
+          daysEl.textContent = days;
+
+          ageOut.style.visibility = "visible";
+
+          extraEl.textContent =
+            "You have lived " + years + " years, " +
+            months + " months and " + days + " days. " +
+            "Every day is an opportunity to plan for a more secure future.";
+        }
+
+        dobInput.addEventListener("input", calculateAge);
+        dobInput.addEventListener("change", calculateAge);
+      }
+
+      // Works whether this script loads before or after the page.
+      if (document.readyState === "loading") {
+        document.addEventListener(
+          "DOMContentLoaded",
+          initAgeCalculator
+        );
+      } else {
+        initAgeCalculator();
+      }
+    })();
+  </script>
+
+
+
+  <section id="surveys" class="alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Survey Forms</p>
+        <h2>Two short surveys, one clearer plan</h2>
+        <p>Your answers help me understand your current financial situation and health preparedness, so I can recommend
+          solutions that actually fit.</p>
+      </div>
+      <div class="surveys">
+        <article class="survey wms">
+          <span class="tag">WMS</span>
+          <h3>Wealth Management Survey</h3>
+          <p>A brief survey about your current financial situation and future goals — investments, savings and
+            protection — so we can navigate towards an effective Financial Security Management Strategy together.</p>
+          <a class="btn btn-white" target="_blank" rel="noopener"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc00eA7ZzaBbn5XT72spjy4vkYyA7P5oZrBYrvj70y2NLzXXA/viewform?usp=sf_link">Fill
+            the Financial Survey Form</a>
+        </article>
+        <article class="survey hms">
+          <span class="tag">HMS</span>
+          <h3>Health Management Survey</h3>
+          <p>A brief survey about your current health insurance status, medical emergency preparedness and reserved
+            medical funds — so we can safeguard your health and reduce the shock of unforeseen medical expenses.</p>
+          <a class="btn btn-white" target="_blank" rel="noopener"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSemtYqq2uhJ2KY9MPtYos7Fln_5xNvqasLrXdk77a0-9gFXMg/viewform?usp=sharing">Fill
+            the Health Survey Form</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Good Questions</p>
+        <h2>Before you decide</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>When is the right time to buy insurance?</summary>
+          <p>The right time is while you have the opportunity to plan ahead — not when uncertainties arise. Acting at
+            the right time may help you access more suitable protection options, subject to eligibility, underwriting,
+            policy terms and conditions.</p>
+        </details>
+        <details>
+          <summary>Will you help at claim time, or only while selling?</summary>
+          <p> My commitment goes beyond the selling process: I assist with after-sales service and through the claims
+            settlement process as well.</p>
+        </details>
+        <details>
+          <summary>How do we decide which plan fits my family?</summary>
+          <p>We start with your needs, responsibilities, liabilities, dreams and aspirations — your income to protect,
+            your health to secure, your wealth to preserve — and build the protection strategy around them. The two
+            surveys above are a good first step.</p>
+        </details>
+        <details>
+          <summary>What details do you need from me?</summary>
+          <p>Just the basics to begin: your contact details and a few details about your needs, goals and aspirations.
+            Use the callback form at the top of this page, and I&rsquo;ll take it from there.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <section class="container my-5" style="background:maroon;color:#fff;">
+
+
+      <div class="col-lg-12">
+        <footer class="bg-dark text-white mt-5 py-4">
+
+          <div class="container">
+
+            <div class="row">
+
+              <div class="col-md-4">
+
+                <h5 id="contact" style="font-style: italic;">Insurance Advisory</h5>
+
+
+
+                <a href="https://girish8360.github.io/amli/GIRISH-PROFILE.html" target="_blank"><span
+                    style="color:#fff;">Home</span></a><br>
+                <a href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#amli"
+                  target="_blank"><span style="color:#fff;">About Us-Axis Max Life</span></a><br>
+
+                <a href="file:///C:/Users/GIRISH%20GAUR/Downloads/INSURANCE%20DATA/GIRISH-NB-LEAFLET.HTM#nb"
+                  target="_blank">
+                  <span style="color:#fff;">About Us-Niva Bupa Health </span></a><br>
+
+
+                <a target="_blank"
+                  href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm"><span
+                    style="color:#fff;">Life Insurance</span></a><br>
+
+
+
+                <a href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM" target="_blank"><span
+                    style="color:#fff;">Health Insurance</span></a><br>
+
+              </div>
+
+              <div class="col-md-4">
+
+                <h5>Quick Links</h5>
+                <p>
+                <h5><b><i>Life Insurance Products</i></b></h5>
+
+                <a target="_blank" href="https://girish8360.github.io/amli/term product.html"><span
+                    style="color:#fff;">Term Insurance</span></a><br>
+                <a target="_blank"
+                  href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#saving"><span
+                    style="color:#fff;">Savings Products</span></a><br>
+                <a target="_blank"
+                  href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#annuity"><span
+                    style="color:#fff;">Annuity Products</span></a><br>
+                <a target="_blank"
+                  href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#ulip"><span
+                    style="color:#fff;">ULIP Products</span></a><br>
+                <a target="_blank"
+                  href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#rider"><span
+                    style="color:#fff;">Riders-Axis Max Life</span></a><br>
+                <a target="_blank" href="https://girish8360.github.io/amli/nbrider.htm#nbrider"> <span
+                    style="color:#fff;">Riders-Niva Bupa</span></a><br>
+
+                <a target="_blank"
+                  href="https://girish8360.github.io/amli/GIRISHGAUR-AXIS%20MAX%20LIFE%20LEAFLET.htm#healthcare"><span
+                    style="color:#fff;">Healthcare Products</span></a> <br><br>
+
+
+                <h5><b><i>Health Insurance Products</i></b></h5>
+
+                <a target="_blank" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#rea3"><span
+                    style="color:#fff;">ReAssure 3.0 UNLIMITED</span></a><br>
+
+                <a target="_blank" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#rea2"><span
+                    style="color:#fff;">ReAssure 2.0</span></a><br>
+                <a target="_blank" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#aspire"><span
+                    style="color:#fff;">Aspire</span></a><br>
+                <a target="_blank" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#senior"><span
+                    style="color:#fff;">Senior First</span></a><br>
+                <a target="_blank" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#personal"><span
+                    style="color:#fff;">Personal Accident</span></a><br>
+                <a target="_blank" href="https://girish8360.github.io/amli/GIRISH-NB-LEAFLET.HTM#travel"><span
+                    style="color:#fff;">Travel Insurance</span></a><br><br>
+
+
+                <h5><b><i>Management Surveys</i></b></h5>
+
+
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc00eA7ZzaBbn5XT72spjy4vkYyA7P5oZrBYrvj70y2NLzXXA/viewform?usp=sf_link"
+                  target="_blank"> <span style="color:#fff;">Wealth Management Survey</span></a><br>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSemtYqq2uhJ2KY9MPtYos7Fln_5xNvqasLrXdk77a0-9gFXMg/viewform?usp=sharing&ouid=110655948174661466563"
+                  target="_blank"> <span style="color:#fff;">Health Management Survey</span></a><br><br>
+
+
+                <h5><b><i>Feedback Form</i></b></h5>
+                <a href="https://girish8360.github.io/amli/GIRISH-PROFILE.html#feedback" target="_blank">
+                  <span style="color:#fff;">Feedback Form</span></a>
+                </p>
+
+              </div>
+
+              <div class="col-md-4">
+
+                <h4>Connect Us </h4>
+                <div class="footer-item">
+
+                  <i class="fa-solid fa-phone me-2" style="font-size:x-large;
+                  ;color:#fff;"></i><span style="font-weight:bold;font-size:larger;">+91-790-628-4866,
+                    <br>
+                    885-966-2533</span><br>
+                </div>
+
+                <div class="footer-item">
+                  <i class="fa-brands fa-whatsapp me-2"
+                    style="background:darkgreen;color: white;font-size:x-large;"></i>
+                  <span style="font-weight:bold;font-size:larger;">+91-790-628-4866, <br> 885-966-2533 </span><br>
+                </div>
+
+                <div class="footer-item">
+                  <i class="fa-solid fa-at me2" style="font-size:20px"></i>
+                  <span style="font-weight:normal;font-size:larger;">
+                    <a href="mailto:girish.garry4u@gmail.com" style="color:#fff;">girish.garry4u@gmail.com</a>
+                    <br>
+                    <a href="mailto:girish.gaur@rediffmail.com" style="color:#fff;">girish.gaur@rediffmail.com</a>
+                  </span><br>
+                </div>
+
+
+
+                <div class="footer-item" style="gap:5px;">
+                  <i class="fas fa-map-marker-alt me-2" style="font-size:30px"></i>
+                  <span style="font-weight:bold;"> AXIS MAX LIFE INSURANCE <br>I<sup>st</sup> FLOOR,
+                    TIRUPATI
+                    TOWERS, <br>
+                    DELHI ROAD<br>SAHARANPUR-247001 (U.P.) </span><br><br>
+                </div>
+
+                <div class="footer-item" style="gap:5px;">
+
+                  <i class="fas fa-map-marker-alt me-2" style="font-size:30px"></i>
+                  <span style="font-weight:bold;"> NIVA BUPA HEALTH INSURANCE <br>
+                    G-17 & G-24 <br>
+                    UPPER GROUND FLOOR,<br>
+                    PARSVNATH PLAZA<br>
+                    COURT ROAD<br>
+                    SAHARANPUR-247001 (U.P.)
+                  </span><br><br>
+                </div>
+
+
+              </div>
+
+            </div>
+            <!-- ================= RESPONSIVE FOOTER ================= -->
+            <footer class="professional-footer">
+
+              <div class="container-fluid">
+
+                <!-- TOP SECTION -->
+                <div class="row align-items-center footer-top">
+
+                  <!-- Advisor Photo -->
+                  <div class="col-12 col-md-3 text-center mb-3 mb-md-0">
+                    <img src="https://raw.githubusercontent.com/girish8360/amli/main/GridArt_20250228_090331226.jpg"
+                      class="footer-profile" alt="Girish Gaur">
+                  </div>
+
+                  <!-- Advisor Details -->
+                  <div class="col-12 col-md-6 text-center mb-3 mb-md-0">
+
+                    <h1 class="footer-name">GIRISH GAUR</h1>
+
+                    <h5 class="footer-designation">
+                      <strong>
+                        Certified Insurance Advisor
+                      </strong>
+                    </h5>
+
+                    <div class="footer-companies">
+                      AXIS MAX LIFE INSURANCE<br>
+                      NIVA BUPA HEALTH INSURANCE
+                    </div>
+
+                  </div>
+
+                  <!-- Niva Bupa Logo -->
+                  <div class="col-12 col-md-3 text-center">
+
+                    <img src="https://raw.githubusercontent.com/girish8360/amli/main/nb.jpg" class="footer-nb-logo"
+                      alt="Niva Bupa Health Insurance">
+
+                  </div>
+
+                </div>
+
+                <!-- CONTACT SECTION -->
+                <div class="row footer-contact">
+
+                  <!-- Phone -->
+                  <div class="col-12 col-sm-6 col-lg-3 footer-item">
+
+                    <i class="fa-solid fa-phone footer-icon"></i>
+
+                    <div>
+                      <strong>CALL</strong><br>
+                      +91-7906284866<br>
+                      +91-8859662533
+                    </div>
+
+                  </div>
+
+
+                  <!-- WhatsApp -->
+                  <div class="col-12 col-sm-6 col-lg-3 footer-item">
+
+                    <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+
+                    <div>
+                      <strong>WHATSAPP</strong><br>
+                      +91-7906284866<br>
+                      +91-8859662533
+                    </div>
+
+                  </div>
+
+
+                  <!-- Email -->
+                  <div class="col-12 col-sm-6 col-lg-3 footer-item">
+
+                    <i class="fa-solid fa-at footer-icon"></i>
+
+                    <div class="email-section">
+
+                      <strong>EMAIL</strong><br>
+
+                      <a href="mailto:girish.garry4u@gmail.com">
+                        girish.garry4u@gmail.com
+                      </a>
+
+                      <br>
+
+                      <a href="mailto:girish.gaur@rediffmail.com">
+                        girish.gaur@rediffmail.com
+                      </a>
+
+                    </div>
+
+                  </div>
+
+
+                  <!-- QR Code -->
+                  <div class="col-12 col-sm-6 col-lg-3 footer-item">
+
+                    <i class="fa-solid fa-globe footer-icon"></i>
+
+                    <div>
+                      <strong>VISIT / CONNECT</strong><br>
+
+                      <img
+                        src="https://raw.githubusercontent.com/girish8360/amli/e601d92ce1bfb06e20ef23ecc64f8b04549ae745/QR-GIRISH-PROFILE.jpeg"
+                        class="footer-qr" alt="Website QR Code">
+
+                    </div>
+
+                  </div>
+                </div>
+
+
+
+                <!-- SOCIAL MEDIA -->
+                <div class="col-12 col-sm-6 col-lg-3 footer-item">
+
+                  <i class="fa-brands fa-facebook facebook-icon"></i>
+
+                  <strong class="facebook-title">
+
+                  </strong>
+                  <img
+                    src="https://raw.githubusercontent.com/girish8360/amli/main/FACEBOOK PAGE GIRISH GAUR INSURELIFE.jpeg"
+                    class="footer-qr" alt="Facebook Page QR Code">
+
+                </div>
+
+
+
+                <!-- COPYRIGHT -->
+                <div class="footer-copyright" style="text-align: center;font-weight: bold;font-size: medium;">
+
+                  © 2026 GIRISH GAUR. All rights reserved.<br>
+                  Compiled & Designed by- GIRISH GAUR
+
+                </div>
+
+            </footer>
+
+
+          </div>
+      </div>
+    </section>
+
+    <!-- SOURCE CODE PREVENTION-RIGHT CLICK DISABLE -->
+
+    <script>
+      // 1. Disable right-click context menu
+      document.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+      });
+
+      // 2. Discourage selecting visible text
+      document.addEventListener("selectstart", function (event) {
+        event.preventDefault();
+      });
+
+      // 3. Discourage common source-code shortcuts
+      document.addEventListener("keydown", function (event) {
+        const key = event.key.toLowerCase();
+
+        if (
+          event.key === "F12" ||
+          (event.ctrlKey && key === "u") ||
+          (event.ctrlKey && event.shiftKey &&
+            ["i", "j", "c"].includes(key))
+        ) {
+          event.preventDefault();
+        }
+      });
+    </script>
+
+
+    <script>
+      // Age calculator
+      const dobInput = document.getElementById('dob');
+      dobInput.max = new Date().toISOString().split('T')[0];
+      dobInput.addEventListener('change', () => {
+        const out = document.getElementById('ageOut'), extra = document.getElementById('ageExtra');
+        if (!dobInput.value) { out.style.visibility = 'hidden'; extra.textContent = ''; return; }
+        const dob = new Date(dobInput.value + 'T00:00:00');
+        const now = new Date();
+        if (dob > now) { extra.textContent = 'Please choose a date in the past.'; out.style.visibility = 'hidden'; return; }
+        let years = now.getFullYear() - dob.getFullYear();
+        let months = now.getMonth() - dob.getMonth();
+        let days = now.getDate() - dob.getDate();
+        if (days < 0) { months--; days += new Date(now.getFullYear(), now.getMonth(), 0).getDate(); }
+        if (months < 0) { years--; months += 12; }
+        const totalDays = Math.floor((now - dob) / 86400000);
+        const next = new Date(now.getFullYear(), dob.getMonth(), dob.getDate());
+        if (next < now) next.setFullYear(now.getFullYear() + 1);
+        const toNext = Math.ceil((next - now) / 86400000);
+        document.getElementById('aYears').textContent = years;
+        document.getElementById('aMonths').textContent = months;
+        document.getElementById('aDays').textContent = days;
+        out.style.visibility = 'visible';
+        extra.innerHTML = 'That is <b>' + totalDays.toLocaleString('en-IN') + ' days</b> of life lived — and your next birthday is in <b>' + toNext + ' days</b>. Every one of those days carried responsibilities worth protecting. <a href="#connect" style="color:var(--green);font-weight:600">Let\u2019s make sure they\u2019re covered \u2192</a>';
+      });
+
+      // Callback form (front-end: validates and prepares the visitor's details)
+      const form = document.getElementById('leadForm');
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('fName').value.trim();
+        const err = document.getElementById('eName');
+        if (!name) { err.style.display = 'block'; document.getElementById('fName').focus(); return; }
+        err.style.display = 'none';
+        const phone = document.getElementById('fPhone').value.trim();
+        const interest = document.getElementById('fInterest').value;
+        const msg = document.getElementById('fMsg').value.trim();
+        const summary = 'Name: ' + name + (phone ? '\nPhone: ' + phone : '') + '\nInterested in: ' + interest + (msg ? '\nNotes: ' + msg : '');
+        document.getElementById('successText').textContent =
+          'Thank you, ' + name.split(' ')[0] + '. Your details are ready below — Girish Gaur will be glad to connect with you about ' + interest.toLowerCase() + '.';
+        const box = document.getElementById('leadSuccess');
+        box.style.display = 'block';
+        box.dataset.summary = summary;
+      });
+      document.getElementById('copyBtn').addEventListener('click', async () => {
+        const box = document.getElementById('leadSuccess');
+        try { await navigator.clipboard.writeText(box.dataset.summary || ''); document.getElementById('copyBtn').textContent = 'Copied ✓'; }
+        catch { document.getElementById('copyBtn').textContent = 'Copy failed — please try again'; }
+      });
+    </script>
+</body>
+
+</html>
