@@ -1448,6 +1448,403 @@
     background: #ffffff;
   }
 
+    /* Calculator */
+    :root {
+
+      --mint: #e8f5ef;
+      --mint2: #f3faf6;
+      --sky: #eef4fb;
+      --ink: #17262e;
+      --muted: #5a6b72;
+      --line: #dde7e2;
+      --amber: #e8a33d;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(10, 80, 58, .10);
+      --shadow-lg: 0 22px 50px rgba(10, 80, 58, .16);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      font-family: 'Times New Roman';
+
+      color: var(--ink);
+      background: #fff;
+      line-height: 1.65;
+      font-size: 16.5px
+    }
+
+    /* Professional navy-and-white theme */
+    :root {
+      --green: #174ea6;
+      --green2: #2563eb;
+      --green-dark: #081b3a;
+      --mint: #18365d;
+      --mint2: #0b2144;
+      --sky: #122d52;
+      --ink: #f7faff;
+      --muted: #c1cee0;
+      --line: #29466c;
+      --amber: #f5c76b;
+      --shadow: 0 10px 30px rgba(0, 0, 0, .22);
+      --shadow-lg: 0 22px 50px rgba(0, 0, 0, .32);
+    }
+
+    html {
+      scroll-padding-top: 80px
+    }
+
+    body {
+      background: #071a35;
+      color: #f7faff
+    }
+
+    .responsive-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+
+    }
+
+    .wrap {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 22px
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.22;
+      letter-spacing: -.01em;
+
+
+    }
+
+    .eyebrow {
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      font-size: .72rem;
+      font-weight: 700;
+      color: var(--darkblue)
+    }
+
+
+
+
+    .trustrow {
+      display: flex;
+      gap: 1.4rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.6rem
+    }
+
+    .trustrow div {
+      display: flex;
+      gap: .5rem;
+      align-items: flex-start;
+      font-size: .9rem;
+      font-weight: 500;
+      max-width: 15rem
+    }
+
+    .trustrow svg {
+      flex: none;
+      margin-top: .15rem
+    }
+
+
+    label {
+      font-weight: 600;
+      font-size: .88rem;
+      display: block;
+      margin-bottom: .35rem
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: .75rem .95rem;
+      border: 1px solid #cfdcd6;
+      border-radius: 10px;
+      font: inherit;
+      background: #fff;
+      color: var(--ink)
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: 2px solid #9fd3bd;
+      border-color: var(--green)
+    }
+
+    .err {
+      color: #b3261e;
+      font-size: .83rem;
+      display: none;
+      margin-top: .3rem
+    }
+
+    .success {
+      display: none;
+      background: var(--mint);
+      border: 1px solid #bfe3d2;
+      border-radius: 12px;
+      padding: 1.1rem 1.2rem;
+      font-size: .95rem
+    }
+
+
+
+    /* Sections */
+    section {
+      padding: 4rem 0
+    }
+
+    .alt {
+      background: var(--mint2)
+    }
+
+    .sec-head {
+      max-width: 46rem;
+      margin-bottom: 2.1rem
+    }
+
+    .sec-head h2 {
+      font-size: clamp(1.7rem, 3.2vw, 2.35rem);
+      margin: .45rem 0 .55rem
+    }
+
+    .sec-head p {
+      color: var(--muted)
+    }
+
+
+
+
+    .grid5 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: 1.6rem
+    }
+
+    /* About */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 2.6rem;
+      align-items: start
+    }
+
+    @media(max-width:860px) {
+      .two-col {
+        grid-template-columns: 1fr
+      }
+    }
+
+
+
+    /* Calculator */
+    .calc-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 2.1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.2rem
+    }
+
+    @media(max-width:820px) {
+      .calc-card {
+        grid-template-columns: 1fr
+      }
+    }
+
+    .age-out {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: .8rem;
+      margin-top: 1.1rem
+    }
+
+    .age-box {
+      background: var(--mint2);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: .95rem;
+      text-align: center
+    }
+
+    .age-box b {
+      font-size: 1.85rem;
+      display: block;
+      font-weight: 800;
+      color: var(--green-dark)
+    }
+
+    .age-box span {
+      font-size: .74rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 700
+    }
+
+    .age-extra {
+      margin-top: 1rem;
+      color: var(--muted);
+      font-size: .94rem
+    }
+
+    .age-extra b {
+      color: var(--ink)
+    }
+
+    .calc-note {
+      color: var(--muted);
+      font-size: .96rem
+    }
+
+    .calc-note p {
+      margin-bottom: .85rem
+    }
+
+    .calc-note strong {
+      color: var(--ink)
+    }
+
+
+    .hero {
+      background: radial-gradient(ellipse at top right, #173965 0%, #0b2144 45%, #071a35 100%);
+      border-bottom-color: #29466c
+    }
+
+    .hero h1 .hl {
+      color: #9ec5ff
+    }
+
+    .eyebrow {
+      color: #9ec5ff
+    }
+
+    .hero .sub,
+    .trustrow div {
+      color: #e1eaf8
+    }
+
+    .trustrow svg {
+      stroke: #9ec5ff
+    }
+
+
+    .calc-card {
+      background: #10294c;
+      color: #f7faff;
+      border-color: #29466c;
+    }
+
+
+    .sec-head p,
+    .calc-note,
+    .age-extra,
+    .faq details p {
+      color: #c1cee0
+    }
+
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="date"],
+    select,
+    textarea {
+      background: #f8fbff;
+      color: #14243a;
+      border-color: #b6c7df;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #64758b
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: 2px solid #8ebcff;
+      border-color: #3478e8
+    }
+
+
+    section {
+      background: #071a35
+    }
+
+    .alt {
+      background: #0b2144
+    }
+
+    .sec-head h2,
+    .stage h3,
+    .product h3,
+    .skill h3,
+    .form-card h3,
+    .advisor-card h3,
+    .calc-note strong,
+    .about p strong,
+    .tl h3 {
+      color: #fff
+    }
+
+    .stage .n {
+      background: #1b3c68;
+      color: #dceaff
+    }
+
+
+    .age-box {
+      background: #0b2144;
+      border-color: #29466c
+    }
+
+    .age-box b {
+      color: #fff
+    }
+
+    .age-box span {
+      color: #c1cee0
+    }
+
+
+    @media(prefers-reduced-motion:reduce) {
+      html {
+        scroll-behavior: auto
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important
+      }
+    }
+  </style>
 </style>
 
 
@@ -2298,86 +2695,192 @@
 
    
       <!-- =================AGE CALCULATOR ================= -->
-       <section class="container my-5" style="background:darkblue;color:#fff;">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="intro">
-              <h2 id="agecalc" style="color: black;font-weight: bold;">AGE IS PASSING</h2>
-              <p style="font-size:25px;">
+      <section id="age">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Age Is Passing</p>
+        <h2>
+          Time moves forward. Responsibilities grow.
+          Is your protection keeping pace?
+        </h2>
+      </div>
 
-       Time Moves Forward. Responsibilities Grow. Is Your Protection Keeping Pace?<br>
-Every passing year adds value to our experience, but it can also add to our responsibilities.
-                Time never stands still, and neither does life. As we grow older, our family commitments, financial liabilities, healthcare needs, and aspirations often grow with us.
-The age you see on this calculator is more than just a number. It is a reminder of the time that has passed, the responsibilities you carry today, and the future you still wish to secure.<br>
-Your present age is not just a milestone in life; it is an opportunity to make wiser decisions for tomorrow.<br>
-The right time to think about health insurance, life insurance, and financial protection is not when uncertainties arise, but while you have the opportunity to plan ahead. Acting at the right time may help you access more suitable protection options, subject to eligibility, underwriting, policy terms, and conditions.
-Don't let another year pass without reviewing what matters most. Give your health, your family's financial security, and your peace of mind the attention they deserve.<br>
+      <div class="calc-card">
+        <div>
+          <label for="dob">Enter your date of birth</label>
 
-Because time is precious, responsibilities are real, and peace of mind begins with timely preparation.<br>
+          <input type="date" id="dob" name="dob">
 
-Your age tells you how far you have travelled. Your decisions today can help shape how securely you travel ahead.<br>
+          <div class="age-out" id="ageOut" style="visibility:hidden">
+            <div class="age-box">
+              <b id="aYears">–</b>
+              <span>Years</span>
+            </div>
 
-Take a moment to reflect. Take a step towards protection. The right time to plan for tomorrow is today.
- </p>
-           </div>
-            
-              <div class="calculator">
-                <h3>AGE CALCULATOR</h3>
-                <div class="input-box">
-                  <input type="date" id="date">
-                  <button onclick="calculateAge()">Calculate Age</button>
-                </div>
-                <p id="result"></p>
+            <div class="age-box">
+              <b id="aMonths">–</b>
+              <span>Months</span>
+            </div>
 
-                <script>
-                  let userInput = document.getElementById('date');
-                  userInput.max = new Date().toISOString().split("T")[0];
-                  let result = document.getElementById('result');
-
-                  function calculateAge() {
-                    let birthDate = new Date(userInput.value);
-                    let d1 = birthDate.getTime();
-                    let m1 = birthDate.getMonth() + 1;
-                    let y1 = birthDate.getFullYear();
-
-                    let today = new Date();
-                    let d2 = today.getDate();
-                    let m2 = today.getMonth() + 1;
-                    let y2 = today.getFullYear();
-
-                    let d3, m3, y3;
-
-                    y3 = y2 - y1;
-                    if (m2 >= m1) {
-                      m3 = m2 - m1;
-                    } else {
-                      y3--;
-                      m3 = 12 + m2 - m1;
-                    }
-
-                    if (d2 >= d1) {
-                      d3 = d2 - d1;
-                    } else {
-                      m3--;
-                      d3 = getDaysInMonth(y1, m1) + d2 - d1;
-
-                    }
-                    if (m3 < 0) {
-                      m3 = 11;
-                      y3--;
-                    }
-                    result.innerHTML = `Your age is: <span>${y3}</span> years, <span>${m3}</span> months 
-    old`;
-                  }
-                  function getDaysInMonth(year, month) {
-                    return new Date(year, month, 0).getDate();
-                  }
-
-                </script>
-              </div>
+            <div class="age-box">
+              <b id="aDays">–</b>
+              <span>Days</span>
             </div>
           </div>
+
+          <p class="age-extra" id="ageExtra" aria-live="polite"></p>
         </div>
+
+        <div class="calc-note">
+          <p>
+            The age you see on this calculator is more than just a number.
+            It is a reminder of the time that has passed, the
+            responsibilities you carry today, and the future you still
+            wish to secure.
+          </p>
+
+          <p>
+            Every passing year adds value to our experience, but it can
+            also add to our responsibilities — family commitments,
+            financial liabilities, healthcare needs and aspirations
+            grow with us.
+          </p>
+
+          <p>
+            The right time to think about health insurance, life insurance
+            and financial protection is not when uncertainties arise,
+            but while you have the opportunity to plan ahead. Acting at
+            the right time may help you access more suitable protection
+            options, subject to eligibility, underwriting, policy terms
+            and conditions.
+          </p>
+
+          <p>
+            <strong>
+              Your age tells you how far you have travelled. Your
+              decisions today can help shape how securely you travel
+              ahead. The right time to plan for tomorrow is today.
+            </strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      function initAgeCalculator() {
+        const dobInput = document.getElementById("dob");
+        const ageOut = document.getElementById("ageOut");
+        const yearsEl = document.getElementById("aYears");
+        const monthsEl = document.getElementById("aMonths");
+        const daysEl = document.getElementById("aDays");
+        const extraEl = document.getElementById("ageExtra");
+
+        // Stop if the required HTML elements are missing.
+        if (
+          !dobInput || !ageOut || !yearsEl ||
+          !monthsEl || !daysEl || !extraEl
+        ) {
+          console.error("Age calculator elements were not found.");
+          return;
+        }
+
+        // Prevent selecting a future date of birth.
+        const today = new Date();
+        const todayString =
+          today.getFullYear() + "-" +
+          String(today.getMonth() + 1).padStart(2, "0") + "-" +
+          String(today.getDate()).padStart(2, "0");
+
+        dobInput.max = todayString;
+
+        function calculateAge() {
+          const value = dobInput.value;
+
+          if (!value) {
+            ageOut.style.visibility = "hidden";
+            yearsEl.textContent = "–";
+            monthsEl.textContent = "–";
+            daysEl.textContent = "–";
+            extraEl.textContent = "";
+            return;
+          }
+
+          // Parse the date in local calendar terms.
+          const parts = value.split("-").map(Number);
+          const birthYear = parts[0];
+          const birthMonth = parts[1] - 1;
+          const birthDay = parts[2];
+
+          const birthDate = new Date(
+            birthYear, birthMonth, birthDay
+          );
+
+          // Reject invalid dates and future birthdays.
+          if (
+            birthDate.getFullYear() !== birthYear ||
+            birthDate.getMonth() !== birthMonth ||
+            birthDate.getDate() !== birthDay ||
+            birthDate > today
+          ) {
+            ageOut.style.visibility = "hidden";
+            extraEl.textContent =
+              "Please enter a valid date of birth.";
+            return;
+          }
+
+          let years = today.getFullYear() - birthYear;
+          let months = today.getMonth() - birthMonth;
+          let days = today.getDate() - birthDay;
+
+          if (days < 0) {
+            months--;
+
+            // Borrow the actual number of days from the
+            // previous calendar month.
+            const previousMonthDays = new Date(
+              today.getFullYear(),
+              today.getMonth(),
+              0
+            ).getDate();
+
+            days += previousMonthDays;
+          }
+
+          if (months < 0) {
+            years--;
+            months += 12;
+          }
+
+          yearsEl.textContent = years;
+          monthsEl.textContent = months;
+          daysEl.textContent = days;
+
+          ageOut.style.visibility = "visible";
+
+          extraEl.textContent =
+            "You have lived " + years + " years, " +
+            months + " months and " + days + " days. " +
+            "Every day is an opportunity to plan for a more secure future.";
+        }
+
+        dobInput.addEventListener("input", calculateAge);
+        dobInput.addEventListener("change", calculateAge);
+      }
+
+      // Works whether this script loads before or after the page.
+      if (document.readyState === "loading") {
+        document.addEventListener(
+          "DOMContentLoaded",
+          initAgeCalculator
+        );
+      } else {
+        initAgeCalculator();
+      }
+    })();
+  </script>
+       
         
         <!-- ================= FEEDBACK================= -->
         <div class="container-fluid px-2 px-sm-3 px-md-4 px-lg-5 py-3" style="background:maroon;color:#fff;">
