@@ -2305,6 +2305,67 @@
   #successMessage strong {
     font-size: 20px;
   }
+
+   .container04 {
+    position: relative;
+    float: center;
+    background: transparent;
+
+  }
+
+  .clock {
+    width: 250px;
+    height: 250px;
+    border-radius: 60%;
+
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .clock span {
+    position: absolute;
+    transform: rotate(calc(30deg*var(--i)));
+    inset-block: 9px;
+    text-align: center;
+  }
+
+  .clock span b {
+    transform: rotate(calc(-30deg*var(--i)));
+    display: inline-block;
+    font-size: 23px;
+    font-family: 'Times New Roman';
+  }
+
+  .clock::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 2;
+  }
+
+  .hand {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .hand i {
+    position: absolute;
+    background: var(--clr);
+    width: 4px;
+    height: var(--h);
+    border-radius: 8px;
+  }
+
+
 </style>
 </head>
 
@@ -2320,10 +2381,9 @@
   <nav>
     <div class="wrap nav-in">
       <a class="brand" href="#top">
-        <span class="mark"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
-            <path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6l7-3z" stroke-linejoin="round" />
-            <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round" />
-          </svg></span>
+              <img src="https://raw.githubusercontent.com/girish8360/girish8360/main/girish_snap.jpg"
+          style="max-height:35px;max-width:35px;" alt="Portrait of Girish Gaur">
+ 
         <span class="bt"><b>Girish Gaur</b><span>Insurance Advisor</span></span>
       </a>
       <div class="nav-links">
@@ -3975,8 +4035,8 @@
   </section>
 
 
-
-  <section id="age">
+  
+  <section id="age" style="background: #041127;">
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">Age Is Passing</p>
@@ -3985,34 +4045,96 @@
           Is your protection keeping pace?
         </h2>
       </div>
+      <div class="container04" style="background:transparent;">
+        <div class="clock">
+          <!-- Clock -->
 
-      <div class="calc-card">
-        <div>
-          <label for="dob1">Enter your date of birth</label>
+          <div style="--clr:#ff3d58; --h:65px;" id="hour" class="hand"><i></i></div>
+          <div style="--clr:#00a6ff;  --h:85px;" id="min" class="hand"><i></i></div>
+          <div style="--clr:#ffffff;  --h:105px;" id="sec" class="hand"><i></i></div>
 
-          <input type="date" id="dob1" name="dob1">
-
-          <div class="age-out" id="ageOut" style="visibility:hidden">
-            <div class="age-box">
-              <b id="aYears">–</b>
-              <span>Years</span>
-            </div>
-
-            <div class="age-box">
-              <b id="aMonths">–</b>
-              <span>Months</span>
-            </div>
-
-            <div class="age-box">
-              <b id="aDays">–</b>
-              <span>Days</span>
-            </div>
-          </div>
-
-          <p class="age-extra" id="ageExtra" aria-live="polite"></p>
+          <span style="--i:1;"><b>I</b></span>
+          <span style="--i:2;"><b>II</b></span>
+          <span style="--i:3;"><b>III</b></span>
+          <span style="--i:4;"><b>IV</b></span>
+          <span style="--i:5;"><b>V</b></span>
+          <span style="--i:6;"><b>VI</b></span>
+          <span style="--i:7;"><b>VII</b></span>
+          <span style="--i:8;"><b>VIII</b></span>
+          <span style="--i:9;"><b>IX</b></span>
+          <span style="--i:10;"><b>X</b></span>
+          <span style="--i:11;"><b>XI</b></span>
+          <span style="--i:12;"><b>XII</b></span>
         </div>
 
-        <div class="calc-note">
+
+        <script>
+          let hr = document.getElementById('hour');
+          let min = document.getElementById('min');
+          let sec = document.getElementById('sec');
+
+          function displayTime() {
+            let date = new Date();
+
+            // Getting hour, mins, secs from date
+            let hh = date.getHours();
+            let mm = date.getMinutes();
+            let ss = date.getSeconds();
+
+            let hRotation = 30 * hh + mm / 2;
+            let mRotation = 6 * mm;
+            let sRotation = 6 * ss;
+
+
+            hr.style.transform = `rotate(${hRotation}deg)`;
+            // hr.style.transform = `rotate(${hRotation}deg)`;
+            // hr.style.transform = `rotate(${hRotation}deg)`;
+            min.style.transform = `rotate(${mRotation}deg)`;
+            sec.style.transform = `rotate(${sRotation}deg)`;
+          }
+          setInterval(displayTime, 1000);
+        </script>
+
+      </div>
+      <p id="demo" style="color:#fff;font-weight: bolder;font-family: 'Times New Roman';font-size:30px;">
+      </p>
+      <script>
+        const d = new Date();
+        document.getElementById("demo").innerHTML = d;
+
+      </script>
+    </div>
+    </div>
+
+
+
+    <div class="calc-card" style="background: #041127;">
+      <div>
+        <label for="dob1">Enter your date of birth</label>
+
+        <input type="date" id="dob1" name="dob1">
+
+        <div class="age-out" id="ageOut" style="visibility:hidden">
+          <div class="age-box">
+            <b id="aYears">–</b>
+            <span>Years</span>
+          </div>
+
+          <div class="age-box">
+            <b id="aMonths">–</b>
+            <span>Months</span>
+          </div>
+
+          <div class="age-box">
+            <b id="aDays">–</b>
+            <span>Days</span>
+          </div>
+        </div>
+
+        <p class="age-extra" id="ageExtra" aria-live="polite"></p>
+      </div>
+
+      <div class="calc-note">
           <p>
             The age you see on this calculator is more than just a number.
             It is a reminder of the time that has passed, the
