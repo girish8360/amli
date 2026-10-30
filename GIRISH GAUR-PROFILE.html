@@ -243,10 +243,80 @@
     border-radius: 10px
   }
 
+  
   @media(max-width:860px) {
     .nav-links a:not(.nav-cta) {
       display: none
     }
+  }
+
+  /* CALL BUTTON */
+
+  .call-btn {
+    background: #e47724;
+    color: #ffffff !important;
+    border: 1px solid #e47724;
+  }
+
+  /* WHATSAPP BUTTON */
+
+  .whatsapp-btn {
+    background: #25D366;
+    color: #ffffff !important;
+    border: 1px solid #25D366;
+  }
+
+  /* BUTTON HOVER */
+
+  .call-btn:hover,
+  .whatsapp-btn:hover {
+    opacity: .88;
+    color: #ffffff !important;
+  }
+
+  /* TABLET RESPONSIVENESS */
+
+  @media(max-width:1100px) {
+
+    .nav-in {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .nav-links {
+      justify-content: center;
+      gap: 8px;
+    }
+
+  }
+
+  /* MOBILE RESPONSIVENESS */
+
+  @media(max-width:600px) {
+
+    .nav-in {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 5px;
+    }
+
+    .nav-links {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .nav-links a:not(.nav-cta) {
+      display: none;
+    }
+
+    .nav-cta {
+      padding: 8px 10px;
+      font-size: 11px;
+    }
+
   }
 
   /* Hero */
@@ -2409,6 +2479,22 @@
         <a class="btn btn-outline nav-cta" href="#connect">Request a Callback</a>
         <a class="btn btn-green nav-cta nav-book" href="https://calendly.com/girish-garry4u/30min" target="_blank"
           rel="noopener noreferrer">Book Appointment</a>
+             <!-- CALL NOW -->
+      <a href="tel:+917906284866"
+         class="btn nav-cta call-btn">
+        <i class="fas fa-phone"></i>
+        Call Now
+      </a>
+
+      <!-- WHATSAPP -->
+      <a href="https://wa.me/918859662533?text=Hello%20Girish%20Ji,%20I%20would%20like%20to%20know%20more%20about%20your%20insurance%20services."
+         target="_blank"
+         rel="noopener noreferrer"
+         class="btn nav-cta whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+        WhatsApp
+      </a>
+
       </div>
     </div>
   </nav>
