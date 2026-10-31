@@ -384,7 +384,268 @@
 
   }
 
+ /* STICKY NAVBAR-CALL & WHATSAPP */
+  :root {
+    --navy: #071a35;
+    --navy-deep: #041127;
+    --blue: #174ea6;
+    --blue-hover: #2563eb;
+    --gold: #f5c76b;
+    --white: #ffffff;
+    --text: #e8f0fc;
+    --line: #29466c;
+    --green: #168447;
+    --whatsapp: #25d366;
+    --call: #e47724;
+    --content-width: 1140px;
+  }
 
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Times New Roman", serif;
+    color: #17262e;
+    background: #fff;
+    line-height: 1.65;
+    font-size: 16.5px;
+  }
+
+  .wrap {
+    width: min(100% - 32px, var(--content-width));
+    margin-inline: auto;
+  }
+
+  /* Top information strip scrolls away; the navigation below stays fixed at the top. */
+  .topstrip {
+    background: var(--navy-deep);
+    color: #d9e7fb;
+    font-size: .82rem;
+  }
+
+  .topstrip .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem 1rem;
+    padding-block: .45rem;
+    flex-wrap: wrap;
+  }
+
+  .topstrip b {
+    color: var(--white);
+  }
+
+  /* Sticky navigation: works on desktop and mobile.
+       Do not place this nav inside an ancestor with overflow:auto/hidden/scroll. */
+  .site-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    width: 100%;
+    background: rgba(7, 26, 53, .98);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .18);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+  }
+
+  .nav-in {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px 20px;
+    padding-block: 10px;
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+    color: var(--white);
+    text-decoration: none;
+    flex: 0 0 auto;
+  }
+
+  .brand img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, .75);
+  }
+
+  .brand .bt {
+    line-height: 1.15;
+  }
+
+  .brand .bt b {
+    display: block;
+    font-size: 1.05rem;
+    white-space: nowrap;
+  }
+
+  .brand .bt span {
+    display: block;
+    margin-top: 4px;
+    color: #c1cee0;
+    font: 600 .68rem/1.2 Inter, sans-serif;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-height: 40px;
+    padding: 8px 13px;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    text-decoration: none;
+    text-align: center;
+    font: 700 .84rem/1.2 Inter, sans-serif;
+    white-space: nowrap;
+    transition: background-color .2s ease, transform .2s ease, opacity .2s ease;
+  }
+
+  .nav-cta:hover {
+    transform: translateY(-1px);
+  }
+
+  .callback-btn {
+    color: var(--white);
+    background: transparent;
+    border-color: #7294c4;
+  }
+
+  .callback-btn:hover {
+    color: var(--white);
+    background: #17365f;
+  }
+
+  .booking-btn {
+    color: #081b3a;
+    background: var(--gold);
+    border-color: var(--gold);
+  }
+
+  .booking-btn:hover {
+    color: #081b3a;
+    background: #ffda8a;
+  }
+
+  .call-btn {
+    color: var(--white);
+    background: var(--call);
+    border-color: var(--call);
+  }
+
+  .whatsapp-btn {
+    color: var(--white);
+    background: darkgreen;
+    border-color: var(--whatsapp);
+  }
+
+  .call-btn:hover,
+  .whatsapp-btn:hover {
+    color: var(--white);
+    opacity: .9;
+  }
+
+  /* Tablet and mobile layout */
+  @media (max-width: 900px) {
+    .nav-in {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 9px;
+    }
+
+    .brand {
+      align-self: center;
+    }
+
+    .nav-links {
+      width: 100%;
+      justify-content: center;
+      gap: 7px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .wrap {
+      width: min(100% - 20px, var(--content-width));
+    }
+
+    .topstrip .wrap {
+      justify-content: center;
+      text-align: center;
+      font-size: .72rem;
+      line-height: 1.35;
+    }
+
+    .nav-in {
+      padding-block: 8px;
+    }
+
+    .brand img {
+      width: 36px;
+      height: 36px;
+    }
+
+    .brand .bt b {
+      font-size: .98rem;
+    }
+
+    .brand .bt span {
+      font-size: .61rem;
+    }
+
+    .nav-links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 6px;
+    }
+
+    .nav-cta {
+      width: 100%;
+      min-height: 38px;
+      padding: 7px 5px;
+      font-size: .72rem;
+    }
+  }
+
+  /* Optional: reduce motion for users who request it in their device settings. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    .nav-cta {
+      transition: none;
+    }
+  }
   .intro {
     font-size: small;
     text-align: justify;
@@ -2304,6 +2565,54 @@
   </header>
 
 
+  <!-- STICKY NAVBAR -->
+  <div class="topstrip">
+    <div class="wrap">
+      <span><b>Girish Gaur</b> · Certified Insurance Advisor · Saharanpur, Uttar Pradesh</span>
+      <span>Axis Max Life Insurance &nbsp;|&nbsp; Niva Bupa Health Insurance</span>
+    </div>
+  </div>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="wrap nav-in">
+      <a class="brand" href="#top" aria-label="Girish Gaur — Home">
+        <img src="https://raw.githubusercontent.com/girish8360/girish8360/main/girish_snap.jpg"
+          alt="Portrait of Girish Gaur">
+        <span class="bt">
+          <b>Girish Gaur</b>
+          <span>Certified Insurance Advisor</span>
+        </span>
+      </a>
+
+      <div class="nav-links">
+
+        <a href="https://girish8360.github.io/amli/GIRISH GAUR-PROFILE.html" target="_blank"> <i
+            class="fa-solid fa-house me-2">
+          </i><span style="color:#fff;font-weight:bold;">HOME</span> </a>
+
+        <a class="nav-cta callback-btn"
+          href="https://girish8360.github.io/amli/GIRISH GAUR-PROFILE.html#connect">Request a Callback</a>
+
+        <a class="nav-cta booking-btn" href="https://calendly.com/girish-garry4u/30min" target="_blank"
+          rel="noopener noreferrer">
+          <i class="far fa-calendar-check" aria-hidden="true"></i>
+          Book Appointment
+        </a>
+
+        <a class="nav-cta call-btn" href="tel:+917906284866">
+          <i class="fas fa-phone" aria-hidden="true"></i>
+          Call Now
+        </a>
+
+        <a class="nav-cta whatsapp-btn"
+          href="https://wa.me/918859662533?text=Hello%20Girish%20Ji%2C%20I%20would%20like%20to%20know%20more%20about%20your%20insurance%20services."
+          target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-whatsapp" aria-hidden="true"></i>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </nav>
   
   <!-- ================= NAVBAR ================= -->
 
@@ -4744,15 +5053,22 @@
                 <h5>Contact Us:</h5>
                 <div class="footer-item" style="gap:5px;">
 
-                  <i class="fa-solid fa-phone me-2" style="font-size:30px;color:#fff;"></i><span
-                    style="font-weight:bold;">+91-790-628-4866,
+                    <i class="fa-solid fa-phone" style="font-size:30px;color:#fff;"></i>
+                <a class="nav-cta call-btn" style="background:transparent;border:none;" href="tel:+917906284866">
+                  <b>+91-790-628-4866,
                     <br>
-                    885-966-2533</span><br>
+                    885-966-2533</b></a><br>
                 </div>
-                <div class="footer-item" style="gap:5px;">
-                  <i class="fa-brands fa-whatsapp me=2" style="background:darkgreen;color: white;font-size:40px"></i>
-                  <span style="font-weight:bold;">+91-790-628-4866, <br> 885-966-2533 </span><br>
-                </div>
+
+                    <div class="footer-item" style="gap:5px;">
+                <i class="fa-brands fa-whatsapp" style="background:darkgreen;color: white;font-size:40px"></i>
+                <a class="nav-cta whatsapp-btn" style="background:transparent;border:none;"
+                  href="https://wa.me/918859662533?text=Hello%20Girish%20Ji%2C%20I%20would%20like%20to%20know%20more%20about%20your%20insurance%20services."
+                  target="_blank" rel="noopener noreferrer">
+
+                  +91-790-628-4866, <br> 885-966-2533 </a><br>
+                    </div>
+ 
 
                 <div class="footer-item" style="gap:5px;">
                   <i class="fa-solid fa-at me-2" style="font-size:30px"></i>
