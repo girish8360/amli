@@ -495,6 +495,262 @@ text-align:center;
     font-weight: normal;
   }
 
+        /* STICKY NAVBAR-CALL & WHATSAPP */
+  :root {
+    --navy: #071a35;
+    --navy-deep: #041127;
+    --blue: #174ea6;
+    --blue-hover: #2563eb;
+    --gold: #f5c76b;
+    --white: #ffffff;
+    --text: #e8f0fc;
+    --line: #29466c;
+    --green: #168447;
+    --whatsapp: #25d366;
+    --call: #e47724;
+    --content-width: 1140px;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+  }
+ 
+  .wrap {
+    width: min(100% - 32px, var(--content-width));
+    margin-inline: auto;
+  }
+
+  /* Top information strip scrolls away; the navigation below stays fixed at the top. */
+  .topstrip {
+    background: var(--navy-deep);
+    color: #d9e7fb;
+    font-size: .82rem;
+  }
+
+  .topstrip .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem 1rem;
+    padding-block: .45rem;
+    flex-wrap: wrap;
+  }
+
+  .topstrip b {
+    color: var(--white);
+  }
+
+  /* Sticky navigation: works on desktop and mobile.
+       Do not place this nav inside an ancestor with overflow:auto/hidden/scroll. */
+  .site-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    width: 100%;
+    background: rgba(7, 26, 53, .98);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .18);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+  }
+
+  .nav-in {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px 20px;
+    padding-block: 10px;
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+    color: var(--white);
+    text-decoration: none;
+    flex: 0 0 auto;
+  }
+
+  .brand img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, .75);
+  }
+
+  .brand .bt {
+    line-height: 1.15;
+  }
+
+  .brand .bt b {
+    display: block;
+    font-size: 1.05rem;
+    white-space: nowrap;
+  }
+
+  .brand .bt span {
+    display: block;
+    margin-top: 4px;
+    color: #c1cee0;
+    font: 600 .68rem/1.2 Inter, sans-serif;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-height: 40px;
+    padding: 8px 13px;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    text-decoration: none;
+    text-align: center;
+    font: 700 .84rem/1.2 Inter, sans-serif;
+    white-space: nowrap;
+    transition: background-color .2s ease, transform .2s ease, opacity .2s ease;
+  }
+
+  .nav-cta:hover {
+    transform: translateY(-1px);
+  }
+
+  .callback-btn {
+    color: var(--white);
+    background: transparent;
+    border-color: #7294c4;
+  }
+
+  .callback-btn:hover {
+    color: var(--white);
+    background: #17365f;
+  }
+
+  .booking-btn {
+    color: #081b3a;
+    background: var(--gold);
+    border-color: var(--gold);
+  }
+
+  .booking-btn:hover {
+    color: #081b3a;
+    background: #ffda8a;
+  }
+
+  .call-btn {
+    color: var(--white);
+    background: var(--call);
+    border-color: var(--call);
+  }
+
+  .whatsapp-btn {
+    color: var(--white);
+    background: darkgreen;
+    border-color: var(--whatsapp);
+  }
+
+  .call-btn:hover,
+  .whatsapp-btn:hover {
+    color: var(--white);
+    opacity: .9;
+  }
+
+  /* Tablet and mobile layout */
+  @media (max-width: 900px) {
+    .nav-in {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 9px;
+    }
+
+    .brand {
+      align-self: center;
+    }
+
+    .nav-links {
+      width: 100%;
+      justify-content: center;
+      gap: 7px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .wrap {
+      width: min(100% - 20px, var(--content-width));
+    }
+
+    .topstrip .wrap {
+      justify-content: center;
+      text-align: center;
+      font-size: .72rem;
+      line-height: 1.35;
+    }
+
+    .nav-in {
+      padding-block: 8px;
+    }
+
+    .brand img {
+      width: 36px;
+      height: 36px;
+    }
+
+    .brand .bt b {
+      font-size: .98rem;
+    }
+
+    .brand .bt span {
+      font-size: .61rem;
+    }
+
+    .nav-links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 6px;
+    }
+
+    .nav-cta {
+      width: 100%;
+      min-height: 38px;
+      padding: 7px 5px;
+      font-size: .72rem;
+    }
+  }
+
+  /* Optional: reduce motion for users who request it in their device settings. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    .nav-cta {
+      transition: none;
+    }
+  }
+
+
+
   /* ================= NAVBAR ================= */
 
   .responsive-navbar {
@@ -734,6 +990,177 @@ text-align:center;
     color: maroon;
 
     cursor: pointer;
+  }
+
+         /* FAQ */
+  <section id="insurance-faq" class="faq-section">#insurance-faq {
+    --navy: #102b50;
+    --blue: #1763a5;
+    --text: #344054;
+    --line: #e5eaf0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: var(--text);
+    padding: 45px 18px;
+    box-sizing: border-box;
+  }
+
+  #insurance-faq * {
+    box-sizing: border-box;
+  }
+
+  #insurance-faq .faq-container {
+    max-width: 850px;
+    margin: auto;
+  }
+
+  #insurance-faq .faq-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  #insurance-faq .faq-header h2 {
+    color: var(--navy);
+    font-size: clamp(25px, 5vw, 34px);
+    margin: 0 0 12px;
+    font-weight: 700;
+  }
+
+  #insurance-faq .faq-header p {
+    color: #667085;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  #insurance-faq .faq-item {
+    border-bottom: 1px solid var(--line);
+  }
+
+  #insurance-faq .faq-question {
+    width: 100%;
+    background: #fff;
+    border: 0;
+    padding: 21px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    text-align: left;
+    cursor: pointer;
+    color: var(--navy);
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  #insurance-faq .faq-question:hover {
+    color: var(--blue);
+  }
+
+  #insurance-faq .faq-question:focus-visible,
+  #insurance-faq .whatsapp-btn:focus-visible {
+    outline: 3px solid #80b7ee;
+    outline-offset: 3px;
+  }
+
+  #insurance-faq .faq-icon {
+    flex-shrink: 0;
+    font-size: 24px;
+    color: var(--blue);
+    transition: transform 0.25s ease;
+  }
+
+  #insurance-faq .faq-question[aria-expanded="true"] .faq-icon {
+    transform: rotate(45deg);
+  }
+
+  #insurance-faq .faq-answer {
+    padding: 0 35px 21px 8px;
+    color: #475467;
+    font-size: 15.5px;
+    line-height: 1.8;
+  }
+
+  #insurance-faq .faq-answer p {
+    margin: 0;
+  }
+
+  #insurance-faq .faq-answer strong {
+    color: var(--navy);
+  }
+
+  #insurance-faq .faq-cta {
+    background: #f4f7fb;
+    border: 1px solid #e1e9f2;
+    border-radius: 12px;
+    text-align: center;
+    padding: 28px 18px;
+    margin-top: 32px;
+  }
+
+  #insurance-faq .faq-cta h3 {
+    color: var(--navy);
+    font-size: 22px;
+    margin: 0 0 12px;
+  }
+
+  #insurance-faq .faq-cta p {
+    color: #475467;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0 0 20px;
+  }
+
+  #insurance-faq .advisor-name {
+    color: var(--navy);
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+
+  #insurance-faq .advisor-detail {
+    font-size: 14px;
+    color: #667085;
+    line-height: 1.7;
+    margin-bottom: 18px;
+  }
+
+  #insurance-faq .whatsapp-btn {
+    display: inline-block;
+    background: #168b50;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    transition: background 0.2s ease;
+  }
+
+  #insurance-faq .whatsapp-btn:hover {
+    background: #106d3d;
+  }
+
+  @media (max-width: 600px) {
+    #insurance-faq {
+      padding: 32px 15px;
+    }
+
+    #insurance-faq .faq-question {
+      font-size: 15.5px;
+      padding: 18px 4px;
+    }
+
+    #insurance-faq .faq-answer {
+      font-size: 14.5px;
+      padding-left: 4px;
+      padding-right: 20px;
+    }
+
+    #insurance-faq .faq-cta h3 {
+      font-size: 20px;
+    }
   }
 
 
@@ -2030,6 +2457,58 @@ text-align:center;
           </script>
       </section>
     </header>
+
+       <!-- STICKY NAVBAR -->
+
+  <div class="topstrip">
+    <div class="wrap">
+      <span><b>Girish Gaur</b> · Certified Insurance Advisor · Saharanpur, Uttar Pradesh</span>
+      <span>Axis Max Life Insurance &nbsp;|&nbsp; Niva Bupa Health Insurance</span>
+    </div>
+  </div>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="wrap nav-in">
+      <a class="brand" href="#top" aria-label="Girish Gaur — Home">
+        <img src="https://raw.githubusercontent.com/girish8360/girish8360/main/girish_snap.jpg"
+          alt="Portrait of Girish Gaur">
+        <span class="bt">
+          <b>GIRISH GAUR </b>
+          <span>Certified Insurance Advisor</span>
+        </span>
+      </a>
+
+      <div class="nav-links">
+
+        <a href="https://girish8360.github.io/amli/GIRISH GAUR-PROFILE.html" target="_blank"> <i
+            class="fa-solid fa-house me-2">
+          </i><span style="color:#fff;font-weight:bold;">HOME</span> </a>
+
+        <a class="nav-cta callback-btn"
+          href="https://girish8360.github.io/amli/GIRISH GAUR-PROFILE.html#connect">Request a Callback</a>
+
+        <a class="nav-cta booking-btn" href="https://calendly.com/girish-garry4u/30min" target="_blank"
+          rel="noopener noreferrer">
+          <i class="far fa-calendar-check" aria-hidden="true"></i>
+          Book Appointment
+        </a>
+
+        <a class="nav-cta call-btn" href="tel:+917906284866">
+          <i class="fas fa-phone" aria-hidden="true"></i>
+          Call Now
+        </a>
+
+        <a class="nav-cta whatsapp-btn"
+          href="https://wa.me/918859662533?text=Hello%20Girish%20Ji%2C%20I%20would%20like%20to%20know%20more%20about%20your%20insurance%20services."
+          target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-whatsapp" aria-hidden="true"></i>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </nav>
+
+
     <!-- ================= NAVBAR ================= -->
 
     <!-- Font Awesome -->
@@ -19801,6 +20280,308 @@ text-align:center;
         </div>
 
       </section>
+
+                           <!-- ================= FAQ ================= -->
+
+    <section id="insurance-faq" class="faq-section">
+
+
+      <div class="faq-container" style="background-color:#ffff; max-width: 900px; margin: 0 auto; padding: 20px;"">
+
+        <div class=" faq-header">
+        <h2>Insurance Clarity Corner-FAQ</h2>
+        <p style="color:maroon;font-size:20px;font-style:italic;font-weight:bold;">
+          Making informed decisions about protecting
+          your family's financial future.Making insurance simpler, clearer & more transparent.
+        </p>
+      </div>
+
+      <!-- FAQ 1 -->
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-1">
+          <span>01. I don't believe in Insurance.</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-answer-1" hidden>
+          <p>
+            Insurance is not about predicting the future;
+            it is about preparing financially for uncertainties.
+            Your family's financial security should not depend
+            entirely on your continued ability to earn.
+            Life insurance helps protect the people who depend
+            on you.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2">
+          <span>02. Premium is a big concern.</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-answer-2" hidden>
+          <p>
+            I understand. The objective is not to buy an
+            expensive policy, but to choose adequate protection
+            within your budget. A manageable premium today can
+            help protect your family from a potentially
+            unmanageable financial burden tomorrow.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3">
+          <span>03. Insurance offers lower returns than the market.</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-answer-3" hidden>
+          <p>
+            Absolutely, but insurance and investments serve
+            different purposes. Investments aim to create
+            wealth, while life insurance primarily protects
+            your family's financial future. Comparing insurance
+            only on returns overlooks its most important purpose:
+            financial protection.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-4">
+          <span>
+            04. I already invest in MF, SIP, Stocks,
+            Real Estate or Gold. Why do I need Insurance?
+          </span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-answer-4" hidden>
+          <p>
+            That's a good approach to wealth creation!
+            However, investments alone may not adequately
+            protect your family's future liabilities if your
+            income stops unexpectedly. Build wealth through
+            investments and protect your financial
+            responsibilities through adequate insurance.
+            Both are essential parts of sound financial planning.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-5">
+          <span>05. I'll think about Insurance later.</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-answer-5" hidden>
+          <p>
+            Certainly, but remember that age and health can
+            influence insurance eligibility and premium.
+            Delaying protection may increase its cost or limit
+            your available options. Your financial
+            responsibilities exist today, so planning their
+            protection should not be postponed indefinitely.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-container" style="background-color:#ffff;">
+
+        <div class="faq-header">
+          <h3>Beyond Objections: Understanding Insurance</h3>
+          <p style="color:maroon;font-size:20px;font-style:italic;font-weight:bold;">
+            Every question deserves a clear answer. Every concern deserves a thoughtful explanation. Explore honest,
+            practical insights that help you make confident and informed insurance decisions.
+          </p>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-6">
+            <span>06. There’s nothing left of my salary as it is. Where am I supposed to get the money for
+              insurance? </span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-answer-6" hidden>
+            <p>
+              I completely understand. I am not suggesting that you compromise on your children's education, household
+              expenses or EMI payments. But let me ask you one thing: if, unfortunately, your income stops tomorrow,
+              will your family's expenses also stop? The house rent, school fees and car EMI will continue. My
+              suggestion is not to increase your financial burden. Let's first identify the minimum protection your
+              family needs and see what can comfortably fit into your existing budget
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 7 -->
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-7">
+            <span> 07. If something happens to me, there’s always the company insurance and the EPF.</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+
+          </button>
+          <div class="faq-answer" id="faq-answer-7" hidden>
+            <p>
+              Your EPF and employer benefits are important assets. I would first like to understand how much your family
+              would actually receive. But let's consider your financial commitments:
+              <ul1>
+                <li>EMI payments for your home or car.</li>
+                <li>Children's education.</li>
+                <li>Household expenses.</li>
+                <li>Outstanding car loan.</li>
+                <li>Future living expenses of your family.</li>
+
+              </ul1>
+
+
+              Would your existing EPF balance and employer benefits be sufficient to manage all these commitments for
+              the next several years?" "Let's calculate the gap. I don't want you to pay for unnecessary cover, but I
+              also don't want your family to discover a financial shortfall at the most difficult time."
+            </p>
+
+          </div>
+        </div>
+
+        <!-- FAQ 8 -->
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-8">
+            <span>08. I am already burdened with a car loan EMI, School Fees of kids and rent. Why I should take extra
+              burden of more premiums of
+              insurance? </span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-answer-8" hidden>
+            <p>
+              You already have financial commitments, so taking on another large monthly commitment would not be
+              sensible. But there is one difference: your car EMI is a financial obligation, whereas a term insurance
+              premium is intended to protect your family against the loss of your income due to your death. We can
+              explore a premium that is manageable rather than committing to something that creates pressure."<br />For
+              example, if a suitable policy costs ₹12,000 annually, explain that it averages ₹1,000 per month, but the
+              actual payment frequency and policy conditions must be considered
+
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 9 -->
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-9">
+            <span>09. Money can get lost in insurance—what if a claim doesn't come through?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-answer-9" hidden>
+            <p>
+              We all want our money to create some value. But life insurance and health insurance should not be
+              evaluated like fixed deposits or mutual funds. If you pay a health insurance premium and don't get
+              hospitalized, it doesn't mean that the premium was wasted. It means you had financial protection during
+              that period.Similarly, term insurance is designed to financially protect your family against an
+              unfortunate event, not to generate a maturity return.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 10 -->
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-10">
+            <span>10. I’m currently occupied with the children’s school fees and household expenses. We’ll see about it
+              later.?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-answer-10" hidden>
+            <p>
+              I completely understand. Your children's education and household expenses should remain your first
+              priority.<br />But can we take just 15 minutes to review your existing insurance arrangements? We don't
+              need to make any purchase decision today. If we identify a genuine protection gap, I can prepare an
+              affordable proposal for you to consider whenever you are comfortable
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 11 -->
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-11">
+            <span>11. My spouse also earns an income. I don’t need this much insurance.?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-answer-11" hidden>
+            <p>
+
+              I understand. But let's consider the financial responsibilities that your family would face if you were to
+              pass away unexpectedly. Your spouse's income may not be sufficient to cover all the household expenses,
+              children's education, and future financial goals. Insurance is not just about replacing income; it's about
+              ensuring that your family's financial needs are met even in your absence.
+            </p>
+          </div>
+        </div>
+
+
+
+        <!-- WhatsApp Enquiry -->
+        <div class="faq-cta">
+          <h3>Your family's financial future
+            deserves a plan, not a promise.</h3>
+
+          <p>
+            My role is to understand your financial
+            responsibilities, assess your protection needs
+            and help you make informed insurance decisions.
+          </p>
+
+          <div class="advisor-name">GIRISH GAUR</div>
+
+          <div class="advisor-detail">
+            Certified Insurance Advisor<br>
+            Axis Max Life Insurance<br>
+            Cell / WhatsApp: 7906284866<br>
+            Email: Girish.garry4u@gmail.com
+          </div>
+
+          <a class="whatsapp-btn"
+            href="https://wa.me/917906284866?text=Hello%20Girish%20Ji%2C%20I%20would%20like%20to%20discuss%20my%20insurance%20and%20financial%20protection%20requirements."
+            target="_blank" rel="noopener noreferrer">
+            Chat on WhatsApp
+          </a>
+        </div>
+
+      </div>
+
+      <script>
+        (function () {
+          const section = document.getElementById("insurance-faq");
+          if (!section) return;
+
+          const questions = section.querySelectorAll(".faq-question");
+
+          questions.forEach(function (button) {
+            button.addEventListener("click", function () {
+              const isOpen =
+                button.getAttribute("aria-expanded") === "true";
+
+              questions.forEach(function (otherButton) {
+                otherButton.setAttribute("aria-expanded", "false");
+                const answer = section.querySelector(
+                  "#" + otherButton.getAttribute("aria-controls")
+                );
+                if (answer) answer.hidden = true;
+              });
+
+              if (!isOpen) {
+                button.setAttribute("aria-expanded", "true");
+                const answer = section.querySelector(
+                  "#" + button.getAttribute("aria-controls")
+                );
+                if (answer) answer.hidden = false;
+              }
+            });
+          });
+        })();
+      </script>
+    </section>
+
 
 
       <!-- ================= FOOTER ================= -->
