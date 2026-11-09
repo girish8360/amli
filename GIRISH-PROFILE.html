@@ -568,8 +568,16 @@
     border-color: var(--whatsapp);
   }
 
+   .mail-btn {
+    color: var(--white);
+    background: darkblue;
+    border-color: var(--whatsapp);
+  }
+  
   .call-btn:hover,
-  .whatsapp-btn:hover {
+  .whatsapp-btn:hover,
+  .mail-btn: hover
+{
     color: var(--white);
     opacity: .9;
   }
@@ -1093,43 +1101,7 @@
     overflow: hidden;
   }
 
-  /*
-      The original artwork is 1459 × 342.
-      Keeping this aspect ratio makes the clickable overlay positions
-      line up with the artwork at every screen width.
-    */
-  .footer-inner {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 1459 / 342;
-    max-width: 1459px;
-    margin: 0 auto;
-  }
-
-  .footer-art {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    user-select: none;
-    -webkit-user-drag: none;
-  }
-
-  .hotspot {
-    position: absolute;
-    display: block;
-    z-index: 5;
-    cursor: pointer;
-    border-radius: 8px;
-    outline: none;
-  }
-
-  /* Invisible hover/focus feedback */
-  .hotspot:hover,
-  .hotspot:focus-visible {
-    background: rgba(255, 255, 255, 0.08);
-    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .35);
-  }
+  
 
   /*
       Coordinates are percentages of the ORIGINAL 1459 × 342 artwork.
@@ -2771,6 +2743,13 @@
                   Survey Form
                 </a>
               </li>
+              
+  <li>
+                <a class="dropdown-item" href="#insurance-faq">
+                  FAQs
+                </a>
+              </li>
+
 
             </ul>
 
@@ -5086,7 +5065,7 @@
         </details>
 
         <details>
-          <summary>Why I should pay big Premium?</summary>
+          <summary>Why should I pay a  Premium?</summary>
           <p>
             I understand. The objective is not to buy an
             expensive policy, but to choose adequate protection
@@ -5137,6 +5116,65 @@
 
 
         </details>
+
+           <!--  Enquiry -->
+        <div class="faq-cta">
+          <h3>Your family's financial future
+            deserves a plan, not a promise.</h3>
+
+          <p>
+            My role is to understand your financial
+            responsibilities, assess your protection needs
+            and help you make informed insurance decisions.
+          </p>
+ 
+
+  <div class="topstrip">
+            <div class="wrap">
+              <span><b>Girish Gaur</b> · Certified Insurance Advisor · Saharanpur, Uttar Pradesh</span>
+              <span>Axis Max Life Insurance &nbsp;|&nbsp; Niva Bupa Health Insurance</span>
+            </div>
+          </div>
+
+          <nav class="site-nav" aria-label="Main navigation">
+            <div class="wrap nav-in">
+              <a class="brand" href="#top" aria-label="Girish Gaur — Home">
+                <img src="https://raw.githubusercontent.com/girish8360/girish8360/main/girish_snap.jpg"
+                  alt="Portrait of Girish Gaur">
+                <span class="bt">
+                  <b>GIRISH GAUR </b>
+                  <span>Certified Insurance Advisor</span>
+
+              </a>
+
+              <div class="nav-links">
+
+
+                <a class="nav-cta call-btn" href="tel:+917906284866">
+                  <i class="fas fa-phone" aria-hidden="true"></i>
+                  Call Now
+                </a>
+
+                <a class="nav-cta whatsapp-btn"
+                  href="https://wa.me/918859662533?text=Hello%20Girish%20Ji%2C%20I%20would%20like%20to%20know%20more%20about%20your%20insurance%20services."
+                  target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                  Chat on WhatsApp
+                </a>
+
+                <a class="nav-cta mail-btn" href="mailto:girish.garry4u@gmail.com" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="fa-solid fa-at me-2" style="font-size:30px"></i>
+
+
+                  Mail Us
+                </a>
+              </div>
+            </div>
+          </nav>
+
+
+        
 
       </div>
     </div>
