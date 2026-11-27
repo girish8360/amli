@@ -1669,6 +1669,377 @@
     }
   }
  
+ /* FAQ */
+
+
+  /* ================= PRODUCT-WISE RESPONSIVE FAQ ================= */
+  #insurance-faq {
+    --faq-navy: #003366;
+    --faq-maroon: #800000;
+    --faq-gold: #d4af37;
+    --faq-ink: #263445;
+    --faq-muted: #667085;
+    --faq-line: #e4e8ee;
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: clamp(22px, 4vw, 48px) clamp(14px, 3vw, 28px);
+    color: var(--faq-ink);
+    background: #fff;
+    border-top: 5px solid var(--faq-gold);
+    border-bottom: 5px solid var(--faq-maroon);
+    border-radius: 12px;
+    box-shadow: 0 5px 22px rgba(0, 31, 63, .09);
+    font-family: 'Times New Roman', Georgia, serif;
+    box-sizing: border-box;
+  }
+
+  #insurance-faq *,
+  #insurance-faq *::before,
+  #insurance-faq *::after {
+    box-sizing: border-box;
+  }
+
+  #insurance-faq .faq-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  #insurance-faq .faq-header {
+    text-align: center;
+    margin: 0 auto 24px;
+  }
+
+  #insurance-faq .faq-header h2 {
+    color: var(--faq-navy);
+    font-size: clamp(27px, 4vw, 38px);
+    font-weight: 700;
+    margin: 0 0 9px;
+    line-height: 1.2;
+  }
+
+  #insurance-faq .faq-header h2 span {
+    color: var(--faq-maroon);
+  }
+
+  #insurance-faq .faq-header p {
+    color: var(--faq-muted);
+    font-size: clamp(15px, 2vw, 18px);
+    line-height: 1.55;
+    margin: 0;
+  }
+
+  #insurance-faq .faq-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 9px;
+    margin: 24px 0 18px;
+  }
+
+  #insurance-faq .faq-tab {
+    appearance: none;
+    border: 1px solid var(--faq-navy);
+    border-radius: 7px;
+    padding: 10px 16px;
+    background: #fff;
+    color: var(--faq-navy);
+    font: 700 15px/1.25 'Times New Roman', Georgia, serif;
+    cursor: pointer;
+    transition: background .2s ease, color .2s ease,
+      border-color .2s ease;
+  }
+
+  #insurance-faq .faq-tab:hover,
+  #insurance-faq .faq-tab[aria-selected="true"] {
+    color: #fff;
+    background: var(--faq-navy);
+    border-color: var(--faq-gold);
+    box-shadow: inset 0 -3px 0 var(--faq-gold);
+  }
+
+  #insurance-faq .faq-tools {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 17px;
+  }
+
+  #insurance-faq .faq-search-wrap {
+    flex: 1 1 240px;
+  }
+
+  #insurance-faq .faq-search {
+    width: 100%;
+    min-height: 43px;
+    border: 1px solid #cbd3df;
+    border-radius: 7px;
+    padding: 9px 12px;
+    color: var(--faq-ink);
+    background: #fff;
+    font: 16px Arial, sans-serif;
+  }
+
+  #insurance-faq .faq-tool-btn {
+    min-height: 42px;
+    border: 1px solid var(--faq-maroon);
+    border-radius: 7px;
+    padding: 9px 14px;
+    color: var(--faq-maroon);
+    background: #fff;
+    font: 700 14px Arial, sans-serif;
+    cursor: pointer;
+  }
+
+  #insurance-faq .faq-tool-btn:hover {
+    background: var(--faq-maroon);
+    color: #fff;
+  }
+
+  #insurance-faq .faq-category-title {
+    margin: 18px 0 8px;
+    padding: 10px 14px;
+    color: #fff;
+    background: var(--faq-maroon);
+    border-left: 5px solid var(--faq-gold);
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  #insurance-faq .faq-item {
+    border: 1px solid var(--faq-line);
+    border-radius: 8px;
+    margin: 9px 0;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  #insurance-faq .faq-question {
+    width: 100%;
+    min-height: 54px;
+    border: 0;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    text-align: left;
+    color: var(--faq-navy);
+    background: #f8fafc;
+    font: 700 17px/1.4 'Times New Roman', Georgia, serif;
+    cursor: pointer;
+  }
+
+  #insurance-faq .faq-question:hover {
+    background: #f4f0e4;
+    color: var(--faq-maroon);
+  }
+
+  #insurance-faq .faq-question:focus-visible,
+  #insurance-faq .faq-tab:focus-visible,
+  #insurance-faq .faq-tool-btn:focus-visible,
+  #insurance-faq .faq-search:focus-visible,
+  #insurance-faq .faq-whatsapp:focus-visible {
+    outline: 3px solid var(--faq-gold);
+    outline-offset: 3px;
+  }
+
+  #insurance-faq .faq-icon {
+    flex: 0 0 27px;
+    width: 27px;
+    height: 27px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: darkblue background: #fff;
+    font: 700 20px/1 Arial, sans-serif;
+  }
+
+  #insurance-faq .faq-answer {
+    padding: 14px 18px 17px;
+    color: #344054;
+    background: #fff;
+    font: 16px/1.7 Arial, Helvetica, sans-serif;
+  }
+
+  #insurance-faq .faq-answer p {
+    margin: 0;
+  }
+
+  #insurance-faq .faq-answer strong {
+    color: var(--faq-navy);
+  }
+
+  #insurance-faq .faq-empty {
+    display: none;
+    padding: 18px;
+    text-align: center;
+    color: var(--faq-muted);
+    background: #f8fafc;
+    border: 1px dashed #cbd3df;
+    border-radius: 8px;
+  }
+
+  #insurance-faq .faq-disclaimer {
+    margin: 20px 0 0;
+    padding: 12px 14px;
+    border-left: 4px solid var(--faq-gold);
+    background: #fbf8ee;
+    color: #5d5140;
+    font: 14px/1.6 Arial, sans-serif;
+  }
+
+  #insurance-faq .faq-cta {
+    margin-top: 25px;
+    padding: 22px 16px;
+    text-align: center;
+    background: #f4f7fb;
+    border: 1px solid #e1e6ed;
+    border-radius: 10px;
+  }
+
+  #insurance-faq .faq-cta h3 {
+    margin: 0 0 8px;
+    color: var(--faq-navy);
+    font-size: clamp(20px, 3vw, 25px);
+  }
+
+  #insurance-faq .faq-cta p {
+    margin: 0 auto 13px;
+    max-width: 720px;
+    color: #475467;
+    font: 15px/1.6 Arial, sans-serif;
+  }
+
+
+
+  #insurance-faq .faq-question {
+    width: 100%;
+    background: #fff;
+    border: 0;
+    padding: 21px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    text-align: left;
+    cursor: pointer;
+    color: var(--navy);
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  #insurance-faq .faq-question:hover {
+    color: var(--blue);
+  }
+
+  #insurance-faq .faq-question:focus-visible,
+  #insurance-faq .whatsapp-btn:focus-visible {
+    outline: 3px solid #80b7ee;
+    outline-offset: 3px;
+  }
+
+  #insurance-faq .faq-icon {
+    flex-shrink: 0;
+    font-size: 24px;
+    color: var(--blue);
+    transition: transform 0.25s ease;
+  }
+
+  #insurance-faq .faq-question[aria-expanded="true"] .faq-icon {
+    transform: rotate(45deg);
+  }
+
+  #insurance-faq .faq-answer {
+    padding: 0 35px 21px 8px;
+    color: darkblue;
+    font-size: 17.5px;
+    line-height: 1.8;
+  }
+
+  #insurance-faq .faq-answer p {
+    margin: 0;
+  }
+
+  #insurance-faq .faq-answer strong {
+    color: var(--darknavy);
+  }
+
+  #insurance-faq .faq-cta {
+    background: #f4f7fb;
+    border: 1px solid #e1e9f2;
+    border-radius: 12px;
+    text-align: center;
+    padding: 28px 18px;
+    margin-top: 32px;
+  }
+
+  #insurance-faq .faq-cta h3 {
+    color: var(--navy);
+    font-size: 22px;
+    margin: 0 0 12px;
+  }
+
+  #insurance-faq .faq-cta p {
+    color: #475467;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0 0 20px;
+  }
+
+  #insurance-faq .advisor-name {
+    color: var(--navy);
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+
+  #insurance-faq .advisor-detail {
+    font-size: 14px;
+    color: #667085;
+    line-height: 1.7;
+    margin-bottom: 18px;
+  }
+
+  #insurance-faq .whatsapp-btn {
+    display: inline-block;
+    background: #168b50;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    transition: background 0.2s ease;
+  }
+
+  #insurance-faq .whatsapp-btn:hover {
+    background: #106d3d;
+  }
+
+  @media (max-width: 600px) {
+    #insurance-faq {
+      padding: 32px 15px;
+    }
+
+    #insurance-faq .faq-question {
+      font-size: 15.5px;
+      padding: 18px 4px;
+    }
+
+    #insurance-faq .faq-answer {
+      font-size: 14.5px;
+      padding-left: 4px;
+      padding-right: 20px;
+    }
+
+    #insurance-faq .faq-cta h3 {
+      font-size: 20px;
+    }
+  }
 
 
 <script>
