@@ -7844,7 +7844,49 @@ width:250px;height:150px;justify-content: center;align-items: center;"> <br>
             </div>
           </div>
 
+<!-- ================= AUTOMATIC AGE CALCULATOR ================= -->
+          <script>
+            // <--GETTING REFERENCES TO THE DATE OF BIRTH AND AGE INPUT FIELDS -->
+            const dobField = document.getElementById("dob");
+            const ageField = document.getElementById("age");
 
+            // <--Prevent selecting a future date -->
+
+            dobField.max = new Date().toISOString().split("T")[0];
+
+            // <--Calculate age automatically when DOB changes -->
+            dobField.addEventListener("change", function () {
+
+              // Get selected DOB
+
+              const dobValue = dobField.value;
+
+              if (!dobValue) { ageField.value = ""; return; }
+
+              // Convert DOB into Date object
+
+              const birthDate = new Date(dobValue + "T00:00:00");
+
+              const today = new Date();
+
+              // Calculate initial age
+
+              let age = today.getFullYear() - birthDate.getFullYear();
+
+              // Calculate whether birthday has occurred this year
+
+              const monthDifference = today.getMonth() - birthDate.getMonth();
+              const dayDifference = today.getDate() - birthDate.getDate();
+
+              // If birthday has not occurred yet, subtract one year
+
+              if (monthDifference < 0 || (monthDifference === 0 && dayDifference < 0)) { age--; }
+
+              // Put calculated age into Age field
+
+              ageField.value = age;
+            }); 
+          </script>
 
           <!-- MOBILE -->
           <div class="form-group row mb-3">
