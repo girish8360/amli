@@ -1325,7 +1325,151 @@
 
   /* FIELDSET */
 
-  fieldset {
+  /* ================= MAGAZINE ================= */
+  /* MAGAZINE-STYLE CONTACT INTRODUCTION */
+  .magazine-message {
+    max-width: auto;
+    margin: 25px auto;
+    padding: 32px 35px;
+    background: #f5ece8;
+    color: darkblue;
+    border: 1px solid #e7dfd5;
+    border-top: 5px solid #812632;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+  /* Small editorial label */
+  .magazine-label {
+    color: darkblue;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  /* Main magazine headline */
+  .magazine-message h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(27px, 4vw, 39px);
+    line-height: 1.2;
+    font-weight: bold;
+    color: #222222;
+    margin: 0 0 12px;
+  }
+
+  /* Decorative subtitle */
+  .magazine-subtitle {
+    font-size: 17px;
+    font-style: italic;
+    color: darkblue;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+
+  /* Paragraph formatting */
+  .magazine-message p {
+    margin: 0 0 18px;
+    text-align: justify;
+  }
+
+  /* Newspaper-style opening letter */
+  .magazine-opening::first-letter {
+    float: left;
+    font-size: 58px;
+    line-height: 0.85;
+    padding-right: 9px;
+    padding-top: 7px;
+    color: #812632;
+    font-weight: bold;
+  }
+
+  /* Highlighted call to action */
+  .magazine-highlight {
+    background: #f5ece8;
+    border-left: 4px solid #812632;
+    padding: 18px 20px;
+    margin: 25px 0;
+    color: #51252a;
+
+    font-size: 17px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.7;
+  }
+
+  /* Privacy section */
+  .magazine-privacy {
+    border-top: 1px solid #d8c9c0;
+    border-bottom: 1px solid #d8c9c0;
+    padding: 18px 0;
+    margin-top: 20px;
+    background: lightgray;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .magazine-privacy h3 {
+    text-align: center;
+    color: lightgray;
+    font-size: 21px;
+    margin: 0 0 12px font-weight: bold;
+  }
+
+  /* Advisor signature */
+  .magazine-signature {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .magazine-signature strong {
+    display: block;
+    color: #812632;
+    font-size: 23px;
+    letter-spacing: 1.5px;
+
+  }
+
+  .magazine-signature span {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #666666;
+    margin-top: 5px;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  /* Mobile-friendly layout */
+  @media (max-width: 600px) {
+    .magazine-message {
+      padding: 23px 19px;
+      font-size: 15px;
+      line-height: 1.8;
+      margin: 15px auto;
+    }
+
+    .magazine-message p {
+      text-align: left;
+    }
+
+    .magazine-opening::first-letter {
+      font-size: 48px;
+    }
+
+    .magazine-highlight {
+      padding: 14px;
+      font-size: 16px;
+    }
+  }
+
+ <!---FORM--->
+
+fieldset {
     padding: 20px;
     margin: 10px 0;
     border-radius: 8px;
@@ -1342,7 +1486,6 @@
 
   .form-control {
     max-width: 400px;
-
   }
 
   .survey-section {
@@ -1352,14 +1495,14 @@
   @media (max-width: 575px) {
     .form-control {
       max-width: 100%;
-      padding-left: 15px;
-
     }
 
     fieldset {
       padding: 12px;
     }
   }
+
+<!--CLOCK-->
 
   .container04 {
     position: relative;
